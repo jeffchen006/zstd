@@ -88,11 +88,12 @@ static const unsigned g_defaultSelectivityLevel = 9;
 static const unsigned g_defaultMaxWindowLog = 27;
 #define OVERLAP_LOG_DEFAULT 9999
 #define LDM_PARAM_DEFAULT 9999  /* Default for parameters where 0 is valid */
-static U32 g_overlapLog = OVERLAP_LOG_DEFAULT;
-static U32 g_ldmHashLog = 0;
-static U32 g_ldmMinMatch = 0;
-static U32 g_ldmHashRateLog = LDM_PARAM_DEFAULT;
-static U32 g_ldmBucketSizeLog = LDM_PARAM_DEFAULT;
+/* These parameters are parsed but unused in decompression-only builds. */
+static UNUSED_ATTR U32 g_overlapLog = OVERLAP_LOG_DEFAULT;
+static UNUSED_ATTR U32 g_ldmHashLog = 0;
+static UNUSED_ATTR U32 g_ldmMinMatch = 0;
+static UNUSED_ATTR U32 g_ldmHashRateLog = LDM_PARAM_DEFAULT;
+static UNUSED_ATTR U32 g_ldmBucketSizeLog = LDM_PARAM_DEFAULT;
 
 
 #define DEFAULT_ACCEL 1
