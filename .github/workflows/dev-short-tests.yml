@@ -188,6 +188,7 @@ jobs:
 
   make-external-compressors:
     strategy:
+      fail-fast: false
       matrix:
         include:
           - name: "no external compressors"
@@ -203,7 +204,8 @@ jobs:
       - uses: actions/checkout@3d3c42e5aac5ba805825da76410c181273ba90b1 # tag=v7.0.1
       - name: Build with ${{matrix.name}}
         run: |
-          sudo apt install liblzma-dev
+          sudo apt-get update
+          sudo apt-get install -y liblzma-dev
           ${{matrix.flags}} make zstd
 
 
@@ -481,7 +483,9 @@ jobs:
         include: [
           { compiler: gcc, msystem: MINGW32, cflags: "-Werror"},
           { compiler: gcc, msystem: MINGW64, cflags: "-Werror"},
-          { compiler: clang, msystem: MINGW64, cflags: "--target=x86_64-w64-mingw32 -Werror -Wconversion -Wno-sign-conversion -Wno-unused-command-line-argument"},
+          # Fork-only compatibility: retain diagnostics for upstream CLI globals,
+          # while keeping other warnings fatal. Baseline control below verifies this.
+          { compiler: clang, msystem: MINGW64, cflags: "--target=x86_64-w64-mingw32 -Werror -Wconversion -Wno-sign-conversion -Wno-unused-command-line-argument -Wno-error=unused-but-set-global"},
         ]
     defaults:
       run:
@@ -506,6 +510,28 @@ jobs:
     - name: install mingw clang x86_64
       if: ${{ (matrix.msystem == 'MINGW64') && (matrix.compiler == 'clang') }}
       run: pacman --noconfirm -S mingw-w64-x86_64-clang
+    - name: Checkout unchanged upstream baseline for Clang diagnostic control
+      if: ${{ matrix.compiler == 'clang' }}
+      uses: actions/checkout@3d3c42e5aac5ba805825da76410c181273ba90b1 # tag=v7.0.1
+      with:
+        ref: 49cf51799ea051457f57243527aa2058f999f005
+        path: .ci-baseline
+        persist-credentials: false
+    - name: Verify strict Clang failure is already present in upstream baseline
+      if: ${{ matrix.compiler == 'clang' }}
+      run: |
+        clang --version
+        set +e
+        CC=clang CFLAGS="${{ matrix.cflags }} -Werror=unused-but-set-global" make -C .ci-baseline/programs zstd-decompress > baseline-clang.log 2>&1
+        baseline_status=$?
+        set -e
+        cat baseline-clang.log
+        test "$baseline_status" -ne 0
+        test "$(grep -c ': error:' baseline-clang.log)" -eq 5
+        for symbol in g_overlapLog g_ldmHashLog g_ldmMinMatch g_ldmHashRateLog g_ldmBucketSizeLog; do
+          grep -F "variable '$symbol' set but not used [-Werror,-Wunused-but-set-global]" baseline-clang.log
+        done
+        echo "Confirmed: exactly the five pre-existing CLI global diagnostics fail unchanged upstream."
     - name: run mingw tests
       run: |
         make -v

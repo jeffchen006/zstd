@@ -46,7 +46,8 @@ jobs:
     - uses: actions/checkout@3d3c42e5aac5ba805825da76410c181273ba90b1 # tag=v7.0.1
     - name: Install dependencies
       run: |
-        sudo apt install liblzma-dev  # Required for compression algorithms
+        sudo apt-get update
+        sudo apt-get install -y liblzma-dev  # Required for compression algorithms
     - name: CMake build and test via make
       run: |
         # Use make wrapper for cmake build with quick test timeouts
