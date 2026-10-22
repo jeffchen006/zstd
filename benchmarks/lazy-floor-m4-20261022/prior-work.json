@@ -1,0 +1,21 @@
+{
+  "searched_on": "2026-10-22",
+  "queries": [
+    "repo:facebook/zstd mlFloor",
+    "repo:facebook/zstd lazy count",
+    "repo:facebook/zstd match length minimum lazy",
+    "repo:facebook/zstd score lazy"
+  ],
+  "related": [
+    {
+      "url": "https://github.com/facebook/zstd/pull/4841",
+      "status": "open at lookup",
+      "relationship": "Same broad row/lazy matchfinder area; different changes (row bookkeeping, count implementation, vectorization and inlining). No mlFloor/lazy_mlFloor in fetched diff. Not benchmarked in combination."
+    },
+    {
+      "url": "https://github.com/facebook/zstd/issues/2587",
+      "relationship": "Different search improvement: finding continuations via an end-of-match hash."
+    }
+  ],
+  "qualification": "No exact floor-based equivalent found in these searches; this is not proof that no prior implementation exists."
+}

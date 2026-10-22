@@ -1,0 +1,1928 @@
+{
+  "cli": [
+    {
+      "case": "all-L1",
+      "level": 1,
+      "candidate": "c0002-r0",
+      "metric": "compression_mbps",
+      "compressed_bytes": 73213479,
+      "ratio": 2.895,
+      "pairs": 7,
+      "baseline_median_mbps": 548.65,
+      "candidate_median_mbps": 548.51,
+      "median_paired_change_pct": -0.030959752321990663,
+      "paired_change_min_pct": -0.1056312377067159,
+      "paired_change_max_pct": 0.3137769994162376,
+      "paired_median_bootstrap95_pct": [
+        -0.08570699150224348,
+        0.04927097209803666
+      ],
+      "baseline_best_mbps": 549.1,
+      "candidate_best_mbps": 549.88,
+      "best_change_pct": 0.14205062830086046,
+      "baseline_cv_pct": 0.08105746974282224,
+      "candidate_cv_pct": 0.11364541358645434,
+      "ratios": [
+        1.0031377699941624,
+        0.9991429300849776,
+        1.0000911327804614,
+        0.9996904024767801,
+        0.9992894880670432,
+        1.0004927097209804,
+        0.9989436876229328
+      ]
+    },
+    {
+      "case": "all-L1",
+      "level": 1,
+      "candidate": "c0002-r0",
+      "metric": "decompression_mbps",
+      "compressed_bytes": 73213479,
+      "ratio": 2.895,
+      "pairs": 7,
+      "baseline_median_mbps": 1406.6,
+      "candidate_median_mbps": 1416.5,
+      "median_paired_change_pct": 0.7891369259206638,
+      "paired_change_min_pct": -0.6511430391393569,
+      "paired_change_max_pct": 2.043577328396462,
+      "paired_median_bootstrap95_pct": [
+        0.1279954490506885,
+        0.9046872773899484
+      ],
+      "baseline_best_mbps": 1412.9,
+      "candidate_best_mbps": 1433.1,
+      "best_change_pct": 1.4296836294146686,
+      "baseline_cv_pct": 0.2193841210751309,
+      "candidate_cv_pct": 0.6778413943210813,
+      "ratios": [
+        1.0204357732839646,
+        1.0022719204827832,
+        1.0086598523566155,
+        1.0090468727738995,
+        0.9934885696086064,
+        1.0012799544905069,
+        1.0078913692592066
+      ]
+    },
+    {
+      "case": "all-L3",
+      "level": 3,
+      "candidate": "c0002-r0",
+      "metric": "compression_mbps",
+      "compressed_bytes": 66121941,
+      "ratio": 3.205,
+      "pairs": 7,
+      "baseline_median_mbps": 320.5,
+      "candidate_median_mbps": 320.48,
+      "median_paired_change_pct": 0.04992199687987586,
+      "paired_change_min_pct": -0.24989847874301585,
+      "paired_change_max_pct": 0.2527379949452513,
+      "paired_median_bootstrap95_pct": [
+        -0.16220600162205612,
+        0.22454389521284757
+      ],
+      "baseline_best_mbps": 320.65,
+      "candidate_best_mbps": 321.37,
+      "best_change_pct": 0.22454389521284757,
+      "baseline_cv_pct": 0.06393729389221234,
+      "candidate_cv_pct": 0.2199970984443364,
+      "ratios": [
+        1.0008119417900194,
+        1.0022454389521285,
+        0.999438622754491,
+        1.0025273799494525,
+        0.9975010152125698,
+        1.0004992199687988,
+        0.9983779399837794
+      ]
+    },
+    {
+      "case": "all-L3",
+      "level": 3,
+      "candidate": "c0002-r0",
+      "metric": "decompression_mbps",
+      "compressed_bytes": 66121941,
+      "ratio": 3.205,
+      "pairs": 7,
+      "baseline_median_mbps": 1296.6,
+      "candidate_median_mbps": 1300.8,
+      "median_paired_change_pct": 0.30826140567201676,
+      "paired_change_min_pct": -0.015316281206922966,
+      "paired_change_max_pct": 1.4668416583030863,
+      "paired_median_bootstrap95_pct": [
+        0.2388841797025476,
+        0.3937311819655731
+      ],
+      "baseline_best_mbps": 1305.8,
+      "candidate_best_mbps": 1314.3,
+      "best_change_pct": 0.650941951294226,
+      "baseline_cv_pct": 0.28350113410780087,
+      "candidate_cv_pct": 0.4002149177084904,
+      "ratios": [
+        0.9998468371879308,
+        1.0039373118196557,
+        1.0025451180009257,
+        1.0023888417970255,
+        1.0146684165830309,
+        1.0034722222222223,
+        1.0030826140567202
+      ]
+    },
+    {
+      "case": "all-L6",
+      "level": 6,
+      "candidate": "c0002-r0",
+      "metric": "compression_mbps",
+      "compressed_bytes": 61230924,
+      "ratio": 3.461,
+      "pairs": 7,
+      "baseline_median_mbps": 125.12,
+      "candidate_median_mbps": 125.76,
+      "median_paired_change_pct": 0.5514705882353033,
+      "paired_change_min_pct": 0.05587930071047076,
+      "paired_change_max_pct": 0.8714422769427577,
+      "paired_median_bootstrap95_pct": [
+        0.41520281060365427,
+        0.7025948103792423
+      ],
+      "baseline_best_mbps": 125.27,
+      "candidate_best_mbps": 126.17,
+      "best_change_pct": 0.718448151991713,
+      "baseline_cv_pct": 0.10927577342357217,
+      "candidate_cv_pct": 0.2334938206207229,
+      "ratios": [
+        1.0061604928394272,
+        1.0005587930071047,
+        1.0087144227694276,
+        1.005514705882353,
+        1.0041520281060365,
+        1.005123278898495,
+        1.0070259481037924
+      ]
+    },
+    {
+      "case": "all-L6",
+      "level": 6,
+      "candidate": "c0002-r0",
+      "metric": "decompression_mbps",
+      "compressed_bytes": 61230924,
+      "ratio": 3.461,
+      "pairs": 7,
+      "baseline_median_mbps": 1384.2,
+      "candidate_median_mbps": 1394.1,
+      "median_paired_change_pct": 0.6061918164104618,
+      "paired_change_min_pct": 0.13726340124258218,
+      "paired_change_max_pct": 1.2914459841834036,
+      "paired_median_bootstrap95_pct": [
+        0.31055900621119736,
+        0.954584900202482
+      ],
+      "baseline_best_mbps": 1385.7,
+      "candidate_best_mbps": 1396.1,
+      "best_change_pct": 0.7505232012701146,
+      "baseline_cv_pct": 0.20750923430839313,
+      "candidate_cv_pct": 0.30415764164898906,
+      "ratios": [
+        1.012914459841834,
+        1.0095458490020248,
+        1.005580518915785,
+        1.003105590062112,
+        1.0013726340124258,
+        1.0064963187527067,
+        1.0060619181641046
+      ]
+    },
+    {
+      "case": "all-L9",
+      "level": 9,
+      "candidate": "c0002-r0",
+      "metric": "compression_mbps",
+      "compressed_bytes": 59073803,
+      "ratio": 3.588,
+      "pairs": 7,
+      "baseline_median_mbps": 83.75,
+      "candidate_median_mbps": 86.7,
+      "median_paired_change_pct": 3.645273096689361,
+      "paired_change_min_pct": 1.2858673651625185,
+      "paired_change_max_pct": 6.199658286551135,
+      "paired_median_bootstrap95_pct": [
+        3.155513217432704,
+        3.882099209202017
+      ],
+      "baseline_best_mbps": 83.99,
+      "candidate_best_mbps": 87.02,
+      "best_change_pct": 3.6075723300392992,
+      "baseline_cv_pct": 0.8572240112266726,
+      "candidate_cv_pct": 0.7595493712735146,
+      "ratios": [
+        1.031555132174327,
+        1.0619965828655114,
+        1.0388209920920202,
+        1.0349850746268658,
+        1.0370016710432084,
+        1.0364527309668936,
+        1.0128586736516252
+      ]
+    },
+    {
+      "case": "all-L9",
+      "level": 9,
+      "candidate": "c0002-r0",
+      "metric": "decompression_mbps",
+      "compressed_bytes": 59073803,
+      "ratio": 3.588,
+      "pairs": 7,
+      "baseline_median_mbps": 1463.4,
+      "candidate_median_mbps": 1473.0,
+      "median_paired_change_pct": 0.6560065600655918,
+      "paired_change_min_pct": -0.8426202772492397,
+      "paired_change_max_pct": 1.0604091126770188,
+      "paired_median_bootstrap95_pct": [
+        0.04084689223227134,
+        0.9391924316171973
+      ],
+      "baseline_best_mbps": 1471.6,
+      "candidate_best_mbps": 1477.2,
+      "best_change_pct": 0.3805381897254767,
+      "baseline_cv_pct": 0.29925637298716173,
+      "candidate_cv_pct": 0.3965083804110709,
+      "ratios": [
+        1.0106040911267702,
+        0.9915737972275076,
+        1.007380578145288,
+        1.0004084689223227,
+        1.0055938331400505,
+        1.009391924316172,
+        1.006560065600656
+      ]
+    },
+    {
+      "case": "dickens-L6",
+      "level": 6,
+      "candidate": "c0002-r0",
+      "metric": "compression_mbps",
+      "compressed_bytes": 3418515,
+      "ratio": 2.982,
+      "pairs": 5,
+      "baseline_median_mbps": 84.5,
+      "candidate_median_mbps": 83.91,
+      "median_paired_change_pct": -0.5221932114882644,
+      "paired_change_min_pct": -0.7455621301775128,
+      "paired_change_max_pct": -0.2251184834123343,
+      "paired_median_bootstrap95_pct": [
+        -0.7455621301775128,
+        -0.2251184834123343
+      ],
+      "baseline_best_mbps": 84.54,
+      "candidate_best_mbps": 84.24,
+      "best_change_pct": -0.35486160397446564,
+      "baseline_cv_pct": 0.13398517881317676,
+      "candidate_cv_pct": 0.23702306572717177,
+      "ratios": [
+        0.9977488151658767,
+        0.9947780678851174,
+        0.99301775147929,
+        0.9964513839602553,
+        0.9925443786982249
+      ]
+    },
+    {
+      "case": "dickens-L6",
+      "level": 6,
+      "candidate": "c0002-r0",
+      "metric": "decompression_mbps",
+      "compressed_bytes": 3418515,
+      "ratio": 2.982,
+      "pairs": 5,
+      "baseline_median_mbps": 1111.3,
+      "candidate_median_mbps": 1110.7,
+      "median_paired_change_pct": -0.07197480881691032,
+      "paired_change_min_pct": -1.3484358144552289,
+      "paired_change_max_pct": 1.0153204605203525,
+      "paired_median_bootstrap95_pct": [
+        -1.3484358144552289,
+        1.0153204605203525
+      ],
+      "baseline_best_mbps": 1112.4,
+      "candidate_best_mbps": 1114.3,
+      "best_change_pct": 0.17080186983098322,
+      "baseline_cv_pct": 0.3451478747522881,
+      "candidate_cv_pct": 0.6242817904470667,
+      "ratios": [
+        0.9865156418554477,
+        1.0101532046052035,
+        0.9992800575953924,
+        1.0024295869702151,
+        0.9992802519118309
+      ]
+    },
+    {
+      "case": "dickens-L9",
+      "level": 9,
+      "candidate": "c0002-r0",
+      "metric": "compression_mbps",
+      "compressed_bytes": 3282524,
+      "ratio": 3.105,
+      "pairs": 5,
+      "baseline_median_mbps": 52.64,
+      "candidate_median_mbps": 54.64,
+      "median_paired_change_pct": 3.24834749763927,
+      "paired_change_min_pct": 2.304060434372057,
+      "paired_change_max_pct": 5.4773384763741495,
+      "paired_median_bootstrap95_pct": [
+        2.304060434372057,
+        5.4773384763741495
+      ],
+      "baseline_best_mbps": 52.95,
+      "candidate_best_mbps": 54.69,
+      "best_change_pct": 3.286118980169972,
+      "baseline_cv_pct": 0.8550907279106101,
+      "candidate_cv_pct": 0.548970989077507,
+      "ratios": [
+        1.0273556231003038,
+        1.0230406043437206,
+        1.0324834749763927,
+        1.0385858201862763,
+        1.0547733847637415
+      ]
+    },
+    {
+      "case": "dickens-L9",
+      "level": 9,
+      "candidate": "c0002-r0",
+      "metric": "decompression_mbps",
+      "compressed_bytes": 3282524,
+      "ratio": 3.105,
+      "pairs": 5,
+      "baseline_median_mbps": 1236.8,
+      "candidate_median_mbps": 1235.0,
+      "median_paired_change_pct": -0.1374514877102273,
+      "paired_change_min_pct": -0.5900897259720317,
+      "paired_change_max_pct": 0.20256036298818003,
+      "paired_median_bootstrap95_pct": [
+        -0.5900897259720317,
+        0.20256036298818003
+      ],
+      "baseline_best_mbps": 1238.8,
+      "candidate_best_mbps": 1236.7,
+      "best_change_pct": -0.16951888924765512,
+      "baseline_cv_pct": 0.13913991535855214,
+      "candidate_cv_pct": 0.2120449654265252,
+      "ratios": [
+        0.9940991027402797,
+        0.9986254851228977,
+        0.9995144059566203,
+        1.0020256036298818,
+        0.9957216661285115
+      ]
+    },
+    {
+      "case": "mozilla-L6",
+      "level": 6,
+      "candidate": "c0002-r0",
+      "metric": "compression_mbps",
+      "compressed_bytes": 17156022,
+      "ratio": 2.986,
+      "pairs": 5,
+      "baseline_median_mbps": 125.89,
+      "candidate_median_mbps": 127.3,
+      "median_paired_change_pct": 1.302724600841998,
+      "paired_change_min_pct": 1.1119936457505863,
+      "paired_change_max_pct": 1.7343350383631773,
+      "paired_median_bootstrap95_pct": [
+        1.1119936457505863,
+        1.7343350383631773
+      ],
+      "baseline_best_mbps": 125.92,
+      "candidate_best_mbps": 127.53,
+      "best_change_pct": 1.2785895806861403,
+      "baseline_cv_pct": 0.31920624205513,
+      "candidate_cv_pct": 0.10161886860509328,
+      "ratios": [
+        1.0122299872935197,
+        1.0158907609997605,
+        1.0173433503836318,
+        1.01302724600842,
+        1.0111199364575059
+      ]
+    },
+    {
+      "case": "mozilla-L6",
+      "level": 6,
+      "candidate": "c0002-r0",
+      "metric": "decompression_mbps",
+      "compressed_bytes": 17156022,
+      "ratio": 2.986,
+      "pairs": 5,
+      "baseline_median_mbps": 1203.5,
+      "candidate_median_mbps": 1212.8,
+      "median_paired_change_pct": 0.6890826068908229,
+      "paired_change_min_pct": 0.12445034431260993,
+      "paired_change_max_pct": 1.7069701280227667,
+      "paired_median_bootstrap95_pct": [
+        0.12445034431260993,
+        1.7069701280227667
+      ],
+      "baseline_best_mbps": 1205.3,
+      "candidate_best_mbps": 1216.3,
+      "best_change_pct": 0.912635858292532,
+      "baseline_cv_pct": 0.36598054158840043,
+      "candidate_cv_pct": 0.33559386763821386,
+      "ratios": [
+        1.0068908260689082,
+        1.014851898206091,
+        1.0170697012802277,
+        1.0047361861238056,
+        1.001244503443126
+      ]
+    },
+    {
+      "case": "mozilla-L9",
+      "level": 9,
+      "candidate": "c0002-r0",
+      "metric": "compression_mbps",
+      "compressed_bytes": 16665339,
+      "ratio": 3.073,
+      "pairs": 5,
+      "baseline_median_mbps": 86.77,
+      "candidate_median_mbps": 89.56,
+      "median_paired_change_pct": 3.1257208765859135,
+      "paired_change_min_pct": 2.799539170506926,
+      "paired_change_max_pct": 4.091120409112037,
+      "paired_median_bootstrap95_pct": [
+        2.799539170506926,
+        4.091120409112037
+      ],
+      "baseline_best_mbps": 86.96,
+      "candidate_best_mbps": 89.66,
+      "best_change_pct": 3.1048758049678105,
+      "baseline_cv_pct": 0.4110626050433753,
+      "candidate_cv_pct": 0.19714507640537388,
+      "ratios": [
+        1.0409112040911204,
+        1.030588776448942,
+        1.0279953917050693,
+        1.0333064423187739,
+        1.0312572087658591
+      ]
+    },
+    {
+      "case": "mozilla-L9",
+      "level": 9,
+      "candidate": "c0002-r0",
+      "metric": "decompression_mbps",
+      "compressed_bytes": 16665339,
+      "ratio": 3.073,
+      "pairs": 5,
+      "baseline_median_mbps": 1248.8,
+      "candidate_median_mbps": 1259.1,
+      "median_paired_change_pct": 0.8244616985511932,
+      "paired_change_min_pct": 0.69683620344414,
+      "paired_change_max_pct": 1.2219631803199515,
+      "paired_median_bootstrap95_pct": [
+        0.69683620344414,
+        1.2219631803199515
+      ],
+      "baseline_best_mbps": 1250.0,
+      "candidate_best_mbps": 1261.6,
+      "best_change_pct": 0.9279999999999955,
+      "baseline_cv_pct": 0.19354013827707592,
+      "candidate_cv_pct": 0.12472355298285734,
+      "ratios": [
+        1.0102498398462523,
+        1.0122196318031995,
+        1.0069683620344414,
+        1.008244616985512,
+        1.00728
+      ]
+    },
+    {
+      "case": "mr-L6",
+      "level": 6,
+      "candidate": "c0002-r0",
+      "metric": "compression_mbps",
+      "compressed_bytes": 3386461,
+      "ratio": 2.944,
+      "pairs": 5,
+      "baseline_median_mbps": 109.73,
+      "candidate_median_mbps": 109.34,
+      "median_paired_change_pct": -0.32801822323462737,
+      "paired_change_min_pct": -0.7655153558735139,
+      "paired_change_max_pct": -0.08224435712327338,
+      "paired_median_bootstrap95_pct": [
+        -0.7655153558735139,
+        -0.08224435712327338
+      ],
+      "baseline_best_mbps": 109.75,
+      "candidate_best_mbps": 109.45,
+      "best_change_pct": -0.2733485193621821,
+      "baseline_cv_pct": 0.12395926152474691,
+      "candidate_cv_pct": 0.2029462160620546,
+      "ratios": [
+        0.9991775564287673,
+        0.9967198177676537,
+        0.9953530751708428,
+        0.9923448464412649,
+        0.9979939819458375
+      ]
+    },
+    {
+      "case": "mr-L6",
+      "level": 6,
+      "candidate": "c0002-r0",
+      "metric": "decompression_mbps",
+      "compressed_bytes": 3386461,
+      "ratio": 2.944,
+      "pairs": 5,
+      "baseline_median_mbps": 1163.6,
+      "candidate_median_mbps": 1166.4,
+      "median_paired_change_pct": 0.1890684083877714,
+      "paired_change_min_pct": 0.04284490145671782,
+      "paired_change_max_pct": 0.4913369537108858,
+      "paired_median_bootstrap95_pct": [
+        0.04284490145671782,
+        0.4913369537108858
+      ],
+      "baseline_best_mbps": 1167.0,
+      "candidate_best_mbps": 1167.5,
+      "best_change_pct": 0.04284490145671782,
+      "baseline_cv_pct": 0.23825656178440366,
+      "candidate_cv_pct": 0.07348889164873378,
+      "ratios": [
+        1.0049133695371089,
+        1.0018906840838777,
+        1.000600497555117,
+        1.0004284490145672,
+        1.0047332185886402
+      ]
+    },
+    {
+      "case": "mr-L9",
+      "level": 9,
+      "candidate": "c0002-r0",
+      "metric": "compression_mbps",
+      "compressed_bytes": 3316438,
+      "ratio": 3.006,
+      "pairs": 5,
+      "baseline_median_mbps": 68.15,
+      "candidate_median_mbps": 68.46,
+      "median_paired_change_pct": 0.3537214443625869,
+      "paired_change_min_pct": 0.16131397565626315,
+      "paired_change_max_pct": 0.9436744323208401,
+      "paired_median_bootstrap95_pct": [
+        0.16131397565626315,
+        0.9436744323208401
+      ],
+      "baseline_best_mbps": 68.33,
+      "candidate_best_mbps": 68.58,
+      "best_change_pct": 0.3658715059271289,
+      "baseline_cv_pct": 0.32791317890566996,
+      "candidate_cv_pct": 0.28022671620024886,
+      "ratios": [
+        1.0094367443232084,
+        1.0035372144436259,
+        1.0021952290355627,
+        1.0016131397565626,
+        1.0063096111518708
+      ]
+    },
+    {
+      "case": "mr-L9",
+      "level": 9,
+      "candidate": "c0002-r0",
+      "metric": "decompression_mbps",
+      "compressed_bytes": 3316438,
+      "ratio": 3.006,
+      "pairs": 5,
+      "baseline_median_mbps": 1235.8,
+      "candidate_median_mbps": 1238.5,
+      "median_paired_change_pct": 0.07275666936137348,
+      "paired_change_min_pct": -1.5131898365431384,
+      "paired_change_max_pct": 0.6894314218509168,
+      "paired_median_bootstrap95_pct": [
+        -1.5131898365431384,
+        0.6894314218509168
+      ],
+      "baseline_best_mbps": 1238.1,
+      "candidate_best_mbps": 1241.4,
+      "best_change_pct": 0.26653743639448724,
+      "baseline_cv_pct": 0.17364555769678647,
+      "candidate_cv_pct": 0.8138964550280962,
+      "ratios": [
+        1.0003230756804782,
+        1.0047005429937597,
+        0.9848681016345686,
+        1.0007275666936137,
+        1.0068943142185092
+      ]
+    },
+    {
+      "case": "nci-L6",
+      "level": 6,
+      "candidate": "c0002-r0",
+      "metric": "compression_mbps",
+      "compressed_bytes": 2426181,
+      "ratio": 13.83,
+      "pairs": 5,
+      "baseline_median_mbps": 241.1,
+      "candidate_median_mbps": 240.56,
+      "median_paired_change_pct": -0.08703941642144164,
+      "paired_change_min_pct": -0.9119300437226752,
+      "paired_change_max_pct": 2.244134648078888,
+      "paired_median_bootstrap95_pct": [
+        -0.9119300437226752,
+        2.244134648078888
+      ],
+      "baseline_best_mbps": 241.29,
+      "candidate_best_mbps": 241.13,
+      "best_change_pct": -0.0663102490778722,
+      "baseline_cv_pct": 1.0757487520837659,
+      "candidate_cv_pct": 0.5592948175165864,
+      "ratios": [
+        0.9993368975092213,
+        0.9991296058357856,
+        1.0224413464807889,
+        0.9908806995627732,
+        0.9930319369556201
+      ]
+    },
+    {
+      "case": "nci-L6",
+      "level": 6,
+      "candidate": "c0002-r0",
+      "metric": "decompression_mbps",
+      "compressed_bytes": 2426181,
+      "ratio": 13.83,
+      "pairs": 5,
+      "baseline_median_mbps": 3213.1,
+      "candidate_median_mbps": 3215.8,
+      "median_paired_change_pct": 0.5004040529620113,
+      "paired_change_min_pct": -0.062154266890424026,
+      "paired_change_max_pct": 0.9219038094940402,
+      "paired_median_bootstrap95_pct": [
+        -0.062154266890424026,
+        0.9219038094940402
+      ],
+      "baseline_best_mbps": 3217.8,
+      "candidate_best_mbps": 3233.5,
+      "best_change_pct": 0.48791099508980196,
+      "baseline_cv_pct": 0.42201514748853447,
+      "candidate_cv_pct": 0.35730133237177536,
+      "ratios": [
+        1.0092190380949404,
+        0.9993784573310958,
+        1.006339243684293,
+        0.9996265288973266,
+        1.0050040405296201
+      ]
+    },
+    {
+      "case": "nci-L9",
+      "level": 9,
+      "candidate": "c0002-r0",
+      "metric": "compression_mbps",
+      "compressed_bytes": 2246701,
+      "ratio": 14.935,
+      "pairs": 5,
+      "baseline_median_mbps": 163.35,
+      "candidate_median_mbps": 165.73,
+      "median_paired_change_pct": 1.8632781477182503,
+      "paired_change_min_pct": 1.3409257898604032,
+      "paired_change_max_pct": 2.2528313437404357,
+      "paired_median_bootstrap95_pct": [
+        1.3409257898604032,
+        2.2528313437404357
+      ],
+      "baseline_best_mbps": 163.69,
+      "candidate_best_mbps": 167.03,
+      "best_change_pct": 2.0404422994685145,
+      "baseline_cv_pct": 0.4086261860738946,
+      "candidate_cv_pct": 0.447300939682136,
+      "ratios": [
+        1.013409257898604,
+        1.0138871895264896,
+        1.0225283134374044,
+        1.021172839506173,
+        1.0186327814771825
+      ]
+    },
+    {
+      "case": "nci-L9",
+      "level": 9,
+      "candidate": "c0002-r0",
+      "metric": "decompression_mbps",
+      "compressed_bytes": 2246701,
+      "ratio": 14.935,
+      "pairs": 5,
+      "baseline_median_mbps": 3616.3,
+      "candidate_median_mbps": 3617.1,
+      "median_paired_change_pct": 0.09685632056675164,
+      "paired_change_min_pct": -0.05527152134862101,
+      "paired_change_max_pct": 0.19909852611785794,
+      "paired_median_bootstrap95_pct": [
+        -0.05527152134862101,
+        0.19909852611785794
+      ],
+      "baseline_best_mbps": 3619.1,
+      "candidate_best_mbps": 3623.5,
+      "best_change_pct": 0.12157718769860715,
+      "baseline_cv_pct": 0.17595166947689272,
+      "candidate_cv_pct": 0.16686910216758552,
+      "ratios": [
+        1.00080130419165,
+        1.0009685632056675,
+        1.0019909852611786,
+        1.0012765367004302,
+        0.9994472847865138
+      ]
+    },
+    {
+      "case": "ooffice-L6",
+      "level": 6,
+      "candidate": "c0002-r0",
+      "metric": "compression_mbps",
+      "compressed_bytes": 2931207,
+      "ratio": 2.099,
+      "pairs": 5,
+      "baseline_median_mbps": 96.92,
+      "candidate_median_mbps": 97.37,
+      "median_paired_change_pct": 0.5896958410924968,
+      "paired_change_min_pct": 0.17489711934155494,
+      "paired_change_max_pct": 1.1496633868461892,
+      "paired_median_bootstrap95_pct": [
+        0.17489711934155494,
+        1.1496633868461892
+      ],
+      "baseline_best_mbps": 97.2,
+      "candidate_best_mbps": 97.81,
+      "best_change_pct": 0.6275720164609089,
+      "baseline_cv_pct": 0.29549971888983906,
+      "candidate_cv_pct": 0.25375057617243746,
+      "ratios": [
+        1.011496633868462,
+        1.005896958410925,
+        1.0017489711934155,
+        1.0068972616841672,
+        1.0040239372678499
+      ]
+    },
+    {
+      "case": "ooffice-L6",
+      "level": 6,
+      "candidate": "c0002-r0",
+      "metric": "decompression_mbps",
+      "compressed_bytes": 2931207,
+      "ratio": 2.099,
+      "pairs": 5,
+      "baseline_median_mbps": 947.5,
+      "candidate_median_mbps": 956.6,
+      "median_paired_change_pct": 0.9604221635884036,
+      "paired_change_min_pct": -0.8059451538622531,
+      "paired_change_max_pct": 2.2517692472657114,
+      "paired_median_bootstrap95_pct": [
+        -0.8059451538622531,
+        2.2517692472657114
+      ],
+      "baseline_best_mbps": 955.4,
+      "candidate_best_mbps": 960.0,
+      "best_change_pct": 0.4814737282813564,
+      "baseline_cv_pct": 0.9697185382274471,
+      "candidate_cv_pct": 0.4913790969574815,
+      "ratios": [
+        1.0225176924726571,
+        0.9919405484613775,
+        1.0104496516782773,
+        1.0054461667364893,
+        1.009604221635884
+      ]
+    },
+    {
+      "case": "ooffice-L9",
+      "level": 9,
+      "candidate": "c0002-r0",
+      "metric": "compression_mbps",
+      "compressed_bytes": 2854930,
+      "ratio": 2.155,
+      "pairs": 5,
+      "baseline_median_mbps": 69.54,
+      "candidate_median_mbps": 70.52,
+      "median_paired_change_pct": 1.1672597864768486,
+      "paired_change_min_pct": 0.556030795551754,
+      "paired_change_max_pct": 3.452328485382705,
+      "paired_median_bootstrap95_pct": [
+        0.556030795551754,
+        3.452328485382705
+      ],
+      "baseline_best_mbps": 70.25,
+      "candidate_best_mbps": 71.07,
+      "best_change_pct": 1.1672597864768486,
+      "baseline_cv_pct": 1.2503455025290984,
+      "candidate_cv_pct": 0.5411249331427042,
+      "ratios": [
+        1.0140926085706068,
+        1.0077742585660814,
+        1.034523284853827,
+        1.0116725978647685,
+        1.0055603079555175
+      ]
+    },
+    {
+      "case": "ooffice-L9",
+      "level": 9,
+      "candidate": "c0002-r0",
+      "metric": "decompression_mbps",
+      "compressed_bytes": 2854930,
+      "ratio": 2.155,
+      "pairs": 5,
+      "baseline_median_mbps": 959.9,
+      "candidate_median_mbps": 968.1,
+      "median_paired_change_pct": 0.8542556516303756,
+      "paired_change_min_pct": 0.1457574180114607,
+      "paired_change_max_pct": 2.106934886183165,
+      "paired_median_bootstrap95_pct": [
+        0.1457574180114607,
+        2.106934886183165
+      ],
+      "baseline_best_mbps": 965.5,
+      "candidate_best_mbps": 971.8,
+      "best_change_pct": 0.6525116519937812,
+      "baseline_cv_pct": 0.8235027500151534,
+      "candidate_cv_pct": 0.40794646974622745,
+      "ratios": [
+        1.0014575741801146,
+        1.0210693488618316,
+        1.0109511889862328,
+        1.0065251165199378,
+        1.0085425565163038
+      ]
+    },
+    {
+      "case": "osdb-L6",
+      "level": 6,
+      "candidate": "c0002-r0",
+      "metric": "compression_mbps",
+      "compressed_bytes": 3395739,
+      "ratio": 2.97,
+      "pairs": 5,
+      "baseline_median_mbps": 134.31,
+      "candidate_median_mbps": 133.18,
+      "median_paired_change_pct": -0.841337204973569,
+      "paired_change_min_pct": -1.2849079025549548,
+      "paired_change_max_pct": -0.4410885167464129,
+      "paired_median_bootstrap95_pct": [
+        -1.2849079025549548,
+        -0.4410885167464129
+      ],
+      "baseline_best_mbps": 134.64,
+      "candidate_best_mbps": 133.36,
+      "best_change_pct": -0.9506833036244555,
+      "baseline_cv_pct": 0.2371150809115797,
+      "candidate_cv_pct": 0.12074147785231383,
+      "ratios": [
+        0.9915866279502643,
+        0.9915128052412151,
+        0.9955891148325359,
+        0.9938888060813833,
+        0.9871509209744505
+      ]
+    },
+    {
+      "case": "osdb-L6",
+      "level": 6,
+      "candidate": "c0002-r0",
+      "metric": "decompression_mbps",
+      "compressed_bytes": 3395739,
+      "ratio": 2.97,
+      "pairs": 5,
+      "baseline_median_mbps": 1580.9,
+      "candidate_median_mbps": 1583.4,
+      "median_paired_change_pct": 0.34155597722960174,
+      "paired_change_min_pct": -0.31627553924979956,
+      "paired_change_max_pct": 0.9238022426095727,
+      "paired_median_bootstrap95_pct": [
+        -0.31627553924979956,
+        0.9238022426095727
+      ],
+      "baseline_best_mbps": 1581.6,
+      "candidate_best_mbps": 1586.4,
+      "best_change_pct": 0.3034901365705833,
+      "baseline_cv_pct": 0.36035235742453164,
+      "candidate_cv_pct": 0.24939103971541457,
+      "ratios": [
+        1.000252908447142,
+        1.0092380224260957,
+        1.0070597214272086,
+        1.003415559772296,
+        0.996837244607502
+      ]
+    },
+    {
+      "case": "osdb-L9",
+      "level": 9,
+      "candidate": "c0002-r0",
+      "metric": "compression_mbps",
+      "compressed_bytes": 3342529,
+      "ratio": 3.017,
+      "pairs": 5,
+      "baseline_median_mbps": 91.5,
+      "candidate_median_mbps": 93.45,
+      "median_paired_change_pct": 2.1857923497267784,
+      "paired_change_min_pct": 1.233085988651239,
+      "paired_change_max_pct": 3.637976929902398,
+      "paired_median_bootstrap95_pct": [
+        1.233085988651239,
+        3.637976929902398
+      ],
+      "baseline_best_mbps": 91.64,
+      "candidate_best_mbps": 93.52,
+      "best_change_pct": 2.0515058926233065,
+      "baseline_cv_pct": 0.6687077948959557,
+      "candidate_cv_pct": 0.3408830708556104,
+      "ratios": [
+        1.0218579234972678,
+        1.036379769299024,
+        1.0123308598865124,
+        1.0248958104847554,
+        1.0215182960131075
+      ]
+    },
+    {
+      "case": "osdb-L9",
+      "level": 9,
+      "candidate": "c0002-r0",
+      "metric": "decompression_mbps",
+      "compressed_bytes": 3342529,
+      "ratio": 3.017,
+      "pairs": 5,
+      "baseline_median_mbps": 1612.7,
+      "candidate_median_mbps": 1621.0,
+      "median_paired_change_pct": 0.4845322400298224,
+      "paired_change_min_pct": 0.17922254496014478,
+      "paired_change_max_pct": 0.9321981231744436,
+      "paired_median_bootstrap95_pct": [
+        0.17922254496014478,
+        0.9321981231744436
+      ],
+      "baseline_best_mbps": 1618.1,
+      "candidate_best_mbps": 1624.1,
+      "best_change_pct": 0.37080526543475933,
+      "baseline_cv_pct": 0.2318751534789153,
+      "candidate_cv_pct": 0.162662343549062,
+      "ratios": [
+        1.0017922254496014,
+        1.0093219812317444,
+        1.0048453224002982,
+        1.0049532536685035,
+        1.0042165312829416
+      ]
+    },
+    {
+      "case": "reymont-L6",
+      "level": 6,
+      "candidate": "c0002-r0",
+      "metric": "compression_mbps",
+      "compressed_bytes": 1774228,
+      "ratio": 3.735,
+      "pairs": 5,
+      "baseline_median_mbps": 96.84,
+      "candidate_median_mbps": 100.19,
+      "median_paired_change_pct": 3.1598513011152463,
+      "paired_change_min_pct": 2.676824873880368,
+      "paired_change_max_pct": 4.722106142916838,
+      "paired_median_bootstrap95_pct": [
+        2.676824873880368,
+        4.722106142916838
+      ],
+      "baseline_best_mbps": 97.23,
+      "candidate_best_mbps": 100.24,
+      "best_change_pct": 3.0957523398128073,
+      "baseline_cv_pct": 0.6509842316656718,
+      "candidate_cv_pct": 0.2252048852846811,
+      "ratios": [
+        1.0472210614291684,
+        1.0267682487388037,
+        1.0315985130111525,
+        1.0305461277383523,
+        1.040286574602845
+      ]
+    },
+    {
+      "case": "reymont-L6",
+      "level": 6,
+      "candidate": "c0002-r0",
+      "metric": "decompression_mbps",
+      "compressed_bytes": 1774228,
+      "ratio": 3.735,
+      "pairs": 5,
+      "baseline_median_mbps": 1329.0,
+      "candidate_median_mbps": 1337.7,
+      "median_paired_change_pct": 0.5249737513124408,
+      "paired_change_min_pct": 0.12711230746222935,
+      "paired_change_max_pct": 0.9053870529651453,
+      "paired_median_bootstrap95_pct": [
+        0.12711230746222935,
+        0.9053870529651453
+      ],
+      "baseline_best_mbps": 1337.4,
+      "candidate_best_mbps": 1340.4,
+      "best_change_pct": 0.22431583669806354,
+      "baseline_cv_pct": 0.3490812521732356,
+      "candidate_cv_pct": 0.16789563047702158,
+      "ratios": [
+        1.0041387613815937,
+        1.0052497375131244,
+        1.0012711230746223,
+        1.0090538705296515,
+        1.0065462753950338
+      ]
+    },
+    {
+      "case": "reymont-L9",
+      "level": 9,
+      "candidate": "c0002-r0",
+      "metric": "compression_mbps",
+      "compressed_bytes": 1670539,
+      "ratio": 3.967,
+      "pairs": 5,
+      "baseline_median_mbps": 63.42,
+      "candidate_median_mbps": 68.22,
+      "median_paired_change_pct": 7.552822453484698,
+      "paired_change_min_pct": 7.279029462738307,
+      "paired_change_max_pct": 8.171021377672204,
+      "paired_median_bootstrap95_pct": [
+        7.279029462738307,
+        8.171021377672204
+      ],
+      "baseline_best_mbps": 63.48,
+      "candidate_best_mbps": 68.31,
+      "best_change_pct": 7.608695652173925,
+      "baseline_cv_pct": 0.21440079849302057,
+      "candidate_cv_pct": 0.12176229643679219,
+      "ratios": [
+        1.0764742983286029,
+        1.075528224534847,
+        1.0746691871455576,
+        1.081710213776722,
+        1.072790294627383
+      ]
+    },
+    {
+      "case": "reymont-L9",
+      "level": 9,
+      "candidate": "c0002-r0",
+      "metric": "decompression_mbps",
+      "compressed_bytes": 1670539,
+      "ratio": 3.967,
+      "pairs": 5,
+      "baseline_median_mbps": 1492.3,
+      "candidate_median_mbps": 1500.5,
+      "median_paired_change_pct": 0.50822522402032,
+      "paired_change_min_pct": 0.46782062420638315,
+      "paired_change_max_pct": 0.6439063652827093,
+      "paired_median_bootstrap95_pct": [
+        0.46782062420638315,
+        0.6439063652827093
+      ],
+      "baseline_best_mbps": 1496.3,
+      "candidate_best_mbps": 1503.3,
+      "best_change_pct": 0.46782062420638315,
+      "baseline_cv_pct": 0.2621342569600663,
+      "candidate_cv_pct": 0.2521567833539195,
+      "ratios": [
+        1.0050822522402032,
+        1.006439063652827,
+        1.0046782062420638,
+        1.0053608523755277,
+        1.0049781365623949
+      ]
+    },
+    {
+      "case": "samba-L6",
+      "level": 6,
+      "candidate": "c0002-r0",
+      "metric": "compression_mbps",
+      "compressed_bytes": 4573385,
+      "ratio": 4.724,
+      "pairs": 5,
+      "baseline_median_mbps": 155.7,
+      "candidate_median_mbps": 158.85,
+      "median_paired_change_pct": 1.8069973087273983,
+      "paired_change_min_pct": 0.8487654320987525,
+      "paired_change_max_pct": 2.100192678227364,
+      "paired_median_bootstrap95_pct": [
+        0.8487654320987525,
+        2.100192678227364
+      ],
+      "baseline_best_mbps": 156.19,
+      "candidate_best_mbps": 158.97,
+      "best_change_pct": 1.7798834752545067,
+      "baseline_cv_pct": 0.18906160748458878,
+      "candidate_cv_pct": 0.5739823059876021,
+      "ratios": [
+        1.0165183430437288,
+        1.0084876543209875,
+        1.0208868894601542,
+        1.0210019267822736,
+        1.018069973087274
+      ]
+    },
+    {
+      "case": "samba-L6",
+      "level": 6,
+      "candidate": "c0002-r0",
+      "metric": "decompression_mbps",
+      "compressed_bytes": 4573385,
+      "ratio": 4.724,
+      "pairs": 5,
+      "baseline_median_mbps": 1876.7,
+      "candidate_median_mbps": 1880.3,
+      "median_paired_change_pct": 0.06918573709420173,
+      "paired_change_min_pct": -0.06935182715390731,
+      "paired_change_max_pct": 1.2257788245369827,
+      "paired_median_bootstrap95_pct": [
+        -0.06935182715390731,
+        1.2257788245369827
+      ],
+      "baseline_best_mbps": 1879.0,
+      "candidate_best_mbps": 1891.1,
+      "best_change_pct": 0.6439595529536879,
+      "baseline_cv_pct": 0.22770481162868736,
+      "candidate_cv_pct": 0.35765971677251124,
+      "ratios": [
+        1.0122577882453698,
+        0.9993064817284609,
+        1.000691857370942,
+        1.002717536100602,
+        0.9994674619235275
+      ]
+    },
+    {
+      "case": "samba-L9",
+      "level": 9,
+      "candidate": "c0002-r0",
+      "metric": "compression_mbps",
+      "compressed_bytes": 4350213,
+      "ratio": 4.967,
+      "pairs": 5,
+      "baseline_median_mbps": 109.02,
+      "candidate_median_mbps": 114.96,
+      "median_paired_change_pct": 5.512749954136864,
+      "paired_change_min_pct": 3.3960197188241725,
+      "paired_change_max_pct": 5.856353591160213,
+      "paired_median_bootstrap95_pct": [
+        3.3960197188241725,
+        5.856353591160213
+      ],
+      "baseline_best_mbps": 109.54,
+      "candidate_best_mbps": 115.37,
+      "best_change_pct": 5.322256709877671,
+      "baseline_cv_pct": 0.32821701933018915,
+      "candidate_cv_pct": 0.7177180345972114,
+      "ratios": [
+        1.0339601971882417,
+        1.0552455867556938,
+        1.0551274995413686,
+        1.053302752293578,
+        1.0585635359116021
+      ]
+    },
+    {
+      "case": "samba-L9",
+      "level": 9,
+      "candidate": "c0002-r0",
+      "metric": "decompression_mbps",
+      "compressed_bytes": 4350213,
+      "ratio": 4.967,
+      "pairs": 5,
+      "baseline_median_mbps": 2028.4,
+      "candidate_median_mbps": 2033.2,
+      "median_paired_change_pct": 0.23663971603233858,
+      "paired_change_min_pct": -0.39352648925180533,
+      "paired_change_max_pct": 5.476411685764426,
+      "paired_median_bootstrap95_pct": [
+        -0.39352648925180533,
+        5.476411685764426
+      ],
+      "baseline_best_mbps": 2033.6,
+      "candidate_best_mbps": 2048.4,
+      "best_change_pct": 0.72777340676633,
+      "baseline_cv_pct": 2.0799734239750545,
+      "candidate_cv_pct": 0.5076988237159867,
+      "ratios": [
+        1.0547641168576443,
+        1.0023663971603234,
+        0.9991126010648786,
+        1.0072777340676633,
+        0.996064735107482
+      ]
+    },
+    {
+      "case": "sao-L6",
+      "level": 6,
+      "candidate": "c0002-r0",
+      "metric": "compression_mbps",
+      "compressed_bytes": 5272383,
+      "ratio": 1.375,
+      "pairs": 5,
+      "baseline_median_mbps": 93.65,
+      "candidate_median_mbps": 92.8,
+      "median_paired_change_pct": -0.9503470368392941,
+      "paired_change_min_pct": -1.1834950421153678,
+      "paired_change_max_pct": -0.2897617514488249,
+      "paired_median_bootstrap95_pct": [
+        -1.1834950421153678,
+        -0.2897617514488249
+      ],
+      "baseline_best_mbps": 93.89,
+      "candidate_best_mbps": 92.92,
+      "best_change_pct": -1.033123868356589,
+      "baseline_cv_pct": 0.29063472870207613,
+      "candidate_cv_pct": 0.1097703848725376,
+      "ratios": [
+        0.9904965296316071,
+        0.9881650495788463,
+        0.9923109782144383,
+        0.9971023824855118,
+        0.9883906699329001
+      ]
+    },
+    {
+      "case": "sao-L6",
+      "level": 6,
+      "candidate": "c0002-r0",
+      "metric": "decompression_mbps",
+      "compressed_bytes": 5272383,
+      "ratio": 1.375,
+      "pairs": 5,
+      "baseline_median_mbps": 963.2,
+      "candidate_median_mbps": 961.7,
+      "median_paired_change_pct": -0.031146179401997376,
+      "paired_change_min_pct": -0.26041666666666297,
+      "paired_change_max_pct": 0.25952455102251637,
+      "paired_median_bootstrap95_pct": [
+        -0.26041666666666297,
+        0.25952455102251637
+      ],
+      "baseline_best_mbps": 963.8,
+      "candidate_best_mbps": 965.8,
+      "best_change_pct": 0.20751193193608852,
+      "baseline_cv_pct": 0.18872534630659604,
+      "candidate_cv_pct": 0.3122031145778308,
+      "ratios": [
+        1.0025952455102252,
+        0.9973958333333334,
+        1.0009372071227742,
+        0.9978211247146712,
+        0.99968853820598
+      ]
+    },
+    {
+      "case": "sao-L9",
+      "level": 9,
+      "candidate": "c0002-r0",
+      "metric": "compression_mbps",
+      "compressed_bytes": 5215722,
+      "ratio": 1.39,
+      "pairs": 5,
+      "baseline_median_mbps": 69.29,
+      "candidate_median_mbps": 69.24,
+      "median_paired_change_pct": -0.10133178922986374,
+      "paired_change_min_pct": -3.835145964510578,
+      "paired_change_max_pct": 0.14452955629427056,
+      "paired_median_bootstrap95_pct": [
+        -3.835145964510578,
+        0.14452955629427056
+      ],
+      "baseline_best_mbps": 69.88,
+      "candidate_best_mbps": 69.44,
+      "best_change_pct": -0.6296508299942771,
+      "baseline_cv_pct": 0.4621653855466967,
+      "candidate_cv_pct": 1.3473848697609534,
+      "ratios": [
+        0.9989866821077014,
+        1.0014452955629427,
+        0.9984184040258807,
+        0.9992783951508153,
+        0.9616485403548942
+      ]
+    },
+    {
+      "case": "sao-L9",
+      "level": 9,
+      "candidate": "c0002-r0",
+      "metric": "decompression_mbps",
+      "compressed_bytes": 5215722,
+      "ratio": 1.39,
+      "pairs": 5,
+      "baseline_median_mbps": 980.5,
+      "candidate_median_mbps": 979.2,
+      "median_paired_change_pct": -0.1325854156042805,
+      "paired_change_min_pct": -0.4992867332382245,
+      "paired_change_max_pct": 0.4901460226692578,
+      "paired_median_bootstrap95_pct": [
+        -0.4992867332382245,
+        0.4901460226692578
+      ],
+      "baseline_best_mbps": 981.4,
+      "candidate_best_mbps": 985.2,
+      "best_change_pct": 0.3872019563888385,
+      "baseline_cv_pct": 0.07932865469711484,
+      "candidate_cv_pct": 0.3848880202525189,
+      "ratios": [
+        1.0043837292282598,
+        1.0049014602266926,
+        0.9986741458439572,
+        0.9979600163198694,
+        0.9950071326676178
+      ]
+    },
+    {
+      "case": "webster-L6",
+      "level": 6,
+      "candidate": "c0002-r0",
+      "metric": "compression_mbps",
+      "compressed_bytes": 10807524,
+      "ratio": 3.836,
+      "pairs": 5,
+      "baseline_median_mbps": 102.77,
+      "candidate_median_mbps": 103.87,
+      "median_paired_change_pct": 1.0703512698258422,
+      "paired_change_min_pct": 0.367718211728274,
+      "paired_change_max_pct": 2.106408227848089,
+      "paired_median_bootstrap95_pct": [
+        0.367718211728274,
+        2.106408227848089
+      ],
+      "baseline_best_mbps": 103.34,
+      "candidate_best_mbps": 104.13,
+      "best_change_pct": 0.7644668085929895,
+      "baseline_cv_pct": 0.8538088657440382,
+      "candidate_cv_pct": 0.31765049524406735,
+      "ratios": [
+        1.0128654970760234,
+        1.021064082278481,
+        1.0107035126982584,
+        1.0095007270964613,
+        1.0036771821172827
+      ]
+    },
+    {
+      "case": "webster-L6",
+      "level": 6,
+      "candidate": "c0002-r0",
+      "metric": "decompression_mbps",
+      "compressed_bytes": 10807524,
+      "ratio": 3.836,
+      "pairs": 5,
+      "baseline_median_mbps": 1385.1,
+      "candidate_median_mbps": 1392.3,
+      "median_paired_change_pct": 0.2960075084831537,
+      "paired_change_min_pct": 0.2085130859936779,
+      "paired_change_max_pct": 0.948862813269602,
+      "paired_median_bootstrap95_pct": [
+        0.2085130859936779,
+        0.948862813269602
+      ],
+      "baseline_best_mbps": 1390.8,
+      "candidate_best_mbps": 1393.7,
+      "best_change_pct": 0.2085130859936779,
+      "baseline_cv_pct": 0.2962874616215917,
+      "candidate_cv_pct": 0.1368718310578863,
+      "ratios": [
+        1.0028089887640448,
+        1.0029600750848315,
+        1.009488628132696,
+        1.005929568298503,
+        1.0020851308599368
+      ]
+    },
+    {
+      "case": "webster-L9",
+      "level": 9,
+      "candidate": "c0002-r0",
+      "metric": "compression_mbps",
+      "compressed_bytes": 10258407,
+      "ratio": 4.041,
+      "pairs": 5,
+      "baseline_median_mbps": 65.72,
+      "candidate_median_mbps": 69.22,
+      "median_paired_change_pct": 5.3704548912216765,
+      "paired_change_min_pct": 5.112598904443089,
+      "paired_change_max_pct": 5.792449946507716,
+      "paired_median_bootstrap95_pct": [
+        5.112598904443089,
+        5.792449946507716
+      ],
+      "baseline_best_mbps": 65.75,
+      "candidate_best_mbps": 69.26,
+      "best_change_pct": 5.338403041825113,
+      "baseline_cv_pct": 0.3054957296769938,
+      "candidate_cv_pct": 0.1804955175594183,
+      "ratios": [
+        1.0537045489122168,
+        1.0579244994650772,
+        1.0558787507654623,
+        1.0511259890444309,
+        1.053079847908745
+      ]
+    },
+    {
+      "case": "webster-L9",
+      "level": 9,
+      "candidate": "c0002-r0",
+      "metric": "decompression_mbps",
+      "compressed_bytes": 10258407,
+      "ratio": 4.041,
+      "pairs": 5,
+      "baseline_median_mbps": 1527.0,
+      "candidate_median_mbps": 1527.6,
+      "median_paired_change_pct": 0.24230517354288938,
+      "paired_change_min_pct": -1.5970676790155736,
+      "paired_change_max_pct": 0.5826895377766039,
+      "paired_median_bootstrap95_pct": [
+        -1.5970676790155736,
+        0.5826895377766039
+      ],
+      "baseline_best_mbps": 1527.8,
+      "candidate_best_mbps": 1536.3,
+      "best_change_pct": 0.5563555439193513,
+      "baseline_cv_pct": 0.19212299962573862,
+      "candidate_cv_pct": 0.8273711208019601,
+      "ratios": [
+        1.0007888509071785,
+        1.002423051735429,
+        0.9840293232098443,
+        1.002822818880063,
+        1.005826895377766
+      ]
+    },
+    {
+      "case": "x-ray-L6",
+      "level": 6,
+      "candidate": "c0002-r0",
+      "metric": "compression_mbps",
+      "compressed_bytes": 5551501,
+      "ratio": 1.526,
+      "pairs": 5,
+      "baseline_median_mbps": 102.41,
+      "candidate_median_mbps": 101.42,
+      "median_paired_change_pct": -1.1298334469659999,
+      "paired_change_min_pct": -1.61102484472051,
+      "paired_change_max_pct": -0.04910626595953094,
+      "paired_median_bootstrap95_pct": [
+        -1.61102484472051,
+        -0.04910626595953094
+      ],
+      "baseline_best_mbps": 103.04,
+      "candidate_best_mbps": 101.77,
+      "best_change_pct": -1.232531055900632,
+      "baseline_cv_pct": 0.43616453034560976,
+      "candidate_cv_pct": 0.1996924856037331,
+      "ratios": [
+        0.9838897515527949,
+        0.98870166553034,
+        0.98838004101162,
+        0.9906231685876148,
+        0.9995089373404047
+      ]
+    },
+    {
+      "case": "x-ray-L6",
+      "level": 6,
+      "candidate": "c0002-r0",
+      "metric": "decompression_mbps",
+      "compressed_bytes": 5551501,
+      "ratio": 1.526,
+      "pairs": 5,
+      "baseline_median_mbps": 788.8,
+      "candidate_median_mbps": 791.3,
+      "median_paired_change_pct": 0.29150823827628347,
+      "paired_change_min_pct": 0.22807906741002526,
+      "paired_change_max_pct": 1.6561817948388624,
+      "paired_median_bootstrap95_pct": [
+        0.22807906741002526,
+        1.6561817948388624
+      ],
+      "baseline_best_mbps": 789.2,
+      "candidate_best_mbps": 792.8,
+      "best_change_pct": 0.4561581348200505,
+      "baseline_cv_pct": 0.5637583212793301,
+      "candidate_cv_pct": 0.10720507105796996,
+      "ratios": [
+        1.0029150823827628,
+        1.0022819472616633,
+        1.0100649764301184,
+        1.0165618179483886,
+        1.0022807906741003
+      ]
+    },
+    {
+      "case": "x-ray-L9",
+      "level": 9,
+      "candidate": "c0002-r0",
+      "metric": "compression_mbps",
+      "compressed_bytes": 5361356,
+      "ratio": 1.581,
+      "pairs": 5,
+      "baseline_median_mbps": 69.86,
+      "candidate_median_mbps": 69.4,
+      "median_paired_change_pct": -0.3589375448671883,
+      "paired_change_min_pct": -5.496707701116521,
+      "paired_change_max_pct": 0.8563134978229137,
+      "paired_median_bootstrap95_pct": [
+        -5.496707701116521,
+        0.8563134978229137
+      ],
+      "baseline_best_mbps": 70.0,
+      "candidate_best_mbps": 69.84,
+      "best_change_pct": -0.22857142857142243,
+      "baseline_cv_pct": 0.6328654601781183,
+      "candidate_cv_pct": 2.2688170570322153,
+      "ratios": [
+        0.9891226563618147,
+        0.9964106245513281,
+        0.9977142857142858,
+        1.0085631349782291,
+        0.9450329229888348
+      ]
+    },
+    {
+      "case": "x-ray-L9",
+      "level": 9,
+      "candidate": "c0002-r0",
+      "metric": "decompression_mbps",
+      "compressed_bytes": 5361356,
+      "ratio": 1.581,
+      "pairs": 5,
+      "baseline_median_mbps": 769.9,
+      "candidate_median_mbps": 771.8,
+      "median_paired_change_pct": -0.012929919834503423,
+      "paired_change_min_pct": -0.8185007145641299,
+      "paired_change_max_pct": 0.7013897908819233,
+      "paired_median_bootstrap95_pct": [
+        -0.8185007145641299,
+        0.7013897908819233
+      ],
+      "baseline_best_mbps": 773.4,
+      "candidate_best_mbps": 775.3,
+      "best_change_pct": 0.2456684768554318,
+      "baseline_cv_pct": 0.4916064308803737,
+      "candidate_cv_pct": 0.6857564197281608,
+      "ratios": [
+        1.0010469833791389,
+        0.9980602612181559,
+        0.999870700801655,
+        1.0070138979088192,
+        0.9918149928543587
+      ]
+    },
+    {
+      "case": "xml-L6",
+      "level": 6,
+      "candidate": "c0002-r0",
+      "metric": "compression_mbps",
+      "compressed_bytes": 546701,
+      "ratio": 9.777,
+      "pairs": 5,
+      "baseline_median_mbps": 209.36,
+      "candidate_median_mbps": 215.81,
+      "median_paired_change_pct": 3.0602501670963456,
+      "paired_change_min_pct": 2.8802063431409897,
+      "paired_change_max_pct": 3.3510460050744317,
+      "paired_median_bootstrap95_pct": [
+        2.8802063431409897,
+        3.3510460050744317
+      ],
+      "baseline_best_mbps": 209.62,
+      "candidate_best_mbps": 215.89,
+      "best_change_pct": 2.9911268008777636,
+      "baseline_cv_pct": 0.1305281491717431,
+      "candidate_cv_pct": 0.09474264199780232,
+      "ratios": [
+        1.02880206343141,
+        1.0335104600507443,
+        1.0310125674965356,
+        1.029529625035779,
+        1.0306025016709635
+      ]
+    },
+    {
+      "case": "xml-L6",
+      "level": 6,
+      "candidate": "c0002-r0",
+      "metric": "decompression_mbps",
+      "compressed_bytes": 546701,
+      "ratio": 9.777,
+      "pairs": 5,
+      "baseline_median_mbps": 2906.4,
+      "candidate_median_mbps": 2892.8,
+      "median_paired_change_pct": -0.5658824336374213,
+      "paired_change_min_pct": -1.3361728437467857,
+      "paired_change_max_pct": 0.5608312689237449,
+      "paired_median_bootstrap95_pct": [
+        -1.3361728437467857,
+        0.5608312689237449
+      ],
+      "baseline_best_mbps": 2915.8,
+      "candidate_best_mbps": 2922.7,
+      "best_change_pct": 0.23664174497564083,
+      "baseline_cv_pct": 0.3534504359461259,
+      "candidate_cv_pct": 0.6562961188360592,
+      "ratios": [
+        0.9866382715625321,
+        1.0010727757206632,
+        0.9943411756636258,
+        0.9942748749784446,
+        1.0056083126892374
+      ]
+    },
+    {
+      "case": "xml-L9",
+      "level": 9,
+      "candidate": "c0002-r0",
+      "metric": "compression_mbps",
+      "compressed_bytes": 516930,
+      "ratio": 10.34,
+      "pairs": 5,
+      "baseline_median_mbps": 148.49,
+      "candidate_median_mbps": 160.68,
+      "median_paired_change_pct": 8.466927118415724,
+      "paired_change_min_pct": 5.1855343794194875,
+      "paired_change_max_pct": 8.90605937372917,
+      "paired_median_bootstrap95_pct": [
+        5.1855343794194875,
+        8.90605937372917
+      ],
+      "baseline_best_mbps": 148.79,
+      "candidate_best_mbps": 161.29,
+      "best_change_pct": 8.40110222461188,
+      "baseline_cv_pct": 0.32145941196172845,
+      "candidate_cv_pct": 1.3165573425687387,
+      "ratios": [
+        1.0846692711841572,
+        1.0772229316486324,
+        1.0518553437941949,
+        1.0890605937372917,
+        1.0859816859682196
+      ]
+    },
+    {
+      "case": "xml-L9",
+      "level": 9,
+      "candidate": "c0002-r0",
+      "metric": "decompression_mbps",
+      "compressed_bytes": 516930,
+      "ratio": 10.34,
+      "pairs": 5,
+      "baseline_median_mbps": 3177.9,
+      "candidate_median_mbps": 3204.3,
+      "median_paired_change_pct": 1.04786179552534,
+      "paired_change_min_pct": -0.8322382829610175,
+      "paired_change_max_pct": 2.3803437919355908,
+      "paired_median_bootstrap95_pct": [
+        -0.8322382829610175,
+        2.3803437919355908
+      ],
+      "baseline_best_mbps": 3196.6,
+      "candidate_best_mbps": 3211.2,
+      "best_change_pct": 0.456735281236309,
+      "baseline_cv_pct": 1.255867216657998,
+      "candidate_cv_pct": 0.6412077575615149,
+      "ratios": [
+        1.0104786179552534,
+        1.003566289182256,
+        0.9916776171703898,
+        1.0197395917055136,
+        1.023803437919356
+      ]
+    }
+  ],
+  "AA": [
+    {
+      "case": "AA-all-L1",
+      "metric": "compression_mbps",
+      "pairs": 3,
+      "baseline_median_mbps": 548.95,
+      "candidate_median_mbps": 548.4,
+      "median_paired_change_pct": -0.04379402211598382,
+      "paired_change_min_pct": -0.23649263234493123,
+      "paired_change_max_pct": 0.09836961471900718,
+      "paired_median_bootstrap95_pct": [
+        -0.23649263234493123,
+        0.09836961471900718
+      ],
+      "baseline_best_mbps": 549.7,
+      "candidate_best_mbps": 549.49,
+      "best_change_pct": -0.03820265599419059,
+      "baseline_cv_pct": 0.15332864660430418,
+      "candidate_cv_pct": 0.15781381020691235,
+      "ratios": [
+        0.9995620597788402,
+        0.9976350736765507,
+        1.00098369614719
+      ]
+    },
+    {
+      "case": "AA-all-L1",
+      "metric": "decompression_mbps",
+      "pairs": 3,
+      "baseline_median_mbps": 1407.9,
+      "candidate_median_mbps": 1410.0,
+      "median_paired_change_pct": 0.05696788435518574,
+      "paired_change_min_pct": -0.16283185840707537,
+      "paired_change_max_pct": 0.14915832090347525,
+      "paired_median_bootstrap95_pct": [
+        -0.16283185840707537,
+        0.14915832090347525
+      ],
+      "baseline_best_mbps": 1412.5,
+      "candidate_best_mbps": 1410.2,
+      "best_change_pct": -0.16283185840707537,
+      "baseline_cv_pct": 0.29186569729066525,
+      "candidate_cv_pct": 0.2050848136784648,
+      "ratios": [
+        1.0014915832090348,
+        0.9983716814159292,
+        1.0005696788435519
+      ]
+    },
+    {
+      "case": "AA-all-L3",
+      "metric": "compression_mbps",
+      "pairs": 3,
+      "baseline_median_mbps": 320.48,
+      "candidate_median_mbps": 320.44,
+      "median_paired_change_pct": -0.01248127808288757,
+      "paired_change_min_pct": -0.10924868121235942,
+      "paired_change_max_pct": 0.009356871062315975,
+      "paired_median_bootstrap95_pct": [
+        -0.10924868121235942,
+        0.009356871062315975
+      ],
+      "baseline_best_mbps": 320.62,
+      "candidate_best_mbps": 320.65,
+      "best_change_pct": 0.009356871062315975,
+      "baseline_cv_pct": 0.03909627160329998,
+      "candidate_cv_pct": 0.10012807024593706,
+      "ratios": [
+        0.9998751872191711,
+        0.9989075131878764,
+        1.0000935687106232
+      ]
+    },
+    {
+      "case": "AA-all-L3",
+      "metric": "decompression_mbps",
+      "pairs": 3,
+      "baseline_median_mbps": 1299.4,
+      "candidate_median_mbps": 1298.2,
+      "median_paired_change_pct": -0.09235031553024298,
+      "paired_change_min_pct": -0.20820481184454787,
+      "paired_change_max_pct": -0.08462840436989083,
+      "paired_median_bootstrap95_pct": [
+        -0.20820481184454787,
+        -0.08462840436989083
+      ],
+      "baseline_best_mbps": 1299.8,
+      "candidate_best_mbps": 1298.7,
+      "best_change_pct": -0.08462840436989083,
+      "baseline_cv_pct": 0.12542907313009083,
+      "candidate_cv_pct": 0.19459413206051432,
+      "ratios": [
+        0.9990764968446976,
+        0.9991537159563011,
+        0.9979179518815545
+      ]
+    },
+    {
+      "case": "AA-all-L6",
+      "metric": "compression_mbps",
+      "pairs": 3,
+      "baseline_median_mbps": 125.05,
+      "candidate_median_mbps": 125.16,
+      "median_paired_change_pct": 0.09596161535385672,
+      "paired_change_min_pct": -0.05589714924539857,
+      "paired_change_max_pct": 0.2570900618622973,
+      "paired_median_bootstrap95_pct": [
+        -0.05589714924539857,
+        0.2570900618622973
+      ],
+      "baseline_best_mbps": 125.23,
+      "candidate_best_mbps": 125.17,
+      "best_change_pct": -0.04791184221033529,
+      "baseline_cv_pct": 0.3179372063211537,
+      "candidate_cv_pct": 0.17319583995287358,
+      "ratios": [
+        1.0009596161535386,
+        0.999441028507546,
+        1.002570900618623
+      ]
+    },
+    {
+      "case": "AA-all-L6",
+      "metric": "decompression_mbps",
+      "pairs": 3,
+      "baseline_median_mbps": 1386.5,
+      "candidate_median_mbps": 1385.0,
+      "median_paired_change_pct": -0.10818608005770392,
+      "paired_change_min_pct": -0.15144958892253646,
+      "paired_change_max_pct": 0.2384393063583845,
+      "paired_median_bootstrap95_pct": [
+        -0.15144958892253646,
+        0.2384393063583845
+      ],
+      "baseline_best_mbps": 1386.6,
+      "candidate_best_mbps": 1387.3,
+      "best_change_pct": 0.050483196307515854,
+      "baseline_cv_pct": 0.10630670320167393,
+      "candidate_cv_pct": 0.10777413772421927,
+      "ratios": [
+        0.998918139199423,
+        0.9984855041107746,
+        1.0023843930635838
+      ]
+    },
+    {
+      "case": "AA-all-L9",
+      "metric": "compression_mbps",
+      "pairs": 3,
+      "baseline_median_mbps": 83.9,
+      "candidate_median_mbps": 83.86,
+      "median_paired_change_pct": -0.19102196752628364,
+      "paired_change_min_pct": -0.28537455410225787,
+      "paired_change_max_pct": 0.035756853396895494,
+      "paired_median_bootstrap95_pct": [
+        -0.28537455410225787,
+        0.035756853396895494
+      ],
+      "baseline_best_mbps": 84.1,
+      "candidate_best_mbps": 83.93,
+      "best_change_pct": -0.20214030915575165,
+      "baseline_cv_pct": 0.2036225868760068,
+      "candidate_cv_pct": 0.20749912654831784,
+      "ratios": [
+        0.9980897803247372,
+        0.9971462544589774,
+        1.000357568533969
+      ]
+    },
+    {
+      "case": "AA-all-L9",
+      "metric": "decompression_mbps",
+      "pairs": 3,
+      "baseline_median_mbps": 1467.0,
+      "candidate_median_mbps": 1470.3,
+      "median_paired_change_pct": 0.22494887525561502,
+      "paired_change_min_pct": -0.1770996526122115,
+      "paired_change_max_pct": 0.5194095133952858,
+      "paired_median_bootstrap95_pct": [
+        -0.1770996526122115,
+        0.5194095133952858
+      ],
+      "baseline_best_mbps": 1468.1,
+      "candidate_best_mbps": 1470.8,
+      "best_change_pct": 0.18391117771270338,
+      "baseline_cv_pct": 0.17536266465018943,
+      "candidate_cv_pct": 0.19922280446319973,
+      "ratios": [
+        1.0051940951339529,
+        1.0022494887525562,
+        0.9982290034738779
+      ]
+    }
+  ],
+  "aggregates": {
+    "perfile_L6": {
+      "files": 12,
+      "geomean_of_file_median_ratios_pct": 0.5840212803808642,
+      "round_geomean_ratios": [
+        1.007470237752393,
+        1.005778004202329,
+        1.0082515935278147,
+        1.0058834407847186,
+        1.0054069416214704
+      ],
+      "round_median_ci95_pct": [
+        0.5406941621470374,
+        0.8251593527814682
+      ],
+      "round_median_change_pct": 0.5883440784718585
+    },
+    "perfile_L9": {
+      "files": 12,
+      "geomean_of_file_median_ratios_pct": 3.160727123298468,
+      "round_geomean_ratios": [
+        1.0299512685569343,
+        1.0312138379817932,
+        1.0301950038019734,
+        1.034139804227423,
+        1.025437153746173
+      ],
+      "round_median_ci95_pct": [
+        2.543715374617306,
+        3.413980422742302
+      ],
+      "round_median_change_pct": 3.0195003801973375
+    }
+  }
+}

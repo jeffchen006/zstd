@@ -1,0 +1,24 @@
+[
+  {
+    "executable": "fuzzer",
+    "argv": [
+      "$RUN/src/asan-c0002-r0/tests/fuzzer",
+      "-T60s",
+      "-s22"
+    ],
+    "returncode": 0,
+    "elapsed_seconds": 76.24001264572144,
+    "log": "$RUN/logs/upstream-asan-fuzzer.log"
+  },
+  {
+    "executable": "zstreamtest",
+    "argv": [
+      "$RUN/src/asan-c0002-r0/tests/zstreamtest",
+      "-T30s",
+      "-s22"
+    ],
+    "returncode": 0,
+    "elapsed_seconds": 38.11371326446533,
+    "log": "$RUN/logs/upstream-asan-zstreamtest.log"
+  }
+]

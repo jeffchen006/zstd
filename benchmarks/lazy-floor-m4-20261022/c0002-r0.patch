@@ -1,0 +1,226 @@
+diff --git a/lib/compress/zstd_lazy.c b/lib/compress/zstd_lazy.c
+index 18b7b43..69aaec0 100644
+--- a/lib/compress/zstd_lazy.c
++++ b/lib/compress/zstd_lazy.c
+@@ -667,7 +667,7 @@ ZSTD_ALLOW_POINTER_OVERFLOW_ATTR
+ size_t ZSTD_HcFindBestMatch(
+                         ZSTD_MatchState_t* ms,
+                         const BYTE* const ip, const BYTE* const iLimit,
+-                        size_t* offsetPtr,
++                        size_t* offsetPtr, size_t const mlFloor,
+                         const U32 mls, const ZSTD_dictMode_e dictMode)
+ {
+     const ZSTD_compressionParameters* const cParams = &ms->cParams;
+@@ -687,7 +687,7 @@ size_t ZSTD_HcFindBestMatch(
+     const U32 lowLimit = isDictionary ? lowestValid : withinMaxDistance;
+     const U32 minChain = curr > chainSize ? curr - chainSize : 0;
+     U32 nbAttempts = 1U << cParams->searchLog;
+-    size_t ml=4-1;
++    size_t ml=mlFloor;
+ 
+     const ZSTD_MatchState_t* const dms = ms->dictMatchState;
+     const U32 ddsHashLog = dictMode == ZSTD_dedicatedDictSearch
+@@ -1185,7 +1185,7 @@ ZSTD_ALLOW_POINTER_OVERFLOW_ATTR
+ size_t ZSTD_RowFindBestMatch(
+                         ZSTD_MatchState_t* ms,
+                         const BYTE* const ip, const BYTE* const iLimit,
+-                        size_t* offsetPtr,
++                        size_t* offsetPtr, size_t const mlFloor,
+                         const U32 mls, const ZSTD_dictMode_e dictMode,
+                         const U32 rowLog)
+ {
+@@ -1211,7 +1211,7 @@ size_t ZSTD_RowFindBestMatch(
+     const U32 groupWidth = ZSTD_row_matchMaskGroupWidth(rowEntries);
+     const U64 hashSalt = ms->hashSalt;
+     U32 nbAttempts = 1U << cappedSearchLog;
+-    size_t ml=4-1;
++    size_t ml=mlFloor;
+     U32 hash;
+ 
+     /* DMS/DDS variables that may be referenced laster */
+@@ -1410,33 +1410,36 @@ size_t ZSTD_RowFindBestMatch(
+     ZSTD_SEARCH_FN_ATTRS size_t ZSTD_BT_SEARCH_FN(dictMode, mls)(                      \
+             ZSTD_MatchState_t* ms,                                                     \
+             const BYTE* ip, const BYTE* const iLimit,                                  \
+-            size_t* offBasePtr)                                                        \
++            size_t* offBasePtr, size_t const mlFloor)                                  \
+     {                                                                                  \
+         assert(MAX(4, MIN(6, ms->cParams.minMatch)) == mls);                           \
++        (void)mlFloor; /* the binary tree search reports its own best match */         \
+         return ZSTD_BtFindBestMatch(ms, ip, iLimit, offBasePtr, mls, ZSTD_##dictMode); \
+     }                                                                                  \
+ 
+-#define GEN_ZSTD_HC_SEARCH_FN(dictMode, mls)                                          \
+-    ZSTD_SEARCH_FN_ATTRS size_t ZSTD_HC_SEARCH_FN(dictMode, mls)(                     \
+-            ZSTD_MatchState_t* ms,                                                    \
+-            const BYTE* ip, const BYTE* const iLimit,                                 \
+-            size_t* offsetPtr)                                                        \
+-    {                                                                                 \
+-        assert(MAX(4, MIN(6, ms->cParams.minMatch)) == mls);                          \
+-        return ZSTD_HcFindBestMatch(ms, ip, iLimit, offsetPtr, mls, ZSTD_##dictMode); \
+-    }                                                                                 \
+-
+-#define GEN_ZSTD_ROW_SEARCH_FN(dictMode, mls, rowLog)                                          \
+-    ZSTD_SEARCH_FN_ATTRS size_t ZSTD_ROW_SEARCH_FN(dictMode, mls, rowLog)(                     \
++#define GEN_ZSTD_HC_SEARCH_FN(dictMode, mls)                                                   \
++    ZSTD_SEARCH_FN_ATTRS size_t ZSTD_HC_SEARCH_FN(dictMode, mls)(                              \
+             ZSTD_MatchState_t* ms,                                                             \
+             const BYTE* ip, const BYTE* const iLimit,                                          \
+-            size_t* offsetPtr)                                                                 \
++            size_t* offsetPtr, size_t const mlFloor)                                           \
+     {                                                                                          \
+         assert(MAX(4, MIN(6, ms->cParams.minMatch)) == mls);                                   \
+-        assert(MAX(4, MIN(6, ms->cParams.searchLog)) == rowLog);                               \
+-        return ZSTD_RowFindBestMatch(ms, ip, iLimit, offsetPtr, mls, ZSTD_##dictMode, rowLog); \
++        assert(mlFloor >= 4-1 && mlFloor < (size_t)(iLimit - ip));                             \
++        return ZSTD_HcFindBestMatch(ms, ip, iLimit, offsetPtr, mlFloor, mls, ZSTD_##dictMode); \
+     }                                                                                          \
+ 
++#define GEN_ZSTD_ROW_SEARCH_FN(dictMode, mls, rowLog)                                                   \
++    ZSTD_SEARCH_FN_ATTRS size_t ZSTD_ROW_SEARCH_FN(dictMode, mls, rowLog)(                              \
++            ZSTD_MatchState_t* ms,                                                                      \
++            const BYTE* ip, const BYTE* const iLimit,                                                   \
++            size_t* offsetPtr, size_t const mlFloor)                                                    \
++    {                                                                                                   \
++        assert(MAX(4, MIN(6, ms->cParams.minMatch)) == mls);                                            \
++        assert(MAX(4, MIN(6, ms->cParams.searchLog)) == rowLog);                                        \
++        assert(mlFloor >= 4-1 && mlFloor < (size_t)(iLimit - ip));                                      \
++        return ZSTD_RowFindBestMatch(ms, ip, iLimit, offsetPtr, mlFloor, mls, ZSTD_##dictMode, rowLog); \
++    }                                                                                                   \
++
+ #define ZSTD_FOR_EACH_ROWLOG(X, dictMode, mls) \
+     X(dictMode, mls, 4)                        \
+     X(dictMode, mls, 5)                        \
+@@ -1469,13 +1472,13 @@ typedef enum { search_hashChain=0, search_binaryTree=1, search_rowHash=2 } searc
+ 
+ #define GEN_ZSTD_CALL_BT_SEARCH_FN(dictMode, mls)                         \
+     case mls:                                                             \
+-        return ZSTD_BT_SEARCH_FN(dictMode, mls)(ms, ip, iend, offsetPtr);
++        return ZSTD_BT_SEARCH_FN(dictMode, mls)(ms, ip, iend, offsetPtr, mlFloor);
+ #define GEN_ZSTD_CALL_HC_SEARCH_FN(dictMode, mls)                         \
+     case mls:                                                             \
+-        return ZSTD_HC_SEARCH_FN(dictMode, mls)(ms, ip, iend, offsetPtr);
+-#define GEN_ZSTD_CALL_ROW_SEARCH_FN(dictMode, mls, rowLog)                         \
+-    case rowLog:                                                                   \
+-        return ZSTD_ROW_SEARCH_FN(dictMode, mls, rowLog)(ms, ip, iend, offsetPtr);
++        return ZSTD_HC_SEARCH_FN(dictMode, mls)(ms, ip, iend, offsetPtr, mlFloor);
++#define GEN_ZSTD_CALL_ROW_SEARCH_FN(dictMode, mls, rowLog)                                  \
++    case rowLog:                                                                            \
++        return ZSTD_ROW_SEARCH_FN(dictMode, mls, rowLog)(ms, ip, iend, offsetPtr, mlFloor);
+ 
+ #define ZSTD_SWITCH_MLS(X, dictMode)   \
+     switch (mls) {                     \
+@@ -1520,6 +1523,9 @@ typedef enum { search_hashChain=0, search_binaryTree=1, search_rowHash=2 } searc
+  * @param ip The position to search at.
+  * @param iend The end of the input data.
+  * @param[out] offsetPtr Stores the match offset into this pointer.
++ * @param mlFloor Matches of length <= mlFloor are of no use to the caller.
++ *                Must be >= 3 and < (iend - ip). The hash chain and row searches
++ *                skip such matches; the binary tree search ignores this value.
+  * @param mls The minimum search length, in the range [4, 6].
+  * @param rowLog The row log (if applicable), in the range [4, 6].
+  * @param searchMethod The search method to use (templated).
+@@ -1527,12 +1533,15 @@ typedef enum { search_hashChain=0, search_binaryTree=1, search_rowHash=2 } searc
+  *
+  * @returns The length of the longest match found, or < mls if no match is found.
+  * If a match is found its offset is stored in @p offsetPtr.
++ * If the longest match is not longer than @p mlFloor, the result may instead be
++ * a value <= mlFloor and @p offsetPtr may be left unchanged.
+  */
+ FORCE_INLINE_TEMPLATE size_t ZSTD_searchMax(
+     ZSTD_MatchState_t* ms,
+     const BYTE* ip,
+     const BYTE* iend,
+     size_t* offsetPtr,
++    size_t const mlFloor,
+     U32 const mls,
+     U32 const rowLog,
+     searchMethod_e const searchMethod,
+@@ -1555,6 +1564,27 @@ FORCE_INLINE_TEMPLATE size_t ZSTD_searchMax(
+ *  Common parser - lazy strategy
+ *********************************/
+ 
++/* ZSTD_lazy_mlFloor() :
++ * Returns the mlFloor of a lazy search at ip, when the current solution
++ * has length matchLength and score gain1.
++ * A candidate (ml2, ofb2) replaces the current solution only if
++ * ml2*4 - ZSTD_highbit32(ofb2) > gain1. A searched match has offset >= 1,
++ * so ofb2 >= ZSTD_REP_NUM+1 and ZSTD_highbit32(ofb2) >= 2.
++ * Hence a candidate with ml2 <= (gain1+2)/4 is always rejected,
++ * and the search does not need to measure its length.
++ * The floor is only used when matchLength >= 8 : with a short floor, the first
++ * 4-byte comparison of each candidate becomes hard to predict, and costs more than it saves.
++ * The floor is capped below (iend - ip), so that the search never reads at or beyond iend.
++ * @return : a value within [3, iend-ip-1] */
++MEM_STATIC size_t ZSTD_lazy_mlFloor(size_t matchLength, int gain1, const BYTE* ip, const BYTE* iend)
++{
++    assert(iend - ip > 4-1);
++    if (matchLength < 8) return 4-1;
++    {   size_t const mlFloor = (gain1 + 2 > 4*(4-1)) ? (size_t)(gain1 + 2) / 4 : 4-1;
++        return MIN(mlFloor, (size_t)(iend - ip) - 1);
++    }
++}
++
+ FORCE_INLINE_TEMPLATE
+ ZSTD_ALLOW_POINTER_OVERFLOW_ATTR
+ size_t ZSTD_compressBlock_lazy_generic(
+@@ -1649,7 +1679,7 @@ size_t ZSTD_compressBlock_lazy_generic(
+ 
+         /* first search (depth 0) */
+         {   size_t offbaseFound = 999999999;
+-            size_t const ml2 = ZSTD_searchMax(ms, ip, iend, &offbaseFound, mls, rowLog, searchMethod, dictMode);
++            size_t const ml2 = ZSTD_searchMax(ms, ip, iend, &offbaseFound, 4-1, mls, rowLog, searchMethod, dictMode);
+             if (ml2 > matchLength)
+                 matchLength = ml2, start = ip, offBase = offbaseFound;
+         }
+@@ -1697,9 +1727,9 @@ size_t ZSTD_compressBlock_lazy_generic(
+                 }
+             }
+             {   size_t ofbCandidate=999999999;
+-                size_t const ml2 = ZSTD_searchMax(ms, ip, iend, &ofbCandidate, mls, rowLog, searchMethod, dictMode);
+-                int const gain2 = (int)(ml2*4 - ZSTD_highbit32((U32)ofbCandidate));   /* raw approx */
+                 int const gain1 = (int)(matchLength*4 - ZSTD_highbit32((U32)offBase) + 4);
++                size_t const ml2 = ZSTD_searchMax(ms, ip, iend, &ofbCandidate, ZSTD_lazy_mlFloor(matchLength, gain1, ip, iend), mls, rowLog, searchMethod, dictMode);
++                int const gain2 = (int)(ml2*4 - ZSTD_highbit32((U32)ofbCandidate));   /* raw approx */
+                 if ((ml2 >= 4) && (gain2 > gain1)) {
+                     matchLength = ml2, offBase = ofbCandidate, start = ip;
+                     continue;   /* search a better one */
+@@ -1733,9 +1763,9 @@ size_t ZSTD_compressBlock_lazy_generic(
+                     }
+                 }
+                 {   size_t ofbCandidate=999999999;
+-                    size_t const ml2 = ZSTD_searchMax(ms, ip, iend, &ofbCandidate, mls, rowLog, searchMethod, dictMode);
+-                    int const gain2 = (int)(ml2*4 - ZSTD_highbit32((U32)ofbCandidate));   /* raw approx */
+                     int const gain1 = (int)(matchLength*4 - ZSTD_highbit32((U32)offBase) + 7);
++                    size_t const ml2 = ZSTD_searchMax(ms, ip, iend, &ofbCandidate, ZSTD_lazy_mlFloor(matchLength, gain1, ip, iend), mls, rowLog, searchMethod, dictMode);
++                    int const gain2 = (int)(ml2*4 - ZSTD_highbit32((U32)ofbCandidate));   /* raw approx */
+                     if ((ml2 >= 4) && (gain2 > gain1)) {
+                         matchLength = ml2, offBase = ofbCandidate, start = ip;
+                         continue;
+@@ -2041,7 +2071,7 @@ size_t ZSTD_compressBlock_lazy_extDict_generic(
+ 
+         /* first search (depth 0) */
+         {   size_t ofbCandidate = 999999999;
+-            size_t const ml2 = ZSTD_searchMax(ms, ip, iend, &ofbCandidate, mls, rowLog, searchMethod, ZSTD_extDict);
++            size_t const ml2 = ZSTD_searchMax(ms, ip, iend, &ofbCandidate, 4-1, mls, rowLog, searchMethod, ZSTD_extDict);
+             if (ml2 > matchLength)
+                 matchLength = ml2, start = ip, offBase = ofbCandidate;
+         }
+@@ -2085,7 +2115,7 @@ size_t ZSTD_compressBlock_lazy_extDict_generic(
+ 
+             /* search match, depth 1 */
+             {   size_t ofbCandidate = 999999999;
+-                size_t const ml2 = ZSTD_searchMax(ms, ip, iend, &ofbCandidate, mls, rowLog, searchMethod, ZSTD_extDict);
++                size_t const ml2 = ZSTD_searchMax(ms, ip, iend, &ofbCandidate, 4-1, mls, rowLog, searchMethod, ZSTD_extDict);
+                 int const gain2 = (int)(ml2*4 - ZSTD_highbit32((U32)ofbCandidate));   /* raw approx */
+                 int const gain1 = (int)(matchLength*4 - ZSTD_highbit32((U32)offBase) + 4);
+                 if ((ml2 >= 4) && (gain2 > gain1)) {
+@@ -2117,7 +2147,7 @@ size_t ZSTD_compressBlock_lazy_extDict_generic(
+ 
+                 /* search match, depth 2 */
+                 {   size_t ofbCandidate = 999999999;
+-                    size_t const ml2 = ZSTD_searchMax(ms, ip, iend, &ofbCandidate, mls, rowLog, searchMethod, ZSTD_extDict);
++                    size_t const ml2 = ZSTD_searchMax(ms, ip, iend, &ofbCandidate, 4-1, mls, rowLog, searchMethod, ZSTD_extDict);
+                     int const gain2 = (int)(ml2*4 - ZSTD_highbit32((U32)ofbCandidate));   /* raw approx */
+                     int const gain1 = (int)(matchLength*4 - ZSTD_highbit32((U32)offBase) + 7);
+                     if ((ml2 >= 4) && (gain2 > gain1)) {

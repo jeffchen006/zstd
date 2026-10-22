@@ -1,0 +1,74 @@
+[
+  {
+    "level": 1,
+    "label": "baseline",
+    "compressed_bytes": 73232187,
+    "compressed_sha256": "fc0825ce5fa8623b5913a5472ac10415db6d68e698c191666ee6fae2a7b9c317",
+    "roundtrip": true,
+    "identical_to_baseline": true,
+    "binary_sha256": "3b11451e156561ff737bbb4b8b2d8930cd41cecada08ea92164702bde7aca0fd"
+  },
+  {
+    "level": 1,
+    "label": "c0002-r0",
+    "compressed_bytes": 73232187,
+    "compressed_sha256": "fc0825ce5fa8623b5913a5472ac10415db6d68e698c191666ee6fae2a7b9c317",
+    "roundtrip": true,
+    "identical_to_baseline": true,
+    "binary_sha256": "0a92b0fc6e76d6aa8fef193a4076c3e11de2b5c079726bf9dbd7c8b899e0a3e2"
+  },
+  {
+    "level": 3,
+    "label": "baseline",
+    "compressed_bytes": 66491424,
+    "compressed_sha256": "d6508144503e8cd5668646206d5d5df05ab938a357a752ae3cb9d3c5f859b9ae",
+    "roundtrip": true,
+    "identical_to_baseline": true,
+    "binary_sha256": "3b11451e156561ff737bbb4b8b2d8930cd41cecada08ea92164702bde7aca0fd"
+  },
+  {
+    "level": 3,
+    "label": "c0002-r0",
+    "compressed_bytes": 66491424,
+    "compressed_sha256": "d6508144503e8cd5668646206d5d5df05ab938a357a752ae3cb9d3c5f859b9ae",
+    "roundtrip": true,
+    "identical_to_baseline": true,
+    "binary_sha256": "0a92b0fc6e76d6aa8fef193a4076c3e11de2b5c079726bf9dbd7c8b899e0a3e2"
+  },
+  {
+    "level": 6,
+    "label": "baseline",
+    "compressed_bytes": 61405606,
+    "compressed_sha256": "e0f4bfbc678a3e0b032f0f3b84d20c9d3579146816c190a979d7d84db693e85b",
+    "roundtrip": true,
+    "identical_to_baseline": true,
+    "binary_sha256": "3b11451e156561ff737bbb4b8b2d8930cd41cecada08ea92164702bde7aca0fd"
+  },
+  {
+    "level": 6,
+    "label": "c0002-r0",
+    "compressed_bytes": 61405606,
+    "compressed_sha256": "e0f4bfbc678a3e0b032f0f3b84d20c9d3579146816c190a979d7d84db693e85b",
+    "roundtrip": true,
+    "identical_to_baseline": true,
+    "binary_sha256": "0a92b0fc6e76d6aa8fef193a4076c3e11de2b5c079726bf9dbd7c8b899e0a3e2"
+  },
+  {
+    "level": 9,
+    "label": "baseline",
+    "compressed_bytes": 59246242,
+    "compressed_sha256": "067b737766bb7cd74c3a7f74e28bdec413ace848460d2d8132ad1553c2a7c14a",
+    "roundtrip": true,
+    "identical_to_baseline": true,
+    "binary_sha256": "3b11451e156561ff737bbb4b8b2d8930cd41cecada08ea92164702bde7aca0fd"
+  },
+  {
+    "level": 9,
+    "label": "c0002-r0",
+    "compressed_bytes": 59246242,
+    "compressed_sha256": "067b737766bb7cd74c3a7f74e28bdec413ace848460d2d8132ad1553c2a7c14a",
+    "roundtrip": true,
+    "identical_to_baseline": true,
+    "binary_sha256": "0a92b0fc6e76d6aa8fef193a4076c3e11de2b5c079726bf9dbd7c8b899e0a3e2"
+  }
+]

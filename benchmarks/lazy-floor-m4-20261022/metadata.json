@@ -1,0 +1,17 @@
+{
+  "baseline_commit": "49cf51799ea051457f57243527aa2058f999f005",
+  "cpu": "Apple M4 Max",
+  "compiler": "Apple clang version 17.0.0 (clang-1700.6.3.2)\nTarget: arm64-apple-darwin25.3.0\nThread model: posix\nInstalledDir: /Library/Developer/CommandLineTools/usr/bin\n",
+  "os_version": "ProductName:\t\tmacOS\nProductVersion:\t\t26.3\nBuildVersion:\t\t25D125\n",
+  "power": "Now drawing from 'AC Power'\n -InternalBattery-0 (id=22151267)\t100%; charged; 0:00 remaining present: true\n",
+  "corpus_zip_sha256": "0626e25f45c0ffb5dc801f13b7c82a3b75743ba07e3a71835a41e3d9f63c77af",
+  "code_commit": "09fd6a001bdb5e30128329334dd4980d5195365c",
+  "patch_sha256": "2872be44821edd6393bbd2646a167432fd8a234759cfaadd13a971dede8194a9",
+  "lazy_source_sha256": "c1c9d1564708de081697871b604a8d1e82f18fa9868f273a15bc785f8a5a0511",
+  "flags": "CC=cc CFLAGS=-O3 DEBUGLEVEL=0 HAVE_ZLIB=0 HAVE_LZMA=0 HAVE_LZ4=0",
+  "corpus_bytes": 211938580,
+  "order": "Concatenate all 12 files in sorted filename order; not a .tar archive.",
+  "original_schedule": "3 A/A pairs per level; 7 balanced baseline/c0002/c0004 rounds at L1,3,6,9 (-i2); 5 alternating baseline/c0002 pairs per file at L6,9 (-i1). c0004 records omitted from this c0002 bundle; original slot and round numbers retained.",
+  "method": "CLI fastest eligible inner timing; median of paired candidate/baseline ratios across processes; equal-weight geometric mean of per-file paired medians.",
+  "limitations": "Single M4 Max / Apple Clang configuration. Other SQLite jobs finished before accepted measurements; normal desktop apps remained. No CPU pinning, frequency/turbo/ASLR controls or alignment perturbation tests. No cross-platform or dictionary/streaming performance claim."
+}
