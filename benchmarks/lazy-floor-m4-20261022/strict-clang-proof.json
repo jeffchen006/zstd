@@ -1,0 +1,13 @@
+{
+  "status": "passed",
+  "job_id": 119910575713,
+  "url": "https://github.com/jeffchen006/zstd/actions/runs/39803297637/job/119910575713",
+  "merge_sha": "1c04092c4597a73dd2eace7afcae62e9f5616a7b",
+  "strict_warning_flags_retained": true,
+  "warning_demotion_absent": true,
+  "baseline_control_passed": true,
+  "candidate_error_count": 0,
+  "candidate_global_warning_count": 0,
+  "candidate_compile_command": "2026-10-22T15:25:57.0901699Z CFLAGS=\"--target=x86_64-w64-mingw32 -Werror -Wconversion -Wno-sign-conversion -Wno-unused-command-line-argument\" make -j allzstd",
+  "baseline": "49cf51799ea051457f57243527aa2058f999f005"
+}

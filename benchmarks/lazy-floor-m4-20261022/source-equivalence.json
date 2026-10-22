@@ -1,0 +1,7 @@
+{
+  "measured_commit": "09fd6a001bdb5e30128329334dd4980d5195365c",
+  "current_commit": "222606cee24d2fc3cb1c514640903a21b6f40dfc",
+  "same_full_source_tree": "d821a0cc6f0fc989bc95675bc8b734102382de53",
+  "diff_empty": true,
+  "reason": "Invalidate a stale GitHub PR merge after fork base CI/CLI repairs."
+}

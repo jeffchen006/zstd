@@ -1,0 +1,34 @@
+From e671aa574a49c5b3146cd8d6c1545d97013a05b9 Mon Sep 17 00:00:00 2001
+From: jeffchen006 <zhiychen@cs.toronto.edu>
+Date: Thu, 22 Oct 2026 17:05:55 +0200
+Subject: [PATCH] cli: annotate compression globals used only in some builds
+
+Clang 23 reports five globals as set but unused in the decompress-only CLI. These values are still parsed for command-line compatibility, so mark them with the existing UNUSED_ATTR macro.
+---
+ programs/zstdcli.c | 11 ++++++-----
+ 1 file changed, 6 insertions(+), 5 deletions(-)
+
+diff --git a/programs/zstdcli.c b/programs/zstdcli.c
+index 31b06d67b..4e9b0add1 100644
+--- a/programs/zstdcli.c
++++ b/programs/zstdcli.c
+@@ -88,11 +88,12 @@ static const unsigned g_defaultSelectivityLevel = 9;
+ static const unsigned g_defaultMaxWindowLog = 27;
+ #define OVERLAP_LOG_DEFAULT 9999
+ #define LDM_PARAM_DEFAULT 9999  /* Default for parameters where 0 is valid */
+-static U32 g_overlapLog = OVERLAP_LOG_DEFAULT;
+-static U32 g_ldmHashLog = 0;
+-static U32 g_ldmMinMatch = 0;
+-static U32 g_ldmHashRateLog = LDM_PARAM_DEFAULT;
+-static U32 g_ldmBucketSizeLog = LDM_PARAM_DEFAULT;
++/* These parameters are parsed but unused in decompression-only builds. */
++static UNUSED_ATTR U32 g_overlapLog = OVERLAP_LOG_DEFAULT;
++static UNUSED_ATTR U32 g_ldmHashLog = 0;
++static UNUSED_ATTR U32 g_ldmMinMatch = 0;
++static UNUSED_ATTR U32 g_ldmHashRateLog = LDM_PARAM_DEFAULT;
++static UNUSED_ATTR U32 g_ldmBucketSizeLog = LDM_PARAM_DEFAULT;
+ 
+ 
+ #define DEFAULT_ACCEL 1
+-- 
+2.50.1 (Apple Git-155)

@@ -1,0 +1,41 @@
+From 5d6505ee01c8a5d5744444ef577e873268511a69 Mon Sep 17 00:00:00 2001
+From: jeffchen006 <zhiychen@cs.toronto.edu>
+Date: Thu, 22 Oct 2026 17:20:45 +0200
+Subject: [PATCH] ci: refresh package indexes before installing liblzma
+
+Ubuntu runner package indexes can refer to liblzma-dev versions already removed from the mirrors, causing apt installation to fail with 404 before compilation. Refresh indexes in both affected workflows and use noninteractive apt-get installation.
+---
+ .github/workflows/cmake-tests.yml     | 3 ++-
+ .github/workflows/dev-short-tests.yml | 3 ++-
+ 2 files changed, 4 insertions(+), 2 deletions(-)
+
+diff --git a/.github/workflows/cmake-tests.yml b/.github/workflows/cmake-tests.yml
+index 4af246356..68b2c7a28 100644
+--- a/.github/workflows/cmake-tests.yml
++++ b/.github/workflows/cmake-tests.yml
+@@ -46,7 +46,8 @@ jobs:
+     - uses: actions/checkout@3d3c42e5aac5ba805825da76410c181273ba90b1 # tag=v7.0.1
+     - name: Install dependencies
+       run: |
+-        sudo apt install liblzma-dev  # Required for compression algorithms
++        sudo apt-get update
++        sudo apt-get install -y liblzma-dev  # Required for compression algorithms
+     - name: CMake build and test via make
+       run: |
+         # Use make wrapper for cmake build with quick test timeouts
+diff --git a/.github/workflows/dev-short-tests.yml b/.github/workflows/dev-short-tests.yml
+index c4db0a496..bed13663e 100644
+--- a/.github/workflows/dev-short-tests.yml
++++ b/.github/workflows/dev-short-tests.yml
+@@ -203,7 +203,8 @@ jobs:
+       - uses: actions/checkout@3d3c42e5aac5ba805825da76410c181273ba90b1 # tag=v7.0.1
+       - name: Build with ${{matrix.name}}
+         run: |
+-          sudo apt install liblzma-dev
++          sudo apt-get update
++          sudo apt-get install -y liblzma-dev
+           ${{matrix.flags}} make zstd
+ 
+ 
+-- 
+2.50.1 (Apple Git-155)

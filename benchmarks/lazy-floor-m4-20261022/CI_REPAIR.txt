@@ -1,0 +1,36 @@
+CI repair and validation, 2026-10-22
+
+Result: all 104 GitHub Actions workflow jobs and all 106 PR checks passed.
+Validation PR: https://github.com/jeffchen006/zstd/pull/1
+Verified UTC: 2026-10-22T15:58:40.931048+00:00
+
+Two inherited upstream failures were repaired:
+1. Ubuntu runner package indexes pointed to removed liblzma-dev versions, returning HTTP 404 before compilation. Refresh package indexes before installation in both the CMake and external-compressor workflows.
+2. Clang 23.1.3 rejects five compression globals as set but unused in the decompress-only CLI. Mark those globals with the project's existing UNUSED_ATTR macro, preserving parsing and strict compiler warning flags.
+
+The MinGW control compiled unchanged upstream 49cf51799ea051457f57243527aa2058f999f005 and required exactly the five original diagnostics. The repaired candidate then passed allzstd and make check using the original -Werror flags. The log was checked for the exact merge SHA, absence of any warning demotion, and absence of candidate global warnings or errors. See strict-clang-proof.json/txt and job https://github.com/jeffchen006/zstd/actions/runs/39803297637/job/119910575713 .
+
+Final workflow results:
+- cmake-tests: 13 jobs passed; https://github.com/jeffchen006/zstd/actions/runs/39803297743
+- dev-short-tests: 57 jobs passed; https://github.com/jeffchen006/zstd/actions/runs/39803297637
+- dev-long-tests: 30 jobs passed; https://github.com/jeffchen006/zstd/actions/runs/39803297866
+- Android NDK Build: 1 jobs passed; https://github.com/jeffchen006/zstd/actions/runs/39803297652
+- facebook/zstd/commit: 3 jobs passed; https://github.com/jeffchen006/zstd/actions/runs/39803297744
+
+Scope and submission:
+The optimization branch contains only lib/compress/zstd_lazy.c. Fork dev contains the separate compatibility repairs and a baseline-control test. Thus these results validate the optimization together with those compatibility repairs; they are not a claim that unmodified upstream CI is repaired by the optimization alone.
+
+Separate source branches, with no upstream PR submitted by the agent:
+- https://github.com/jeffchen006/zstd/tree/fix/ci-liblzma-package-index
+- https://github.com/jeffchen006/zstd/tree/fix/cli-unused-compression-globals
+Both standalone patches are included here. Keep these as separate prerequisite PRs, or explicitly include them in the optimization PR if that scope is preferred.
+
+Performance provenance:
+The measured optimization commit is 09fd6a001bdb5e30128329334dd4980d5195365c. Current head 222606cee24d2fc3cb1c514640903a21b6f40dfc has the identical full source tree d821a0cc6f0fc989bc95675bc8b734102382de53. Only commit metadata changed to invalidate a stale GitHub merge. The existing Mac benchmark data was not replaced or reinterpreted. See source-equivalence.json.
+
+An earlier rerun used stale merge 33c1ab565df687b39f18c0f51b50dfebaa0a4bd4 and is excluded from this validation claim. The accepted run tested merge 1c04092c4597a73dd2eace7afcae62e9f5616a7b, whose parents and actual checked-out source were verified.
+
+Recheck current status:
+  gh pr checks 1 --repo jeffchen006/zstd
+
+No upstream PR or email was submitted by the agent. Codex assisted with diagnosis, implementation and validation.

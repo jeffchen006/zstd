@@ -1,0 +1,1536 @@
+{
+  "verified_at": "2026-10-22T15:58:40.931048+00:00",
+  "current_head": "222606cee24d2fc3cb1c514640903a21b6f40dfc",
+  "measured_head": "09fd6a001bdb5e30128329334dd4980d5195365c",
+  "fork_base": "ca4a53be4541f94a56b1da8fc22f04ba22757119",
+  "tested_merge": "1c04092c4597a73dd2eace7afcae62e9f5616a7b",
+  "workflow_jobs_passed": 104,
+  "pr_checks_passed": 106,
+  "runs": [
+    {
+      "id": 39803297743,
+      "name": "cmake-tests",
+      "head": "222606cee24d2fc3cb1c514640903a21b6f40dfc",
+      "url": "https://github.com/jeffchen006/zstd/actions/runs/39803297743",
+      "jobs": [
+        {
+          "databaseId": 119909715294,
+          "name": "CMake build using make wrapper",
+          "status": "completed",
+          "conclusion": "success",
+          "url": "https://github.com/jeffchen006/zstd/actions/runs/39803297743/job/119909715294"
+        },
+        {
+          "databaseId": 119909715833,
+          "name": "CMake Cross-Platform (Spaces in Path) (ubuntu-latest, Unix Makefiles, Linux)",
+          "status": "completed",
+          "conclusion": "success",
+          "url": "https://github.com/jeffchen006/zstd/actions/runs/39803297743/job/119909715833"
+        },
+        {
+          "databaseId": 119909715838,
+          "name": "CMake macOS ARM64 (Apple Silicon)",
+          "status": "completed",
+          "conclusion": "success",
+          "url": "https://github.com/jeffchen006/zstd/actions/runs/39803297743/job/119909715838"
+        },
+        {
+          "databaseId": 119909716004,
+          "name": "CMake Root Build",
+          "status": "completed",
+          "conclusion": "success",
+          "url": "https://github.com/jeffchen006/zstd/actions/runs/39803297743/job/119909716004"
+        },
+        {
+          "databaseId": 119909716075,
+          "name": "CMake Cross-Platform (Spaces in Path) (macos-latest, Unix Makefiles, macOS)",
+          "status": "completed",
+          "conclusion": "success",
+          "url": "https://github.com/jeffchen006/zstd/actions/runs/39803297743/job/119909716075"
+        },
+        {
+          "databaseId": 119909716144,
+          "name": "CMake Windows (Clang-CL AVX2)",
+          "status": "completed",
+          "conclusion": "success",
+          "url": "https://github.com/jeffchen006/zstd/actions/runs/39803297743/job/119909716144"
+        },
+        {
+          "databaseId": 119909716195,
+          "name": "CMake Windows (MSVC Win32)",
+          "status": "completed",
+          "conclusion": "success",
+          "url": "https://github.com/jeffchen006/zstd/actions/runs/39803297743/job/119909716195"
+        },
+        {
+          "databaseId": 119909716361,
+          "name": "CMake Windows (MSVC x64)",
+          "status": "completed",
+          "conclusion": "success",
+          "url": "https://github.com/jeffchen006/zstd/actions/runs/39803297743/job/119909716361"
+        },
+        {
+          "databaseId": 119909716486,
+          "name": "CMake Windows (MSVC x64 (No ZSTD_BUILD_TESTS))",
+          "status": "completed",
+          "conclusion": "success",
+          "url": "https://github.com/jeffchen006/zstd/actions/runs/39803297743/job/119909716486"
+        },
+        {
+          "databaseId": 119909716528,
+          "name": "CMake Windows (MinGW)",
+          "status": "completed",
+          "conclusion": "success",
+          "url": "https://github.com/jeffchen006/zstd/actions/runs/39803297743/job/119909716528"
+        },
+        {
+          "databaseId": 119909716544,
+          "name": "CMake Windows (MSVC ARM64)",
+          "status": "completed",
+          "conclusion": "success",
+          "url": "https://github.com/jeffchen006/zstd/actions/runs/39803297743/job/119909716544"
+        },
+        {
+          "databaseId": 119909716733,
+          "name": "CMake Windows (Clang-CL)",
+          "status": "completed",
+          "conclusion": "success",
+          "url": "https://github.com/jeffchen006/zstd/actions/runs/39803297743/job/119909716733"
+        },
+        {
+          "databaseId": 119909717242,
+          "name": "CMake Cross-Platform (Spaces in Path) (windows-latest, NMake Makefiles, Windows NMake)",
+          "status": "completed",
+          "conclusion": "success",
+          "url": "https://github.com/jeffchen006/zstd/actions/runs/39803297743/job/119909717242"
+        }
+      ]
+    },
+    {
+      "id": 39803297637,
+      "name": "dev-short-tests",
+      "head": "222606cee24d2fc3cb1c514640903a21b6f40dfc",
+      "url": "https://github.com/jeffchen006/zstd/actions/runs/39803297637",
+      "jobs": [
+        {
+          "databaseId": 119910575435,
+          "name": "build-c89",
+          "status": "completed",
+          "conclusion": "success",
+          "url": "https://github.com/jeffchen006/zstd/actions/runs/39803297637/job/119910575435"
+        },
+        {
+          "databaseId": 119910575696,
+          "name": "bourne-shell",
+          "status": "completed",
+          "conclusion": "success",
+          "url": "https://github.com/jeffchen006/zstd/actions/runs/39803297637/job/119910575696"
+        },
+        {
+          "databaseId": 119910575713,
+          "name": "mingw-short-test (clang, MINGW64, --target=x86_64-w64-mingw32 -Werror -Wconversion -Wno-sign-conv...",
+          "status": "completed",
+          "conclusion": "success",
+          "url": "https://github.com/jeffchen006/zstd/actions/runs/39803297637/job/119910575713"
+        },
+        {
+          "databaseId": 119910575755,
+          "name": "check-32bit",
+          "status": "completed",
+          "conclusion": "success",
+          "url": "https://github.com/jeffchen006/zstd/actions/runs/39803297637/job/119910575755"
+        },
+        {
+          "databaseId": 119910575758,
+          "name": "clangbuild",
+          "status": "completed",
+          "conclusion": "success",
+          "url": "https://github.com/jeffchen006/zstd/actions/runs/39803297637/job/119910575758"
+        },
+        {
+          "databaseId": 119910575764,
+          "name": "QEMU PPC64LE",
+          "status": "completed",
+          "conclusion": "success",
+          "url": "https://github.com/jeffchen006/zstd/actions/runs/39803297637/job/119910575764"
+        },
+        {
+          "databaseId": 119910575766,
+          "name": "QEMU ARM",
+          "status": "completed",
+          "conclusion": "success",
+          "url": "https://github.com/jeffchen006/zstd/actions/runs/39803297637/job/119910575766"
+        },
+        {
+          "databaseId": 119910575767,
+          "name": "lz4-threadpool-libs",
+          "status": "completed",
+          "conclusion": "success",
+          "url": "https://github.com/jeffchen006/zstd/actions/runs/39803297637/job/119910575767"
+        },
+        {
+          "databaseId": 119910575807,
+          "name": "linux-kernel",
+          "status": "completed",
+          "conclusion": "success",
+          "url": "https://github.com/jeffchen006/zstd/actions/runs/39803297637/job/119910575807"
+        },
+        {
+          "databaseId": 119910575866,
+          "name": "armbuild",
+          "status": "completed",
+          "conclusion": "success",
+          "url": "https://github.com/jeffchen006/zstd/actions/runs/39803297637/job/119910575866"
+        },
+        {
+          "databaseId": 119910575869,
+          "name": "mingw-short-test (gcc, MINGW32, -Werror)",
+          "status": "completed",
+          "conclusion": "success",
+          "url": "https://github.com/jeffchen006/zstd/actions/runs/39803297637/job/119910575869"
+        },
+        {
+          "databaseId": 119910575870,
+          "name": "build-zstd-dll",
+          "status": "completed",
+          "conclusion": "success",
+          "url": "https://github.com/jeffchen006/zstd/actions/runs/39803297637/job/119910575870"
+        },
+        {
+          "databaseId": 119910575947,
+          "name": "QEMU MIPS",
+          "status": "completed",
+          "conclusion": "success",
+          "url": "https://github.com/jeffchen006/zstd/actions/runs/39803297637/job/119910575947"
+        },
+        {
+          "databaseId": 119910575957,
+          "name": "cpp-gnu90-c99-compatibility",
+          "status": "completed",
+          "conclusion": "success",
+          "url": "https://github.com/jeffchen006/zstd/actions/runs/39803297637/job/119910575957"
+        },
+        {
+          "databaseId": 119910575971,
+          "name": "QEMU PPC",
+          "status": "completed",
+          "conclusion": "success",
+          "url": "https://github.com/jeffchen006/zstd/actions/runs/39803297637/job/119910575971"
+        },
+        {
+          "databaseId": 119910576004,
+          "name": "mingw-short-test (gcc, MINGW64, -Werror)",
+          "status": "completed",
+          "conclusion": "success",
+          "url": "https://github.com/jeffchen006/zstd/actions/runs/39803297637/job/119910576004"
+        },
+        {
+          "databaseId": 119910576028,
+          "name": "QEMU S390X",
+          "status": "completed",
+          "conclusion": "success",
+          "url": "https://github.com/jeffchen006/zstd/actions/runs/39803297637/job/119910576028"
+        },
+        {
+          "databaseId": 119910576033,
+          "name": "mingw-cross-compilation",
+          "status": "completed",
+          "conclusion": "success",
+          "url": "https://github.com/jeffchen006/zstd/actions/runs/39803297637/job/119910576033"
+        },
+        {
+          "databaseId": 119910576034,
+          "name": "meson-linux",
+          "status": "completed",
+          "conclusion": "success",
+          "url": "https://github.com/jeffchen006/zstd/actions/runs/39803297637/job/119910576034"
+        },
+        {
+          "databaseId": 119910576066,
+          "name": "QEMU SPARC",
+          "status": "completed",
+          "conclusion": "success",
+          "url": "https://github.com/jeffchen006/zstd/actions/runs/39803297637/job/119910576066"
+        },
+        {
+          "databaseId": 119910576079,
+          "name": "benchmarking",
+          "status": "completed",
+          "conclusion": "success",
+          "url": "https://github.com/jeffchen006/zstd/actions/runs/39803297637/job/119910576079"
+        },
+        {
+          "databaseId": 119910576095,
+          "name": "QEMU ARM64",
+          "status": "completed",
+          "conclusion": "success",
+          "url": "https://github.com/jeffchen006/zstd/actions/runs/39803297637/job/119910576095"
+        },
+        {
+          "databaseId": 119910576109,
+          "name": "musl-build",
+          "status": "completed",
+          "conclusion": "success",
+          "url": "https://github.com/jeffchen006/zstd/actions/runs/39803297637/job/119910576109"
+        },
+        {
+          "databaseId": 119910576152,
+          "name": "gcc-pgo",
+          "status": "completed",
+          "conclusion": "success",
+          "url": "https://github.com/jeffchen006/zstd/actions/runs/39803297637/job/119910576152"
+        },
+        {
+          "databaseId": 119910576157,
+          "name": "gcc-7-libzstd",
+          "status": "completed",
+          "conclusion": "success",
+          "url": "https://github.com/jeffchen006/zstd/actions/runs/39803297637/job/119910576157"
+        },
+        {
+          "databaseId": 119910576173,
+          "name": "pkg-config",
+          "status": "completed",
+          "conclusion": "success",
+          "url": "https://github.com/jeffchen006/zstd/actions/runs/39803297637/job/119910576173"
+        },
+        {
+          "databaseId": 119910576185,
+          "name": "QEMU RISC-V",
+          "status": "completed",
+          "conclusion": "success",
+          "url": "https://github.com/jeffchen006/zstd/actions/runs/39803297637/job/119910576185"
+        },
+        {
+          "databaseId": 119910576206,
+          "name": "libzstd-size",
+          "status": "completed",
+          "conclusion": "success",
+          "url": "https://github.com/jeffchen006/zstd/actions/runs/39803297637/job/119910576206"
+        },
+        {
+          "databaseId": 119910576253,
+          "name": "cygwin-tests",
+          "status": "completed",
+          "conclusion": "success",
+          "url": "https://github.com/jeffchen006/zstd/actions/runs/39803297637/job/119910576253"
+        },
+        {
+          "databaseId": 119910576254,
+          "name": "gcc-make-all-32bit",
+          "status": "completed",
+          "conclusion": "success",
+          "url": "https://github.com/jeffchen006/zstd/actions/runs/39803297637/job/119910576254"
+        },
+        {
+          "databaseId": 119910576284,
+          "name": "visual-runtime-tests (Win32, Release)",
+          "status": "completed",
+          "conclusion": "success",
+          "url": "https://github.com/jeffchen006/zstd/actions/runs/39803297637/job/119910576284"
+        },
+        {
+          "databaseId": 119910576286,
+          "name": "msbuild-visual-studio (VS 2022 Win32 Debug, Win32, Debug, v143, windows-2022)",
+          "status": "completed",
+          "conclusion": "success",
+          "url": "https://github.com/jeffchen006/zstd/actions/runs/39803297637/job/119910576286"
+        },
+        {
+          "databaseId": 119910576307,
+          "name": "msbuild-visual-studio (VS 2025 x64 Debug, x64, Debug, v143, windows-2025)",
+          "status": "completed",
+          "conclusion": "success",
+          "url": "https://github.com/jeffchen006/zstd/actions/runs/39803297637/job/119910576307"
+        },
+        {
+          "databaseId": 119910576331,
+          "name": "zlib-wrapper",
+          "status": "completed",
+          "conclusion": "success",
+          "url": "https://github.com/jeffchen006/zstd/actions/runs/39803297637/job/119910576331"
+        },
+        {
+          "databaseId": 119910576336,
+          "name": "meson-mingw-cross-compilation",
+          "status": "completed",
+          "conclusion": "success",
+          "url": "https://github.com/jeffchen006/zstd/actions/runs/39803297637/job/119910576336"
+        },
+        {
+          "databaseId": 119910576338,
+          "name": "gcc-make-all-avx2",
+          "status": "completed",
+          "conclusion": "success",
+          "url": "https://github.com/jeffchen006/zstd/actions/runs/39803297637/job/119910576338"
+        },
+        {
+          "databaseId": 119910576354,
+          "name": "versions-compatibility",
+          "status": "completed",
+          "conclusion": "success",
+          "url": "https://github.com/jeffchen006/zstd/actions/runs/39803297637/job/119910576354"
+        },
+        {
+          "databaseId": 119910576355,
+          "name": "visual-runtime-tests (x64, Release)",
+          "status": "completed",
+          "conclusion": "success",
+          "url": "https://github.com/jeffchen006/zstd/actions/runs/39803297637/job/119910576355"
+        },
+        {
+          "databaseId": 119910576361,
+          "name": "make-external-compressors (only lzma, HAVE_ZLIB=0 HAVE_LZ4=0 HAVE_LZMA=1)",
+          "status": "completed",
+          "conclusion": "success",
+          "url": "https://github.com/jeffchen006/zstd/actions/runs/39803297637/job/119910576361"
+        },
+        {
+          "databaseId": 119910576378,
+          "name": "msbuild-visual-studio (VS 2022 x64 Debug, x64, Debug, v143, windows-2022)",
+          "status": "completed",
+          "conclusion": "success",
+          "url": "https://github.com/jeffchen006/zstd/actions/runs/39803297637/job/119910576378"
+        },
+        {
+          "databaseId": 119910576415,
+          "name": "msbuild-visual-studio (VS 2022 x64 Release AVX2, x64, Release, v143, windows-2022, AdvancedVector...",
+          "status": "completed",
+          "conclusion": "success",
+          "url": "https://github.com/jeffchen006/zstd/actions/runs/39803297637/job/119910576415"
+        },
+        {
+          "databaseId": 119910576418,
+          "name": "minimal-decompressor-macros",
+          "status": "completed",
+          "conclusion": "success",
+          "url": "https://github.com/jeffchen006/zstd/actions/runs/39803297637/job/119910576418"
+        },
+        {
+          "databaseId": 119910576444,
+          "name": "intel-cet-compatibility",
+          "status": "completed",
+          "conclusion": "success",
+          "url": "https://github.com/jeffchen006/zstd/actions/runs/39803297637/job/119910576444"
+        },
+        {
+          "databaseId": 119910576467,
+          "name": "gcc-8-make",
+          "status": "completed",
+          "conclusion": "success",
+          "url": "https://github.com/jeffchen006/zstd/actions/runs/39803297637/job/119910576467"
+        },
+        {
+          "databaseId": 119910576474,
+          "name": "icx-check",
+          "status": "completed",
+          "conclusion": "success",
+          "url": "https://github.com/jeffchen006/zstd/actions/runs/39803297637/job/119910576474"
+        },
+        {
+          "databaseId": 119910576475,
+          "name": "meson-windows",
+          "status": "completed",
+          "conclusion": "success",
+          "url": "https://github.com/jeffchen006/zstd/actions/runs/39803297637/job/119910576475"
+        },
+        {
+          "databaseId": 119910576496,
+          "name": "make-external-compressors (no external compressors, HAVE_ZLIB=0 HAVE_LZ4=0 HAVE_LZMA=0)",
+          "status": "completed",
+          "conclusion": "success",
+          "url": "https://github.com/jeffchen006/zstd/actions/runs/39803297637/job/119910576496"
+        },
+        {
+          "databaseId": 119910576503,
+          "name": "msbuild-visual-studio (VS 2022 Win32 Release, Win32, Release, v143, windows-2022)",
+          "status": "completed",
+          "conclusion": "success",
+          "url": "https://github.com/jeffchen006/zstd/actions/runs/39803297637/job/119910576503"
+        },
+        {
+          "databaseId": 119910576510,
+          "name": "dynamic-bmi2",
+          "status": "completed",
+          "conclusion": "success",
+          "url": "https://github.com/jeffchen006/zstd/actions/runs/39803297637/job/119910576510"
+        },
+        {
+          "databaseId": 119910576533,
+          "name": "make-external-compressors (only zlib, HAVE_ZLIB=1 HAVE_LZ4=0 HAVE_LZMA=0)",
+          "status": "completed",
+          "conclusion": "success",
+          "url": "https://github.com/jeffchen006/zstd/actions/runs/39803297637/job/119910576533"
+        },
+        {
+          "databaseId": 119910576568,
+          "name": "QEMU M68K",
+          "status": "completed",
+          "conclusion": "success",
+          "url": "https://github.com/jeffchen006/zstd/actions/runs/39803297637/job/119910576568"
+        },
+        {
+          "databaseId": 119910576586,
+          "name": "gcc-make-all-32bit-avx2",
+          "status": "completed",
+          "conclusion": "success",
+          "url": "https://github.com/jeffchen006/zstd/actions/runs/39803297637/job/119910576586"
+        },
+        {
+          "databaseId": 119910576590,
+          "name": "implicit-fall-through",
+          "status": "completed",
+          "conclusion": "success",
+          "url": "https://github.com/jeffchen006/zstd/actions/runs/39803297637/job/119910576590"
+        },
+        {
+          "databaseId": 119910576596,
+          "name": "test-variants",
+          "status": "completed",
+          "conclusion": "success",
+          "url": "https://github.com/jeffchen006/zstd/actions/runs/39803297637/job/119910576596"
+        },
+        {
+          "databaseId": 119910576600,
+          "name": "clang-pgo",
+          "status": "completed",
+          "conclusion": "success",
+          "url": "https://github.com/jeffchen006/zstd/actions/runs/39803297637/job/119910576600"
+        },
+        {
+          "databaseId": 119910576612,
+          "name": "make-external-compressors (only lz4, HAVE_ZLIB=0 HAVE_LZ4=1 HAVE_LZMA=0)",
+          "status": "completed",
+          "conclusion": "success",
+          "url": "https://github.com/jeffchen006/zstd/actions/runs/39803297637/job/119910576612"
+        },
+        {
+          "databaseId": 119910576717,
+          "name": "msbuild-visual-studio (VS 2022 x64 Release, x64, Release, v143, windows-2022)",
+          "status": "completed",
+          "conclusion": "success",
+          "url": "https://github.com/jeffchen006/zstd/actions/runs/39803297637/job/119910576717"
+        }
+      ]
+    },
+    {
+      "id": 39803297866,
+      "name": "dev-long-tests",
+      "head": "222606cee24d2fc3cb1c514640903a21b6f40dfc",
+      "url": "https://github.com/jeffchen006/zstd/actions/runs/39803297866",
+      "jobs": [
+        {
+          "databaseId": 119910557506,
+          "name": "make-test-32bit",
+          "status": "completed",
+          "conclusion": "success",
+          "url": "https://github.com/jeffchen006/zstd/actions/runs/39803297866/job/119910557506"
+        },
+        {
+          "databaseId": 119910557895,
+          "name": "valgrind-fuzz-test",
+          "status": "completed",
+          "conclusion": "success",
+          "url": "https://github.com/jeffchen006/zstd/actions/runs/39803297866/job/119910557895"
+        },
+        {
+          "databaseId": 119910557901,
+          "name": "clang-msan-testzstd",
+          "status": "completed",
+          "conclusion": "success",
+          "url": "https://github.com/jeffchen006/zstd/actions/runs/39803297866/job/119910557901"
+        },
+        {
+          "databaseId": 119910558020,
+          "name": "gcc-8-asan-ubsan-testzstd",
+          "status": "completed",
+          "conclusion": "success",
+          "url": "https://github.com/jeffchen006/zstd/actions/runs/39803297866/job/119910558020"
+        },
+        {
+          "databaseId": 119910558021,
+          "name": "oss-fuzz (memory)",
+          "status": "completed",
+          "conclusion": "success",
+          "url": "https://github.com/jeffchen006/zstd/actions/runs/39803297866/job/119910558021"
+        },
+        {
+          "databaseId": 119910558033,
+          "name": "clang-msan-fuzz",
+          "status": "completed",
+          "conclusion": "success",
+          "url": "https://github.com/jeffchen006/zstd/actions/runs/39803297866/job/119910558033"
+        },
+        {
+          "databaseId": 119910558035,
+          "name": "clang-msan-fuzz-unoptimized",
+          "status": "completed",
+          "conclusion": "success",
+          "url": "https://github.com/jeffchen006/zstd/actions/runs/39803297866/job/119910558035"
+        },
+        {
+          "databaseId": 119910558063,
+          "name": "oss-fuzz (undefined)",
+          "status": "completed",
+          "conclusion": "success",
+          "url": "https://github.com/jeffchen006/zstd/actions/runs/39803297866/job/119910558063"
+        },
+        {
+          "databaseId": 119910558075,
+          "name": "clang-asan-ubsan-testzstd",
+          "status": "completed",
+          "conclusion": "success",
+          "url": "https://github.com/jeffchen006/zstd/actions/runs/39803297866/job/119910558075"
+        },
+        {
+          "databaseId": 119910558111,
+          "name": "make-test",
+          "status": "completed",
+          "conclusion": "success",
+          "url": "https://github.com/jeffchen006/zstd/actions/runs/39803297866/job/119910558111"
+        },
+        {
+          "databaseId": 119910558244,
+          "name": "no-intrinsics-fuzztest",
+          "status": "completed",
+          "conclusion": "success",
+          "url": "https://github.com/jeffchen006/zstd/actions/runs/39803297866/job/119910558244"
+        },
+        {
+          "databaseId": 119910558247,
+          "name": "asan-ubsan-regression",
+          "status": "completed",
+          "conclusion": "success",
+          "url": "https://github.com/jeffchen006/zstd/actions/runs/39803297866/job/119910558247"
+        },
+        {
+          "databaseId": 119910558255,
+          "name": "clang-asan-ubsan-regression",
+          "status": "completed",
+          "conclusion": "success",
+          "url": "https://github.com/jeffchen006/zstd/actions/runs/39803297866/job/119910558255"
+        },
+        {
+          "databaseId": 119910558265,
+          "name": "test-largeDictionary",
+          "status": "completed",
+          "conclusion": "success",
+          "url": "https://github.com/jeffchen006/zstd/actions/runs/39803297866/job/119910558265"
+        },
+        {
+          "databaseId": 119910558266,
+          "name": "make-test-macos",
+          "status": "completed",
+          "conclusion": "success",
+          "url": "https://github.com/jeffchen006/zstd/actions/runs/39803297866/job/119910558266"
+        },
+        {
+          "databaseId": 119910558276,
+          "name": "tsan-fuzztest",
+          "status": "completed",
+          "conclusion": "success",
+          "url": "https://github.com/jeffchen006/zstd/actions/runs/39803297866/job/119910558276"
+        },
+        {
+          "databaseId": 119910558301,
+          "name": "mingw-long-test",
+          "status": "completed",
+          "conclusion": "success",
+          "url": "https://github.com/jeffchen006/zstd/actions/runs/39803297866/job/119910558301"
+        },
+        {
+          "databaseId": 119910558324,
+          "name": "oss-fuzz (address)",
+          "status": "completed",
+          "conclusion": "success",
+          "url": "https://github.com/jeffchen006/zstd/actions/runs/39803297866/job/119910558324"
+        },
+        {
+          "databaseId": 119910558334,
+          "name": "gcc-asan-ubsan-testzstd-32bit",
+          "status": "completed",
+          "conclusion": "success",
+          "url": "https://github.com/jeffchen006/zstd/actions/runs/39803297866/job/119910558334"
+        },
+        {
+          "databaseId": 119910558357,
+          "name": "gcc-8-asan-ubsan-fuzz",
+          "status": "completed",
+          "conclusion": "success",
+          "url": "https://github.com/jeffchen006/zstd/actions/runs/39803297866/job/119910558357"
+        },
+        {
+          "databaseId": 119910558365,
+          "name": "clang-asan-fuzz32",
+          "status": "completed",
+          "conclusion": "success",
+          "url": "https://github.com/jeffchen006/zstd/actions/runs/39803297866/job/119910558365"
+        },
+        {
+          "databaseId": 119910558407,
+          "name": "clang-asan-ubsan-fuzz",
+          "status": "completed",
+          "conclusion": "success",
+          "url": "https://github.com/jeffchen006/zstd/actions/runs/39803297866/job/119910558407"
+        },
+        {
+          "databaseId": 119910558411,
+          "name": "uasan-zstreamtest",
+          "status": "completed",
+          "conclusion": "success",
+          "url": "https://github.com/jeffchen006/zstd/actions/runs/39803297866/job/119910558411"
+        },
+        {
+          "databaseId": 119910558441,
+          "name": "big-tests-zstreamtest32",
+          "status": "completed",
+          "conclusion": "success",
+          "url": "https://github.com/jeffchen006/zstd/actions/runs/39803297866/job/119910558441"
+        },
+        {
+          "databaseId": 119910558481,
+          "name": "clang-asan-ubsan-legacy",
+          "status": "completed",
+          "conclusion": "success",
+          "url": "https://github.com/jeffchen006/zstd/actions/runs/39803297866/job/119910558481"
+        },
+        {
+          "databaseId": 119910558583,
+          "name": "make-all",
+          "status": "completed",
+          "conclusion": "success",
+          "url": "https://github.com/jeffchen006/zstd/actions/runs/39803297866/job/119910558583"
+        },
+        {
+          "databaseId": 119910558647,
+          "name": "gcc-asan-ubsan-fuzz32",
+          "status": "completed",
+          "conclusion": "success",
+          "url": "https://github.com/jeffchen006/zstd/actions/runs/39803297866/job/119910558647"
+        },
+        {
+          "databaseId": 119910558752,
+          "name": "tsan-zstreamtest",
+          "status": "completed",
+          "conclusion": "success",
+          "url": "https://github.com/jeffchen006/zstd/actions/runs/39803297866/job/119910558752"
+        },
+        {
+          "databaseId": 119910558845,
+          "name": "armfuzz",
+          "status": "completed",
+          "conclusion": "success",
+          "url": "https://github.com/jeffchen006/zstd/actions/runs/39803297866/job/119910558845"
+        },
+        {
+          "databaseId": 119910559013,
+          "name": "msan-regression",
+          "status": "completed",
+          "conclusion": "success",
+          "url": "https://github.com/jeffchen006/zstd/actions/runs/39803297866/job/119910559013"
+        }
+      ]
+    },
+    {
+      "id": 39803297652,
+      "name": "Android NDK Build",
+      "head": "222606cee24d2fc3cb1c514640903a21b6f40dfc",
+      "url": "https://github.com/jeffchen006/zstd/actions/runs/39803297652",
+      "jobs": [
+        {
+          "databaseId": 119909713897,
+          "name": "build",
+          "status": "completed",
+          "conclusion": "success",
+          "url": "https://github.com/jeffchen006/zstd/actions/runs/39803297652/job/119909713897"
+        }
+      ]
+    },
+    {
+      "id": 39803297744,
+      "name": "facebook/zstd/commit",
+      "head": "222606cee24d2fc3cb1c514640903a21b6f40dfc",
+      "url": "https://github.com/jeffchen006/zstd/actions/runs/39803297744",
+      "jobs": [
+        {
+          "databaseId": 119909713702,
+          "name": "short-tests-0",
+          "status": "completed",
+          "conclusion": "success",
+          "url": "https://github.com/jeffchen006/zstd/actions/runs/39803297744/job/119909713702"
+        },
+        {
+          "databaseId": 119909714164,
+          "name": "short-tests-1",
+          "status": "completed",
+          "conclusion": "success",
+          "url": "https://github.com/jeffchen006/zstd/actions/runs/39803297744/job/119909714164"
+        },
+        {
+          "databaseId": 119909714397,
+          "name": "regression-test",
+          "status": "completed",
+          "conclusion": "success",
+          "url": "https://github.com/jeffchen006/zstd/actions/runs/39803297744/job/119909714397"
+        }
+      ]
+    }
+  ],
+  "checks": [
+    {
+      "bucket": "pass",
+      "link": "https://github.com/jeffchen006/zstd/actions/runs/39803297637/job/119910576510",
+      "name": "dynamic-bmi2",
+      "state": "SUCCESS",
+      "workflow": "dev-short-tests"
+    },
+    {
+      "bucket": "pass",
+      "link": "https://github.com/jeffchen006/zstd/actions/runs/39803297637/job/119910576467",
+      "name": "gcc-8-make",
+      "state": "SUCCESS",
+      "workflow": "dev-short-tests"
+    },
+    {
+      "bucket": "pass",
+      "link": "https://github.com/jeffchen006/zstd/actions/runs/39803297637/job/119910576331",
+      "name": "zlib-wrapper",
+      "state": "SUCCESS",
+      "workflow": "dev-short-tests"
+    },
+    {
+      "bucket": "pass",
+      "link": "https://github.com/jeffchen006/zstd/actions/runs/39803297637/job/119910576590",
+      "name": "implicit-fall-through",
+      "state": "SUCCESS",
+      "workflow": "dev-short-tests"
+    },
+    {
+      "bucket": "pass",
+      "link": "https://github.com/jeffchen006/zstd/actions/runs/39803297637/job/119910575866",
+      "name": "armbuild",
+      "state": "SUCCESS",
+      "workflow": "dev-short-tests"
+    },
+    {
+      "bucket": "pass",
+      "link": "https://github.com/jeffchen006/zstd/actions/runs/39803297637/job/119910576361",
+      "name": "make-external-compressors (only lzma, HAVE_ZLIB=0 HAVE_LZ4=0 HAVE_LZMA=1)",
+      "state": "SUCCESS",
+      "workflow": "dev-short-tests"
+    },
+    {
+      "bucket": "pass",
+      "link": "https://github.com/jeffchen006/zstd/actions/runs/39803297637/job/119910576600",
+      "name": "clang-pgo",
+      "state": "SUCCESS",
+      "workflow": "dev-short-tests"
+    },
+    {
+      "bucket": "pass",
+      "link": "https://github.com/jeffchen006/zstd/actions/runs/39803297637/job/119910576354",
+      "name": "versions-compatibility",
+      "state": "SUCCESS",
+      "workflow": "dev-short-tests"
+    },
+    {
+      "bucket": "pass",
+      "link": "https://github.com/jeffchen006/zstd/actions/runs/39803297637/job/119910576444",
+      "name": "intel-cet-compatibility",
+      "state": "SUCCESS",
+      "workflow": "dev-short-tests"
+    },
+    {
+      "bucket": "pass",
+      "link": "https://github.com/jeffchen006/zstd/actions/runs/39803297637/job/119910576586",
+      "name": "gcc-make-all-32bit-avx2",
+      "state": "SUCCESS",
+      "workflow": "dev-short-tests"
+    },
+    {
+      "bucket": "pass",
+      "link": "https://github.com/jeffchen006/zstd/actions/runs/39803297637/job/119910576568",
+      "name": "QEMU M68K",
+      "state": "SUCCESS",
+      "workflow": "dev-short-tests"
+    },
+    {
+      "bucket": "pass",
+      "link": "https://github.com/jeffchen006/zstd/actions/runs/39803297637/job/119910576254",
+      "name": "gcc-make-all-32bit",
+      "state": "SUCCESS",
+      "workflow": "dev-short-tests"
+    },
+    {
+      "bucket": "pass",
+      "link": "https://github.com/jeffchen006/zstd/actions/runs/39803297637/job/119910576185",
+      "name": "QEMU RISC-V",
+      "state": "SUCCESS",
+      "workflow": "dev-short-tests"
+    },
+    {
+      "bucket": "pass",
+      "link": "https://github.com/jeffchen006/zstd/actions/runs/39803297637/job/119910576336",
+      "name": "meson-mingw-cross-compilation",
+      "state": "SUCCESS",
+      "workflow": "dev-short-tests"
+    },
+    {
+      "bucket": "pass",
+      "link": "https://github.com/jeffchen006/zstd/actions/runs/39803297637/job/119910576152",
+      "name": "gcc-pgo",
+      "state": "SUCCESS",
+      "workflow": "dev-short-tests"
+    },
+    {
+      "bucket": "pass",
+      "link": "https://github.com/jeffchen006/zstd/actions/runs/39803297637/job/119910576079",
+      "name": "benchmarking",
+      "state": "SUCCESS",
+      "workflow": "dev-short-tests"
+    },
+    {
+      "bucket": "pass",
+      "link": "https://github.com/jeffchen006/zstd/actions/runs/39803297637/job/119910576475",
+      "name": "meson-windows",
+      "state": "SUCCESS",
+      "workflow": "dev-short-tests"
+    },
+    {
+      "bucket": "pass",
+      "link": "https://github.com/jeffchen006/zstd/actions/runs/39803297637/job/119910576095",
+      "name": "QEMU ARM64",
+      "state": "SUCCESS",
+      "workflow": "dev-short-tests"
+    },
+    {
+      "bucket": "pass",
+      "link": "https://github.com/jeffchen006/zstd/actions/runs/39803297637/job/119910576033",
+      "name": "mingw-cross-compilation",
+      "state": "SUCCESS",
+      "workflow": "dev-short-tests"
+    },
+    {
+      "bucket": "pass",
+      "link": "https://github.com/jeffchen006/zstd/actions/runs/39803297637/job/119910575807",
+      "name": "linux-kernel",
+      "state": "SUCCESS",
+      "workflow": "dev-short-tests"
+    },
+    {
+      "bucket": "pass",
+      "link": "https://github.com/jeffchen006/zstd/actions/runs/39803297637/job/119910576474",
+      "name": "icx-check",
+      "state": "SUCCESS",
+      "workflow": "dev-short-tests"
+    },
+    {
+      "bucket": "pass",
+      "link": "https://github.com/jeffchen006/zstd/actions/runs/39803297637/job/119910576157",
+      "name": "gcc-7-libzstd",
+      "state": "SUCCESS",
+      "workflow": "dev-short-tests"
+    },
+    {
+      "bucket": "pass",
+      "link": "https://github.com/jeffchen006/zstd/actions/runs/39803297637/job/119910575869",
+      "name": "mingw-short-test (gcc, MINGW32, -Werror)",
+      "state": "SUCCESS",
+      "workflow": "dev-short-tests"
+    },
+    {
+      "bucket": "pass",
+      "link": "https://github.com/jeffchen006/zstd/actions/runs/39803297637/job/119910576596",
+      "name": "test-variants",
+      "state": "SUCCESS",
+      "workflow": "dev-short-tests"
+    },
+    {
+      "bucket": "pass",
+      "link": "https://github.com/jeffchen006/zstd/actions/runs/39803297637/job/119910575713",
+      "name": "mingw-short-test (clang, MINGW64, --target=x86_64-w64-mingw32 -Werror -Wconversion -Wno-sign-conv...",
+      "state": "SUCCESS",
+      "workflow": "dev-short-tests"
+    },
+    {
+      "bucket": "pass",
+      "link": "https://github.com/jeffchen006/zstd/actions/runs/39803297637/job/119910576338",
+      "name": "gcc-make-all-avx2",
+      "state": "SUCCESS",
+      "workflow": "dev-short-tests"
+    },
+    {
+      "bucket": "pass",
+      "link": "https://github.com/jeffchen006/zstd/actions/runs/39803297637/job/119910576612",
+      "name": "make-external-compressors (only lz4, HAVE_ZLIB=0 HAVE_LZ4=1 HAVE_LZMA=0)",
+      "state": "SUCCESS",
+      "workflow": "dev-short-tests"
+    },
+    {
+      "bucket": "pass",
+      "link": "https://github.com/jeffchen006/zstd/actions/runs/39803297637/job/119910576533",
+      "name": "make-external-compressors (only zlib, HAVE_ZLIB=1 HAVE_LZ4=0 HAVE_LZMA=0)",
+      "state": "SUCCESS",
+      "workflow": "dev-short-tests"
+    },
+    {
+      "bucket": "pass",
+      "link": "https://github.com/jeffchen006/zstd/actions/runs/39803297637/job/119910576496",
+      "name": "make-external-compressors (no external compressors, HAVE_ZLIB=0 HAVE_LZ4=0 HAVE_LZMA=0)",
+      "state": "SUCCESS",
+      "workflow": "dev-short-tests"
+    },
+    {
+      "bucket": "pass",
+      "link": "https://github.com/jeffchen006/zstd/actions/runs/39803297637/job/119910576206",
+      "name": "libzstd-size",
+      "state": "SUCCESS",
+      "workflow": "dev-short-tests"
+    },
+    {
+      "bucket": "pass",
+      "link": "https://github.com/jeffchen006/zstd/actions/runs/39803297637/job/119910576004",
+      "name": "mingw-short-test (gcc, MINGW64, -Werror)",
+      "state": "SUCCESS",
+      "workflow": "dev-short-tests"
+    },
+    {
+      "bucket": "pass",
+      "link": "https://github.com/jeffchen006/zstd/actions/runs/39803297637/job/119910576355",
+      "name": "visual-runtime-tests (x64, Release)",
+      "state": "SUCCESS",
+      "workflow": "dev-short-tests"
+    },
+    {
+      "bucket": "pass",
+      "link": "https://github.com/jeffchen006/zstd/actions/runs/39803297637/job/119910576284",
+      "name": "visual-runtime-tests (Win32, Release)",
+      "state": "SUCCESS",
+      "workflow": "dev-short-tests"
+    },
+    {
+      "bucket": "pass",
+      "link": "https://github.com/jeffchen006/zstd/actions/runs/39803297637/job/119910576286",
+      "name": "msbuild-visual-studio (VS 2022 Win32 Debug, Win32, Debug, v143, windows-2022)",
+      "state": "SUCCESS",
+      "workflow": "dev-short-tests"
+    },
+    {
+      "bucket": "pass",
+      "link": "https://github.com/jeffchen006/zstd/actions/runs/39803297637/job/119910576173",
+      "name": "pkg-config",
+      "state": "SUCCESS",
+      "workflow": "dev-short-tests"
+    },
+    {
+      "bucket": "pass",
+      "link": "https://github.com/jeffchen006/zstd/actions/runs/39803297637/job/119910575971",
+      "name": "QEMU PPC",
+      "state": "SUCCESS",
+      "workflow": "dev-short-tests"
+    },
+    {
+      "bucket": "pass",
+      "link": "https://github.com/jeffchen006/zstd/actions/runs/39803297637/job/119910576418",
+      "name": "minimal-decompressor-macros",
+      "state": "SUCCESS",
+      "workflow": "dev-short-tests"
+    },
+    {
+      "bucket": "pass",
+      "link": "https://github.com/jeffchen006/zstd/actions/runs/39803297637/job/119910576253",
+      "name": "cygwin-tests",
+      "state": "SUCCESS",
+      "workflow": "dev-short-tests"
+    },
+    {
+      "bucket": "pass",
+      "link": "https://github.com/jeffchen006/zstd/actions/runs/39803297637/job/119910576717",
+      "name": "msbuild-visual-studio (VS 2022 x64 Release, x64, Release, v143, windows-2022)",
+      "state": "SUCCESS",
+      "workflow": "dev-short-tests"
+    },
+    {
+      "bucket": "pass",
+      "link": "https://github.com/jeffchen006/zstd/actions/runs/39803297637/job/119910576066",
+      "name": "QEMU SPARC",
+      "state": "SUCCESS",
+      "workflow": "dev-short-tests"
+    },
+    {
+      "bucket": "pass",
+      "link": "https://github.com/jeffchen006/zstd/actions/runs/39803297637/job/119910575957",
+      "name": "cpp-gnu90-c99-compatibility",
+      "state": "SUCCESS",
+      "workflow": "dev-short-tests"
+    },
+    {
+      "bucket": "pass",
+      "link": "https://github.com/jeffchen006/zstd/actions/runs/39803297637/job/119910576034",
+      "name": "meson-linux",
+      "state": "SUCCESS",
+      "workflow": "dev-short-tests"
+    },
+    {
+      "bucket": "pass",
+      "link": "https://github.com/jeffchen006/zstd/actions/runs/39803297637/job/119910575435",
+      "name": "build-c89",
+      "state": "SUCCESS",
+      "workflow": "dev-short-tests"
+    },
+    {
+      "bucket": "pass",
+      "link": "https://github.com/jeffchen006/zstd/actions/runs/39803297637/job/119910575755",
+      "name": "check-32bit",
+      "state": "SUCCESS",
+      "workflow": "dev-short-tests"
+    },
+    {
+      "bucket": "pass",
+      "link": "https://github.com/jeffchen006/zstd/actions/runs/39803297637/job/119910575947",
+      "name": "QEMU MIPS",
+      "state": "SUCCESS",
+      "workflow": "dev-short-tests"
+    },
+    {
+      "bucket": "pass",
+      "link": "https://github.com/jeffchen006/zstd/actions/runs/39803297637/job/119910576028",
+      "name": "QEMU S390X",
+      "state": "SUCCESS",
+      "workflow": "dev-short-tests"
+    },
+    {
+      "bucket": "pass",
+      "link": "https://github.com/jeffchen006/zstd/actions/runs/39803297637/job/119910576415",
+      "name": "msbuild-visual-studio (VS 2022 x64 Release AVX2, x64, Release, v143, windows-2022, AdvancedVector...",
+      "state": "SUCCESS",
+      "workflow": "dev-short-tests"
+    },
+    {
+      "bucket": "pass",
+      "link": "https://github.com/jeffchen006/zstd/actions/runs/39803297637/job/119910576378",
+      "name": "msbuild-visual-studio (VS 2022 x64 Debug, x64, Debug, v143, windows-2022)",
+      "state": "SUCCESS",
+      "workflow": "dev-short-tests"
+    },
+    {
+      "bucket": "pass",
+      "link": "https://github.com/jeffchen006/zstd/actions/runs/39803297637/job/119910575764",
+      "name": "QEMU PPC64LE",
+      "state": "SUCCESS",
+      "workflow": "dev-short-tests"
+    },
+    {
+      "bucket": "pass",
+      "link": "https://github.com/jeffchen006/zstd/actions/runs/39803297637/job/119910575870",
+      "name": "build-zstd-dll",
+      "state": "SUCCESS",
+      "workflow": "dev-short-tests"
+    },
+    {
+      "bucket": "pass",
+      "link": "https://github.com/jeffchen006/zstd/actions/runs/39803297637/job/119910575696",
+      "name": "bourne-shell",
+      "state": "SUCCESS",
+      "workflow": "dev-short-tests"
+    },
+    {
+      "bucket": "pass",
+      "link": "https://github.com/jeffchen006/zstd/actions/runs/39803297637/job/119910576503",
+      "name": "msbuild-visual-studio (VS 2022 Win32 Release, Win32, Release, v143, windows-2022)",
+      "state": "SUCCESS",
+      "workflow": "dev-short-tests"
+    },
+    {
+      "bucket": "pass",
+      "link": "https://github.com/jeffchen006/zstd/actions/runs/39803297637/job/119910575767",
+      "name": "lz4-threadpool-libs",
+      "state": "SUCCESS",
+      "workflow": "dev-short-tests"
+    },
+    {
+      "bucket": "pass",
+      "link": "https://github.com/jeffchen006/zstd/actions/runs/39803297866/job/119910558845",
+      "name": "armfuzz",
+      "state": "SUCCESS",
+      "workflow": "dev-long-tests"
+    },
+    {
+      "bucket": "pass",
+      "link": "https://github.com/jeffchen006/zstd/actions/runs/39803297637/job/119910575766",
+      "name": "QEMU ARM",
+      "state": "SUCCESS",
+      "workflow": "dev-short-tests"
+    },
+    {
+      "bucket": "pass",
+      "link": "https://github.com/jeffchen006/zstd/actions/runs/39803297637/job/119910575758",
+      "name": "clangbuild",
+      "state": "SUCCESS",
+      "workflow": "dev-short-tests"
+    },
+    {
+      "bucket": "pass",
+      "link": "https://github.com/jeffchen006/zstd/actions/runs/39803297866/job/119910558365",
+      "name": "clang-asan-fuzz32",
+      "state": "SUCCESS",
+      "workflow": "dev-long-tests"
+    },
+    {
+      "bucket": "pass",
+      "link": "https://github.com/jeffchen006/zstd/actions/runs/39803297637/job/119910576109",
+      "name": "musl-build",
+      "state": "SUCCESS",
+      "workflow": "dev-short-tests"
+    },
+    {
+      "bucket": "pass",
+      "link": "https://github.com/jeffchen006/zstd/actions/runs/39803297866/job/119910558075",
+      "name": "clang-asan-ubsan-testzstd",
+      "state": "SUCCESS",
+      "workflow": "dev-long-tests"
+    },
+    {
+      "bucket": "pass",
+      "link": "https://github.com/jeffchen006/zstd/actions/runs/39803297637/job/119910576307",
+      "name": "msbuild-visual-studio (VS 2025 x64 Debug, x64, Debug, v143, windows-2025)",
+      "state": "SUCCESS",
+      "workflow": "dev-short-tests"
+    },
+    {
+      "bucket": "pass",
+      "link": "https://github.com/jeffchen006/zstd/actions/runs/39803297866/job/119910558266",
+      "name": "make-test-macos",
+      "state": "SUCCESS",
+      "workflow": "dev-long-tests"
+    },
+    {
+      "bucket": "pass",
+      "link": "https://github.com/jeffchen006/zstd/actions/runs/39803297866/job/119910558301",
+      "name": "mingw-long-test",
+      "state": "SUCCESS",
+      "workflow": "dev-long-tests"
+    },
+    {
+      "bucket": "pass",
+      "link": "https://github.com/jeffchen006/zstd/actions/runs/39803297866/job/119910557895",
+      "name": "valgrind-fuzz-test",
+      "state": "SUCCESS",
+      "workflow": "dev-long-tests"
+    },
+    {
+      "bucket": "pass",
+      "link": "https://github.com/jeffchen006/zstd/actions/runs/39803297866/job/119910558324",
+      "name": "oss-fuzz (address)",
+      "state": "SUCCESS",
+      "workflow": "dev-long-tests"
+    },
+    {
+      "bucket": "pass",
+      "link": "https://github.com/jeffchen006/zstd/actions/runs/39803297866/job/119910558334",
+      "name": "gcc-asan-ubsan-testzstd-32bit",
+      "state": "SUCCESS",
+      "workflow": "dev-long-tests"
+    },
+    {
+      "bucket": "pass",
+      "link": "https://github.com/jeffchen006/zstd/actions/runs/39803297866/job/119910558035",
+      "name": "clang-msan-fuzz-unoptimized",
+      "state": "SUCCESS",
+      "workflow": "dev-long-tests"
+    },
+    {
+      "bucket": "pass",
+      "link": "https://github.com/jeffchen006/zstd/actions/runs/39803297866/job/119910558020",
+      "name": "gcc-8-asan-ubsan-testzstd",
+      "state": "SUCCESS",
+      "workflow": "dev-long-tests"
+    },
+    {
+      "bucket": "pass",
+      "link": "https://github.com/jeffchen006/zstd/actions/runs/39803297866/job/119910558407",
+      "name": "clang-asan-ubsan-fuzz",
+      "state": "SUCCESS",
+      "workflow": "dev-long-tests"
+    },
+    {
+      "bucket": "pass",
+      "link": "https://github.com/jeffchen006/zstd/actions/runs/39803297866/job/119910558441",
+      "name": "big-tests-zstreamtest32",
+      "state": "SUCCESS",
+      "workflow": "dev-long-tests"
+    },
+    {
+      "bucket": "pass",
+      "link": "https://github.com/jeffchen006/zstd/actions/runs/39803297866/job/119910558033",
+      "name": "clang-msan-fuzz",
+      "state": "SUCCESS",
+      "workflow": "dev-long-tests"
+    },
+    {
+      "bucket": "pass",
+      "link": "https://github.com/jeffchen006/zstd/actions/runs/39803297866/job/119910558276",
+      "name": "tsan-fuzztest",
+      "state": "SUCCESS",
+      "workflow": "dev-long-tests"
+    },
+    {
+      "bucket": "pass",
+      "link": "https://github.com/jeffchen006/zstd/actions/runs/39803297866/job/119910557901",
+      "name": "clang-msan-testzstd",
+      "state": "SUCCESS",
+      "workflow": "dev-long-tests"
+    },
+    {
+      "bucket": "pass",
+      "link": "https://github.com/jeffchen006/zstd/actions/runs/39803297866/job/119910558411",
+      "name": "uasan-zstreamtest",
+      "state": "SUCCESS",
+      "workflow": "dev-long-tests"
+    },
+    {
+      "bucket": "pass",
+      "link": "https://github.com/jeffchen006/zstd/actions/runs/39803297866/job/119910558752",
+      "name": "tsan-zstreamtest",
+      "state": "SUCCESS",
+      "workflow": "dev-long-tests"
+    },
+    {
+      "bucket": "pass",
+      "link": "https://github.com/jeffchen006/zstd/actions/runs/39803297866/job/119910558244",
+      "name": "no-intrinsics-fuzztest",
+      "state": "SUCCESS",
+      "workflow": "dev-long-tests"
+    },
+    {
+      "bucket": "pass",
+      "link": "https://github.com/jeffchen006/zstd/actions/runs/39803297866/job/119910559013",
+      "name": "msan-regression",
+      "state": "SUCCESS",
+      "workflow": "dev-long-tests"
+    },
+    {
+      "bucket": "pass",
+      "link": "https://github.com/jeffchen006/zstd/actions/runs/39803297866/job/119910558265",
+      "name": "test-largeDictionary",
+      "state": "SUCCESS",
+      "workflow": "dev-long-tests"
+    },
+    {
+      "bucket": "pass",
+      "link": "https://github.com/jeffchen006/zstd/actions/runs/39803297866/job/119910558481",
+      "name": "clang-asan-ubsan-legacy",
+      "state": "SUCCESS",
+      "workflow": "dev-long-tests"
+    },
+    {
+      "bucket": "pass",
+      "link": "https://github.com/jeffchen006/zstd/actions/runs/39803297866/job/119910558111",
+      "name": "make-test",
+      "state": "SUCCESS",
+      "workflow": "dev-long-tests"
+    },
+    {
+      "bucket": "pass",
+      "link": "https://github.com/jeffchen006/zstd/actions/runs/39803297866/job/119910558247",
+      "name": "asan-ubsan-regression",
+      "state": "SUCCESS",
+      "workflow": "dev-long-tests"
+    },
+    {
+      "bucket": "pass",
+      "link": "https://github.com/jeffchen006/zstd/actions/runs/39803297866/job/119910558255",
+      "name": "clang-asan-ubsan-regression",
+      "state": "SUCCESS",
+      "workflow": "dev-long-tests"
+    },
+    {
+      "bucket": "pass",
+      "link": "https://github.com/jeffchen006/zstd/actions/runs/39803297866/job/119910558647",
+      "name": "gcc-asan-ubsan-fuzz32",
+      "state": "SUCCESS",
+      "workflow": "dev-long-tests"
+    },
+    {
+      "bucket": "pass",
+      "link": "https://github.com/jeffchen006/zstd/actions/runs/39803297866/job/119910558583",
+      "name": "make-all",
+      "state": "SUCCESS",
+      "workflow": "dev-long-tests"
+    },
+    {
+      "bucket": "pass",
+      "link": "https://github.com/jeffchen006/zstd/actions/runs/39803297866/job/119910558021",
+      "name": "oss-fuzz (memory)",
+      "state": "SUCCESS",
+      "workflow": "dev-long-tests"
+    },
+    {
+      "bucket": "pass",
+      "link": "https://github.com/jeffchen006/zstd/actions/runs/39803297866/job/119910558063",
+      "name": "oss-fuzz (undefined)",
+      "state": "SUCCESS",
+      "workflow": "dev-long-tests"
+    },
+    {
+      "bucket": "pass",
+      "link": "https://github.com/jeffchen006/zstd/actions/runs/39803297866/job/119910558357",
+      "name": "gcc-8-asan-ubsan-fuzz",
+      "state": "SUCCESS",
+      "workflow": "dev-long-tests"
+    },
+    {
+      "bucket": "pass",
+      "link": "https://github.com/jeffchen006/zstd/actions/runs/39803297866/job/119910557506",
+      "name": "make-test-32bit",
+      "state": "SUCCESS",
+      "workflow": "dev-long-tests"
+    },
+    {
+      "bucket": "pass",
+      "link": "https://github.com/jeffchen006/zstd/actions/runs/39803297743/job/119909716528",
+      "name": "CMake Windows (MinGW)",
+      "state": "SUCCESS",
+      "workflow": "cmake-tests"
+    },
+    {
+      "bucket": "pass",
+      "link": "https://github.com/jeffchen006/zstd/actions/runs/39803297743/job/119909716733",
+      "name": "CMake Windows (Clang-CL)",
+      "state": "SUCCESS",
+      "workflow": "cmake-tests"
+    },
+    {
+      "bucket": "pass",
+      "link": "https://github.com/jeffchen006/zstd/actions/runs/39803297743/job/119909716486",
+      "name": "CMake Windows (MSVC x64 (No ZSTD_BUILD_TESTS))",
+      "state": "SUCCESS",
+      "workflow": "cmake-tests"
+    },
+    {
+      "bucket": "pass",
+      "link": "https://github.com/jeffchen006/zstd/actions/runs/39803297743/job/119909716361",
+      "name": "CMake Windows (MSVC x64)",
+      "state": "SUCCESS",
+      "workflow": "cmake-tests"
+    },
+    {
+      "bucket": "pass",
+      "link": "https://github.com/jeffchen006/zstd/actions/runs/39803297743/job/119909715833",
+      "name": "CMake Cross-Platform (Spaces in Path) (ubuntu-latest, Unix Makefiles, Linux)",
+      "state": "SUCCESS",
+      "workflow": "cmake-tests"
+    },
+    {
+      "bucket": "pass",
+      "link": "https://socket.dev",
+      "name": "Socket Security: Pull Request Alerts",
+      "state": "SUCCESS",
+      "workflow": ""
+    },
+    {
+      "bucket": "pass",
+      "link": "https://socket.dev/dashboard/org/jeffchen006/sbom/05120019-1d97-4a87-a37e-be25f5a60044",
+      "name": "Socket Security: Project Report",
+      "state": "SUCCESS",
+      "workflow": ""
+    },
+    {
+      "bucket": "pass",
+      "link": "https://github.com/jeffchen006/zstd/actions/runs/39803297743/job/119909716195",
+      "name": "CMake Windows (MSVC Win32)",
+      "state": "SUCCESS",
+      "workflow": "cmake-tests"
+    },
+    {
+      "bucket": "pass",
+      "link": "https://github.com/jeffchen006/zstd/actions/runs/39803297743/job/119909716004",
+      "name": "CMake Root Build",
+      "state": "SUCCESS",
+      "workflow": "cmake-tests"
+    },
+    {
+      "bucket": "pass",
+      "link": "https://github.com/jeffchen006/zstd/actions/runs/39803297743/job/119909715838",
+      "name": "CMake macOS ARM64 (Apple Silicon)",
+      "state": "SUCCESS",
+      "workflow": "cmake-tests"
+    },
+    {
+      "bucket": "pass",
+      "link": "https://github.com/jeffchen006/zstd/actions/runs/39803297743/job/119909715294",
+      "name": "CMake build using make wrapper",
+      "state": "SUCCESS",
+      "workflow": "cmake-tests"
+    },
+    {
+      "bucket": "pass",
+      "link": "https://github.com/jeffchen006/zstd/actions/runs/39803297743/job/119909716144",
+      "name": "CMake Windows (Clang-CL AVX2)",
+      "state": "SUCCESS",
+      "workflow": "cmake-tests"
+    },
+    {
+      "bucket": "pass",
+      "link": "https://github.com/jeffchen006/zstd/actions/runs/39803297744/job/119909714164",
+      "name": "short-tests-1",
+      "state": "SUCCESS",
+      "workflow": "facebook/zstd/commit"
+    },
+    {
+      "bucket": "pass",
+      "link": "https://github.com/jeffchen006/zstd/actions/runs/39803297743/job/119909717242",
+      "name": "CMake Cross-Platform (Spaces in Path) (windows-latest, NMake Makefiles, Windows NMake)",
+      "state": "SUCCESS",
+      "workflow": "cmake-tests"
+    },
+    {
+      "bucket": "pass",
+      "link": "https://github.com/jeffchen006/zstd/actions/runs/39803297743/job/119909716075",
+      "name": "CMake Cross-Platform (Spaces in Path) (macos-latest, Unix Makefiles, macOS)",
+      "state": "SUCCESS",
+      "workflow": "cmake-tests"
+    },
+    {
+      "bucket": "pass",
+      "link": "https://github.com/jeffchen006/zstd/actions/runs/39803297743/job/119909716544",
+      "name": "CMake Windows (MSVC ARM64)",
+      "state": "SUCCESS",
+      "workflow": "cmake-tests"
+    },
+    {
+      "bucket": "pass",
+      "link": "https://github.com/jeffchen006/zstd/actions/runs/39803297744/job/119909713702",
+      "name": "short-tests-0",
+      "state": "SUCCESS",
+      "workflow": "facebook/zstd/commit"
+    },
+    {
+      "bucket": "pass",
+      "link": "https://github.com/jeffchen006/zstd/actions/runs/39803297652/job/119909713897",
+      "name": "build",
+      "state": "SUCCESS",
+      "workflow": "Android NDK Build"
+    },
+    {
+      "bucket": "pass",
+      "link": "https://github.com/jeffchen006/zstd/actions/runs/39803297744/job/119909714397",
+      "name": "regression-test",
+      "state": "SUCCESS",
+      "workflow": "facebook/zstd/commit"
+    }
+  ],
+  "strict_clang": {
+    "status": "passed",
+    "job_id": 119910575713,
+    "url": "https://github.com/jeffchen006/zstd/actions/runs/39803297637/job/119910575713",
+    "merge_sha": "1c04092c4597a73dd2eace7afcae62e9f5616a7b",
+    "strict_warning_flags_retained": true,
+    "warning_demotion_absent": true,
+    "baseline_control_passed": true,
+    "candidate_error_count": 0,
+    "candidate_global_warning_count": 0,
+    "candidate_compile_command": "2026-10-22T15:25:57.0901699Z CFLAGS=\"--target=x86_64-w64-mingw32 -Werror -Wconversion -Wno-sign-conversion -Wno-unused-command-line-argument\" make -j allzstd",
+    "baseline": "49cf51799ea051457f57243527aa2058f999f005"
+  }
+}
