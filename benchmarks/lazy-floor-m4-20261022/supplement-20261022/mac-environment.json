@@ -1,0 +1,13 @@
+{
+  "machdep.cpu.brand_string": "Apple M4 Max",
+  "hw.physicalcpu": "14",
+  "hw.logicalcpu": "14",
+  "hw.memsize": "38654705664",
+  "os": "ProductName:\t\tmacOS\nProductVersion:\t\t26.3\nBuildVersion:\t\t25D125\n",
+  "machine": "arm64",
+  "thread_environment": {
+    "ZSTD_NBTHREADS": null,
+    "ZSTD_CLEVEL": null
+  },
+  "controls": "Normal desktop session, uncontrolled CPU placement/frequency/ASLR; CPU-burst guard and independent longer A/A."
+}

@@ -1,0 +1,12 @@
+{
+  "discarded_for_load": 5,
+  "excluded_invalid_scenario_attempts": 10,
+  "wait_guard_records": 163,
+  "reasons": [
+    "CPU scheduling interference or occupied SMT sibling",
+    "CPU scheduling interference or occupied SMT sibling",
+    "CPU scheduling interference or occupied SMT sibling",
+    "CPU scheduling interference or occupied SMT sibling",
+    "CPU scheduling interference or occupied SMT sibling"
+  ]
+}

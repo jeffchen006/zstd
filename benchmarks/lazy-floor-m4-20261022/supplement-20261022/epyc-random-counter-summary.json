@@ -1,0 +1,26 @@
+[
+  {
+    "compiler": "clang14",
+    "pairs": 5,
+    "paired_changes_pct": {
+      "cycles": 2.6881426119003127,
+      "instructions": 0.751475518240996,
+      "branches": -0.01921675500874409,
+      "branch-misses": 0.6371216527982559,
+      "cache-misses": 0.5921055858630897
+    },
+    "scope": "Fixed256MiB repeated-random diagnostic with explicit4MiB window; separate from16MiB in-memory timing."
+  },
+  {
+    "compiler": "gcc11",
+    "pairs": 5,
+    "paired_changes_pct": {
+      "cycles": -0.17314436743377515,
+      "instructions": 0.018007713228884725,
+      "branches": -0.018384537595428352,
+      "branch-misses": -0.09327706015261894,
+      "cache-misses": 0.5254687284155901
+    },
+    "scope": "Fixed256MiB repeated-random diagnostic with explicit4MiB window; separate from16MiB in-memory timing."
+  }
+]

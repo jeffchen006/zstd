@@ -1,0 +1,17 @@
+[
+  {
+    "compiler": "apple-clang17",
+    "case": "silesia-L9",
+    "reason": "Principal L9 claim plus largest screened loss below -1%; independent longer confirmation, selection disclosed before confirmation results."
+  },
+  {
+    "compiler": "apple-clang17",
+    "case": "silesia-L5",
+    "reason": "Principal L9 claim plus largest screened loss below -1%; independent longer confirmation, selection disclosed before confirmation results."
+  },
+  {
+    "compiler": "gcc15",
+    "case": "silesia-L9",
+    "reason": "Principal L9 claim plus largest screened loss below -1%; independent longer confirmation, selection disclosed before confirmation results."
+  }
+]

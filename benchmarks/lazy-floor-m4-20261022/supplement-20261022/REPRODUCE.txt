@@ -1,0 +1,64 @@
+Reproducing the supplemental validation
+
+Exact source:
+- Baseline dev:49cf51799ea051457f57243527aa2058f999f005
+- Candidate:222606cee24d2fc3cb1c514640903a21b6f40dfc
+- Candidate full tree:d821a0cc6f0fc989bc95675bc8b734102382de53
+- The original measured candidate09fd6a001bdb5e30128329334dd4980d5195365c has this identical full tree.
+- The parent evidence directory contains c0002-r0.patch. Applying it to the pinned baseline reconstructs the candidate source without relying on a mutable branch.
+
+Use separate fresh source exports for old/new and each compiler. For example, clone upstream, export the pinned baseline with git archive into two new directories, and apply the evidence patch only in the candidate directory. The experiment used separately extracted immutable source archives, whose hashes are in source-archives.json. Do not reuse object files across configurations.
+
+Build each copy with the selected compiler:
+  make -j4 zstd CC=/absolute/path/to/compiler CFLAGS=-O3 DEBUGLEVEL=0 HAVE_ZLIB=0 HAVE_LZMA=0 HAVE_LZ4=0
+  make -C tests -j4 fullbench CC=/absolute/path/to/compiler CFLAGS=-O3 DEBUGLEVEL=0
+
+Compiler configurations:
+- Mac AppleClang17.0.0(clang-1700.6.3.2)
+- Mac HomebrewGCC15.2.0_1
+- Linux UbuntuClang14.0.0
+- Linux GCC11.4.0
+Actual commands, versions, binary hashes and size outputs are in *-builds.json. Keep compiler settings identical within each old/new pair.
+
+Inputs:
+- Full12-file Silesia,211938580bytes, individually verified against the parent corpus-files.json. Concatenate in alphabetical order; this is NOT a tar archive.
+- Official enwik8,100000000bytes, MD5a1fa5ffddb56f4953e226637dabbb36a, from https://mattmahoney.net/dc/enwik8.zip . Check its decompressed MD5, not the zip hash.
+- Python3.9+ random.Random(221022).randbytes(16*1024*1024).
+- Mixed input:first8MiB of that random input followed by first8MiB of enwik8.
+- Raw dictionary cases:first64KiB of dickens/xml as dictionary, following4MiB as input, split into independent32KiB chunks for timing. Full4MiB frames are separately checked for byte equivalence and decoding.
+
+Portable recheck, one compiler configuration at a time:
+  python3 reproduce_supplement.py --baseline /path/to/old/zstd --candidate /path/to/new/zstd --silesia /path/to/silesia --enwik8 /path/to/enwik8 --corpus-manifest /path/to/evidence/corpus-files.json --out /new/recheck-directory --rounds 3 --seconds 2 --with-raw-dictionary --baseline-fullbench /path/to/old/tests/fullbench --candidate-fullbench /path/to/new/tests/fullbench
+
+The helper uses alternating old/new order. The original screen interleaved two compilers; this portable recheck runs one compiler at a time, so its chronological schedule is not identical. It removes ZSTD_NBTHREADS/ZSTD_CLEVEL only from its child environment. No system settings or other jobs are changed.
+
+Bounded smoke only, excluded from performance claims:
+  python3 reproduce_supplement.py --baseline /path/to/old/zstd --candidate /path/to/new/zstd --silesia /path/to/silesia --enwik8 /path/to/enwik8 --corpus-manifest /path/to/evidence/corpus-files.json --out /new/smoke-directory --with-raw-dictionary --case rawdict-xml-L9 --rounds 1 --seconds 1 --skip-aa
+This smoke was run successfully on the Mac after all its timed phases finished; its timings are excluded. It checked the portable input/patch-binary paths, full-input dictionary equivalence/roundtrips, real benchmark output parsing and raw-result writing.
+
+Independent longer confirmation:
+Select a named case with --case, --rounds 5 --seconds 5 --skip-aa. The experiment always confirmed silesia-L9 and the worst screened loss below-1% for each compiler, using fresh samples. This selection rule was written before the confirmation results. Three original L6 file-loss cases use five pairs at-i5.
+
+Same-binary controls:
+Use the SAME baseline executable for both --baseline and --candidate, with --case silesia-L9 --rounds 5 --seconds 5 --skip-aa. The x86 random-data concern also has five data-matched A/A pairs on random16MiB-L9. Do not use a Silesia-only noise estimate as proof of random-data stability. The initial Mac A/A overlapped data staging and is excluded; the later controls are separate. All other recorded values, including large outliers, remain in the evidence.
+
+Streaming scenario:
+In this pinned source, tests/fullbench.c kScenarios index7 is compressStream:
+  tests/fullbench -b7 -l9 -i3 enwik8-first-1024
+The historical mergedPR #3543 used-b41. ID41 no longer exists and silently returns0 without a timing. Require a nonempty compressStream result and no validation failure; returncode0 alone is insufficient.
+
+Linux placement/load controls:
+This experiment used taskset -c62, with SMT sibling158 idle, and rejected timing samples when the benchmark process received less than93% scheduled CPU or its sibling was more than10% busy. Choose an appropriate available core for a new machine; do not blindly use these CPU numbers. No unrelated job was paused and no governor/boost/ASLR setting changed. A shared host still has uncontrolled cache, memory and frequency variation.
+
+Fixed-work counters (NOT adaptive-loop instruction totals):
+  taskset -c62 perf stat -x, -e cycles,instructions,branches,branch-misses,cache-misses,context-switches,cpu-migrations /path/to/zstd -q -9 --single-thread --no-asyncio --no-check -c silesia-all > /dev/null
+Run five alternating pairs with the same fixed input. Ordinary CLI default worker counts differ from benchmark defaults, so --single-thread is explicit. Earlier exploratory counter runs without the explicit flag are excluded from the final mechanism evidence.
+The random-data instruction diagnostic repeats the seeded16MiB source16times(256MiB) and uses --zstd=wlog=22. The explicit4MiB window prevents matching the16MiB repetition distance and matches default level9's window in this pinned source. This is a diagnostic workload, not another sample of the original16MiB throughput experiment.
+
+Profiling:
+Mac native sample captured5seconds of each baseline/candidate's level9 compression while zstd -b9 -i10 ran. Linux perf record sampled the GCC11 random-data benchmark's actual hot functions. Profile/counter invocations are excluded from throughput summaries; adaptive-loop profile sample counts are not used as instruction-count ratios.
+
+Local static analysis:
+Use fresh separate source exports and the official LLVM scan-build wrapper pinned llvmorg-20.1.8 with the installed AppleClang17 analyzer. Supply CC through the ENVIRONMENT so recursive make permits interception:
+  env CC=/path/to/clang make staticAnalyze 'SCANBUILD=/path/to/scan-build --use-analyzer=/path/to/clang --use-cc=/path/to/clang -v -v --keep-empty -o /new/analysis-reports'
+Check real clang-cc1 -analyze invocations, including zstd_lazy.c, and diagnostics. A build that is already up to date or a command-line CC override can yield a misleading no-bugs wrapper message without analyzing the source. Our actual runs analyzed41units each and all exit2 with the same12inherited diagnostics; no new reports. No checker was disabled to turn this into a clean pass.

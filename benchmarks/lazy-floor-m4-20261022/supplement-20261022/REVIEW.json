@@ -1,0 +1,12 @@
+{
+  "status": "reviewed",
+  "raw_cli_stdout_records_independently_reparsed": 946,
+  "all_summary_correctness_gates_passed": true,
+  "streaming_sizes_equal_in_all_16_configurations": true,
+  "counter_events_not_multiplexed_below_99_percent": true,
+  "counter_cpu_migrations_zero": true,
+  "counter_smt_interference_below_1_percent": true,
+  "privacy_scan_passed": true,
+  "static_analysis_not_a_clean_pass": true,
+  "recommendation": "Hold generic optimization; observed x86 benchmark slowdown with unresolved mechanism; disclose in RFC/draft."
+}

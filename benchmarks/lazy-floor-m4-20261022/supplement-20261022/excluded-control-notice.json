@@ -1,0 +1,8 @@
+{
+  "excluded_cases": [
+    "AA-silesia-L9"
+  ],
+  "scope": "Mac initial same-binary controls only; kept in raw data but excluded from final calibration.",
+  "reason": "Data staging to the EPYC host overlapped the initial Mac calibration window. Main candidate/baseline pairs began after staging finished.",
+  "replacement": "final_noise_controls.py, after expanded-completed.json; five -i5 pairs for each Mac compiler."
+}

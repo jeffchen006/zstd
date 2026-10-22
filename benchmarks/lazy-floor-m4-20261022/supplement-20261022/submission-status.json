@@ -1,0 +1,20 @@
+{
+  "verified_at": "2026-10-22T19:20:40.888263+00:00",
+  "fork_pr": {
+    "baseRefOid": "ca4a53be4541f94a56b1da8fc22f04ba22757119",
+    "headRefOid": "222606cee24d2fc3cb1c514640903a21b6f40dfc",
+    "isDraft": true,
+    "state": "OPEN"
+  },
+  "successful_checks": 106,
+  "successful_workflow_jobs": 104,
+  "upstream_dev": "49cf51799ea051457f57243527aa2058f999f005",
+  "upstream_pr_for_optimization": [],
+  "CLA": "Contributor confirmed signed; no upstream PR CLA status exists yet",
+  "source_changes_during_supplement": false,
+  "review_recommendation": "Hold generic optimization; RFC/draft only with regressions disclosed; separate compatibility fixes remain prepared",
+  "other_successful_checks": [
+    "Socket Security: Project Report",
+    "Socket Security: Pull Request Alerts"
+  ]
+}

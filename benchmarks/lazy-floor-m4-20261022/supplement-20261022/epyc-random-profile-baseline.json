@@ -1,0 +1,24 @@
+{
+  "label": "baseline",
+  "command": [
+    "taskset",
+    "-c",
+    "62",
+    "perf",
+    "record",
+    "-q",
+    "-F",
+    "199",
+    "-o",
+    "$EPYC_RUN/random-profile-baseline.data",
+    "$EPYC_RUN/bench-source-gcc11-baseline/zstd",
+    "-q",
+    "-b9",
+    "-i5",
+    "$EPYC_RUN/data/random16MiB"
+  ],
+  "returncode": 0,
+  "stderr": "Couldn't record kernel reference relocation symbol\nSymbol resolution may be skewed if relocation was used (e.g. kexec).\nCheck /proc/kallsyms permission or run as root.\n",
+  "report_returncode": 0,
+  "excluded_from_timing": true
+}

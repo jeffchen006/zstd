@@ -1,0 +1,5 @@
+{"time": 1792691269.64348, "jobs": [{"pid": 66960, "cpu": 160.6, "command": "[background command redacted]"}]}
+{"time": 1792691326.675318, "jobs": [{"pid": 69205, "cpu": 379.6, "command": "[background command redacted]"}]}
+{"time": 1792691664.460877, "jobs": [{"pid": 56236, "cpu": 165.2, "command": "[background command redacted]"}]}
+{"time": 1792692165.874053, "jobs": [{"pid": 46831, "cpu": 155.4, "command": "[background command redacted]"}]}
+{"time": 1792693512.532966, "jobs": [{"pid": 54887, "cpu": 338.9, "command": "[background command redacted]"}]}

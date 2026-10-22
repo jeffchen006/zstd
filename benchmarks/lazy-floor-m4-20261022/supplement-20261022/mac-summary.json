@@ -1,0 +1,3248 @@
+{
+  "cli": [
+    {
+      "compiler": "apple-clang17",
+      "case": "AA-silesia-L9",
+      "pairs": 3,
+      "compression_change_pct": 1.2933264355923457,
+      "compression_min_pair_pct": -0.7865892972275912,
+      "compression_max_pair_pct": 2.117676895764653,
+      "decompression_change_pct": 1.4266544247474977,
+      "baseline_compression_mbps": 77.55,
+      "candidate_compression_mbps": 78.32,
+      "baseline_decompression_mbps": 1422.9,
+      "candidate_decompression_mbps": 1450.9,
+      "compressed_bytes": 59073803,
+      "pair_details": [
+        {
+          "round": 0,
+          "c_ratio": 0.9921341070277241,
+          "d_ratio": 1.014266544247475,
+          "baseline_c": 77.55,
+          "candidate_c": 76.94,
+          "baseline_d": 1415.9,
+          "candidate_d": 1436.1,
+          "compressed_bytes": 59073803
+        },
+        {
+          "round": 1,
+          "c_ratio": 1.0129332643559235,
+          "d_ratio": 1.0005516860906145,
+          "baseline_c": 77.32,
+          "candidate_c": 78.32,
+          "baseline_d": 1450.1,
+          "candidate_d": 1450.9,
+          "compressed_bytes": 59073803
+        },
+        {
+          "round": 2,
+          "c_ratio": 1.0211767689576465,
+          "d_ratio": 1.0267060229109566,
+          "baseline_c": 78.86,
+          "candidate_c": 80.53,
+          "baseline_d": 1422.9,
+          "candidate_d": 1460.9,
+          "compressed_bytes": 59073803
+        }
+      ]
+    },
+    {
+      "compiler": "apple-clang17",
+      "case": "confirm-osdb-L6",
+      "pairs": 5,
+      "compression_change_pct": -0.5372158206166322,
+      "compression_min_pair_pct": -1.1473618482672476,
+      "compression_max_pair_pct": -0.2725856697819218,
+      "decompression_change_pct": 0.6739243131155925,
+      "baseline_compression_mbps": 128.44,
+      "candidate_compression_mbps": 128.01,
+      "baseline_decompression_mbps": 1542.7,
+      "candidate_decompression_mbps": 1552.3,
+      "compressed_bytes": 3395739,
+      "pair_details": [
+        {
+          "round": 0,
+          "c_ratio": 0.9885263815173275,
+          "d_ratio": 1.006739243131156,
+          "baseline_c": 128.12,
+          "candidate_c": 126.65,
+          "baseline_d": 1543.2,
+          "candidate_d": 1553.6,
+          "compressed_bytes": 3395739
+        },
+        {
+          "round": 1,
+          "c_ratio": 0.9972741433021808,
+          "d_ratio": 1.0042765502494655,
+          "baseline_c": 128.4,
+          "candidate_c": 128.05,
+          "baseline_d": 1543.3,
+          "candidate_d": 1549.9,
+          "compressed_bytes": 3395739
+        },
+        {
+          "round": 2,
+          "c_ratio": 0.9946278417938337,
+          "d_ratio": 1.0073896415375638,
+          "baseline_c": 128.44,
+          "candidate_c": 127.75,
+          "baseline_d": 1542.7,
+          "candidate_d": 1554.1,
+          "compressed_bytes": 3395739
+        },
+        {
+          "round": 3,
+          "c_ratio": 0.9969701678060908,
+          "d_ratio": 1.0025280352628507,
+          "baseline_c": 128.72,
+          "candidate_c": 128.33,
+          "baseline_d": 1542.7,
+          "candidate_d": 1546.6,
+          "compressed_bytes": 3395739
+        },
+        {
+          "round": 4,
+          "c_ratio": 0.9901763613861385,
+          "d_ratio": 1.007463655244029,
+          "baseline_c": 129.28,
+          "candidate_c": 128.01,
+          "baseline_d": 1540.8,
+          "candidate_d": 1552.3,
+          "compressed_bytes": 3395739
+        }
+      ]
+    },
+    {
+      "compiler": "apple-clang17",
+      "case": "confirm-sao-L6",
+      "pairs": 5,
+      "compression_change_pct": -1.0237068965517238,
+      "compression_min_pair_pct": -1.7024027583234513,
+      "compression_max_pair_pct": 0.5308560053085554,
+      "decompression_change_pct": 0.08359456635318452,
+      "baseline_compression_mbps": 92.81,
+      "candidate_compression_mbps": 91.57,
+      "baseline_decompression_mbps": 956.8,
+      "candidate_decompression_mbps": 956.8,
+      "compressed_bytes": 5272383,
+      "pair_details": [
+        {
+          "round": 0,
+          "c_ratio": 1.0053085600530856,
+          "d_ratio": 1.0089428297668477,
+          "baseline_c": 90.42,
+          "candidate_c": 90.9,
+          "baseline_d": 939.3,
+          "candidate_d": 947.7,
+          "compressed_bytes": 5272383
+        },
+        {
+          "round": 1,
+          "c_ratio": 0.9911723543976746,
+          "d_ratio": 1.0,
+          "baseline_c": 92.89,
+          "candidate_c": 92.07,
+          "baseline_d": 956.8,
+          "candidate_d": 956.8,
+          "compressed_bytes": 5272383
+        },
+        {
+          "round": 2,
+          "c_ratio": 0.9829759724167655,
+          "d_ratio": 0.9993731717509402,
+          "baseline_c": 92.81,
+          "candidate_c": 91.23,
+          "baseline_d": 957.2,
+          "candidate_d": 956.6,
+          "compressed_bytes": 5272383
+        },
+        {
+          "round": 3,
+          "c_ratio": 0.9852593070798364,
+          "d_ratio": 1.0008359456635318,
+          "baseline_c": 92.94,
+          "candidate_c": 91.57,
+          "baseline_d": 957.0,
+          "candidate_d": 957.8,
+          "compressed_bytes": 5272383
+        },
+        {
+          "round": 4,
+          "c_ratio": 0.9897629310344828,
+          "d_ratio": 1.001778614772965,
+          "baseline_c": 92.8,
+          "candidate_c": 91.85,
+          "baseline_d": 955.8,
+          "candidate_d": 957.5,
+          "compressed_bytes": 5272383
+        }
+      ]
+    },
+    {
+      "compiler": "apple-clang17",
+      "case": "confirm-x-ray-L6",
+      "pairs": 5,
+      "compression_change_pct": -1.1824832147509845,
+      "compression_min_pair_pct": -4.751858549326904,
+      "compression_max_pair_pct": 0.4978662873399653,
+      "decompression_change_pct": 0.22003624126325505,
+      "baseline_compression_mbps": 99.38,
+      "candidate_compression_mbps": 98.46,
+      "baseline_decompression_mbps": 773.4,
+      "candidate_decompression_mbps": 775.8,
+      "compressed_bytes": 5551501,
+      "pair_details": [
+        {
+          "round": 0,
+          "c_ratio": 0.9881751678524902,
+          "d_ratio": 1.0001289158179707,
+          "baseline_c": 99.79,
+          "candidate_c": 98.61,
+          "baseline_d": 775.7,
+          "candidate_d": 775.8,
+          "compressed_bytes": 5551501
+        },
+        {
+          "round": 1,
+          "c_ratio": 0.9907426041457034,
+          "d_ratio": 1.0054193548387098,
+          "baseline_c": 99.38,
+          "candidate_c": 98.46,
+          "baseline_d": 775.0,
+          "candidate_d": 779.2,
+          "compressed_bytes": 5551501
+        },
+        {
+          "round": 2,
+          "c_ratio": 1.0049786628733997,
+          "d_ratio": 1.0075168481078278,
+          "baseline_c": 98.42,
+          "candidate_c": 98.91,
+          "baseline_d": 771.6,
+          "candidate_d": 777.4,
+          "compressed_bytes": 5551501
+        },
+        {
+          "round": 3,
+          "c_ratio": 0.952481414506731,
+          "d_ratio": 0.982803206620119,
+          "baseline_c": 99.54,
+          "candidate_c": 94.81,
+          "baseline_d": 773.4,
+          "candidate_d": 760.1,
+          "compressed_bytes": 5551501
+        },
+        {
+          "round": 4,
+          "c_ratio": 0.9841845471945201,
+          "d_ratio": 1.0022003624126326,
+          "baseline_c": 99.27,
+          "candidate_c": 97.7,
+          "baseline_d": 772.6,
+          "candidate_d": 774.3,
+          "compressed_bytes": 5551501
+        }
+      ]
+    },
+    {
+      "compiler": "apple-clang17",
+      "case": "enwik8-L12",
+      "pairs": 3,
+      "compression_change_pct": 1.4679556032939578,
+      "compression_min_pair_pct": -0.9531374106433566,
+      "compression_max_pair_pct": 2.3954236682159458,
+      "decompression_change_pct": 0.29425429766145594,
+      "baseline_compression_mbps": 27.93,
+      "candidate_compression_mbps": 28.34,
+      "baseline_decompression_mbps": 1291.4,
+      "candidate_decompression_mbps": 1295.2,
+      "compressed_bytes": 30339024,
+      "pair_details": [
+        {
+          "round": 0,
+          "c_ratio": 0.9904686258935664,
+          "d_ratio": 1.012542854753742,
+          "baseline_c": 25.18,
+          "candidate_c": 24.94,
+          "baseline_d": 1195.9,
+          "candidate_d": 1210.9,
+          "compressed_bytes": 30339024
+        },
+        {
+          "round": 1,
+          "c_ratio": 1.0239542366821595,
+          "d_ratio": 0.998459049233377,
+          "baseline_c": 27.97,
+          "candidate_c": 28.64,
+          "baseline_d": 1297.9,
+          "candidate_d": 1295.9,
+          "compressed_bytes": 30339024
+        },
+        {
+          "round": 2,
+          "c_ratio": 1.0146795560329396,
+          "d_ratio": 1.0029425429766146,
+          "baseline_c": 27.93,
+          "candidate_c": 28.34,
+          "baseline_d": 1291.4,
+          "candidate_d": 1295.2,
+          "compressed_bytes": 30339024
+        }
+      ]
+    },
+    {
+      "compiler": "apple-clang17",
+      "case": "enwik8-L13",
+      "pairs": 3,
+      "compression_change_pct": 0.7853403141361293,
+      "compression_min_pair_pct": -1.9206145966709331,
+      "compression_max_pair_pct": 3.038309114927329,
+      "decompression_change_pct": 0.10297845373890002,
+      "baseline_compression_mbps": 7.64,
+      "candidate_compression_mbps": 7.7,
+      "baseline_decompression_mbps": 1254.5,
+      "candidate_decompression_mbps": 1263.2,
+      "compressed_bytes": 29967212,
+      "pair_details": [
+        {
+          "round": 0,
+          "c_ratio": 1.0303830911492733,
+          "d_ratio": 1.0069350338780392,
+          "baseline_c": 7.57,
+          "candidate_c": 7.8,
+          "baseline_d": 1254.5,
+          "candidate_d": 1263.2,
+          "compressed_bytes": 29967212
+        },
+        {
+          "round": 1,
+          "c_ratio": 0.9807938540332907,
+          "d_ratio": 1.001029784537389,
+          "baseline_c": 7.81,
+          "candidate_c": 7.66,
+          "baseline_d": 1262.4,
+          "candidate_d": 1263.7,
+          "compressed_bytes": 29967212
+        },
+        {
+          "round": 2,
+          "c_ratio": 1.0078534031413613,
+          "d_ratio": 0.9964870259481037,
+          "baseline_c": 7.64,
+          "candidate_c": 7.7,
+          "baseline_d": 1252.5,
+          "candidate_d": 1248.1,
+          "compressed_bytes": 29967212
+        }
+      ]
+    },
+    {
+      "compiler": "apple-clang17",
+      "case": "enwik8-L5",
+      "pairs": 3,
+      "compression_change_pct": 0.22844958879075783,
+      "compression_min_pair_pct": -0.11381743683133161,
+      "compression_max_pair_pct": 0.2366050984582424,
+      "decompression_change_pct": 0.037268238144050336,
+      "baseline_compression_mbps": 131.32,
+      "candidate_compression_mbps": 131.62,
+      "baseline_decompression_mbps": 1073.3,
+      "candidate_decompression_mbps": 1073.7,
+      "compressed_bytes": 33699396,
+      "pair_details": [
+        {
+          "round": 0,
+          "c_ratio": 1.0022844958879076,
+          "d_ratio": 1.0035543915442897,
+          "baseline_c": 131.32,
+          "candidate_c": 131.62,
+          "baseline_d": 1069.1,
+          "candidate_d": 1072.9,
+          "compressed_bytes": 33699396
+        },
+        {
+          "round": 1,
+          "c_ratio": 1.0023660509845824,
+          "d_ratio": 0.9987906976744186,
+          "baseline_c": 131.02,
+          "candidate_c": 131.33,
+          "baseline_d": 1075.0,
+          "candidate_d": 1073.7,
+          "compressed_bytes": 33699396
+        },
+        {
+          "round": 2,
+          "c_ratio": 0.9988618256316867,
+          "d_ratio": 1.0003726823814405,
+          "baseline_c": 131.79,
+          "candidate_c": 131.64,
+          "baseline_d": 1073.3,
+          "candidate_d": 1073.7,
+          "compressed_bytes": 33699396
+        }
+      ]
+    },
+    {
+      "compiler": "apple-clang17",
+      "case": "enwik8-L6",
+      "pairs": 3,
+      "compression_change_pct": -0.2900167317345326,
+      "compression_min_pair_pct": -0.49134561697375956,
+      "compression_max_pair_pct": 1.441116865570824,
+      "decompression_change_pct": -0.41696238466998325,
+      "baseline_compression_mbps": 89.55,
+      "candidate_compression_mbps": 89.39,
+      "baseline_decompression_mbps": 1120.6,
+      "candidate_decompression_mbps": 1120.2,
+      "compressed_bytes": 32612520,
+      "pair_details": [
+        {
+          "round": 0,
+          "c_ratio": 0.9970998326826547,
+          "d_ratio": 0.9958303761533002,
+          "baseline_c": 89.65,
+          "candidate_c": 89.39,
+          "baseline_d": 1127.2,
+          "candidate_d": 1122.5,
+          "compressed_bytes": 32612520
+        },
+        {
+          "round": 1,
+          "c_ratio": 1.0144111686557082,
+          "d_ratio": 0.9935748706050331,
+          "baseline_c": 88.82,
+          "candidate_c": 90.1,
+          "baseline_d": 1120.6,
+          "candidate_d": 1113.4,
+          "compressed_bytes": 32612520
+        },
+        {
+          "round": 2,
+          "c_ratio": 0.9950865438302624,
+          "d_ratio": 1.0032240730789899,
+          "baseline_c": 89.55,
+          "candidate_c": 89.11,
+          "baseline_d": 1116.6,
+          "candidate_d": 1120.2,
+          "compressed_bytes": 32612520
+        }
+      ]
+    },
+    {
+      "compiler": "apple-clang17",
+      "case": "enwik8-L7",
+      "pairs": 3,
+      "compression_change_pct": -0.7485802787816187,
+      "compression_min_pair_pct": -2.767857142857144,
+      "compression_max_pair_pct": 0.168721609344602,
+      "decompression_change_pct": -2.0291095890411004,
+      "baseline_compression_mbps": 77.48,
+      "candidate_compression_mbps": 76.9,
+      "baseline_decompression_mbps": 1154.5,
+      "candidate_decompression_mbps": 1142.0,
+      "compressed_bytes": 31981436,
+      "pair_details": [
+        {
+          "round": 0,
+          "c_ratio": 0.9723214285714286,
+          "d_ratio": 0.979708904109589,
+          "baseline_c": 78.4,
+          "candidate_c": 76.23,
+          "baseline_d": 1168.0,
+          "candidate_d": 1144.3,
+          "compressed_bytes": 31981436
+        },
+        {
+          "round": 1,
+          "c_ratio": 0.9925141972121838,
+          "d_ratio": 0.970677803880623,
+          "baseline_c": 77.48,
+          "candidate_c": 76.9,
+          "baseline_d": 1149.3,
+          "candidate_d": 1115.6,
+          "compressed_bytes": 31981436
+        },
+        {
+          "round": 2,
+          "c_ratio": 1.001687216093446,
+          "d_ratio": 0.989172802078822,
+          "baseline_c": 77.05,
+          "candidate_c": 77.18,
+          "baseline_d": 1154.5,
+          "candidate_d": 1142.0,
+          "compressed_bytes": 31981436
+        }
+      ]
+    },
+    {
+      "compiler": "apple-clang17",
+      "case": "enwik8-L9",
+      "pairs": 3,
+      "compression_change_pct": 4.057971014492745,
+      "compression_min_pair_pct": 2.3622047244094446,
+      "compression_max_pair_pct": 4.4395924308588075,
+      "decompression_change_pct": 0.3234903782349141,
+      "baseline_compression_mbps": 55.2,
+      "candidate_compression_mbps": 57.4,
+      "baseline_decompression_mbps": 1205.6,
+      "candidate_decompression_mbps": 1206.5,
+      "compressed_bytes": 31076602,
+      "pair_details": [
+        {
+          "round": 0,
+          "c_ratio": 1.0236220472440944,
+          "d_ratio": 1.0032349037823491,
+          "baseline_c": 55.88,
+          "candidate_c": 57.2,
+          "baseline_d": 1205.6,
+          "candidate_d": 1209.5,
+          "compressed_bytes": 31076602
+        },
+        {
+          "round": 1,
+          "c_ratio": 1.0405797101449274,
+          "d_ratio": 0.9998342587221347,
+          "baseline_c": 55.2,
+          "candidate_c": 57.44,
+          "baseline_d": 1206.7,
+          "candidate_d": 1206.5,
+          "compressed_bytes": 31076602
+        },
+        {
+          "round": 2,
+          "c_ratio": 1.044395924308588,
+          "d_ratio": 1.0087866108786612,
+          "baseline_c": 54.96,
+          "candidate_c": 57.4,
+          "baseline_d": 1195.0,
+          "candidate_d": 1205.5,
+          "compressed_bytes": 31076602
+        }
+      ]
+    },
+    {
+      "compiler": "apple-clang17",
+      "case": "mixed-L6",
+      "pairs": 3,
+      "compression_change_pct": 0.17142857142857792,
+      "compression_min_pair_pct": -0.5011960359949996,
+      "compression_max_pair_pct": 0.6445672191528473,
+      "decompression_change_pct": 0.7452450621799667,
+      "baseline_compression_mbps": 175.0,
+      "candidate_compression_mbps": 174.88,
+      "baseline_decompression_mbps": 2187.2,
+      "candidate_decompression_mbps": 2197.2,
+      "compressed_bytes": 11148798,
+      "pair_details": [
+        {
+          "round": 0,
+          "c_ratio": 0.99498803964005,
+          "d_ratio": 0.985048852533515,
+          "baseline_c": 175.58,
+          "candidate_c": 174.7,
+          "baseline_d": 2200.5,
+          "candidate_d": 2167.6,
+          "compressed_bytes": 11148798
+        },
+        {
+          "round": 1,
+          "c_ratio": 1.0017142857142858,
+          "d_ratio": 1.0141235114926612,
+          "baseline_c": 175.0,
+          "candidate_c": 175.3,
+          "baseline_d": 2166.6,
+          "candidate_d": 2197.2,
+          "compressed_bytes": 11148798
+        },
+        {
+          "round": 2,
+          "c_ratio": 1.0064456721915285,
+          "d_ratio": 1.0074524506217997,
+          "baseline_c": 173.76,
+          "candidate_c": 174.88,
+          "baseline_d": 2187.2,
+          "candidate_d": 2203.5,
+          "compressed_bytes": 11148798
+        }
+      ]
+    },
+    {
+      "compiler": "apple-clang17",
+      "case": "mixed-L9",
+      "pairs": 3,
+      "compression_change_pct": 2.670623145400608,
+      "compression_min_pair_pct": 2.621621621621628,
+      "compression_max_pair_pct": 3.1481147393108477,
+      "decompression_change_pct": 0.2681649853147672,
+      "baseline_compression_mbps": 111.0,
+      "candidate_compression_mbps": 114.18,
+      "baseline_decompression_mbps": 2349.3,
+      "candidate_decompression_mbps": 2355.4,
+      "compressed_bytes": 11033108,
+      "pair_details": [
+        {
+          "round": 0,
+          "c_ratio": 1.0262162162162163,
+          "d_ratio": 1.0026816498531477,
+          "baseline_c": 111.0,
+          "candidate_c": 113.91,
+          "baseline_d": 2349.3,
+          "candidate_d": 2355.6,
+          "compressed_bytes": 11033108
+        },
+        {
+          "round": 1,
+          "c_ratio": 1.026706231454006,
+          "d_ratio": 1.0048206134550575,
+          "baseline_c": 111.21,
+          "candidate_c": 114.18,
+          "baseline_d": 2344.1,
+          "candidate_d": 2355.4,
+          "compressed_bytes": 11033108
+        },
+        {
+          "round": 2,
+          "c_ratio": 1.0314811473931085,
+          "d_ratio": 0.999957524529584,
+          "baseline_c": 110.86,
+          "candidate_c": 114.35,
+          "baseline_d": 2354.3,
+          "candidate_d": 2354.2,
+          "compressed_bytes": 11033108
+        }
+      ]
+    },
+    {
+      "compiler": "apple-clang17",
+      "case": "random16MiB-L12",
+      "pairs": 3,
+      "compression_change_pct": -0.0399139327151965,
+      "compression_min_pair_pct": -1.9470939726840775,
+      "compression_max_pair_pct": 1.5915884667776714,
+      "decompression_change_pct": -0.06881750107129436,
+      "baseline_compression_mbps": 2155.52,
+      "candidate_compression_mbps": 2147.89,
+      "baseline_decompression_mbps": 55073.2,
+      "candidate_decompression_mbps": 55035.3,
+      "compressed_bytes": 16777610,
+      "pair_details": [
+        {
+          "round": 0,
+          "c_ratio": 0.999600860672848,
+          "d_ratio": 0.9993118249892871,
+          "baseline_c": 2179.69,
+          "candidate_c": 2178.82,
+          "baseline_d": 55073.2,
+          "candidate_d": 55035.3,
+          "compressed_bytes": 16777610
+        },
+        {
+          "round": 1,
+          "c_ratio": 1.0159158846677767,
+          "d_ratio": 0.996817924003472,
+          "baseline_c": 2114.24,
+          "candidate_c": 2147.89,
+          "baseline_d": 55184.1,
+          "candidate_d": 55008.5,
+          "compressed_bytes": 16777610
+        },
+        {
+          "round": 2,
+          "c_ratio": 0.9805290602731592,
+          "d_ratio": 1.0029829868018276,
+          "baseline_c": 2155.52,
+          "candidate_c": 2113.55,
+          "baseline_d": 55045.5,
+          "candidate_d": 55209.7,
+          "compressed_bytes": 16777610
+        }
+      ]
+    },
+    {
+      "compiler": "apple-clang17",
+      "case": "random16MiB-L13",
+      "pairs": 3,
+      "compression_change_pct": -0.7793811250868088,
+      "compression_min_pair_pct": -1.3334700994973803,
+      "compression_max_pair_pct": 0.7043534762833037,
+      "decompression_change_pct": -0.3468681718863831,
+      "baseline_compression_mbps": 388.77,
+      "candidate_compression_mbps": 385.74,
+      "baseline_decompression_mbps": 54936.4,
+      "candidate_decompression_mbps": 54729.5,
+      "compressed_bytes": 16777610,
+      "pair_details": [
+        {
+          "round": 0,
+          "c_ratio": 0.9922061887491319,
+          "d_ratio": 0.9965313182811362,
+          "baseline_c": 388.77,
+          "candidate_c": 385.74,
+          "baseline_d": 54920.0,
+          "candidate_d": 54729.5,
+          "compressed_bytes": 16777610
+        },
+        {
+          "round": 1,
+          "c_ratio": 0.9866652990050262,
+          "d_ratio": 0.9924318869828456,
+          "baseline_c": 389.96,
+          "candidate_c": 384.76,
+          "baseline_d": 55099.6,
+          "candidate_d": 54682.6,
+          "compressed_bytes": 16777610
+        },
+        {
+          "round": 2,
+          "c_ratio": 1.007043534762833,
+          "d_ratio": 0.9979430759933304,
+          "baseline_c": 384.75,
+          "candidate_c": 387.46,
+          "baseline_d": 54936.4,
+          "candidate_d": 54823.4,
+          "compressed_bytes": 16777610
+        }
+      ]
+    },
+    {
+      "compiler": "apple-clang17",
+      "case": "random16MiB-L5",
+      "pairs": 3,
+      "compression_change_pct": -0.40780284177570625,
+      "compression_min_pair_pct": -1.9263391063824908,
+      "compression_max_pair_pct": -0.04705828340564322,
+      "decompression_change_pct": 0.391286882851305,
+      "baseline_compression_mbps": 4356.45,
+      "candidate_compression_mbps": 4342.17,
+      "baseline_decompression_mbps": 54768.0,
+      "candidate_decompression_mbps": 54904.0,
+      "compressed_bytes": 16777610,
+      "pair_details": [
+        {
+          "round": 0,
+          "c_ratio": 0.9959219715822429,
+          "d_ratio": 1.003912868828513,
+          "baseline_c": 4359.95,
+          "candidate_c": 4342.17,
+          "baseline_d": 54768.0,
+          "candidate_d": 54982.3,
+          "compressed_bytes": 16777610
+        },
+        {
+          "round": 1,
+          "c_ratio": 0.9995294171659436,
+          "d_ratio": 1.0073019484093495,
+          "baseline_c": 4356.3,
+          "candidate_c": 4354.25,
+          "baseline_d": 54506.0,
+          "candidate_d": 54904.0,
+          "compressed_bytes": 16777610
+        },
+        {
+          "round": 2,
+          "c_ratio": 0.9807366089361751,
+          "d_ratio": 0.9956115203506414,
+          "baseline_c": 4356.45,
+          "candidate_c": 4272.53,
+          "baseline_d": 54939.3,
+          "candidate_d": 54698.2,
+          "compressed_bytes": 16777610
+        }
+      ]
+    },
+    {
+      "compiler": "apple-clang17",
+      "case": "random16MiB-L6",
+      "pairs": 3,
+      "compression_change_pct": -0.31900859847375784,
+      "compression_min_pair_pct": -0.5732757934296173,
+      "compression_max_pair_pct": 1.2216769582999332,
+      "decompression_change_pct": 0.0521208255501282,
+      "baseline_compression_mbps": 4395.79,
+      "candidate_compression_mbps": 4390.22,
+      "baseline_decompression_mbps": 54872.5,
+      "candidate_decompression_mbps": 54901.1,
+      "compressed_bytes": 16777610,
+      "pair_details": [
+        {
+          "round": 0,
+          "c_ratio": 0.9942672420657038,
+          "d_ratio": 0.9913949611470008,
+          "baseline_c": 4395.79,
+          "candidate_c": 4370.59,
+          "baseline_d": 55246.7,
+          "candidate_d": 54771.3,
+          "compressed_bytes": 16777610
+        },
+        {
+          "round": 1,
+          "c_ratio": 0.9968099140152624,
+          "d_ratio": 1.0005212082555013,
+          "baseline_c": 4404.27,
+          "candidate_c": 4390.22,
+          "baseline_d": 54872.5,
+          "candidate_d": 54901.1,
+          "compressed_bytes": 16777610
+        },
+        {
+          "round": 2,
+          "c_ratio": 1.0122167695829993,
+          "d_ratio": 1.003025619220894,
+          "baseline_c": 4354.67,
+          "candidate_c": 4407.87,
+          "baseline_d": 54798.7,
+          "candidate_d": 54964.5,
+          "compressed_bytes": 16777610
+        }
+      ]
+    },
+    {
+      "compiler": "apple-clang17",
+      "case": "random16MiB-L7",
+      "pairs": 3,
+      "compression_change_pct": 0.07372338420952307,
+      "compression_min_pair_pct": -0.4137282557592936,
+      "compression_max_pair_pct": 0.22705241263776266,
+      "decompression_change_pct": -0.4117231998021387,
+      "baseline_compression_mbps": 4250.12,
+      "candidate_compression_mbps": 4248.73,
+      "baseline_decompression_mbps": 54792.8,
+      "candidate_decompression_mbps": 54646.8,
+      "compressed_bytes": 16777610,
+      "pair_details": [
+        {
+          "round": 0,
+          "c_ratio": 0.9958627174424071,
+          "d_ratio": 0.9975393197716023,
+          "baseline_c": 4254.0,
+          "candidate_c": 4236.4,
+          "baseline_d": 54781.6,
+          "candidate_d": 54646.8,
+          "compressed_bytes": 16777610
+        },
+        {
+          "round": 1,
+          "c_ratio": 1.0007372338420952,
+          "d_ratio": 0.9946854331225999,
+          "baseline_c": 4245.6,
+          "candidate_c": 4248.73,
+          "baseline_d": 54792.8,
+          "candidate_d": 54501.6,
+          "compressed_bytes": 16777610
+        },
+        {
+          "round": 2,
+          "c_ratio": 1.0022705241263776,
+          "d_ratio": 0.9958827680019786,
+          "baseline_c": 4250.12,
+          "candidate_c": 4259.77,
+          "baseline_d": 54988.4,
+          "candidate_d": 54762.0,
+          "compressed_bytes": 16777610
+        }
+      ]
+    },
+    {
+      "compiler": "apple-clang17",
+      "case": "random16MiB-L9",
+      "pairs": 3,
+      "compression_change_pct": 0.8188950515448434,
+      "compression_min_pair_pct": 0.3305748065626668,
+      "compression_max_pair_pct": 0.9766439419439443,
+      "decompression_change_pct": -0.23180930786811382,
+      "baseline_compression_mbps": 4014.22,
+      "candidate_compression_mbps": 4027.49,
+      "baseline_decompression_mbps": 55165.1,
+      "candidate_decompression_mbps": 55089.8,
+      "compressed_bytes": 16777610,
+      "pair_details": [
+        {
+          "round": 0,
+          "c_ratio": 1.0097664394194394,
+          "d_ratio": 1.0075534948122102,
+          "baseline_c": 3980.98,
+          "candidate_c": 4019.86,
+          "baseline_d": 54888.5,
+          "candidate_d": 55303.1,
+          "compressed_bytes": 16777610
+        },
+        {
+          "round": 1,
+          "c_ratio": 1.0081889505154484,
+          "d_ratio": 0.9976819069213189,
+          "baseline_c": 4018.83,
+          "candidate_c": 4051.74,
+          "baseline_d": 55217.8,
+          "candidate_d": 55089.8,
+          "compressed_bytes": 16777610
+        },
+        {
+          "round": 2,
+          "c_ratio": 1.0033057480656267,
+          "d_ratio": 0.9971413085447141,
+          "baseline_c": 4014.22,
+          "candidate_c": 4027.49,
+          "baseline_d": 55165.1,
+          "candidate_d": 55007.4,
+          "compressed_bytes": 16777610
+        }
+      ]
+    },
+    {
+      "compiler": "apple-clang17",
+      "case": "silesia-32KiB-L6",
+      "pairs": 3,
+      "compression_change_pct": 1.1362672771983329,
+      "compression_min_pair_pct": 0.7127704709376292,
+      "compression_max_pair_pct": 1.477117486338786,
+      "decompression_change_pct": 0.4739336492890933,
+      "baseline_compression_mbps": 117.85,
+      "candidate_compression_mbps": 118.85,
+      "baseline_decompression_mbps": 1053.0,
+      "candidate_decompression_mbps": 1060.0,
+      "compressed_bytes": 72603809,
+      "pair_details": [
+        {
+          "round": 0,
+          "c_ratio": 1.0071277047093763,
+          "d_ratio": 1.0074074074074073,
+          "baseline_c": 117.85,
+          "candidate_c": 118.69,
+          "baseline_d": 1053.0,
+          "candidate_d": 1060.8,
+          "compressed_bytes": 72603809
+        },
+        {
+          "round": 1,
+          "c_ratio": 1.0113626727719833,
+          "d_ratio": 1.004739336492891,
+          "baseline_c": 117.93,
+          "candidate_c": 119.27,
+          "baseline_d": 1055.0,
+          "candidate_d": 1060.0,
+          "compressed_bytes": 72603809
+        },
+        {
+          "round": 2,
+          "c_ratio": 1.0147711748633879,
+          "d_ratio": 1.0024714828897336,
+          "baseline_c": 117.12,
+          "candidate_c": 118.85,
+          "baseline_d": 1052.0,
+          "candidate_d": 1054.6,
+          "compressed_bytes": 72603809
+        }
+      ]
+    },
+    {
+      "compiler": "apple-clang17",
+      "case": "silesia-32KiB-L9",
+      "pairs": 3,
+      "compression_change_pct": 3.4464333422388416,
+      "compression_min_pair_pct": 2.6645350386357514,
+      "compression_max_pair_pct": 4.201454349582545,
+      "decompression_change_pct": 0.018191740949591306,
+      "baseline_compression_mbps": 74.86,
+      "candidate_compression_mbps": 77.38,
+      "baseline_decompression_mbps": 1099.6,
+      "candidate_decompression_mbps": 1099.6,
+      "compressed_bytes": 71853531,
+      "pair_details": [
+        {
+          "round": 0,
+          "c_ratio": 1.0344643334223884,
+          "d_ratio": 1.0012731902510004,
+          "baseline_c": 74.86,
+          "candidate_c": 77.44,
+          "baseline_d": 1099.6,
+          "candidate_d": 1101.0,
+          "compressed_bytes": 71853531
+        },
+        {
+          "round": 1,
+          "c_ratio": 1.0266453503863575,
+          "d_ratio": 0.9985451900345518,
+          "baseline_c": 75.06,
+          "candidate_c": 77.06,
+          "baseline_d": 1099.8,
+          "candidate_d": 1098.2,
+          "compressed_bytes": 71853531
+        },
+        {
+          "round": 2,
+          "c_ratio": 1.0420145434958255,
+          "d_ratio": 1.000181917409496,
+          "baseline_c": 74.26,
+          "candidate_c": 77.38,
+          "baseline_d": 1099.4,
+          "candidate_d": 1099.6,
+          "compressed_bytes": 71853531
+        }
+      ]
+    },
+    {
+      "compiler": "apple-clang17",
+      "case": "silesia-L12",
+      "pairs": 3,
+      "compression_change_pct": 10.091984231274642,
+      "compression_min_pair_pct": 2.2672455378678125,
+      "compression_max_pair_pct": 11.54869611495477,
+      "decompression_change_pct": 0.6573757559821258,
+      "baseline_compression_mbps": 38.05,
+      "candidate_compression_mbps": 41.92,
+      "baseline_decompression_mbps": 1521.2,
+      "candidate_decompression_mbps": 1533.5,
+      "compressed_bytes": 57911231,
+      "pair_details": [
+        {
+          "round": 0,
+          "c_ratio": 1.0226724553786781,
+          "d_ratio": 1.0050465329663127,
+          "baseline_c": 41.46,
+          "candidate_c": 42.4,
+          "baseline_d": 1525.8,
+          "candidate_d": 1533.5,
+          "compressed_bytes": 57911231
+        },
+        {
+          "round": 1,
+          "c_ratio": 1.1154869611495477,
+          "d_ratio": 1.3439384669172276,
+          "baseline_c": 37.58,
+          "candidate_c": 41.92,
+          "baseline_d": 1144.1,
+          "candidate_d": 1537.6,
+          "compressed_bytes": 57911231
+        },
+        {
+          "round": 2,
+          "c_ratio": 1.1009198423127464,
+          "d_ratio": 1.0065737575598213,
+          "baseline_c": 38.05,
+          "candidate_c": 41.89,
+          "baseline_d": 1521.2,
+          "candidate_d": 1531.2,
+          "compressed_bytes": 57911231
+        }
+      ]
+    },
+    {
+      "compiler": "apple-clang17",
+      "case": "silesia-L13",
+      "pairs": 3,
+      "compression_change_pct": 1.107266435986154,
+      "compression_min_pair_pct": 0.862641008626408,
+      "compression_max_pair_pct": 2.3994354269583518,
+      "decompression_change_pct": 0.17625171355830638,
+      "baseline_compression_mbps": 14.45,
+      "candidate_compression_mbps": 14.61,
+      "baseline_decompression_mbps": 1530.9,
+      "candidate_decompression_mbps": 1534.6,
+      "compressed_bytes": 57686085,
+      "pair_details": [
+        {
+          "round": 0,
+          "c_ratio": 1.0110726643598615,
+          "d_ratio": 1.001762517135583,
+          "baseline_c": 14.45,
+          "candidate_c": 14.61,
+          "baseline_d": 1531.9,
+          "candidate_d": 1534.6,
+          "compressed_bytes": 57686085
+        },
+        {
+          "round": 1,
+          "c_ratio": 1.0239943542695835,
+          "d_ratio": 0.994051898816916,
+          "baseline_c": 14.17,
+          "candidate_c": 14.51,
+          "baseline_d": 1529.9,
+          "candidate_d": 1520.8,
+          "compressed_bytes": 57686085
+        },
+        {
+          "round": 2,
+          "c_ratio": 1.008626410086264,
+          "d_ratio": 1.0060095368737343,
+          "baseline_c": 15.07,
+          "candidate_c": 15.2,
+          "baseline_d": 1530.9,
+          "candidate_d": 1540.1,
+          "compressed_bytes": 57686085
+        }
+      ]
+    },
+    {
+      "compiler": "apple-clang17",
+      "case": "silesia-L5",
+      "pairs": 3,
+      "compression_change_pct": -1.002275102994521,
+      "compression_min_pair_pct": -3.5334007495092634,
+      "compression_max_pair_pct": 2.0322482506845096,
+      "decompression_change_pct": 1.0087582108226467,
+      "baseline_compression_mbps": 164.35,
+      "candidate_compression_mbps": 162.17,
+      "baseline_decompression_mbps": 1278.8,
+      "candidate_decompression_mbps": 1275.2,
+      "compressed_bytes": 62742335,
+      "pair_details": [
+        {
+          "round": 0,
+          "c_ratio": 1.020322482506845,
+          "d_ratio": 1.0100875821082265,
+          "baseline_c": 164.35,
+          "candidate_c": 167.69,
+          "baseline_d": 1278.8,
+          "candidate_d": 1291.7,
+          "compressed_bytes": 62742335
+        },
+        {
+          "round": 1,
+          "c_ratio": 0.9646659925049074,
+          "d_ratio": 1.0150441773461754,
+          "baseline_c": 168.11,
+          "candidate_c": 162.17,
+          "baseline_d": 1256.3,
+          "candidate_d": 1275.2,
+          "compressed_bytes": 62742335
+        },
+        {
+          "round": 2,
+          "c_ratio": 0.9899772489700548,
+          "d_ratio": 0.959931798806479,
+          "baseline_c": 162.63,
+          "candidate_c": 161.0,
+          "baseline_d": 1290.3,
+          "candidate_d": 1238.6,
+          "compressed_bytes": 62742335
+        }
+      ]
+    },
+    {
+      "compiler": "apple-clang17",
+      "case": "silesia-L6",
+      "pairs": 3,
+      "compression_change_pct": 0.46109993293090845,
+      "compression_min_pair_pct": 0.3003504088102682,
+      "compression_max_pair_pct": 1.0489217084836744,
+      "decompression_change_pct": 0.4092968864201074,
+      "baseline_compression_mbps": 119.28,
+      "candidate_compression_mbps": 120.22,
+      "baseline_decompression_mbps": 1368.2,
+      "candidate_decompression_mbps": 1373.8,
+      "compressed_bytes": 61230924,
+      "pair_details": [
+        {
+          "round": 0,
+          "c_ratio": 1.0030035040881027,
+          "d_ratio": 1.004092968864201,
+          "baseline_c": 119.86,
+          "candidate_c": 120.22,
+          "baseline_d": 1368.2,
+          "candidate_d": 1373.8,
+          "compressed_bytes": 61230924
+        },
+        {
+          "round": 1,
+          "c_ratio": 1.0104892170848367,
+          "d_ratio": 1.008645955451348,
+          "baseline_c": 119.17,
+          "candidate_c": 120.42,
+          "baseline_d": 1364.8,
+          "candidate_d": 1376.6,
+          "compressed_bytes": 61230924
+        },
+        {
+          "round": 2,
+          "c_ratio": 1.004610999329309,
+          "d_ratio": 1.00204394481349,
+          "baseline_c": 119.28,
+          "candidate_c": 119.83,
+          "baseline_d": 1369.9,
+          "candidate_d": 1372.7,
+          "compressed_bytes": 61230924
+        }
+      ]
+    },
+    {
+      "compiler": "apple-clang17",
+      "case": "silesia-L7",
+      "pairs": 3,
+      "compression_change_pct": 4.412493802677253,
+      "compression_min_pair_pct": 2.4961744452945744,
+      "compression_max_pair_pct": 6.5152121697357845,
+      "decompression_change_pct": 0.21942242355605934,
+      "baseline_compression_mbps": 100.85,
+      "candidate_compression_mbps": 106.43,
+      "baseline_decompression_mbps": 1412.8,
+      "candidate_decompression_mbps": 1417.1,
+      "compressed_bytes": 60250552,
+      "pair_details": [
+        {
+          "round": 0,
+          "c_ratio": 1.0651521216973578,
+          "d_ratio": 1.0021942242355606,
+          "baseline_c": 99.92,
+          "candidate_c": 106.43,
+          "baseline_d": 1412.8,
+          "candidate_d": 1415.9,
+          "compressed_bytes": 60250552
+        },
+        {
+          "round": 1,
+          "c_ratio": 1.0441249380267725,
+          "d_ratio": 1.0088243666382009,
+          "baseline_c": 100.85,
+          "candidate_c": 105.3,
+          "baseline_d": 1405.2,
+          "candidate_d": 1417.6,
+          "compressed_bytes": 60250552
+        },
+        {
+          "round": 2,
+          "c_ratio": 1.0249617444529457,
+          "d_ratio": 1.0011303426351112,
+          "baseline_c": 104.56,
+          "candidate_c": 107.17,
+          "baseline_d": 1415.5,
+          "candidate_d": 1417.1,
+          "compressed_bytes": 60250552
+        }
+      ]
+    },
+    {
+      "compiler": "apple-clang17",
+      "case": "silesia-L9",
+      "pairs": 3,
+      "compression_change_pct": 3.2449137265001315,
+      "compression_min_pair_pct": 2.4535895105803007,
+      "compression_max_pair_pct": 4.019457245263691,
+      "decompression_change_pct": 1.0830072666293988,
+      "baseline_compression_mbps": 77.66,
+      "candidate_compression_mbps": 80.18,
+      "baseline_decompression_mbps": 1431.2,
+      "candidate_decompression_mbps": 1446.7,
+      "compressed_bytes": 59073803,
+      "pair_details": [
+        {
+          "round": 0,
+          "c_ratio": 1.024535895105803,
+          "d_ratio": 1.0145228215767634,
+          "baseline_c": 77.03,
+          "candidate_c": 78.92,
+          "baseline_d": 1397.8,
+          "candidate_d": 1418.1,
+          "compressed_bytes": 59073803
+        },
+        {
+          "round": 1,
+          "c_ratio": 1.0324491372650013,
+          "d_ratio": 1.010830072666294,
+          "baseline_c": 77.66,
+          "candidate_c": 80.18,
+          "baseline_d": 1431.2,
+          "candidate_d": 1446.7,
+          "compressed_bytes": 59073803
+        },
+        {
+          "round": 2,
+          "c_ratio": 1.040194572452637,
+          "d_ratio": 1.0015918056612914,
+          "baseline_c": 78.12,
+          "candidate_c": 81.26,
+          "baseline_d": 1444.9,
+          "candidate_d": 1447.2,
+          "compressed_bytes": 59073803
+        }
+      ]
+    },
+    {
+      "compiler": "apple-clang17",
+      "case": "silesia-hashchain-L6",
+      "pairs": 3,
+      "compression_change_pct": 1.297876202577597,
+      "compression_min_pair_pct": 1.0910082734794102,
+      "compression_max_pair_pct": 1.8596943472656946,
+      "decompression_change_pct": 0.6016936562174946,
+      "baseline_compression_mbps": 109.99,
+      "candidate_compression_mbps": 111.19,
+      "baseline_decompression_mbps": 1346.2,
+      "candidate_decompression_mbps": 1354.3,
+      "compressed_bytes": 61430436,
+      "pair_details": [
+        {
+          "round": 0,
+          "c_ratio": 1.010910082734794,
+          "d_ratio": 1.006016936562175,
+          "baseline_c": 109.99,
+          "candidate_c": 111.19,
+          "baseline_d": 1346.2,
+          "candidate_d": 1354.3,
+          "compressed_bytes": 61430436
+        },
+        {
+          "round": 1,
+          "c_ratio": 1.012978762025776,
+          "d_ratio": 0.9983712149255941,
+          "baseline_c": 110.18,
+          "candidate_c": 111.61,
+          "baseline_d": 1350.7,
+          "candidate_d": 1348.5,
+          "compressed_bytes": 61430436
+        },
+        {
+          "round": 2,
+          "c_ratio": 1.018596943472657,
+          "d_ratio": 1.0113898607905902,
+          "baseline_c": 108.62,
+          "candidate_c": 110.64,
+          "baseline_d": 1343.3,
+          "candidate_d": 1358.6,
+          "compressed_bytes": 61430436
+        }
+      ]
+    },
+    {
+      "compiler": "apple-clang17",
+      "case": "silesia-hashchain-L9",
+      "pairs": 3,
+      "compression_change_pct": 0.7826257092545363,
+      "compression_min_pair_pct": 0.019406171162428265,
+      "compression_max_pair_pct": 2.4751510426817225,
+      "decompression_change_pct": 0.9005864283719633,
+      "baseline_compression_mbps": 51.31,
+      "candidate_compression_mbps": 51.54,
+      "baseline_decompression_mbps": 1432.4,
+      "candidate_decompression_mbps": 1445.3,
+      "compressed_bytes": 59234156,
+      "pair_details": [
+        {
+          "round": 0,
+          "c_ratio": 1.0001940617116243,
+          "d_ratio": 1.0090058642837196,
+          "baseline_c": 51.53,
+          "candidate_c": 51.54,
+          "baseline_d": 1432.4,
+          "candidate_d": 1445.3,
+          "compressed_bytes": 59234156
+        },
+        {
+          "round": 1,
+          "c_ratio": 1.0247515104268172,
+          "d_ratio": 1.0043819990262224,
+          "baseline_c": 51.31,
+          "candidate_c": 52.58,
+          "baseline_d": 1437.7,
+          "candidate_d": 1444.0,
+          "compressed_bytes": 59234156
+        },
+        {
+          "round": 2,
+          "c_ratio": 1.0078262570925454,
+          "d_ratio": 1.009076310828737,
+          "baseline_c": 51.11,
+          "candidate_c": 51.51,
+          "baseline_d": 1432.3,
+          "candidate_d": 1445.3,
+          "compressed_bytes": 59234156
+        }
+      ]
+    },
+    {
+      "compiler": "gcc15",
+      "case": "AA-silesia-L9",
+      "pairs": 3,
+      "compression_change_pct": 0.33333333333334103,
+      "compression_min_pair_pct": -1.7359761627153802,
+      "compression_max_pair_pct": 0.9054456085888063,
+      "decompression_change_pct": 0.14961295778312955,
+      "baseline_compression_mbps": 77.31,
+      "candidate_compression_mbps": 78.01,
+      "baseline_decompression_mbps": 1536.8,
+      "candidate_decompression_mbps": 1530.3,
+      "compressed_bytes": 59073803,
+      "pair_details": [
+        {
+          "round": 0,
+          "c_ratio": 0.9826402383728462,
+          "d_ratio": 1.0069384788211193,
+          "baseline_c": 77.19,
+          "candidate_c": 75.85,
+          "baseline_d": 1513.3,
+          "candidate_d": 1523.8,
+          "compressed_bytes": 59073803
+        },
+        {
+          "round": 1,
+          "c_ratio": 1.009054456085888,
+          "d_ratio": 0.995770432066632,
+          "baseline_c": 77.31,
+          "candidate_c": 78.01,
+          "baseline_d": 1536.8,
+          "candidate_d": 1530.3,
+          "compressed_bytes": 59073803
+        },
+        {
+          "round": 2,
+          "c_ratio": 1.0033333333333334,
+          "d_ratio": 1.0014961295778313,
+          "baseline_c": 78.0,
+          "candidate_c": 78.26,
+          "baseline_d": 1537.3,
+          "candidate_d": 1539.6,
+          "compressed_bytes": 59073803
+        }
+      ]
+    },
+    {
+      "compiler": "gcc15",
+      "case": "confirm-osdb-L6",
+      "pairs": 5,
+      "compression_change_pct": -0.015816528272039054,
+      "compression_min_pair_pct": -0.07944073721003475,
+      "compression_max_pair_pct": 0.2535456778385292,
+      "decompression_change_pct": -0.3843572692331154,
+      "baseline_compression_mbps": 126.09,
+      "candidate_compression_mbps": 126.06,
+      "baseline_decompression_mbps": 1639.1,
+      "candidate_decompression_mbps": 1634.4,
+      "compressed_bytes": 3395739,
+      "pair_details": [
+        {
+          "round": 0,
+          "c_ratio": 0.9992055926278997,
+          "d_ratio": 0.9958566902266635,
+          "baseline_c": 125.88,
+          "candidate_c": 125.78,
+          "baseline_d": 1641.2,
+          "candidate_d": 1634.4,
+          "compressed_bytes": 3395739
+        },
+        {
+          "round": 1,
+          "c_ratio": 0.9998418347172796,
+          "d_ratio": 1.0001223316410788,
+          "baseline_c": 126.45,
+          "candidate_c": 126.43,
+          "baseline_d": 1634.9,
+          "candidate_d": 1635.1,
+          "compressed_bytes": 3395739
+        },
+        {
+          "round": 2,
+          "c_ratio": 1.0011119936457507,
+          "d_ratio": 0.9951846885285872,
+          "baseline_c": 125.9,
+          "candidate_c": 126.04,
+          "baseline_d": 1640.6,
+          "candidate_d": 1632.7,
+          "compressed_bytes": 3395739
+        },
+        {
+          "round": 3,
+          "c_ratio": 0.9997620747085415,
+          "d_ratio": 0.9961564273076688,
+          "baseline_c": 126.09,
+          "candidate_c": 126.06,
+          "baseline_d": 1639.1,
+          "candidate_d": 1632.8,
+          "compressed_bytes": 3395739
+        },
+        {
+          "round": 4,
+          "c_ratio": 1.0025354567783853,
+          "d_ratio": 1.00030517578125,
+          "baseline_c": 126.21,
+          "candidate_c": 126.53,
+          "baseline_d": 1638.4,
+          "candidate_d": 1638.9,
+          "compressed_bytes": 3395739
+        }
+      ]
+    },
+    {
+      "compiler": "gcc15",
+      "case": "confirm-sao-L6",
+      "pairs": 5,
+      "compression_change_pct": -0.021765153988462238,
+      "compression_min_pair_pct": -0.44818539571491733,
+      "compression_max_pair_pct": 0.18528610354222597,
+      "decompression_change_pct": 0.1599360255897686,
+      "baseline_compression_mbps": 91.89,
+      "candidate_compression_mbps": 91.92,
+      "baseline_decompression_mbps": 998.9,
+      "candidate_decompression_mbps": 1001.4,
+      "compressed_bytes": 5272383,
+      "pair_details": [
+        {
+          "round": 0,
+          "c_ratio": 0.9955181460428508,
+          "d_ratio": 1.0028197381671702,
+          "baseline_c": 91.48,
+          "candidate_c": 91.07,
+          "baseline_d": 993.0,
+          "candidate_d": 995.8,
+          "compressed_bytes": 5272383
+        },
+        {
+          "round": 1,
+          "c_ratio": 0.9997823484601154,
+          "d_ratio": 1.001201321453599,
+          "baseline_c": 91.89,
+          "candidate_c": 91.87,
+          "baseline_d": 998.9,
+          "candidate_d": 1000.1,
+          "compressed_bytes": 5272383
+        },
+        {
+          "round": 2,
+          "c_ratio": 1.0018528610354223,
+          "d_ratio": 1.0015993602558977,
+          "baseline_c": 91.75,
+          "candidate_c": 91.92,
+          "baseline_d": 1000.4,
+          "candidate_d": 1002.0,
+          "compressed_bytes": 5272383
+        },
+        {
+          "round": 3,
+          "c_ratio": 0.9990230134607034,
+          "d_ratio": 0.9991020652499252,
+          "baseline_c": 92.12,
+          "candidate_c": 92.03,
+          "baseline_d": 1002.3,
+          "candidate_d": 1001.4,
+          "compressed_bytes": 5272383
+        },
+        {
+          "round": 4,
+          "c_ratio": 0.99978265594436,
+          "d_ratio": 1.003505608974359,
+          "baseline_c": 92.02,
+          "candidate_c": 92.0,
+          "baseline_d": 998.4,
+          "candidate_d": 1001.9,
+          "compressed_bytes": 5272383
+        }
+      ]
+    },
+    {
+      "compiler": "gcc15",
+      "case": "confirm-x-ray-L6",
+      "pairs": 5,
+      "compression_change_pct": -0.337734111145227,
+      "compression_min_pair_pct": -0.5571605447792005,
+      "compression_max_pair_pct": -0.10260619741432331,
+      "decompression_change_pct": -0.012448649321539218,
+      "baseline_compression_mbps": 97.46,
+      "candidate_compression_mbps": 97.35,
+      "baseline_decompression_mbps": 803.7,
+      "candidate_decompression_mbps": 802.7,
+      "compressed_bytes": 5551501,
+      "pair_details": [
+        {
+          "round": 0,
+          "c_ratio": 0.9976429596228735,
+          "d_ratio": 0.9998755135067846,
+          "baseline_c": 97.58,
+          "candidate_c": 97.35,
+          "baseline_d": 803.3,
+          "candidate_d": 803.2,
+          "compressed_bytes": 5551501
+        },
+        {
+          "round": 1,
+          "c_ratio": 0.9961930239736598,
+          "d_ratio": 0.9926789924308227,
+          "baseline_c": 97.19,
+          "candidate_c": 96.82,
+          "baseline_d": 805.9,
+          "candidate_d": 800.0,
+          "compressed_bytes": 5551501
+        },
+        {
+          "round": 2,
+          "c_ratio": 0.9989739380258568,
+          "d_ratio": 0.998755754634814,
+          "baseline_c": 97.46,
+          "candidate_c": 97.36,
+          "baseline_d": 803.7,
+          "candidate_d": 802.7,
+          "compressed_bytes": 5551501
+        },
+        {
+          "round": 3,
+          "c_ratio": 0.9966226588885477,
+          "d_ratio": 1.0002484780718102,
+          "baseline_c": 97.71,
+          "candidate_c": 97.38,
+          "baseline_d": 804.9,
+          "candidate_d": 805.1,
+          "compressed_bytes": 5551501
+        },
+        {
+          "round": 4,
+          "c_ratio": 0.994428394552208,
+          "d_ratio": 1.0006239081607187,
+          "baseline_c": 96.92,
+          "candidate_c": 96.38,
+          "baseline_d": 801.4,
+          "candidate_d": 801.9,
+          "compressed_bytes": 5551501
+        }
+      ]
+    },
+    {
+      "compiler": "gcc15",
+      "case": "enwik8-L12",
+      "pairs": 3,
+      "compression_change_pct": 4.356357927786503,
+      "compression_min_pair_pct": 1.2932674020540214,
+      "compression_max_pair_pct": 6.9009314140558775,
+      "decompression_change_pct": -0.3347218089854165,
+      "baseline_compression_mbps": 25.48,
+      "candidate_compression_mbps": 26.59,
+      "baseline_decompression_mbps": 1344.4,
+      "candidate_decompression_mbps": 1337.8,
+      "compressed_bytes": 30339024,
+      "pair_details": [
+        {
+          "round": 0,
+          "c_ratio": 1.0690093141405588,
+          "d_ratio": 1.040481056437667,
+          "baseline_c": 23.62,
+          "candidate_c": 25.25,
+          "baseline_d": 1272.2,
+          "candidate_d": 1323.7,
+          "compressed_bytes": 30339024
+        },
+        {
+          "round": 1,
+          "c_ratio": 1.0129326740205402,
+          "d_ratio": 0.9966527819101458,
+          "baseline_c": 26.29,
+          "candidate_c": 26.63,
+          "baseline_d": 1344.4,
+          "candidate_d": 1339.9,
+          "compressed_bytes": 30339024
+        },
+        {
+          "round": 2,
+          "c_ratio": 1.043563579277865,
+          "d_ratio": 0.989204377403135,
+          "baseline_c": 25.48,
+          "candidate_c": 26.59,
+          "baseline_d": 1352.4,
+          "candidate_d": 1337.8,
+          "compressed_bytes": 30339024
+        }
+      ]
+    },
+    {
+      "compiler": "gcc15",
+      "case": "enwik8-L13",
+      "pairs": 3,
+      "compression_change_pct": 1.5483870967741842,
+      "compression_min_pair_pct": -0.8962868117797673,
+      "compression_max_pair_pct": 1.5768725361366531,
+      "decompression_change_pct": 1.3326143891542186,
+      "baseline_compression_mbps": 7.75,
+      "candidate_compression_mbps": 7.74,
+      "baseline_decompression_mbps": 1298.2,
+      "candidate_decompression_mbps": 1315.5,
+      "compressed_bytes": 29967212,
+      "pair_details": [
+        {
+          "round": 0,
+          "c_ratio": 0.9910371318822023,
+          "d_ratio": 1.0147252576920096,
+          "baseline_c": 7.81,
+          "candidate_c": 7.74,
+          "baseline_d": 1290.3,
+          "candidate_d": 1309.3,
+          "compressed_bytes": 29967212
+        },
+        {
+          "round": 1,
+          "c_ratio": 1.0157687253613665,
+          "d_ratio": 1.0133261438915422,
+          "baseline_c": 7.61,
+          "candidate_c": 7.73,
+          "baseline_d": 1298.2,
+          "candidate_d": 1315.5,
+          "compressed_bytes": 29967212
+        },
+        {
+          "round": 2,
+          "c_ratio": 1.0154838709677418,
+          "d_ratio": 0.9982577077494129,
+          "baseline_c": 7.75,
+          "candidate_c": 7.87,
+          "baseline_d": 1320.1,
+          "candidate_d": 1317.8,
+          "compressed_bytes": 29967212
+        }
+      ]
+    },
+    {
+      "compiler": "gcc15",
+      "case": "enwik8-L5",
+      "pairs": 3,
+      "compression_change_pct": 0.06242684354271777,
+      "compression_min_pair_pct": -1.5032323389672086,
+      "compression_max_pair_pct": 1.0476116019075832,
+      "decompression_change_pct": -0.49296405843864965,
+      "baseline_compression_mbps": 128.15,
+      "candidate_compression_mbps": 128.23,
+      "baseline_decompression_mbps": 1115.7,
+      "candidate_decompression_mbps": 1110.1,
+      "compressed_bytes": 33699396,
+      "pair_details": [
+        {
+          "round": 0,
+          "c_ratio": 1.0104761160190758,
+          "d_ratio": 0.9972152353575278,
+          "baseline_c": 127.91,
+          "candidate_c": 129.25,
+          "baseline_d": 1113.2,
+          "candidate_d": 1110.1,
+          "compressed_bytes": 33699396
+        },
+        {
+          "round": 1,
+          "c_ratio": 1.0006242684354272,
+          "d_ratio": 0.9950703594156135,
+          "baseline_c": 128.15,
+          "candidate_c": 128.23,
+          "baseline_d": 1115.7,
+          "candidate_d": 1110.2,
+          "compressed_bytes": 33699396
+        },
+        {
+          "round": 2,
+          "c_ratio": 0.9849676766103279,
+          "d_ratio": 0.9872737049650474,
+          "baseline_c": 128.39,
+          "candidate_c": 126.46,
+          "baseline_d": 1115.8,
+          "candidate_d": 1101.6,
+          "compressed_bytes": 33699396
+        }
+      ]
+    },
+    {
+      "compiler": "gcc15",
+      "case": "enwik8-L6",
+      "pairs": 3,
+      "compression_change_pct": 0.26339899221254903,
+      "compression_min_pair_pct": 0.16116035455278066,
+      "compression_max_pair_pct": 0.5042979942693426,
+      "decompression_change_pct": 0.26694221992595857,
+      "baseline_compression_mbps": 87.25,
+      "candidate_compression_mbps": 87.55,
+      "baseline_decompression_mbps": 1161.3,
+      "candidate_decompression_mbps": 1164.4,
+      "compressed_bytes": 32612520,
+      "pair_details": [
+        {
+          "round": 0,
+          "c_ratio": 1.0026339899221255,
+          "d_ratio": 1.0026694221992596,
+          "baseline_c": 87.32,
+          "candidate_c": 87.55,
+          "baseline_d": 1161.3,
+          "candidate_d": 1164.4,
+          "compressed_bytes": 32612520
+        },
+        {
+          "round": 1,
+          "c_ratio": 1.0016116035455278,
+          "d_ratio": 0.9958872418815868,
+          "baseline_c": 86.87,
+          "candidate_c": 87.01,
+          "baseline_d": 1167.1,
+          "candidate_d": 1162.3,
+          "compressed_bytes": 32612520
+        },
+        {
+          "round": 2,
+          "c_ratio": 1.0050429799426934,
+          "d_ratio": 1.0070677469401828,
+          "baseline_c": 87.25,
+          "candidate_c": 87.69,
+          "baseline_d": 1160.2,
+          "candidate_d": 1168.4,
+          "compressed_bytes": 32612520
+        }
+      ]
+    },
+    {
+      "compiler": "gcc15",
+      "case": "enwik8-L7",
+      "pairs": 3,
+      "compression_change_pct": 0.02659928181938387,
+      "compression_min_pair_pct": -1.9389830508474648,
+      "compression_max_pair_pct": 0.4916018025399316,
+      "decompression_change_pct": 0.6067154255319007,
+      "baseline_compression_mbps": 73.75,
+      "candidate_compression_mbps": 73.59,
+      "baseline_decompression_mbps": 1203.2,
+      "candidate_decompression_mbps": 1209.9,
+      "compressed_bytes": 31981436,
+      "pair_details": [
+        {
+          "round": 0,
+          "c_ratio": 1.0049160180253993,
+          "d_ratio": 1.0064886448714752,
+          "baseline_c": 73.23,
+          "candidate_c": 73.59,
+          "baseline_d": 1202.1,
+          "candidate_d": 1209.9,
+          "compressed_bytes": 31981436
+        },
+        {
+          "round": 1,
+          "c_ratio": 1.0002659928181938,
+          "d_ratio": 1.006067154255319,
+          "baseline_c": 75.19,
+          "candidate_c": 75.21,
+          "baseline_d": 1203.2,
+          "candidate_d": 1210.5,
+          "compressed_bytes": 31981436
+        },
+        {
+          "round": 2,
+          "c_ratio": 0.9806101694915254,
+          "d_ratio": 0.9648282694848084,
+          "baseline_c": 73.75,
+          "candidate_c": 72.32,
+          "baseline_d": 1211.2,
+          "candidate_d": 1168.6,
+          "compressed_bytes": 31981436
+        }
+      ]
+    },
+    {
+      "compiler": "gcc15",
+      "case": "enwik8-L9",
+      "pairs": 3,
+      "compression_change_pct": 2.6042649556520026,
+      "compression_min_pair_pct": 1.4841254931429848,
+      "compression_max_pair_pct": 3.446962483336513,
+      "decompression_change_pct": -0.06385696040868138,
+      "baseline_compression_mbps": 52.99,
+      "candidate_compression_mbps": 54.32,
+      "baseline_decompression_mbps": 1252.8,
+      "candidate_decompression_mbps": 1247.7,
+      "compressed_bytes": 31076602,
+      "pair_details": [
+        {
+          "round": 0,
+          "c_ratio": 1.0344696248333651,
+          "d_ratio": 1.0017701963308658,
+          "baseline_c": 52.51,
+          "candidate_c": 54.32,
+          "baseline_d": 1242.8,
+          "candidate_d": 1245.0,
+          "compressed_bytes": 31076602
+        },
+        {
+          "round": 1,
+          "c_ratio": 1.0148412549314298,
+          "d_ratio": 0.9993614303959132,
+          "baseline_c": 53.23,
+          "candidate_c": 54.02,
+          "baseline_d": 1252.8,
+          "candidate_d": 1252.0,
+          "compressed_bytes": 31076602
+        },
+        {
+          "round": 2,
+          "c_ratio": 1.02604264955652,
+          "d_ratio": 0.9948967386970737,
+          "baseline_c": 52.99,
+          "candidate_c": 54.37,
+          "baseline_d": 1254.1,
+          "candidate_d": 1247.7,
+          "compressed_bytes": 31076602
+        }
+      ]
+    },
+    {
+      "compiler": "gcc15",
+      "case": "mixed-L6",
+      "pairs": 3,
+      "compression_change_pct": 0.6972111553784854,
+      "compression_min_pair_pct": -0.2805868942538092,
+      "compression_max_pair_pct": 0.998648886800213,
+      "decompression_change_pct": -0.05688531046252887,
+      "baseline_compression_mbps": 170.68,
+      "candidate_compression_mbps": 171.87,
+      "baseline_decompression_mbps": 2285.3,
+      "candidate_decompression_mbps": 2284.0,
+      "compressed_bytes": 11148798,
+      "pair_details": [
+        {
+          "round": 0,
+          "c_ratio": 1.0069721115537849,
+          "d_ratio": 0.9935087566437222,
+          "baseline_c": 170.68,
+          "candidate_c": 171.87,
+          "baseline_d": 2295.4,
+          "candidate_d": 2280.5,
+          "compressed_bytes": 11148798
+        },
+        {
+          "round": 1,
+          "c_ratio": 1.0099864888680021,
+          "d_ratio": 1.0047723292469353,
+          "baseline_c": 170.23,
+          "candidate_c": 171.93,
+          "baseline_d": 2284.0,
+          "candidate_d": 2294.9,
+          "compressed_bytes": 11148798
+        },
+        {
+          "round": 2,
+          "c_ratio": 0.9971941310574619,
+          "d_ratio": 0.9994311468953747,
+          "baseline_c": 171.07,
+          "candidate_c": 170.59,
+          "baseline_d": 2285.3,
+          "candidate_d": 2284.0,
+          "compressed_bytes": 11148798
+        }
+      ]
+    },
+    {
+      "compiler": "gcc15",
+      "case": "mixed-L9",
+      "pairs": 3,
+      "compression_change_pct": 3.5646925688419318,
+      "compression_min_pair_pct": 1.8144213594058378,
+      "compression_max_pair_pct": 3.6203799981094686,
+      "decompression_change_pct": -0.26273656554045566,
+      "baseline_compression_mbps": 106.04,
+      "candidate_compression_mbps": 109.62,
+      "baseline_decompression_mbps": 2435.9,
+      "candidate_decompression_mbps": 2429.5,
+      "compressed_bytes": 11033108,
+      "pair_details": [
+        {
+          "round": 0,
+          "c_ratio": 1.0181442135940584,
+          "d_ratio": 0.9951211512443114,
+          "baseline_c": 106.37,
+          "candidate_c": 108.3,
+          "baseline_d": 2439.1,
+          "candidate_d": 2427.2,
+          "compressed_bytes": 11033108
+        },
+        {
+          "round": 1,
+          "c_ratio": 1.0356469256884193,
+          "d_ratio": 0.9973726343445954,
+          "baseline_c": 106.04,
+          "candidate_c": 109.82,
+          "baseline_d": 2435.9,
+          "candidate_d": 2429.5,
+          "compressed_bytes": 11033108
+        },
+        {
+          "round": 2,
+          "c_ratio": 1.0362037999810947,
+          "d_ratio": 1.0029183279214107,
+          "baseline_c": 105.79,
+          "candidate_c": 109.62,
+          "baseline_d": 2432.9,
+          "candidate_d": 2440.0,
+          "compressed_bytes": 11033108
+        }
+      ]
+    },
+    {
+      "compiler": "gcc15",
+      "case": "random16MiB-L12",
+      "pairs": 3,
+      "compression_change_pct": 0.2772892601622834,
+      "compression_min_pair_pct": -1.422824306247894,
+      "compression_max_pair_pct": 0.8098022329994459,
+      "decompression_change_pct": -0.5662754724106267,
+      "baseline_compression_mbps": 1996.03,
+      "candidate_compression_mbps": 2001.75,
+      "baseline_decompression_mbps": 55079.2,
+      "candidate_decompression_mbps": 55008.2,
+      "compressed_bytes": 16777610,
+      "pair_details": [
+        {
+          "round": 0,
+          "c_ratio": 1.0080980223299945,
+          "d_ratio": 1.0070015925977953,
+          "baseline_c": 1985.67,
+          "candidate_c": 2001.75,
+          "baseline_d": 54816.1,
+          "candidate_d": 55199.9,
+          "compressed_bytes": 16777610
+        },
+        {
+          "round": 1,
+          "c_ratio": 1.0027728926016228,
+          "d_ratio": 0.9932038870010796,
+          "baseline_c": 2001.52,
+          "candidate_c": 2007.07,
+          "baseline_d": 55384.6,
+          "candidate_d": 55008.2,
+          "compressed_bytes": 16777610
+        },
+        {
+          "round": 2,
+          "c_ratio": 0.9857717569375211,
+          "d_ratio": 0.9943372452758937,
+          "baseline_c": 1996.03,
+          "candidate_c": 1967.63,
+          "baseline_d": 55079.2,
+          "candidate_d": 54767.3,
+          "compressed_bytes": 16777610
+        }
+      ]
+    },
+    {
+      "compiler": "gcc15",
+      "case": "random16MiB-L13",
+      "pairs": 3,
+      "compression_change_pct": -0.0028951939779919833,
+      "compression_min_pair_pct": -4.476837981101644,
+      "compression_max_pair_pct": 0.1922516749198966,
+      "decompression_change_pct": -0.3263274436835162,
+      "baseline_compression_mbps": 345.4,
+      "candidate_compression_mbps": 343.96,
+      "baseline_decompression_mbps": 54889.4,
+      "candidate_decompression_mbps": 54752.3,
+      "compressed_bytes": 16777610,
+      "pair_details": [
+        {
+          "round": 0,
+          "c_ratio": 0.9999710480602201,
+          "d_ratio": 0.9967367255631648,
+          "baseline_c": 345.4,
+          "candidate_c": 345.39,
+          "baseline_d": 55006.1,
+          "candidate_d": 54826.6,
+          "compressed_bytes": 16777610
+        },
+        {
+          "round": 1,
+          "c_ratio": 1.001922516749199,
+          "d_ratio": 0.9989545627043438,
+          "baseline_c": 343.3,
+          "candidate_c": 343.96,
+          "baseline_d": 54809.6,
+          "candidate_d": 54752.3,
+          "compressed_bytes": 16777610
+        },
+        {
+          "round": 2,
+          "c_ratio": 0.9552316201889836,
+          "d_ratio": 0.9801364197823259,
+          "baseline_c": 347.12,
+          "candidate_c": 331.58,
+          "baseline_d": 54889.4,
+          "candidate_d": 53799.1,
+          "compressed_bytes": 16777610
+        }
+      ]
+    },
+    {
+      "compiler": "gcc15",
+      "case": "random16MiB-L5",
+      "pairs": 3,
+      "compression_change_pct": 0.8350809198941711,
+      "compression_min_pair_pct": 0.2302241402703853,
+      "compression_max_pair_pct": 1.2720559862489988,
+      "decompression_change_pct": -0.3113710523249047,
+      "baseline_compression_mbps": 4561.12,
+      "candidate_compression_mbps": 4579.98,
+      "baseline_decompression_mbps": 54825.5,
+      "candidate_decompression_mbps": 54747.4,
+      "compressed_bytes": 16777610,
+      "pair_details": [
+        {
+          "round": 0,
+          "c_ratio": 1.01272055986249,
+          "d_ratio": 0.996886289476751,
+          "baseline_c": 4561.12,
+          "candidate_c": 4619.14,
+          "baseline_d": 54918.4,
+          "candidate_d": 54747.4,
+          "compressed_bytes": 16777610
+        },
+        {
+          "round": 1,
+          "c_ratio": 1.0023022414027039,
+          "d_ratio": 1.00018969275246,
+          "baseline_c": 4569.46,
+          "candidate_c": 4579.98,
+          "baseline_d": 54825.5,
+          "candidate_d": 54835.9,
+          "compressed_bytes": 16777610
+        },
+        {
+          "round": 2,
+          "c_ratio": 1.0083508091989417,
+          "d_ratio": 0.9950093677372565,
+          "baseline_c": 4520.52,
+          "candidate_c": 4558.27,
+          "baseline_d": 54602.3,
+          "candidate_d": 54329.8,
+          "compressed_bytes": 16777610
+        }
+      ]
+    },
+    {
+      "compiler": "gcc15",
+      "case": "random16MiB-L6",
+      "pairs": 3,
+      "compression_change_pct": 1.0548814120242778,
+      "compression_min_pair_pct": -0.08535033541572368,
+      "compression_max_pair_pct": 1.1442537354885207,
+      "decompression_change_pct": 0.1563250465231425,
+      "baseline_compression_mbps": 4500.75,
+      "candidate_compression_mbps": 4543.67,
+      "baseline_decompression_mbps": 54649.5,
+      "candidate_decompression_mbps": 54742.8,
+      "compressed_bytes": 16777610,
+      "pair_details": [
+        {
+          "round": 0,
+          "c_ratio": 0.9991464966458428,
+          "d_ratio": 0.9993430863960329,
+          "baseline_c": 4510.82,
+          "candidate_c": 4506.97,
+          "baseline_d": 54649.5,
+          "candidate_d": 54613.6,
+          "compressed_bytes": 16777610
+        },
+        {
+          "round": 1,
+          "c_ratio": 1.0105488141202428,
+          "d_ratio": 1.0019969359571108,
+          "baseline_c": 4496.24,
+          "candidate_c": 4543.67,
+          "baseline_d": 54633.7,
+          "candidate_d": 54742.8,
+          "compressed_bytes": 16777610
+        },
+        {
+          "round": 2,
+          "c_ratio": 1.0114425373548852,
+          "d_ratio": 1.0015632504652314,
+          "baseline_c": 4500.75,
+          "candidate_c": 4552.25,
+          "baseline_d": 54757.7,
+          "candidate_d": 54843.3,
+          "compressed_bytes": 16777610
+        }
+      ]
+    },
+    {
+      "compiler": "gcc15",
+      "case": "random16MiB-L7",
+      "pairs": 3,
+      "compression_change_pct": 0.2368039991514692,
+      "compression_min_pair_pct": 0.14645801034940398,
+      "compression_max_pair_pct": 1.1493236054819223,
+      "decompression_change_pct": -0.18792581205600012,
+      "baseline_compression_mbps": 4315.23,
+      "candidate_compression_mbps": 4344.94,
+      "baseline_decompression_mbps": 54961.3,
+      "candidate_decompression_mbps": 54865.2,
+      "compressed_bytes": 16777610,
+      "pair_details": [
+        {
+          "round": 0,
+          "c_ratio": 1.0023680399915147,
+          "d_ratio": 1.0026844192365738,
+          "baseline_c": 4336.92,
+          "candidate_c": 4347.19,
+          "baseline_d": 54797.7,
+          "candidate_d": 54944.8,
+          "compressed_bytes": 16777610
+        },
+        {
+          "round": 1,
+          "c_ratio": 1.0114932360548192,
+          "d_ratio": 0.99812074187944,
+          "baseline_c": 4295.57,
+          "candidate_c": 4344.94,
+          "baseline_d": 54968.5,
+          "candidate_d": 54865.2,
+          "compressed_bytes": 16777610
+        },
+        {
+          "round": 2,
+          "c_ratio": 1.001464580103494,
+          "d_ratio": 0.9918888381461136,
+          "baseline_c": 4315.23,
+          "candidate_c": 4321.55,
+          "baseline_d": 54961.3,
+          "candidate_d": 54515.5,
+          "compressed_bytes": 16777610
+        }
+      ]
+    },
+    {
+      "compiler": "gcc15",
+      "case": "random16MiB-L9",
+      "pairs": 3,
+      "compression_change_pct": 0.15770106886279223,
+      "compression_min_pair_pct": -0.9055119095589426,
+      "compression_max_pair_pct": 2.613367675991274,
+      "decompression_change_pct": 0.18974503579323176,
+      "baseline_compression_mbps": 3994.9,
+      "candidate_compression_mbps": 4001.2,
+      "baseline_decompression_mbps": 54927.8,
+      "candidate_decompression_mbps": 55072.8,
+      "compressed_bytes": 16777610,
+      "pair_details": [
+        {
+          "round": 0,
+          "c_ratio": 1.0261336767599127,
+          "d_ratio": 0.9901070132064274,
+          "baseline_c": 3929.03,
+          "candidate_c": 4031.71,
+          "baseline_d": 54927.8,
+          "candidate_d": 54384.4,
+          "compressed_bytes": 16777610
+        },
+        {
+          "round": 1,
+          "c_ratio": 0.9909448809044106,
+          "d_ratio": 1.0018974503579323,
+          "baseline_c": 3995.53,
+          "candidate_c": 3959.35,
+          "baseline_d": 54968.5,
+          "candidate_d": 55072.8,
+          "compressed_bytes": 16777610
+        },
+        {
+          "round": 2,
+          "c_ratio": 1.001577010688628,
+          "d_ratio": 1.0074627953947224,
+          "baseline_c": 3994.9,
+          "candidate_c": 4001.2,
+          "baseline_d": 54858.8,
+          "candidate_d": 55268.2,
+          "compressed_bytes": 16777610
+        }
+      ]
+    },
+    {
+      "compiler": "gcc15",
+      "case": "silesia-32KiB-L6",
+      "pairs": 3,
+      "compression_change_pct": 1.9618193014867558,
+      "compression_min_pair_pct": 1.3595298658012345,
+      "compression_max_pair_pct": 2.32640112795206,
+      "decompression_change_pct": -0.027124773960207627,
+      "baseline_compression_mbps": 113.67,
+      "candidate_compression_mbps": 115.9,
+      "baseline_decompression_mbps": 1103.1,
+      "candidate_decompression_mbps": 1099.3,
+      "compressed_bytes": 72603809,
+      "pair_details": [
+        {
+          "round": 0,
+          "c_ratio": 1.0232640112795206,
+          "d_ratio": 1.0009104980424293,
+          "baseline_c": 113.48,
+          "candidate_c": 116.12,
+          "baseline_d": 1098.3,
+          "candidate_d": 1099.3,
+          "compressed_bytes": 72603809
+        },
+        {
+          "round": 1,
+          "c_ratio": 1.0135952986580123,
+          "d_ratio": 0.9997287522603979,
+          "baseline_c": 114.01,
+          "candidate_c": 115.56,
+          "baseline_d": 1106.0,
+          "candidate_d": 1105.7,
+          "compressed_bytes": 72603809
+        },
+        {
+          "round": 2,
+          "c_ratio": 1.0196181930148676,
+          "d_ratio": 0.9957392802103165,
+          "baseline_c": 113.67,
+          "candidate_c": 115.9,
+          "baseline_d": 1103.1,
+          "candidate_d": 1098.4,
+          "compressed_bytes": 72603809
+        }
+      ]
+    },
+    {
+      "compiler": "gcc15",
+      "case": "silesia-32KiB-L9",
+      "pairs": 3,
+      "compression_change_pct": 5.019416079390182,
+      "compression_min_pair_pct": 4.893800229621115,
+      "compression_max_pair_pct": 5.496402877697837,
+      "decompression_change_pct": -0.30471878808985275,
+      "baseline_compression_mbps": 69.53,
+      "candidate_compression_mbps": 73.09,
+      "baseline_decompression_mbps": 1148.8,
+      "candidate_decompression_mbps": 1145.1,
+      "compressed_bytes": 71853531,
+      "pair_details": [
+        {
+          "round": 0,
+          "c_ratio": 1.0501941607939018,
+          "d_ratio": 0.9977367688022285,
+          "baseline_c": 69.53,
+          "candidate_c": 73.02,
+          "baseline_d": 1148.8,
+          "candidate_d": 1146.2,
+          "compressed_bytes": 71853531
+        },
+        {
+          "round": 1,
+          "c_ratio": 1.0549640287769784,
+          "d_ratio": 0.9887728459530025,
+          "baseline_c": 69.5,
+          "candidate_c": 73.32,
+          "baseline_d": 1149.0,
+          "candidate_d": 1136.1,
+          "compressed_bytes": 71853531
+        },
+        {
+          "round": 2,
+          "c_ratio": 1.0489380022962111,
+          "d_ratio": 0.9969528121191015,
+          "baseline_c": 69.68,
+          "candidate_c": 73.09,
+          "baseline_d": 1148.6,
+          "candidate_d": 1145.1,
+          "compressed_bytes": 71853531
+        }
+      ]
+    },
+    {
+      "compiler": "gcc15",
+      "case": "silesia-L12",
+      "pairs": 3,
+      "compression_change_pct": 1.94821840553705,
+      "compression_min_pair_pct": 0.7117437722419684,
+      "compression_max_pair_pct": 4.578120841096611,
+      "decompression_change_pct": -0.1437769581796533,
+      "baseline_compression_mbps": 39.01,
+      "candidate_compression_mbps": 39.62,
+      "baseline_decompression_mbps": 1599.7,
+      "candidate_decompression_mbps": 1597.4,
+      "compressed_bytes": 57911231,
+      "pair_details": [
+        {
+          "round": 0,
+          "c_ratio": 1.0071174377224197,
+          "d_ratio": 0.9985622304182035,
+          "baseline_c": 39.34,
+          "candidate_c": 39.62,
+          "baseline_d": 1599.7,
+          "candidate_d": 1597.4,
+          "compressed_bytes": 57911231
+        },
+        {
+          "round": 1,
+          "c_ratio": 1.0194821840553705,
+          "d_ratio": 1.0004370356496224,
+          "baseline_c": 39.01,
+          "candidate_c": 39.77,
+          "baseline_d": 1601.7,
+          "candidate_d": 1602.4,
+          "compressed_bytes": 57911231
+        },
+        {
+          "round": 2,
+          "c_ratio": 1.0457812084109661,
+          "d_ratio": 0.9964648696420682,
+          "baseline_c": 37.57,
+          "candidate_c": 39.29,
+          "baseline_d": 1584.1,
+          "candidate_d": 1578.5,
+          "compressed_bytes": 57911231
+        }
+      ]
+    },
+    {
+      "compiler": "gcc15",
+      "case": "silesia-L13",
+      "pairs": 3,
+      "compression_change_pct": 1.1585807385952274,
+      "compression_min_pair_pct": 0.7843137254901933,
+      "compression_max_pair_pct": 4.134762633996925,
+      "decompression_change_pct": 0.09323140033563604,
+      "baseline_compression_mbps": 13.81,
+      "candidate_compression_mbps": 13.97,
+      "baseline_decompression_mbps": 1607.7,
+      "candidate_decompression_mbps": 1584.9,
+      "compressed_bytes": 57686085,
+      "pair_details": [
+        {
+          "round": 0,
+          "c_ratio": 1.0413476263399692,
+          "d_ratio": 0.9797847857187286,
+          "baseline_c": 13.06,
+          "candidate_c": 13.6,
+          "baseline_d": 1607.7,
+          "candidate_d": 1575.2,
+          "compressed_bytes": 57686085
+        },
+        {
+          "round": 1,
+          "c_ratio": 1.0115858073859523,
+          "d_ratio": 1.0120689655172415,
+          "baseline_c": 13.81,
+          "candidate_c": 13.97,
+          "baseline_d": 1566.0,
+          "candidate_d": 1584.9,
+          "compressed_bytes": 57686085
+        },
+        {
+          "round": 2,
+          "c_ratio": 1.007843137254902,
+          "d_ratio": 1.0009323140033564,
+          "baseline_c": 15.3,
+          "candidate_c": 15.42,
+          "baseline_d": 1608.9,
+          "candidate_d": 1610.4,
+          "compressed_bytes": 57686085
+        }
+      ]
+    },
+    {
+      "compiler": "gcc15",
+      "case": "silesia-L5",
+      "pairs": 3,
+      "compression_change_pct": -0.9430562229697181,
+      "compression_min_pair_pct": -2.199108469539368,
+      "compression_max_pair_pct": 2.1028598894496486,
+      "decompression_change_pct": -0.09557418026759912,
+      "baseline_compression_mbps": 166.48,
+      "candidate_compression_mbps": 164.91,
+      "baseline_decompression_mbps": 1359.8,
+      "candidate_decompression_mbps": 1358.0,
+      "compressed_bytes": 62742335,
+      "pair_details": [
+        {
+          "round": 0,
+          "c_ratio": 0.9905694377703028,
+          "d_ratio": 0.999044258197324,
+          "baseline_c": 166.48,
+          "candidate_c": 164.91,
+          "baseline_d": 1360.2,
+          "candidate_d": 1358.9,
+          "compressed_bytes": 62742335
+        },
+        {
+          "round": 1,
+          "c_ratio": 0.9780089153046063,
+          "d_ratio": 0.9895572878364465,
+          "baseline_c": 168.25,
+          "candidate_c": 164.55,
+          "baseline_d": 1359.8,
+          "candidate_d": 1345.6,
+          "compressed_bytes": 62742335
+        },
+        {
+          "round": 2,
+          "c_ratio": 1.0210285988944965,
+          "d_ratio": 1.0100409074005205,
+          "baseline_c": 166.44,
+          "candidate_c": 169.94,
+          "baseline_d": 1344.5,
+          "candidate_d": 1358.0,
+          "compressed_bytes": 62742335
+        }
+      ]
+    },
+    {
+      "compiler": "gcc15",
+      "case": "silesia-L6",
+      "pairs": 3,
+      "compression_change_pct": 1.288835780129749,
+      "compression_min_pair_pct": 0.15329586101173742,
+      "compression_max_pair_pct": 1.7570926544955734,
+      "decompression_change_pct": -0.4373481430059001,
+      "baseline_compression_mbps": 117.16,
+      "candidate_compression_mbps": 118.67,
+      "baseline_decompression_mbps": 1439.0,
+      "candidate_decompression_mbps": 1434.2,
+      "compressed_bytes": 61230924,
+      "pair_details": [
+        {
+          "round": 0,
+          "c_ratio": 1.0175709265449557,
+          "d_ratio": 1.0000695991091315,
+          "baseline_c": 116.67,
+          "candidate_c": 118.72,
+          "baseline_d": 1436.8,
+          "candidate_d": 1436.9,
+          "compressed_bytes": 61230924
+        },
+        {
+          "round": 1,
+          "c_ratio": 1.0015329586101174,
+          "d_ratio": 0.995626518569941,
+          "baseline_c": 117.42,
+          "candidate_c": 117.6,
+          "baseline_d": 1440.5,
+          "candidate_d": 1434.2,
+          "compressed_bytes": 61230924
+        },
+        {
+          "round": 2,
+          "c_ratio": 1.0128883578012975,
+          "d_ratio": 0.9947185545517722,
+          "baseline_c": 117.16,
+          "candidate_c": 118.67,
+          "baseline_d": 1439.0,
+          "candidate_d": 1431.4,
+          "compressed_bytes": 61230924
+        }
+      ]
+    },
+    {
+      "compiler": "gcc15",
+      "case": "silesia-L7",
+      "pairs": 3,
+      "compression_change_pct": 0.7217718014633112,
+      "compression_min_pair_pct": -2.305246422893492,
+      "compression_max_pair_pct": 2.2275258552108212,
+      "decompression_change_pct": -0.020278491280256716,
+      "baseline_compression_mbps": 100.64,
+      "candidate_compression_mbps": 101.87,
+      "baseline_decompression_mbps": 1481.3,
+      "candidate_decompression_mbps": 1479.1,
+      "compressed_bytes": 60250552,
+      "pair_details": [
+        {
+          "round": 0,
+          "c_ratio": 0.9769475357710651,
+          "d_ratio": 0.9997972150871974,
+          "baseline_c": 100.64,
+          "candidate_c": 98.32,
+          "baseline_d": 1479.4,
+          "candidate_d": 1479.1,
+          "compressed_bytes": 60250552
+        },
+        {
+          "round": 1,
+          "c_ratio": 1.0222752585521082,
+          "d_ratio": 0.9978397353675825,
+          "baseline_c": 100.56,
+          "candidate_c": 102.8,
+          "baseline_d": 1481.3,
+          "candidate_d": 1478.1,
+          "compressed_bytes": 60250552
+        },
+        {
+          "round": 2,
+          "c_ratio": 1.0072177180146331,
+          "d_ratio": 1.0001349254536869,
+          "baseline_c": 101.14,
+          "candidate_c": 101.87,
+          "baseline_d": 1482.3,
+          "candidate_d": 1482.5,
+          "compressed_bytes": 60250552
+        }
+      ]
+    },
+    {
+      "compiler": "gcc15",
+      "case": "silesia-L9",
+      "pairs": 3,
+      "compression_change_pct": 2.6854559957458113,
+      "compression_min_pair_pct": 1.2886940348080245,
+      "compression_max_pair_pct": 4.041649541033032,
+      "decompression_change_pct": 0.17303340875816087,
+      "baseline_compression_mbps": 75.22,
+      "candidate_compression_mbps": 76.24,
+      "baseline_decompression_mbps": 1502.6,
+      "candidate_decompression_mbps": 1505.2,
+      "compressed_bytes": 59073803,
+      "pair_details": [
+        {
+          "round": 0,
+          "c_ratio": 1.0268545599574581,
+          "d_ratio": 0.9895042577067793,
+          "baseline_c": 75.22,
+          "candidate_c": 77.24,
+          "baseline_d": 1514.9,
+          "candidate_d": 1499.0,
+          "compressed_bytes": 59073803
+        },
+        {
+          "round": 1,
+          "c_ratio": 1.0404164954103303,
+          "d_ratio": 1.0116892659141006,
+          "baseline_c": 72.99,
+          "candidate_c": 75.94,
+          "baseline_d": 1497.1,
+          "candidate_d": 1514.6,
+          "compressed_bytes": 59073803
+        },
+        {
+          "round": 2,
+          "c_ratio": 1.0128869403480802,
+          "d_ratio": 1.0017303340875816,
+          "baseline_c": 75.27,
+          "candidate_c": 76.24,
+          "baseline_d": 1502.6,
+          "candidate_d": 1505.2,
+          "compressed_bytes": 59073803
+        }
+      ]
+    },
+    {
+      "compiler": "gcc15",
+      "case": "silesia-hashchain-L6",
+      "pairs": 3,
+      "compression_change_pct": 0.8115942028985579,
+      "compression_min_pair_pct": -3.6103151862464156,
+      "compression_max_pair_pct": 1.5558970418747542,
+      "decompression_change_pct": 0.4867038160400572,
+      "baseline_compression_mbps": 104.12,
+      "candidate_compression_mbps": 104.34,
+      "baseline_decompression_mbps": 1417.7,
+      "candidate_decompression_mbps": 1420.8,
+      "compressed_bytes": 61430436,
+      "pair_details": [
+        {
+          "round": 0,
+          "c_ratio": 1.0081159420289856,
+          "d_ratio": 1.011749626148259,
+          "baseline_c": 103.5,
+          "candidate_c": 104.34,
+          "baseline_d": 1404.3,
+          "candidate_d": 1420.8,
+          "compressed_bytes": 61430436
+        },
+        {
+          "round": 1,
+          "c_ratio": 1.0155589704187475,
+          "d_ratio": 0.976515258050907,
+          "baseline_c": 104.12,
+          "candidate_c": 105.74,
+          "baseline_d": 1422.2,
+          "candidate_d": 1388.8,
+          "compressed_bytes": 61430436
+        },
+        {
+          "round": 2,
+          "c_ratio": 0.9638968481375358,
+          "d_ratio": 1.0048670381604006,
+          "baseline_c": 104.7,
+          "candidate_c": 100.92,
+          "baseline_d": 1417.7,
+          "candidate_d": 1424.6,
+          "compressed_bytes": 61430436
+        }
+      ]
+    },
+    {
+      "compiler": "gcc15",
+      "case": "silesia-hashchain-L9",
+      "pairs": 3,
+      "compression_change_pct": 2.111801242236022,
+      "compression_min_pair_pct": 1.3443640124095158,
+      "compression_max_pair_pct": 3.431879264006632,
+      "decompression_change_pct": 0.34664355709619343,
+      "baseline_compression_mbps": 48.35,
+      "candidate_compression_mbps": 49.32,
+      "baseline_decompression_mbps": 1500.1,
+      "candidate_decompression_mbps": 1513.0,
+      "compressed_bytes": 59234156,
+      "pair_details": [
+        {
+          "round": 0,
+          "c_ratio": 1.0211180124223602,
+          "d_ratio": 1.0112960363612058,
+          "baseline_c": 48.3,
+          "candidate_c": 49.32,
+          "baseline_d": 1496.1,
+          "candidate_d": 1513.0,
+          "compressed_bytes": 59234156
+        },
+        {
+          "round": 1,
+          "c_ratio": 1.0134436401240952,
+          "d_ratio": 1.0023839480829084,
+          "baseline_c": 48.35,
+          "candidate_c": 49.0,
+          "baseline_d": 1510.1,
+          "candidate_d": 1513.7,
+          "compressed_bytes": 59234156
+        },
+        {
+          "round": 2,
+          "c_ratio": 1.0343187926400663,
+          "d_ratio": 1.003466435570962,
+          "baseline_c": 48.37,
+          "candidate_c": 50.03,
+          "baseline_d": 1500.1,
+          "candidate_d": 1505.3,
+          "compressed_bytes": 59234156
+        }
+      ]
+    }
+  ],
+  "streaming": [
+    {
+      "compiler": "apple-clang17",
+      "input_bytes": 1024,
+      "level": 6,
+      "pairs": 3,
+      "change_pct": 0.5649717514124131,
+      "baseline_mbps": 123.9,
+      "candidate_mbps": 124.6,
+      "min_pair_pct": 0.32180209171359664,
+      "max_pair_pct": 0.5658852061438902
+    },
+    {
+      "compiler": "apple-clang17",
+      "input_bytes": 1024,
+      "level": 9,
+      "pairs": 3,
+      "change_pct": 1.5037593984962294,
+      "baseline_mbps": 106.5,
+      "candidate_mbps": 108.0,
+      "min_pair_pct": 0.9363295880149725,
+      "max_pair_pct": 1.6901408450704203
+    },
+    {
+      "compiler": "apple-clang17",
+      "input_bytes": 32768,
+      "level": 6,
+      "pairs": 3,
+      "change_pct": 0.8154188287620379,
+      "baseline_mbps": 135.1,
+      "candidate_mbps": 136.8,
+      "min_pair_pct": 0.512820512820511,
+      "max_pair_pct": 1.2583271650629335
+    },
+    {
+      "compiler": "apple-clang17",
+      "input_bytes": 32768,
+      "level": 9,
+      "pairs": 3,
+      "change_pct": 3.490566037735854,
+      "baseline_mbps": 105.8,
+      "candidate_mbps": 109.5,
+      "min_pair_pct": 2.840909090909083,
+      "max_pair_pct": 3.497164461247637
+    },
+    {
+      "compiler": "gcc15",
+      "input_bytes": 1024,
+      "level": 6,
+      "pairs": 3,
+      "change_pct": 1.3643659711075395,
+      "baseline_mbps": 124.6,
+      "candidate_mbps": 126.1,
+      "min_pair_pct": 1.1235955056179803,
+      "max_pair_pct": 1.6116035455278066
+    },
+    {
+      "compiler": "gcc15",
+      "input_bytes": 1024,
+      "level": 9,
+      "pairs": 3,
+      "change_pct": 3.4079844206426513,
+      "baseline_mbps": 103.5,
+      "candidate_mbps": 106.9,
+      "min_pair_pct": 2.689721421709912,
+      "max_pair_pct": 4.927536231884044
+    },
+    {
+      "compiler": "gcc15",
+      "input_bytes": 32768,
+      "level": 6,
+      "pairs": 3,
+      "change_pct": 1.2698412698412653,
+      "baseline_mbps": 126.0,
+      "candidate_mbps": 127.6,
+      "min_pair_pct": -0.31397174254317317,
+      "max_pair_pct": 4.658634538152628
+    },
+    {
+      "compiler": "gcc15",
+      "input_bytes": 32768,
+      "level": 9,
+      "pairs": 3,
+      "change_pct": -1.122448979591828,
+      "baseline_mbps": 96.8,
+      "candidate_mbps": 96.9,
+      "min_pair_pct": -2.5826446280991733,
+      "max_pair_pct": 1.9648397104446547
+    }
+  ],
+  "static_analysis": [
+    {
+      "label": "baseline",
+      "finished": true,
+      "warning_count": 12,
+      "diagnostics": [
+        {
+          "file": "zstd_compress.c",
+          "line": 4995,
+          "column": 13,
+          "message": "Value stored to 'src' is never read [deadcode.DeadStores]"
+        },
+        {
+          "file": "zstd_compress.c",
+          "line": 8161,
+          "column": 9,
+          "message": "Value stored to 'dstCapacity' is never read [deadcode.DeadStores]"
+        },
+        {
+          "file": "zstd_compress_superblock.c",
+          "line": 611,
+          "column": 13,
+          "message": "Value stored to 'lp' is never read [deadcode.DeadStores]"
+        },
+        {
+          "file": "zstd_compress_superblock.c",
+          "line": 613,
+          "column": 13,
+          "message": "Value stored to 'llCodePtr' is never read [deadcode.DeadStores]"
+        },
+        {
+          "file": "zstd_compress_superblock.c",
+          "line": 614,
+          "column": 13,
+          "message": "Value stored to 'mlCodePtr' is never read [deadcode.DeadStores]"
+        },
+        {
+          "file": "zstd_compress_superblock.c",
+          "line": 615,
+          "column": 13,
+          "message": "Value stored to 'ofCodePtr' is never read [deadcode.DeadStores]"
+        },
+        {
+          "file": "zstd_ldm.c",
+          "line": 56,
+          "column": 35,
+          "message": "Left shift overflows the capacity of 'U64' [core.BitwiseShift]"
+        },
+        {
+          "file": "zstd_opt.c",
+          "line": 1377,
+          "column": 17,
+          "message": "Value stored to 'storeStart' during its initialization is never read [deadcode.DeadStores]"
+        },
+        {
+          "file": "divsufsort.c",
+          "line": 1229,
+          "column": 11,
+          "message": "Assigned value is garbage or undefined [core.uninitialized.Assign]"
+        },
+        {
+          "file": "fileio.c",
+          "line": 1052,
+          "column": 18,
+          "message": "The 2nd argument to 'mmap' is 0 but should be > 0 [unix.StdCLibraryFunctions]"
+        },
+        {
+          "file": "util.c",
+          "line": 659,
+          "column": 25,
+          "message": "File position of the stream might be 'indeterminate' after a failed operation. Can cause undefined behavior [unix.Stream]"
+        },
+        {
+          "file": "util.c",
+          "line": 659,
+          "column": 25,
+          "message": "Read function called when stream is in EOF state. Function has no effect [unix.Stream]"
+        }
+      ],
+      "analyzed_compilation_units": 41,
+      "lazy_c_analyzed": true,
+      "result": {
+        "label": "baseline",
+        "commit": "49cf51799ea051457f57243527aa2058f999f005",
+        "command": [
+          "make",
+          "staticAnalyze",
+          "SCANBUILD=$MAC_RUN/scan-build-llvm-20.1.8/bin/scan-build --use-analyzer=/Library/Developer/CommandLineTools/usr/bin/clang --use-cc=/Library/Developer/CommandLineTools/usr/bin/clang -v -v --keep-empty -o $MAC_RUN/static-verified-reports-baseline"
+        ],
+        "environment": {
+          "CC": "/Library/Developer/CommandLineTools/usr/bin/clang"
+        },
+        "returncode": 2,
+        "elapsed_seconds": 127.55644011497498,
+        "no_bugs_found": false,
+        "analyzer_ran": true,
+        "status": "inspect",
+        "compiler": "Apple clang version 17.0.0 (clang-1700.6.3.2)\nTarget: arm64-apple-darwin25.3.0\nThread model: posix\nInstalledDir: /Library/Developer/CommandLineTools/usr/bin\n",
+        "scan_build_tag": "llvmorg-20.1.8",
+        "log_sha256": "3eed11d6fb9be66b388173f309a9f60922bd295bec6bcd6dd724cdcc279eeb51"
+      },
+      "same_diagnostics_as_baseline": true
+    },
+    {
+      "label": "candidate",
+      "finished": true,
+      "warning_count": 12,
+      "diagnostics": [
+        {
+          "file": "zstd_compress.c",
+          "line": 4995,
+          "column": 13,
+          "message": "Value stored to 'src' is never read [deadcode.DeadStores]"
+        },
+        {
+          "file": "zstd_compress.c",
+          "line": 8161,
+          "column": 9,
+          "message": "Value stored to 'dstCapacity' is never read [deadcode.DeadStores]"
+        },
+        {
+          "file": "zstd_compress_superblock.c",
+          "line": 611,
+          "column": 13,
+          "message": "Value stored to 'lp' is never read [deadcode.DeadStores]"
+        },
+        {
+          "file": "zstd_compress_superblock.c",
+          "line": 613,
+          "column": 13,
+          "message": "Value stored to 'llCodePtr' is never read [deadcode.DeadStores]"
+        },
+        {
+          "file": "zstd_compress_superblock.c",
+          "line": 614,
+          "column": 13,
+          "message": "Value stored to 'mlCodePtr' is never read [deadcode.DeadStores]"
+        },
+        {
+          "file": "zstd_compress_superblock.c",
+          "line": 615,
+          "column": 13,
+          "message": "Value stored to 'ofCodePtr' is never read [deadcode.DeadStores]"
+        },
+        {
+          "file": "zstd_ldm.c",
+          "line": 56,
+          "column": 35,
+          "message": "Left shift overflows the capacity of 'U64' [core.BitwiseShift]"
+        },
+        {
+          "file": "zstd_opt.c",
+          "line": 1377,
+          "column": 17,
+          "message": "Value stored to 'storeStart' during its initialization is never read [deadcode.DeadStores]"
+        },
+        {
+          "file": "divsufsort.c",
+          "line": 1229,
+          "column": 11,
+          "message": "Assigned value is garbage or undefined [core.uninitialized.Assign]"
+        },
+        {
+          "file": "fileio.c",
+          "line": 1052,
+          "column": 18,
+          "message": "The 2nd argument to 'mmap' is 0 but should be > 0 [unix.StdCLibraryFunctions]"
+        },
+        {
+          "file": "util.c",
+          "line": 659,
+          "column": 25,
+          "message": "File position of the stream might be 'indeterminate' after a failed operation. Can cause undefined behavior [unix.Stream]"
+        },
+        {
+          "file": "util.c",
+          "line": 659,
+          "column": 25,
+          "message": "Read function called when stream is in EOF state. Function has no effect [unix.Stream]"
+        }
+      ],
+      "analyzed_compilation_units": 41,
+      "lazy_c_analyzed": true,
+      "result": {
+        "label": "candidate",
+        "commit": "222606cee24d2fc3cb1c514640903a21b6f40dfc",
+        "command": [
+          "make",
+          "staticAnalyze",
+          "SCANBUILD=$MAC_RUN/scan-build-llvm-20.1.8/bin/scan-build --use-analyzer=/Library/Developer/CommandLineTools/usr/bin/clang --use-cc=/Library/Developer/CommandLineTools/usr/bin/clang -v -v --keep-empty -o $MAC_RUN/static-verified-reports-candidate"
+        ],
+        "environment": {
+          "CC": "/Library/Developer/CommandLineTools/usr/bin/clang"
+        },
+        "returncode": 2,
+        "elapsed_seconds": 122.44034385681152,
+        "no_bugs_found": false,
+        "analyzer_ran": true,
+        "status": "inspect",
+        "compiler": "Apple clang version 17.0.0 (clang-1700.6.3.2)\nTarget: arm64-apple-darwin25.3.0\nThread model: posix\nInstalledDir: /Library/Developer/CommandLineTools/usr/bin\n",
+        "scan_build_tag": "llvmorg-20.1.8",
+        "log_sha256": "2dc8972d8d8ad810d1e193dc6af6c1b31bcc4a850e856bfdcc94170b9dbc1141"
+      },
+      "same_diagnostics_as_baseline": true
+    },
+    {
+      "label": "cli-fix",
+      "finished": true,
+      "warning_count": 12,
+      "diagnostics": [
+        {
+          "file": "zstd_compress.c",
+          "line": 4995,
+          "column": 13,
+          "message": "Value stored to 'src' is never read [deadcode.DeadStores]"
+        },
+        {
+          "file": "zstd_compress.c",
+          "line": 8161,
+          "column": 9,
+          "message": "Value stored to 'dstCapacity' is never read [deadcode.DeadStores]"
+        },
+        {
+          "file": "zstd_compress_superblock.c",
+          "line": 611,
+          "column": 13,
+          "message": "Value stored to 'lp' is never read [deadcode.DeadStores]"
+        },
+        {
+          "file": "zstd_compress_superblock.c",
+          "line": 613,
+          "column": 13,
+          "message": "Value stored to 'llCodePtr' is never read [deadcode.DeadStores]"
+        },
+        {
+          "file": "zstd_compress_superblock.c",
+          "line": 614,
+          "column": 13,
+          "message": "Value stored to 'mlCodePtr' is never read [deadcode.DeadStores]"
+        },
+        {
+          "file": "zstd_compress_superblock.c",
+          "line": 615,
+          "column": 13,
+          "message": "Value stored to 'ofCodePtr' is never read [deadcode.DeadStores]"
+        },
+        {
+          "file": "zstd_ldm.c",
+          "line": 56,
+          "column": 35,
+          "message": "Left shift overflows the capacity of 'U64' [core.BitwiseShift]"
+        },
+        {
+          "file": "zstd_opt.c",
+          "line": 1377,
+          "column": 17,
+          "message": "Value stored to 'storeStart' during its initialization is never read [deadcode.DeadStores]"
+        },
+        {
+          "file": "divsufsort.c",
+          "line": 1229,
+          "column": 11,
+          "message": "Assigned value is garbage or undefined [core.uninitialized.Assign]"
+        },
+        {
+          "file": "fileio.c",
+          "line": 1052,
+          "column": 18,
+          "message": "The 2nd argument to 'mmap' is 0 but should be > 0 [unix.StdCLibraryFunctions]"
+        },
+        {
+          "file": "util.c",
+          "line": 659,
+          "column": 25,
+          "message": "File position of the stream might be 'indeterminate' after a failed operation. Can cause undefined behavior [unix.Stream]"
+        },
+        {
+          "file": "util.c",
+          "line": 659,
+          "column": 25,
+          "message": "Read function called when stream is in EOF state. Function has no effect [unix.Stream]"
+        }
+      ],
+      "analyzed_compilation_units": 41,
+      "lazy_c_analyzed": true,
+      "result": {
+        "label": "cli-fix",
+        "commit": "e671aa574a49c5b3146cd8d6c1545d97013a05b9",
+        "command": [
+          "make",
+          "staticAnalyze",
+          "SCANBUILD=$MAC_RUN/scan-build-llvm-20.1.8/bin/scan-build --use-analyzer=/Library/Developer/CommandLineTools/usr/bin/clang --use-cc=/Library/Developer/CommandLineTools/usr/bin/clang -v -v --keep-empty -o $MAC_RUN/static-verified-reports-cli-fix"
+        ],
+        "environment": {
+          "CC": "/Library/Developer/CommandLineTools/usr/bin/clang"
+        },
+        "returncode": 2,
+        "elapsed_seconds": 125.8592221736908,
+        "no_bugs_found": false,
+        "analyzer_ran": true,
+        "status": "inspect",
+        "compiler": "Apple clang version 17.0.0 (clang-1700.6.3.2)\nTarget: arm64-apple-darwin25.3.0\nThread model: posix\nInstalledDir: /Library/Developer/CommandLineTools/usr/bin\n",
+        "scan_build_tag": "llvmorg-20.1.8",
+        "log_sha256": "eb9a7a1fc63cf252b7aa73ce4e37dc29fa8f2e2c6cafa4386b57e5cb9b02c8f3"
+      },
+      "same_diagnostics_as_baseline": true
+    }
+  ],
+  "independent_confirmation": [
+    {
+      "compiler": "apple-clang17",
+      "case": "silesia-L5",
+      "pairs": 5,
+      "change_pct": 0.2676959472078799,
+      "min_pair_pct": -1.4426865490695273,
+      "max_pair_pct": 87.17707844058245,
+      "baseline_mbps": 162.58,
+      "candidate_mbps": 162.39,
+      "decompression_change_pct": 0.4241614955620143
+    },
+    {
+      "compiler": "apple-clang17",
+      "case": "silesia-L9",
+      "pairs": 5,
+      "change_pct": 3.623092236230918,
+      "min_pair_pct": 3.4241976634886484,
+      "max_pair_pct": 4.938271604938271,
+      "baseline_mbps": 75.31,
+      "candidate_mbps": 77.99,
+      "decompression_change_pct": 0.8037225042301088
+    },
+    {
+      "compiler": "gcc15",
+      "case": "silesia-L9",
+      "pairs": 5,
+      "change_pct": 3.5167785234899496,
+      "min_pair_pct": 3.1140939597315453,
+      "max_pair_pct": 5.964520184383293,
+      "baseline_mbps": 74.5,
+      "candidate_mbps": 76.84,
+      "decompression_change_pct": -0.198281559814939
+    }
+  ],
+  "final_aa": [
+    {
+      "compiler": "apple-clang17",
+      "pairs": 5,
+      "median_change_pct": -0.29578189300412117,
+      "min_pair_pct": -0.7703171138785381,
+      "max_pair_pct": 0.6080993660240619
+    },
+    {
+      "compiler": "gcc15",
+      "pairs": 5,
+      "median_change_pct": 0.040328001075407016,
+      "min_pair_pct": -0.589101620029453,
+      "max_pair_pct": 0.7980522115514477
+    }
+  ],
+  "caution": "Three-pair expanded matrix is a screen; pair ranges are descriptive, not confidence intervals. Longer confirmations use five pairs at -i5. Original Mac A/A is excluded due transfer overlap; see final_aa. Cross-CPU/compiler claims require inspecting all configurations, including losses.",
+  "excluded_initial_aa": {
+    "excluded_cases": [
+      "AA-silesia-L9"
+    ],
+    "scope": "Mac initial same-binary controls only; kept in raw data but excluded from final calibration.",
+    "reason": "Data staging to the EPYC host overlapped the initial Mac calibration window. Main candidate/baseline pairs began after staging finished.",
+    "replacement": "final_noise_controls.py, after expanded-completed.json; five -i5 pairs for each Mac compiler."
+  },
+  "dictionary_compression": [
+    {
+      "compiler": "apple-clang17",
+      "dataset": "dickens",
+      "level": 6,
+      "pairs": 3,
+      "change_pct": -0.8397355726281863,
+      "min_pair_pct": -0.9087669280113952,
+      "max_pair_pct": -0.6954350927246833,
+      "baseline_mbps": 56.08,
+      "candidate_mbps": 55.61
+    },
+    {
+      "compiler": "apple-clang17",
+      "dataset": "dickens",
+      "level": 9,
+      "pairs": 3,
+      "change_pct": 0.3573981415296634,
+      "min_pair_pct": 0.1787629603146268,
+      "max_pair_pct": 0.9329027628274034,
+      "baseline_mbps": 27.97,
+      "candidate_mbps": 28.08
+    },
+    {
+      "compiler": "apple-clang17",
+      "dataset": "xml",
+      "level": 6,
+      "pairs": 3,
+      "change_pct": 3.912549687677469,
+      "min_pair_pct": 3.245390070921994,
+      "max_pair_pct": 4.319617551647603,
+      "baseline_mbps": 176.1,
+      "candidate_mbps": 182.99
+    },
+    {
+      "compiler": "apple-clang17",
+      "dataset": "xml",
+      "level": 9,
+      "pairs": 3,
+      "change_pct": 9.804444444444439,
+      "min_pair_pct": 9.061805246776334,
+      "max_pair_pct": 9.863307424283029,
+      "baseline_mbps": 112.45,
+      "candidate_mbps": 122.97
+    },
+    {
+      "compiler": "gcc15",
+      "dataset": "dickens",
+      "level": 6,
+      "pairs": 3,
+      "change_pct": 0.25796941219826675,
+      "min_pair_pct": 0.2202238942925261,
+      "max_pair_pct": 0.29465930018417463,
+      "baseline_mbps": 54.3,
+      "candidate_mbps": 54.46
+    },
+    {
+      "compiler": "gcc15",
+      "dataset": "dickens",
+      "level": 9,
+      "pairs": 3,
+      "change_pct": 1.4380530973451267,
+      "min_pair_pct": -10.415899889584102,
+      "max_pair_pct": 1.512357063814096,
+      "baseline_mbps": 27.12,
+      "candidate_mbps": 27.51
+    },
+    {
+      "compiler": "gcc15",
+      "dataset": "xml",
+      "level": 6,
+      "pairs": 3,
+      "change_pct": 4.160309822790764,
+      "min_pair_pct": 3.833996722079136,
+      "max_pair_pct": 4.551059956544723,
+      "baseline_mbps": 170.42,
+      "candidate_mbps": 177.51
+    },
+    {
+      "compiler": "gcc15",
+      "dataset": "xml",
+      "level": 9,
+      "pairs": 3,
+      "change_pct": 9.44643869261288,
+      "min_pair_pct": 9.301446261461365,
+      "max_pair_pct": 22.14594994191572,
+      "baseline_mbps": 105.79,
+      "candidate_mbps": 115.66
+    }
+  ]
+}

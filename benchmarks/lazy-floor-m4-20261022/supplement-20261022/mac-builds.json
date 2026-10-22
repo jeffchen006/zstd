@@ -1,0 +1,142 @@
+[
+  {
+    "compiler_label": "apple-clang17",
+    "compiler": "Apple clang version 17.0.0 (clang-1700.6.3.2)\nTarget: arm64-apple-darwin25.3.0\nThread model: posix\nInstalledDir: /Library/Developer/CommandLineTools/usr/bin\n",
+    "label": "baseline",
+    "commit": "49cf51799ea051457f57243527aa2058f999f005",
+    "command": [
+      "make",
+      "-j4",
+      "zstd",
+      "CC=/Library/Developer/CommandLineTools/usr/bin/clang",
+      "CFLAGS=-O3",
+      "DEBUGLEVEL=0",
+      "HAVE_ZLIB=0",
+      "HAVE_LZMA=0",
+      "HAVE_LZ4=0"
+    ],
+    "fullbench_command": [
+      "make",
+      "-C",
+      "tests",
+      "-j4",
+      "fullbench",
+      "CC=/Library/Developer/CommandLineTools/usr/bin/clang",
+      "CFLAGS=-O3",
+      "DEBUGLEVEL=0"
+    ],
+    "returncode": 0,
+    "binary": "$MAC_RUN/bench-source-apple-clang17-baseline/zstd",
+    "sha256": "3b11451e156561ff737bbb4b8b2d8930cd41cecada08ea92164702bde7aca0fd",
+    "fullbench": "$MAC_RUN/bench-source-apple-clang17-baseline/tests/fullbench",
+    "fullbench_sha256": "352d2a77b254c874eff0513bcb492e41268c67cc017886ae5daf07f2d57ad212",
+    "size_output": "__TEXT\t__DATA\t__OBJC\tothers\tdec\thex\n720896\t16384\t0\t4295065600\t4295802880\t1000cc000\n",
+    "file_bytes": 824504,
+    "size_sections": "Segment __PAGEZERO: 4294967296 (zero fill) \nSegment __TEXT: 720896\n\tSection __text: 660056\n\tSection __stubs: 984\n\tSection __const: 14504\n\tSection __cstring: 38197\n\tSection __unwind_info: 1976\n\tSection __eh_frame: 160\n\ttotal 715877\nSegment __DATA_CONST: 16384\n\tSection __got: 696\n\tSection __const: 2912\n\ttotal 3608\nSegment __DATA: 16384\n\tSection __data: 944\n\tSection __common: 28 (zerofill)\n\tSection __bss: 2712 (zerofill)\n\ttotal 3684\nSegment __LINKEDIT: 81920\ntotal 4295802880\n"
+  },
+  {
+    "compiler_label": "apple-clang17",
+    "compiler": "Apple clang version 17.0.0 (clang-1700.6.3.2)\nTarget: arm64-apple-darwin25.3.0\nThread model: posix\nInstalledDir: /Library/Developer/CommandLineTools/usr/bin\n",
+    "label": "candidate",
+    "commit": "222606cee24d2fc3cb1c514640903a21b6f40dfc",
+    "command": [
+      "make",
+      "-j4",
+      "zstd",
+      "CC=/Library/Developer/CommandLineTools/usr/bin/clang",
+      "CFLAGS=-O3",
+      "DEBUGLEVEL=0",
+      "HAVE_ZLIB=0",
+      "HAVE_LZMA=0",
+      "HAVE_LZ4=0"
+    ],
+    "fullbench_command": [
+      "make",
+      "-C",
+      "tests",
+      "-j4",
+      "fullbench",
+      "CC=/Library/Developer/CommandLineTools/usr/bin/clang",
+      "CFLAGS=-O3",
+      "DEBUGLEVEL=0"
+    ],
+    "returncode": 0,
+    "binary": "$MAC_RUN/bench-source-apple-clang17-candidate/zstd",
+    "sha256": "0a92b0fc6e76d6aa8fef193a4076c3e11de2b5c079726bf9dbd7c8b899e0a3e2",
+    "fullbench": "$MAC_RUN/bench-source-apple-clang17-candidate/tests/fullbench",
+    "fullbench_sha256": "41c2e1f228bebe9aed0ec9e206d1845bce63bbfac02b916850defc37a1a5a0f6",
+    "size_output": "__TEXT\t__DATA\t__OBJC\tothers\tdec\thex\n720896\t16384\t0\t4295065600\t4295802880\t1000cc000\n",
+    "file_bytes": 824504,
+    "size_sections": "Segment __PAGEZERO: 4294967296 (zero fill) \nSegment __TEXT: 720896\n\tSection __text: 661328\n\tSection __stubs: 984\n\tSection __const: 14504\n\tSection __cstring: 38197\n\tSection __unwind_info: 1976\n\tSection __eh_frame: 160\n\ttotal 717149\nSegment __DATA_CONST: 16384\n\tSection __got: 696\n\tSection __const: 2912\n\ttotal 3608\nSegment __DATA: 16384\n\tSection __data: 944\n\tSection __common: 28 (zerofill)\n\tSection __bss: 2712 (zerofill)\n\ttotal 3684\nSegment __LINKEDIT: 81920\ntotal 4295802880\n"
+  },
+  {
+    "compiler_label": "gcc15",
+    "compiler": "gcc-15 (Homebrew GCC 15.2.0_1) 15.2.0\nCopyright (C) 2025 Free Software Foundation, Inc.\nThis is free software; see the source for copying conditions.  There is NO\nwarranty; not even for MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.\n\n",
+    "label": "baseline",
+    "commit": "49cf51799ea051457f57243527aa2058f999f005",
+    "command": [
+      "make",
+      "-j4",
+      "zstd",
+      "CC=/opt/homebrew/bin/gcc-15",
+      "CFLAGS=-O3",
+      "DEBUGLEVEL=0",
+      "HAVE_ZLIB=0",
+      "HAVE_LZMA=0",
+      "HAVE_LZ4=0"
+    ],
+    "fullbench_command": [
+      "make",
+      "-C",
+      "tests",
+      "-j4",
+      "fullbench",
+      "CC=/opt/homebrew/bin/gcc-15",
+      "CFLAGS=-O3",
+      "DEBUGLEVEL=0"
+    ],
+    "returncode": 0,
+    "binary": "$MAC_RUN/bench-source-gcc15-baseline/zstd",
+    "sha256": "500d2c031f12ac322dcbf74141f5b49cfaf05f0dfb8d0447ddffd220a9501b36",
+    "fullbench": "$MAC_RUN/bench-source-gcc15-baseline/tests/fullbench",
+    "fullbench_sha256": "ee34e68cf9dfe88659f72213f667532a5ca9087a09465015822b910aae93ae6a",
+    "size_output": "__TEXT\t__DATA\t__OBJC\tothers\tdec\thex\n1032192\t16384\t0\t4295065600\t4296114176\t100118000\n",
+    "file_bytes": 1131080,
+    "size_sections": "Segment __PAGEZERO: 4294967296 (zero fill) \nSegment __TEXT: 1032192\n\tSection __text: 874344\n\tSection __text_cold: 388\n\tSection __text_startup: 16320\n\tSection __stubs: 948\n\tSection __cstring: 40886\n\tSection __const: 16192\n\tSection __eh_frame: 80184\n\ttotal 1029262\nSegment __DATA_CONST: 16384\n\tSection __got: 656\n\tSection __const: 696\n\ttotal 1352\nSegment __DATA: 16384\n\tSection __data: 3112\n\tSection __common: 24 (zerofill)\n\tSection __bss: 2716 (zerofill)\n\ttotal 5852\nSegment __LINKEDIT: 81920\ntotal 4296114176\n"
+  },
+  {
+    "compiler_label": "gcc15",
+    "compiler": "gcc-15 (Homebrew GCC 15.2.0_1) 15.2.0\nCopyright (C) 2025 Free Software Foundation, Inc.\nThis is free software; see the source for copying conditions.  There is NO\nwarranty; not even for MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.\n\n",
+    "label": "candidate",
+    "commit": "222606cee24d2fc3cb1c514640903a21b6f40dfc",
+    "command": [
+      "make",
+      "-j4",
+      "zstd",
+      "CC=/opt/homebrew/bin/gcc-15",
+      "CFLAGS=-O3",
+      "DEBUGLEVEL=0",
+      "HAVE_ZLIB=0",
+      "HAVE_LZMA=0",
+      "HAVE_LZ4=0"
+    ],
+    "fullbench_command": [
+      "make",
+      "-C",
+      "tests",
+      "-j4",
+      "fullbench",
+      "CC=/opt/homebrew/bin/gcc-15",
+      "CFLAGS=-O3",
+      "DEBUGLEVEL=0"
+    ],
+    "returncode": 0,
+    "binary": "$MAC_RUN/bench-source-gcc15-candidate/zstd",
+    "sha256": "21d14a3d9ed245f7b1d4a7aa0fcc227585335ebcb6439d326178c636598c8e24",
+    "fullbench": "$MAC_RUN/bench-source-gcc15-candidate/tests/fullbench",
+    "fullbench_sha256": "5b4f5b7cde13f472380494272b102b192b9aa47d382201272b3822f2c04e64b7",
+    "size_output": "__TEXT\t__DATA\t__OBJC\tothers\tdec\thex\n1048576\t16384\t0\t4295065600\t4296130560\t10011c000\n",
+    "file_bytes": 1147592,
+    "size_sections": "Segment __PAGEZERO: 4294967296 (zero fill) \nSegment __TEXT: 1048576\n\tSection __text: 880360\n\tSection __text_cold: 388\n\tSection __text_startup: 16320\n\tSection __stubs: 948\n\tSection __cstring: 40886\n\tSection __const: 16192\n\tSection __eh_frame: 80056\n\ttotal 1035150\nSegment __DATA_CONST: 16384\n\tSection __got: 656\n\tSection __const: 696\n\ttotal 1352\nSegment __DATA: 16384\n\tSection __data: 3112\n\tSection __common: 24 (zerofill)\n\tSection __bss: 2716 (zerofill)\n\ttotal 5852\nSegment __LINKEDIT: 81920\ntotal 4296130560\n"
+  }
+]

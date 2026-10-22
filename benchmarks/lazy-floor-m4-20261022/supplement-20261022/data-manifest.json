@@ -1,0 +1,32 @@
+{
+  "enwik8_source": "https://mattmahoney.net/dc/enwik8.zip",
+  "enwik8_md5": "a1fa5ffddb56f4953e226637dabbb36a",
+  "random_generator": "Python random.Random(221022).randbytes(16*1024*1024)",
+  "files": [
+    {
+      "file": "enwik8",
+      "bytes": 100000000,
+      "sha256": "2b49720ec4d78c3c9fabaee6e4179a5e997302b3a70029f30f2d582218c024a8"
+    },
+    {
+      "file": "enwik8-first-1024",
+      "bytes": 1024,
+      "sha256": "ef3e698d40b8b36d6d1776feccc25bab3d01de872a4fd8e56f5b929631568496"
+    },
+    {
+      "file": "enwik8-first-32768",
+      "bytes": 32768,
+      "sha256": "de91bc4727fadadb7abfa3af752e8d7ac6cfb24c87b7cf4078858088dcd4e5c7"
+    },
+    {
+      "file": "random-then-text16MiB",
+      "bytes": 16777216,
+      "sha256": "3f82226ab3b97af36a9748d6d023b99adca004c22e3af0307ec398a9e8b22b43"
+    },
+    {
+      "file": "random16MiB",
+      "bytes": 16777216,
+      "sha256": "509a38a1a7440e350c3ce2caf2dafc24ab3deee526834e8739a6e4ebaa7e6df0"
+    }
+  ]
+}

@@ -1,0 +1,567 @@
+Supplemental validation for lazy match-length floor, 2026-10-22
+
+Assessment: hold the generic optimization for performance work, or discuss it only as an RFC/draft with regressions disclosed. Independent Mac Silesia L9 gains reproduce with both compilers; independent x86 GCC11 random L9 measurements are slower in all five pairs. The x86 Silesia gains are small and mixed. Correctness/CI success does not establish a general performance win. The two compatibility fixes remain separate and prepared.
+
+Hardware: Apple M4 Max14CPU cores,36GiB,macOS26.3; Apple Clang17.0.0 and GCC15.2. AMD EPYC9654,Ubuntu22.04/Linux5.15; Clang14.0 and GCC11.4. Exact compiler/build/environment metadata accompanies each result.
+
+Scope: same optimization source as the original Mac experiment. User confirmed CLA signed. Compatibility fixes remain separate prerequisite PRs. No upstream PR submitted by the agent.
+
+Static analysis: make staticAnalyze actually analyzed 41 units, including zstd_lazy.c, for baseline, optimization and standalone CLI fix. Each exits 2 with the identical 12 upstream diagnostics. No new diagnostics; this is NOT a clean static-analysis pass. LLVM scan-build wrapper pinned llvmorg-20.1.8; Apple Clang 17.0.0 analyzer. CC is supplied in the environment to allow compiler interception by recursive make. See static-analysis.json/proof and retained private verbose logs.
+
+Precedents: see ACCEPTED_PR_REVIEW.txt for five merged PRs and the corresponding added checks. These examples do not establish a universal minimum gain or guarantee acceptance.
+
+Method: two binaries per compiler; -O3 DEBUGLEVEL=0, external codecs disabled, single-thread benchmark. Twelve-file Silesia is an alphabetical concatenation (211938580 bytes), not a tar archive. Official enwik8 has 100000000 bytes and its published MD5 was verified. Additional deterministic random and mixed data, hash-chain controls, 32 KiB independent chunks, and 1/32 KiB reused-context fullbench streaming are covered.
+
+Screen: 3 alternating pairs per case at -i2. Three previous L6 file losses use 5 pairs at -i5. Independent follow-up always tests Silesia L9 and the largest screened loss below -1% per compiler using 5 new pairs at -i5. Final same-binary controls use 5 pairs at -i5. Pair ranges below are descriptive, not confidence intervals.
+
+Independent longer compression checks (speed columns are separate medians; changes are median paired ratios; min..max individual paired change):
+
+mac   apple-clang17  silesia-L5                        162.58 ->    162.39 MB/s   +0.27% [-1.44, +87.18]
+
+mac   apple-clang17  silesia-L9                         75.31 ->     77.99 MB/s   +3.62% [+3.42, +4.94]
+
+mac   gcc15          silesia-L9                         74.50 ->     76.84 MB/s   +3.52% [+3.11, +5.96]
+
+epyc  clang14        silesia-L13                        13.15 ->     14.31 MB/s   -0.69% [-3.73, +24.43]
+
+epyc  clang14        silesia-L9                         73.66 ->     75.04 MB/s   +1.63% [-0.97, +2.20]
+
+epyc  gcc11          random16MiB-L9                   2485.69 ->   2288.01 MB/s   -7.84% [-10.74, -3.66]
+
+epyc  gcc11          silesia-L9                         73.35 ->     73.38 MB/s   +0.61% [-0.52, +1.45]
+
+
+Longer checks of original L6 file losses:
+
+mac   apple-clang17  confirm-osdb-L6                  -0.54% [-1.15, -0.27]
+
+mac   apple-clang17  confirm-sao-L6                   -1.02% [-1.70, +0.53]
+
+mac   apple-clang17  confirm-x-ray-L6                 -1.18% [-4.75, +0.50]
+
+mac   gcc15          confirm-osdb-L6                  -0.02% [-0.08, +0.25]
+
+mac   gcc15          confirm-sao-L6                   -0.02% [-0.45, +0.19]
+
+mac   gcc15          confirm-x-ray-L6                 -0.34% [-0.56, -0.10]
+
+epyc  clang14        confirm-osdb-L6                  -0.40% [-0.75, +0.10]
+
+epyc  clang14        confirm-sao-L6                   -0.66% [-2.93, -0.31]
+
+epyc  clang14        confirm-x-ray-L6                 -0.83% [-4.04, -0.50]
+
+epyc  gcc11          confirm-osdb-L6                  -1.86% [-2.05, -1.22]
+
+epyc  gcc11          confirm-sao-L6                   -2.00% [-3.12, -0.90]
+
+epyc  gcc11          confirm-x-ray-L6                 -1.47% [-2.34, +0.76]
+
+
+Final same-binary noise controls:
+
+mac   apple-clang17  median -0.30% [-0.77, +0.61]
+
+mac   gcc15          median +0.04% [-0.59, +0.80]
+
+epyc  clang14        median -0.20% [-2.33, +0.59]
+
+epyc  gcc11          median -0.14% [-3.38, +2.03]
+
+
+Streaming screen, median paired change:
+
+mac   apple-clang17    1024 bytes L6   +0.56% [+0.32, +0.57]
+
+mac   apple-clang17    1024 bytes L9   +1.50% [+0.94, +1.69]
+
+mac   apple-clang17   32768 bytes L6   +0.82% [+0.51, +1.26]
+
+mac   apple-clang17   32768 bytes L9   +3.49% [+2.84, +3.50]
+
+mac   gcc15            1024 bytes L6   +1.36% [+1.12, +1.61]
+
+mac   gcc15            1024 bytes L9   +3.41% [+2.69, +4.93]
+
+mac   gcc15           32768 bytes L6   +1.27% [-0.31, +4.66]
+
+mac   gcc15           32768 bytes L9   -1.12% [-2.58, +1.96]
+
+epyc  clang14          1024 bytes L6   -0.44% [-0.53, -0.09]
+
+epyc  clang14          1024 bytes L9   -0.82% [-1.49, +2.20]
+
+epyc  clang14         32768 bytes L6   -0.55% [-1.46, +0.18]
+
+epyc  clang14         32768 bytes L9   +3.35% [+0.48, +3.58]
+
+epyc  gcc11            1024 bytes L6   +0.00% [-0.37, +0.09]
+
+epyc  gcc11            1024 bytes L9   +1.69% [-0.21, +3.21]
+
+epyc  gcc11           32768 bytes L6   -0.77% [-0.77, +0.10]
+
+epyc  gcc11           32768 bytes L9   +0.00% [-0.37, +1.36]
+
+
+Full compression screen (median paired change; min..max individual paired change):
+
+mac   apple-clang17  enwik8-L12                       +1.47% [-0.95, +2.40]
+
+mac   apple-clang17  enwik8-L13                       +0.79% [-1.92, +3.04]
+
+mac   apple-clang17  enwik8-L5                        +0.23% [-0.11, +0.24]
+
+mac   apple-clang17  enwik8-L6                        -0.29% [-0.49, +1.44]
+
+mac   apple-clang17  enwik8-L7                        -0.75% [-2.77, +0.17]
+
+mac   apple-clang17  enwik8-L9                        +4.06% [+2.36, +4.44]
+
+mac   apple-clang17  mixed-L6                         +0.17% [-0.50, +0.64]
+
+mac   apple-clang17  mixed-L9                         +2.67% [+2.62, +3.15]
+
+mac   apple-clang17  random16MiB-L12                  -0.04% [-1.95, +1.59]
+
+mac   apple-clang17  random16MiB-L13                  -0.78% [-1.33, +0.70]
+
+mac   apple-clang17  random16MiB-L5                   -0.41% [-1.93, -0.05]
+
+mac   apple-clang17  random16MiB-L6                   -0.32% [-0.57, +1.22]
+
+mac   apple-clang17  random16MiB-L7                   +0.07% [-0.41, +0.23]
+
+mac   apple-clang17  random16MiB-L9                   +0.82% [+0.33, +0.98]
+
+mac   apple-clang17  silesia-32KiB-L6                 +1.14% [+0.71, +1.48]
+
+mac   apple-clang17  silesia-32KiB-L9                 +3.45% [+2.66, +4.20]
+
+mac   apple-clang17  silesia-L12                     +10.09% [+2.27, +11.55]
+
+mac   apple-clang17  silesia-L13                      +1.11% [+0.86, +2.40]
+
+mac   apple-clang17  silesia-L5                       -1.00% [-3.53, +2.03]
+
+mac   apple-clang17  silesia-L6                       +0.46% [+0.30, +1.05]
+
+mac   apple-clang17  silesia-L7                       +4.41% [+2.50, +6.52]
+
+mac   apple-clang17  silesia-L9                       +3.24% [+2.45, +4.02]
+
+mac   apple-clang17  silesia-hashchain-L6             +1.30% [+1.09, +1.86]
+
+mac   apple-clang17  silesia-hashchain-L9             +0.78% [+0.02, +2.48]
+
+mac   gcc15          enwik8-L12                       +4.36% [+1.29, +6.90]
+
+mac   gcc15          enwik8-L13                       +1.55% [-0.90, +1.58]
+
+mac   gcc15          enwik8-L5                        +0.06% [-1.50, +1.05]
+
+mac   gcc15          enwik8-L6                        +0.26% [+0.16, +0.50]
+
+mac   gcc15          enwik8-L7                        +0.03% [-1.94, +0.49]
+
+mac   gcc15          enwik8-L9                        +2.60% [+1.48, +3.45]
+
+mac   gcc15          mixed-L6                         +0.70% [-0.28, +1.00]
+
+mac   gcc15          mixed-L9                         +3.56% [+1.81, +3.62]
+
+mac   gcc15          random16MiB-L12                  +0.28% [-1.42, +0.81]
+
+mac   gcc15          random16MiB-L13                  -0.00% [-4.48, +0.19]
+
+mac   gcc15          random16MiB-L5                   +0.84% [+0.23, +1.27]
+
+mac   gcc15          random16MiB-L6                   +1.05% [-0.09, +1.14]
+
+mac   gcc15          random16MiB-L7                   +0.24% [+0.15, +1.15]
+
+mac   gcc15          random16MiB-L9                   +0.16% [-0.91, +2.61]
+
+mac   gcc15          silesia-32KiB-L6                 +1.96% [+1.36, +2.33]
+
+mac   gcc15          silesia-32KiB-L9                 +5.02% [+4.89, +5.50]
+
+mac   gcc15          silesia-L12                      +1.95% [+0.71, +4.58]
+
+mac   gcc15          silesia-L13                      +1.16% [+0.78, +4.13]
+
+mac   gcc15          silesia-L5                       -0.94% [-2.20, +2.10]
+
+mac   gcc15          silesia-L6                       +1.29% [+0.15, +1.76]
+
+mac   gcc15          silesia-L7                       +0.72% [-2.31, +2.23]
+
+mac   gcc15          silesia-L9                       +2.69% [+1.29, +4.04]
+
+mac   gcc15          silesia-hashchain-L6             +0.81% [-3.61, +1.56]
+
+mac   gcc15          silesia-hashchain-L9             +2.11% [+1.34, +3.43]
+
+epyc  clang14        enwik8-L12                       +0.29% [-4.55, +1.53]
+
+epyc  clang14        enwik8-L13                       +0.00% [-4.23, +3.53]
+
+epyc  clang14        enwik8-L5                        +0.05% [-0.98, +1.18]
+
+epyc  clang14        enwik8-L6                        +0.43% [-0.02, +0.95]
+
+epyc  clang14        enwik8-L7                        +1.03% [+0.27, +1.03]
+
+epyc  clang14        enwik8-L9                        +1.51% [+1.49, +2.61]
+
+epyc  clang14        mixed-L6                         +0.20% [+0.16, +0.30]
+
+epyc  clang14        mixed-L9                         -1.19% [-3.84, +5.35]
+
+epyc  clang14        random16MiB-L12                  +0.03% [-3.14, +2.90]
+
+epyc  clang14        random16MiB-L13                  -2.20% [-2.81, +0.64]
+
+epyc  clang14        random16MiB-L5                   -2.74% [-12.80, -1.60]
+
+epyc  clang14        random16MiB-L6                   -0.90% [-2.25, -0.81]
+
+epyc  clang14        random16MiB-L7                   -0.50% [-0.62, +0.66]
+
+epyc  clang14        random16MiB-L9                   -4.65% [-14.24, +9.11]
+
+epyc  clang14        silesia-32KiB-L6                 +0.67% [-0.29, +1.17]
+
+epyc  clang14        silesia-32KiB-L9                 +6.58% [+5.38, +7.34]
+
+epyc  clang14        silesia-L12                      -1.51% [-2.89, -0.32]
+
+epyc  clang14        silesia-L13                      -5.62% [-22.58, -0.97]
+
+epyc  clang14        silesia-L5                       -0.22% [-0.46, +0.14]
+
+epyc  clang14        silesia-L6                       +0.54% [+0.14, +2.15]
+
+epyc  clang14        silesia-L7                       -0.58% [-1.10, +0.28]
+
+epyc  clang14        silesia-L9                       -0.53% [-1.55, +1.69]
+
+epyc  clang14        silesia-hashchain-L6             -0.96% [-2.81, -0.24]
+
+epyc  clang14        silesia-hashchain-L9             -1.49% [-1.84, +2.72]
+
+epyc  gcc11          enwik8-L12                       +2.58% [+0.24, +5.65]
+
+epyc  gcc11          enwik8-L13                       -1.43% [-1.54, +0.28]
+
+epyc  gcc11          enwik8-L5                        -1.08% [-1.64, -0.43]
+
+epyc  gcc11          enwik8-L6                        -0.50% [-0.70, -0.05]
+
+epyc  gcc11          enwik8-L7                        -0.96% [-1.18, -0.67]
+
+epyc  gcc11          enwik8-L9                        +1.92% [+0.34, +2.47]
+
+epyc  gcc11          mixed-L6                         -0.54% [-1.13, -0.50]
+
+epyc  gcc11          mixed-L9                         +2.10% [-6.12, +3.01]
+
+epyc  gcc11          random16MiB-L12                  -2.85% [-9.30, -1.11]
+
+epyc  gcc11          random16MiB-L13                  -8.80% [-10.33, +5.87]
+
+epyc  gcc11          random16MiB-L5                   -2.30% [-4.18, -0.19]
+
+epyc  gcc11          random16MiB-L6                   +0.17% [-0.76, +2.04]
+
+epyc  gcc11          random16MiB-L7                   -1.49% [-3.82, -0.69]
+
+epyc  gcc11          random16MiB-L9                   -9.88% [-10.28, -3.96]
+
+epyc  gcc11          silesia-32KiB-L6                 +3.29% [+2.82, +3.66]
+
+epyc  gcc11          silesia-32KiB-L9                 +3.70% [+3.34, +7.35]
+
+epyc  gcc11          silesia-L12                      +0.66% [-3.07, +0.95]
+
+epyc  gcc11          silesia-L13                      +0.97% [-2.34, +16.81]
+
+epyc  gcc11          silesia-L5                       -1.47% [-1.53, -0.17]
+
+epyc  gcc11          silesia-L6                       -0.43% [-0.96, -0.02]
+
+epyc  gcc11          silesia-L7                       -0.30% [-0.59, +0.57]
+
+epyc  gcc11          silesia-L9                       +0.46% [+0.17, +3.50]
+
+epyc  gcc11          silesia-hashchain-L6             -0.24% [-0.68, +2.11]
+
+epyc  gcc11          silesia-hashchain-L9             +0.22% [-13.03, +7.05]
+
+
+Decoder screen losses below -1% (compression-only patch; unconfirmed screening observations, not discarded):
+
+mac   apple-clang17  enwik8-L7                        -2.03% [-2.93, -1.08]
+
+epyc  clang14        random16MiB-L12                  -4.77% [-10.81, +2.86]
+
+epyc  clang14        random16MiB-L5                   -3.12% [-3.79, +4.77]
+
+epyc  clang14        random16MiB-L7                   -1.75% [-3.85, +2.94]
+
+epyc  clang14        silesia-L13                      -1.10% [-1.11, +0.19]
+
+epyc  gcc11          enwik8-L9                        -1.17% [-1.54, +0.95]
+
+epyc  gcc11          mixed-L6                         -2.99% [-5.26, +0.55]
+
+epyc  gcc11          random16MiB-L13                  -2.96% [-4.12, +14.22]
+
+epyc  gcc11          random16MiB-L5                   -1.23% [-2.94, +0.17]
+
+epyc  gcc11          random16MiB-L7                   -1.73% [-3.40, +8.70]
+
+epyc  gcc11          random16MiB-L9                   -3.96% [-4.99, -1.78]
+
+epyc  gcc11          silesia-hashchain-L9             -1.30% [-1.66, +0.66]
+
+
+Dictionary compression screen (raw64KiB prefix dictionary, following4MiB input in32KiB independent chunks; three pairs, descriptive ranges):
+
+mac   apple-clang17  dickens  L6   -0.84% [-0.91, -0.70]
+
+mac   apple-clang17  dickens  L9   +0.36% [+0.18, +0.93]
+
+mac   apple-clang17  xml      L6   +3.91% [+3.25, +4.32]
+
+mac   apple-clang17  xml      L9   +9.80% [+9.06, +9.86]
+
+mac   gcc15          dickens  L6   +0.26% [+0.22, +0.29]
+
+mac   gcc15          dickens  L9   +1.44% [-10.42, +1.51]
+
+mac   gcc15          xml      L6   +4.16% [+3.83, +4.55]
+
+mac   gcc15          xml      L9   +9.45% [+9.30, +22.15]
+
+epyc  clang14        dickens  L6   +1.46% [+0.56, +1.61]
+
+epyc  clang14        dickens  L9   +2.89% [+2.70, +3.05]
+
+epyc  clang14        xml      L6   +4.85% [+4.44, +5.33]
+
+epyc  clang14        xml      L9   +6.70% [+6.61, +7.53]
+
+epyc  gcc11          dickens  L6   -0.13% [-2.25, -0.04]
+
+epyc  gcc11          dickens  L9   -0.55% [-0.70, -0.41]
+
+epyc  gcc11          xml      L6   +3.62% [+3.27, +3.98]
+
+epyc  gcc11          xml      L9   +6.22% [+5.85, +6.32]
+
+
+Code size, exact size tool output and file bytes:
+
+mac apple-clang17 baseline file_bytes=824504
+Segment __PAGEZERO: 4294967296 (zero fill) 
+Segment __TEXT: 720896
+	Section __text: 660056
+	Section __stubs: 984
+	Section __const: 14504
+	Section __cstring: 38197
+	Section __unwind_info: 1976
+	Section __eh_frame: 160
+	total 715877
+Segment __DATA_CONST: 16384
+	Section __got: 696
+	Section __const: 2912
+	total 3608
+Segment __DATA: 16384
+	Section __data: 944
+	Section __common: 28 (zerofill)
+	Section __bss: 2712 (zerofill)
+	total 3684
+Segment __LINKEDIT: 81920
+total 4295802880
+
+
+mac apple-clang17 candidate file_bytes=824504
+Segment __PAGEZERO: 4294967296 (zero fill) 
+Segment __TEXT: 720896
+	Section __text: 661328
+	Section __stubs: 984
+	Section __const: 14504
+	Section __cstring: 38197
+	Section __unwind_info: 1976
+	Section __eh_frame: 160
+	total 717149
+Segment __DATA_CONST: 16384
+	Section __got: 696
+	Section __const: 2912
+	total 3608
+Segment __DATA: 16384
+	Section __data: 944
+	Section __common: 28 (zerofill)
+	Section __bss: 2712 (zerofill)
+	total 3684
+Segment __LINKEDIT: 81920
+total 4295802880
+
+
+mac gcc15 baseline file_bytes=1131080
+Segment __PAGEZERO: 4294967296 (zero fill) 
+Segment __TEXT: 1032192
+	Section __text: 874344
+	Section __text_cold: 388
+	Section __text_startup: 16320
+	Section __stubs: 948
+	Section __cstring: 40886
+	Section __const: 16192
+	Section __eh_frame: 80184
+	total 1029262
+Segment __DATA_CONST: 16384
+	Section __got: 656
+	Section __const: 696
+	total 1352
+Segment __DATA: 16384
+	Section __data: 3112
+	Section __common: 24 (zerofill)
+	Section __bss: 2716 (zerofill)
+	total 5852
+Segment __LINKEDIT: 81920
+total 4296114176
+
+
+mac gcc15 candidate file_bytes=1147592
+Segment __PAGEZERO: 4294967296 (zero fill) 
+Segment __TEXT: 1048576
+	Section __text: 880360
+	Section __text_cold: 388
+	Section __text_startup: 16320
+	Section __stubs: 948
+	Section __cstring: 40886
+	Section __const: 16192
+	Section __eh_frame: 80056
+	total 1035150
+Segment __DATA_CONST: 16384
+	Section __got: 656
+	Section __const: 696
+	total 1352
+Segment __DATA: 16384
+	Section __data: 3112
+	Section __common: 24 (zerofill)
+	Section __bss: 2716 (zerofill)
+	total 5852
+Segment __LINKEDIT: 81920
+total 4296130560
+
+
+epyc clang14 baseline file_bytes=1032032
+   text	   data	    bss	    dec	    hex	filename
+ 967650	   4840	   2816	 975306	  ee1ca	$EPYC_RUN/bench-source-clang14-baseline/zstd
+
+
+epyc clang14 candidate file_bytes=1036128
+   text	   data	    bss	    dec	    hex	filename
+ 971882	   4840	   2816	 979538	  ef252	$EPYC_RUN/bench-source-clang14-candidate/zstd
+
+
+epyc gcc11 baseline file_bytes=1112560
+   text	   data	    bss	    dec	    hex	filename
+1042098	   5104	   2904	1050106	 1005fa	$EPYC_RUN/bench-source-gcc11-baseline/zstd
+
+
+epyc gcc11 candidate file_bytes=1112560
+   text	   data	    bss	    dec	    hex	filename
+1044962	   5104	   2904	1052970	 10112a	$EPYC_RUN/bench-source-gcc11-candidate/zstd
+
+
+
+EPYC fixed-input perf counter changes, median paired candidate/baseline:
+[
+  {
+    "compiler": "clang14",
+    "paired_counter_changes_pct": {
+      "cycles": -4.302574672311421,
+      "instructions": 0.728314911974115,
+      "branches": -0.08295086821563658,
+      "branch-misses": 0.238744694732973,
+      "cache-misses": -0.11590104856971095
+    },
+    "pairs": 5,
+    "scope": "Equal fixed CLI input, includes CLI and cached IO overhead; separate from adaptive in-memory timing."
+  },
+  {
+    "compiler": "gcc11",
+    "paired_counter_changes_pct": {
+      "cycles": 0.6835318495682197,
+      "instructions": -0.03553798012280174,
+      "branches": -0.046107263787531494,
+      "branch-misses": -0.16002572364947065,
+      "cache-misses": 0.05553197357763828
+    },
+    "pairs": 5,
+    "scope": "Equal fixed CLI input, includes CLI and cached IO overhead; separate from adaptive in-memory timing."
+  }
+]
+
+
+EPYC dataset-matched random-data A/A controls:
+[
+  {
+    "compiler": "clang14",
+    "pairs": 5,
+    "median_pct": 0.7843152149555443,
+    "min_pct": -0.9017407019880075,
+    "max_pct": 9.290774931844513
+  },
+  {
+    "compiler": "gcc11",
+    "pairs": 5,
+    "median_pct": -0.34589685269279524,
+    "min_pct": -1.7815315495367412,
+    "max_pct": 1.3672440762412252
+  }
+]
+
+
+EPYC fixed-work random-data instruction diagnostic (NOT original speed samples):
+[
+  {
+    "compiler": "clang14",
+    "pairs": 5,
+    "paired_changes_pct": {
+      "cycles": 2.6881426119003127,
+      "instructions": 0.751475518240996,
+      "branches": -0.01921675500874409,
+      "branch-misses": 0.6371216527982559,
+      "cache-misses": 0.5921055858630897
+    },
+    "scope": "Fixed256MiB repeated-random diagnostic with explicit4MiB window; separate from16MiB in-memory timing."
+  },
+  {
+    "compiler": "gcc11",
+    "pairs": 5,
+    "paired_changes_pct": {
+      "cycles": -0.17314436743377515,
+      "instructions": 0.018007713228884725,
+      "branches": -0.018384537595428352,
+      "branch-misses": -0.09327706015261894,
+      "cache-misses": 0.5254687284155901
+    },
+    "scope": "Fixed256MiB repeated-random diagnostic with explicit4MiB window; separate from16MiB in-memory timing."
+  }
+]
+
+Interpretation of the random-data concern: the repeated GCC11 in-memory loss exceeds the range of the five data-matched same-binary pairs, but the separate fixed-work GCC11 diagnostic does not reproduce a comparable instruction/cycle increase (instructions about+0.018%, cycles about-0.17%). This diagnostic has a different input size/work schedule and cannot invalidate the original throughput observations. The cause remains unresolved; no algorithmic, compiler or architecture-specific cause is established. Flat random profiles sample the complete compression/decompression benchmark, with libc memmove and the row matcher among hot functions; their proportions do not isolate the compression cost or prove causality. Shared-resource and buffer/cache effects remain possible.
+
+
+Correctness and limitations:
+Both machines passed 696 boundary configurations each (both compilers, row/hash-chain, repetitive/random input, sizes 0..131073, exact compressed-byte equivalence and decoder round trips). All timed pairs have unchanged compressed size; in-memory benchmarks check source/decoded checksums. Streaming checks report no validation failures.
+
+Mac remains a desktop session with uncontrolled core placement, frequency/turbo and ASLR. Initial Mac A/A overlapped data transfer and is excluded; valid final controls are separate. EPYC is a shared server: only benchmark process affinity changed (CPU62, SMT sibling158), with guards for scheduling interference and busy sibling. Its schedutil governor, boost, ASLR and shared cache/memory traffic remain uncontrolled. Initial EPYC A/A had several-percent variability; examine both it and final controls. Small changes inside noise are inconclusive. Profile/counter invocations and reproducer smoke timings are excluded from speed claims.
+
+Raw compression and decompression observations, size checks, commands, compiler versions, input hashes, longer confirmations and controls are retained. A compression-only patch does not justify claiming small incidental decoder shifts as decoder gains. No broad platform win, dictionary/streaming win, or acceptance guarantee follows from this screen alone.
+
+Excluded setup and measurement scopes: the initial compilation-only static wrapper attempt did not intercept the compiler and is not an analysis result. Only static-verified runs are used. The historical fullbench scenario41 attempts produced no timing and are excluded; current scenario7 results are required. The first Mac A/A overlaps transfer and is excluded from final calibration. Earlier x86 perf runs lacking explicit --single-thread are excluded; only perf-single files support the final Silesia counter summary. Rejected load samples remain separately recorded and are not silently pooled with valid observations. Reproducer smoke and profiles are not speed samples. The original quarantined exploratory-shared-load samples are not used for any final claim.

@@ -1,0 +1,26 @@
+[
+  {
+    "compiler": "clang14",
+    "paired_counter_changes_pct": {
+      "cycles": -4.302574672311421,
+      "instructions": 0.728314911974115,
+      "branches": -0.08295086821563658,
+      "branch-misses": 0.238744694732973,
+      "cache-misses": -0.11590104856971095
+    },
+    "pairs": 5,
+    "scope": "Equal fixed CLI input, includes CLI and cached IO overhead; separate from adaptive in-memory timing."
+  },
+  {
+    "compiler": "gcc11",
+    "paired_counter_changes_pct": {
+      "cycles": 0.6835318495682197,
+      "instructions": -0.03553798012280174,
+      "branches": -0.046107263787531494,
+      "branch-misses": -0.16002572364947065,
+      "cache-misses": 0.05553197357763828
+    },
+    "pairs": 5,
+    "scope": "Equal fixed CLI input, includes CLI and cached IO overhead; separate from adaptive in-memory timing."
+  }
+]

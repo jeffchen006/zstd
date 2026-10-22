@@ -1,0 +1,308 @@
+[
+  {
+    "label": "baseline",
+    "finished": true,
+    "warning_count": 12,
+    "diagnostics": [
+      {
+        "file": "zstd_compress.c",
+        "line": 4995,
+        "column": 13,
+        "message": "Value stored to 'src' is never read [deadcode.DeadStores]"
+      },
+      {
+        "file": "zstd_compress.c",
+        "line": 8161,
+        "column": 9,
+        "message": "Value stored to 'dstCapacity' is never read [deadcode.DeadStores]"
+      },
+      {
+        "file": "zstd_compress_superblock.c",
+        "line": 611,
+        "column": 13,
+        "message": "Value stored to 'lp' is never read [deadcode.DeadStores]"
+      },
+      {
+        "file": "zstd_compress_superblock.c",
+        "line": 613,
+        "column": 13,
+        "message": "Value stored to 'llCodePtr' is never read [deadcode.DeadStores]"
+      },
+      {
+        "file": "zstd_compress_superblock.c",
+        "line": 614,
+        "column": 13,
+        "message": "Value stored to 'mlCodePtr' is never read [deadcode.DeadStores]"
+      },
+      {
+        "file": "zstd_compress_superblock.c",
+        "line": 615,
+        "column": 13,
+        "message": "Value stored to 'ofCodePtr' is never read [deadcode.DeadStores]"
+      },
+      {
+        "file": "zstd_ldm.c",
+        "line": 56,
+        "column": 35,
+        "message": "Left shift overflows the capacity of 'U64' [core.BitwiseShift]"
+      },
+      {
+        "file": "zstd_opt.c",
+        "line": 1377,
+        "column": 17,
+        "message": "Value stored to 'storeStart' during its initialization is never read [deadcode.DeadStores]"
+      },
+      {
+        "file": "divsufsort.c",
+        "line": 1229,
+        "column": 11,
+        "message": "Assigned value is garbage or undefined [core.uninitialized.Assign]"
+      },
+      {
+        "file": "fileio.c",
+        "line": 1052,
+        "column": 18,
+        "message": "The 2nd argument to 'mmap' is 0 but should be > 0 [unix.StdCLibraryFunctions]"
+      },
+      {
+        "file": "util.c",
+        "line": 659,
+        "column": 25,
+        "message": "File position of the stream might be 'indeterminate' after a failed operation. Can cause undefined behavior [unix.Stream]"
+      },
+      {
+        "file": "util.c",
+        "line": 659,
+        "column": 25,
+        "message": "Read function called when stream is in EOF state. Function has no effect [unix.Stream]"
+      }
+    ],
+    "analyzed_compilation_units": 41,
+    "lazy_c_analyzed": true,
+    "result": {
+      "label": "baseline",
+      "commit": "49cf51799ea051457f57243527aa2058f999f005",
+      "command": [
+        "make",
+        "staticAnalyze",
+        "SCANBUILD=$MAC_RUN/scan-build-llvm-20.1.8/bin/scan-build --use-analyzer=/Library/Developer/CommandLineTools/usr/bin/clang --use-cc=/Library/Developer/CommandLineTools/usr/bin/clang -v -v --keep-empty -o $MAC_RUN/static-verified-reports-baseline"
+      ],
+      "environment": {
+        "CC": "/Library/Developer/CommandLineTools/usr/bin/clang"
+      },
+      "returncode": 2,
+      "elapsed_seconds": 127.55644011497498,
+      "no_bugs_found": false,
+      "analyzer_ran": true,
+      "status": "inspect",
+      "compiler": "Apple clang version 17.0.0 (clang-1700.6.3.2)\nTarget: arm64-apple-darwin25.3.0\nThread model: posix\nInstalledDir: /Library/Developer/CommandLineTools/usr/bin\n",
+      "scan_build_tag": "llvmorg-20.1.8",
+      "log_sha256": "3eed11d6fb9be66b388173f309a9f60922bd295bec6bcd6dd724cdcc279eeb51"
+    },
+    "same_diagnostics_as_baseline": true
+  },
+  {
+    "label": "candidate",
+    "finished": true,
+    "warning_count": 12,
+    "diagnostics": [
+      {
+        "file": "zstd_compress.c",
+        "line": 4995,
+        "column": 13,
+        "message": "Value stored to 'src' is never read [deadcode.DeadStores]"
+      },
+      {
+        "file": "zstd_compress.c",
+        "line": 8161,
+        "column": 9,
+        "message": "Value stored to 'dstCapacity' is never read [deadcode.DeadStores]"
+      },
+      {
+        "file": "zstd_compress_superblock.c",
+        "line": 611,
+        "column": 13,
+        "message": "Value stored to 'lp' is never read [deadcode.DeadStores]"
+      },
+      {
+        "file": "zstd_compress_superblock.c",
+        "line": 613,
+        "column": 13,
+        "message": "Value stored to 'llCodePtr' is never read [deadcode.DeadStores]"
+      },
+      {
+        "file": "zstd_compress_superblock.c",
+        "line": 614,
+        "column": 13,
+        "message": "Value stored to 'mlCodePtr' is never read [deadcode.DeadStores]"
+      },
+      {
+        "file": "zstd_compress_superblock.c",
+        "line": 615,
+        "column": 13,
+        "message": "Value stored to 'ofCodePtr' is never read [deadcode.DeadStores]"
+      },
+      {
+        "file": "zstd_ldm.c",
+        "line": 56,
+        "column": 35,
+        "message": "Left shift overflows the capacity of 'U64' [core.BitwiseShift]"
+      },
+      {
+        "file": "zstd_opt.c",
+        "line": 1377,
+        "column": 17,
+        "message": "Value stored to 'storeStart' during its initialization is never read [deadcode.DeadStores]"
+      },
+      {
+        "file": "divsufsort.c",
+        "line": 1229,
+        "column": 11,
+        "message": "Assigned value is garbage or undefined [core.uninitialized.Assign]"
+      },
+      {
+        "file": "fileio.c",
+        "line": 1052,
+        "column": 18,
+        "message": "The 2nd argument to 'mmap' is 0 but should be > 0 [unix.StdCLibraryFunctions]"
+      },
+      {
+        "file": "util.c",
+        "line": 659,
+        "column": 25,
+        "message": "File position of the stream might be 'indeterminate' after a failed operation. Can cause undefined behavior [unix.Stream]"
+      },
+      {
+        "file": "util.c",
+        "line": 659,
+        "column": 25,
+        "message": "Read function called when stream is in EOF state. Function has no effect [unix.Stream]"
+      }
+    ],
+    "analyzed_compilation_units": 41,
+    "lazy_c_analyzed": true,
+    "result": {
+      "label": "candidate",
+      "commit": "222606cee24d2fc3cb1c514640903a21b6f40dfc",
+      "command": [
+        "make",
+        "staticAnalyze",
+        "SCANBUILD=$MAC_RUN/scan-build-llvm-20.1.8/bin/scan-build --use-analyzer=/Library/Developer/CommandLineTools/usr/bin/clang --use-cc=/Library/Developer/CommandLineTools/usr/bin/clang -v -v --keep-empty -o $MAC_RUN/static-verified-reports-candidate"
+      ],
+      "environment": {
+        "CC": "/Library/Developer/CommandLineTools/usr/bin/clang"
+      },
+      "returncode": 2,
+      "elapsed_seconds": 122.44034385681152,
+      "no_bugs_found": false,
+      "analyzer_ran": true,
+      "status": "inspect",
+      "compiler": "Apple clang version 17.0.0 (clang-1700.6.3.2)\nTarget: arm64-apple-darwin25.3.0\nThread model: posix\nInstalledDir: /Library/Developer/CommandLineTools/usr/bin\n",
+      "scan_build_tag": "llvmorg-20.1.8",
+      "log_sha256": "2dc8972d8d8ad810d1e193dc6af6c1b31bcc4a850e856bfdcc94170b9dbc1141"
+    },
+    "same_diagnostics_as_baseline": true
+  },
+  {
+    "label": "cli-fix",
+    "finished": true,
+    "warning_count": 12,
+    "diagnostics": [
+      {
+        "file": "zstd_compress.c",
+        "line": 4995,
+        "column": 13,
+        "message": "Value stored to 'src' is never read [deadcode.DeadStores]"
+      },
+      {
+        "file": "zstd_compress.c",
+        "line": 8161,
+        "column": 9,
+        "message": "Value stored to 'dstCapacity' is never read [deadcode.DeadStores]"
+      },
+      {
+        "file": "zstd_compress_superblock.c",
+        "line": 611,
+        "column": 13,
+        "message": "Value stored to 'lp' is never read [deadcode.DeadStores]"
+      },
+      {
+        "file": "zstd_compress_superblock.c",
+        "line": 613,
+        "column": 13,
+        "message": "Value stored to 'llCodePtr' is never read [deadcode.DeadStores]"
+      },
+      {
+        "file": "zstd_compress_superblock.c",
+        "line": 614,
+        "column": 13,
+        "message": "Value stored to 'mlCodePtr' is never read [deadcode.DeadStores]"
+      },
+      {
+        "file": "zstd_compress_superblock.c",
+        "line": 615,
+        "column": 13,
+        "message": "Value stored to 'ofCodePtr' is never read [deadcode.DeadStores]"
+      },
+      {
+        "file": "zstd_ldm.c",
+        "line": 56,
+        "column": 35,
+        "message": "Left shift overflows the capacity of 'U64' [core.BitwiseShift]"
+      },
+      {
+        "file": "zstd_opt.c",
+        "line": 1377,
+        "column": 17,
+        "message": "Value stored to 'storeStart' during its initialization is never read [deadcode.DeadStores]"
+      },
+      {
+        "file": "divsufsort.c",
+        "line": 1229,
+        "column": 11,
+        "message": "Assigned value is garbage or undefined [core.uninitialized.Assign]"
+      },
+      {
+        "file": "fileio.c",
+        "line": 1052,
+        "column": 18,
+        "message": "The 2nd argument to 'mmap' is 0 but should be > 0 [unix.StdCLibraryFunctions]"
+      },
+      {
+        "file": "util.c",
+        "line": 659,
+        "column": 25,
+        "message": "File position of the stream might be 'indeterminate' after a failed operation. Can cause undefined behavior [unix.Stream]"
+      },
+      {
+        "file": "util.c",
+        "line": 659,
+        "column": 25,
+        "message": "Read function called when stream is in EOF state. Function has no effect [unix.Stream]"
+      }
+    ],
+    "analyzed_compilation_units": 41,
+    "lazy_c_analyzed": true,
+    "result": {
+      "label": "cli-fix",
+      "commit": "e671aa574a49c5b3146cd8d6c1545d97013a05b9",
+      "command": [
+        "make",
+        "staticAnalyze",
+        "SCANBUILD=$MAC_RUN/scan-build-llvm-20.1.8/bin/scan-build --use-analyzer=/Library/Developer/CommandLineTools/usr/bin/clang --use-cc=/Library/Developer/CommandLineTools/usr/bin/clang -v -v --keep-empty -o $MAC_RUN/static-verified-reports-cli-fix"
+      ],
+      "environment": {
+        "CC": "/Library/Developer/CommandLineTools/usr/bin/clang"
+      },
+      "returncode": 2,
+      "elapsed_seconds": 125.8592221736908,
+      "no_bugs_found": false,
+      "analyzer_ran": true,
+      "status": "inspect",
+      "compiler": "Apple clang version 17.0.0 (clang-1700.6.3.2)\nTarget: arm64-apple-darwin25.3.0\nThread model: posix\nInstalledDir: /Library/Developer/CommandLineTools/usr/bin\n",
+      "scan_build_tag": "llvmorg-20.1.8",
+      "log_sha256": "eb9a7a1fc63cf252b7aa73ce4e37dc29fa8f2e2c6cafa4386b57e5cb9b02c8f3"
+    },
+    "same_diagnostics_as_baseline": true
+  }
+]

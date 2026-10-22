@@ -1,0 +1,2944 @@
+{
+  "cli": [
+    {
+      "compiler": "clang14",
+      "case": "AA-silesia-L9",
+      "pairs": 3,
+      "compression_change_pct": -2.9627616200054274,
+      "compression_min_pair_pct": -6.026516673362792,
+      "compression_max_pair_pct": 0.6519967400162807,
+      "decompression_change_pct": 0.5205836016165533,
+      "baseline_compression_mbps": 73.62,
+      "candidate_compression_mbps": 71.4,
+      "baseline_decompression_mbps": 1458.7,
+      "candidate_decompression_mbps": 1457.3,
+      "compressed_bytes": 59073803,
+      "pair_details": [
+        {
+          "round": 0,
+          "c_ratio": 0.9397348332663721,
+          "d_ratio": 0.9782683211078357,
+          "baseline_c": 74.67,
+          "candidate_c": 70.17,
+          "baseline_d": 1458.7,
+          "candidate_d": 1427.0,
+          "compressed_bytes": 59073803
+        },
+        {
+          "round": 1,
+          "c_ratio": 1.0065199674001628,
+          "d_ratio": 1.0056586847008488,
+          "baseline_c": 73.62,
+          "candidate_c": 74.1,
+          "baseline_d": 1449.1,
+          "candidate_d": 1457.3,
+          "compressed_bytes": 59073803
+        },
+        {
+          "round": 2,
+          "c_ratio": 0.9703723837999457,
+          "d_ratio": 1.0052058360161655,
+          "baseline_c": 73.58,
+          "candidate_c": 71.4,
+          "baseline_d": 1459.9,
+          "candidate_d": 1467.5,
+          "compressed_bytes": 59073803
+        }
+      ]
+    },
+    {
+      "compiler": "clang14",
+      "case": "confirm-osdb-L6",
+      "pairs": 5,
+      "compression_change_pct": -0.40160642570281624,
+      "compression_min_pair_pct": -0.7534424525850958,
+      "compression_max_pair_pct": 0.09577710056596356,
+      "decompression_change_pct": 0.27293224160436225,
+      "baseline_compression_mbps": 114.85,
+      "candidate_compression_mbps": 114.6,
+      "baseline_decompression_mbps": 1687.4,
+      "candidate_decompression_mbps": 1691.4,
+      "compressed_bytes": 3395739,
+      "pair_details": [
+        {
+          "round": 0,
+          "c_ratio": 0.992465575474149,
+          "d_ratio": 1.0051619793520825,
+          "baseline_c": 115.47,
+          "candidate_c": 114.6,
+          "baseline_d": 1685.4,
+          "candidate_d": 1694.1,
+          "compressed_bytes": 3395739
+        },
+        {
+          "round": 1,
+          "c_ratio": 0.9959839357429718,
+          "d_ratio": 1.0000591261160054,
+          "baseline_c": 114.54,
+          "candidate_c": 114.08,
+          "baseline_d": 1691.3,
+          "candidate_d": 1691.4,
+          "compressed_bytes": 3395739
+        },
+        {
+          "round": 2,
+          "c_ratio": 0.9942832394976181,
+          "d_ratio": 0.9988147445774564,
+          "baseline_c": 115.45,
+          "candidate_c": 114.79,
+          "baseline_d": 1687.4,
+          "candidate_d": 1685.4,
+          "compressed_bytes": 3395739
+        },
+        {
+          "round": 3,
+          "c_ratio": 1.0009577710056596,
+          "d_ratio": 1.0027293224160436,
+          "baseline_c": 114.85,
+          "candidate_c": 114.96,
+          "baseline_d": 1685.4,
+          "candidate_d": 1690.0,
+          "compressed_bytes": 3395739
+        },
+        {
+          "round": 4,
+          "c_ratio": 0.999738219895288,
+          "d_ratio": 1.0028424231657487,
+          "baseline_c": 114.6,
+          "candidate_c": 114.57,
+          "baseline_d": 1688.7,
+          "candidate_d": 1693.5,
+          "compressed_bytes": 3395739
+        }
+      ]
+    },
+    {
+      "compiler": "clang14",
+      "case": "confirm-sao-L6",
+      "pairs": 5,
+      "compression_change_pct": -0.6603888956830062,
+      "compression_min_pair_pct": -2.929280549086899,
+      "compression_max_pair_pct": -0.305847810129678,
+      "decompression_change_pct": -0.03708511032819439,
+      "baseline_compression_mbps": 81.77,
+      "candidate_compression_mbps": 81.23,
+      "baseline_decompression_mbps": 1078.6,
+      "candidate_decompression_mbps": 1080.7,
+      "compressed_bytes": 5272383,
+      "pair_details": [
+        {
+          "round": 0,
+          "c_ratio": 0.970707194509131,
+          "d_ratio": 0.9969458583988895,
+          "baseline_c": 81.59,
+          "candidate_c": 79.2,
+          "baseline_d": 1080.5,
+          "candidate_d": 1077.2,
+          "compressed_bytes": 5272383
+        },
+        {
+          "round": 1,
+          "c_ratio": 0.9969415218987032,
+          "d_ratio": 0.9996291488967181,
+          "baseline_c": 81.74,
+          "candidate_c": 81.49,
+          "baseline_d": 1078.6,
+          "candidate_d": 1078.2,
+          "compressed_bytes": 5272383
+        },
+        {
+          "round": 2,
+          "c_ratio": 0.9941399096569407,
+          "d_ratio": 1.0042746956602548,
+          "baseline_c": 81.91,
+          "candidate_c": 81.43,
+          "baseline_d": 1076.1,
+          "candidate_d": 1080.7,
+          "compressed_bytes": 5272383
+        },
+        {
+          "round": 3,
+          "c_ratio": 0.9887626725296201,
+          "d_ratio": 1.0026886704987947,
+          "baseline_c": 81.87,
+          "candidate_c": 80.95,
+          "baseline_d": 1078.6,
+          "candidate_d": 1081.5,
+          "compressed_bytes": 5272383
+        },
+        {
+          "round": 4,
+          "c_ratio": 0.9933961110431699,
+          "d_ratio": 0.9989840214279115,
+          "baseline_c": 81.77,
+          "candidate_c": 81.23,
+          "baseline_d": 1082.7,
+          "candidate_d": 1081.6,
+          "compressed_bytes": 5272383
+        }
+      ]
+    },
+    {
+      "compiler": "clang14",
+      "case": "confirm-x-ray-L6",
+      "pairs": 5,
+      "compression_change_pct": -0.8284157966409467,
+      "compression_min_pair_pct": -4.03617863199549,
+      "compression_max_pair_pct": -0.498527079084532,
+      "decompression_change_pct": -0.023046784973490553,
+      "baseline_compression_mbps": 88.26,
+      "candidate_compression_mbps": 87.5,
+      "baseline_decompression_mbps": 867.3,
+      "candidate_decompression_mbps": 869.5,
+      "compressed_bytes": 5551501,
+      "pair_details": [
+        {
+          "round": 0,
+          "c_ratio": 0.9950147292091547,
+          "d_ratio": 0.9968800554656807,
+          "baseline_c": 88.26,
+          "candidate_c": 87.82,
+          "baseline_d": 865.4,
+          "candidate_d": 862.7,
+          "compressed_bytes": 5551501
+        },
+        {
+          "round": 1,
+          "c_ratio": 0.9917158420335905,
+          "d_ratio": 1.0156377640331427,
+          "baseline_c": 88.12,
+          "candidate_c": 87.39,
+          "baseline_d": 856.9,
+          "candidate_d": 870.3,
+          "compressed_bytes": 5551501
+        },
+        {
+          "round": 2,
+          "c_ratio": 0.9948875255623721,
+          "d_ratio": 1.0025366078634845,
+          "baseline_c": 88.02,
+          "candidate_c": 87.57,
+          "baseline_d": 867.3,
+          "candidate_d": 869.5,
+          "compressed_bytes": 5551501
+        },
+        {
+          "round": 3,
+          "c_ratio": 0.9904912836767036,
+          "d_ratio": 0.9997695321502651,
+          "baseline_c": 88.34,
+          "candidate_c": 87.5,
+          "baseline_d": 867.8,
+          "candidate_d": 867.6,
+          "compressed_bytes": 5551501
+        },
+        {
+          "round": 4,
+          "c_ratio": 0.9596382136800451,
+          "d_ratio": 0.9985072913078425,
+          "baseline_c": 88.45,
+          "candidate_c": 84.88,
+          "baseline_d": 870.9,
+          "candidate_d": 869.6,
+          "compressed_bytes": 5551501
+        }
+      ]
+    },
+    {
+      "compiler": "clang14",
+      "case": "enwik8-L12",
+      "pairs": 3,
+      "compression_change_pct": 0.288065843621399,
+      "compression_min_pair_pct": -4.554780467788266,
+      "compression_max_pair_pct": 1.5286624203821653,
+      "decompression_change_pct": 0.39444619753865595,
+      "baseline_compression_mbps": 24.3,
+      "candidate_compression_mbps": 23.91,
+      "baseline_decompression_mbps": 1267.6,
+      "candidate_decompression_mbps": 1272.6,
+      "compressed_bytes": 30339024,
+      "pair_details": [
+        {
+          "round": 0,
+          "c_ratio": 1.0152866242038217,
+          "d_ratio": 1.0039444619753866,
+          "baseline_c": 23.55,
+          "candidate_c": 23.91,
+          "baseline_d": 1267.6,
+          "candidate_d": 1272.6,
+          "compressed_bytes": 30339024
+        },
+        {
+          "round": 1,
+          "c_ratio": 0.9544521953221173,
+          "d_ratio": 0.9801084990958407,
+          "baseline_c": 24.37,
+          "candidate_c": 23.26,
+          "baseline_d": 1271.9,
+          "candidate_d": 1246.6,
+          "compressed_bytes": 30339024
+        },
+        {
+          "round": 2,
+          "c_ratio": 1.002880658436214,
+          "d_ratio": 1.023339461274079,
+          "baseline_c": 24.3,
+          "candidate_c": 24.37,
+          "baseline_d": 1251.1,
+          "candidate_d": 1280.3,
+          "compressed_bytes": 30339024
+        }
+      ]
+    },
+    {
+      "compiler": "clang14",
+      "case": "enwik8-L13",
+      "pairs": 3,
+      "compression_change_pct": 0.0,
+      "compression_min_pair_pct": -4.231311706629048,
+      "compression_max_pair_pct": 3.53460972017674,
+      "decompression_change_pct": -0.03194122814020872,
+      "baseline_compression_mbps": 7.09,
+      "candidate_compression_mbps": 7.03,
+      "baseline_decompression_mbps": 1251.0,
+      "candidate_decompression_mbps": 1251.9,
+      "compressed_bytes": 29967212,
+      "pair_details": [
+        {
+          "round": 0,
+          "c_ratio": 1.0353460972017674,
+          "d_ratio": 1.001918465227818,
+          "baseline_c": 6.79,
+          "candidate_c": 7.03,
+          "baseline_d": 1251.0,
+          "candidate_d": 1253.4,
+          "compressed_bytes": 29967212
+        },
+        {
+          "round": 1,
+          "c_ratio": 0.9576868829337095,
+          "d_ratio": 0.9883832719115526,
+          "baseline_c": 7.09,
+          "candidate_c": 6.79,
+          "baseline_d": 1248.2,
+          "candidate_d": 1233.7,
+          "compressed_bytes": 29967212
+        },
+        {
+          "round": 2,
+          "c_ratio": 1.0,
+          "d_ratio": 0.9996805877185979,
+          "baseline_c": 7.24,
+          "candidate_c": 7.24,
+          "baseline_d": 1252.3,
+          "candidate_d": 1251.9,
+          "compressed_bytes": 29967212
+        }
+      ]
+    },
+    {
+      "compiler": "clang14",
+      "case": "enwik8-L5",
+      "pairs": 3,
+      "compression_change_pct": 0.051163980557689115,
+      "compression_min_pair_pct": -0.9786247746587651,
+      "compression_max_pair_pct": 1.179941002949847,
+      "decompression_change_pct": 1.2453413326061202,
+      "baseline_compression_mbps": 116.49,
+      "candidate_compression_mbps": 116.62,
+      "baseline_decompression_mbps": 1099.7,
+      "candidate_decompression_mbps": 1109.7,
+      "compressed_bytes": 33699396,
+      "pair_details": [
+        {
+          "round": 0,
+          "c_ratio": 0.9902137522534123,
+          "d_ratio": 1.0178866263070996,
+          "baseline_c": 116.49,
+          "candidate_c": 115.35,
+          "baseline_d": 1090.2,
+          "candidate_d": 1109.7,
+          "compressed_bytes": 33699396
+        },
+        {
+          "round": 1,
+          "c_ratio": 1.000511639805577,
+          "d_ratio": 1.0124534133260612,
+          "baseline_c": 117.27,
+          "candidate_c": 117.33,
+          "baseline_d": 1100.1,
+          "candidate_d": 1113.8,
+          "compressed_bytes": 33699396
+        },
+        {
+          "round": 2,
+          "c_ratio": 1.0117994100294985,
+          "d_ratio": 1.007820314631263,
+          "baseline_c": 115.26,
+          "candidate_c": 116.62,
+          "baseline_d": 1099.7,
+          "candidate_d": 1108.3,
+          "compressed_bytes": 33699396
+        }
+      ]
+    },
+    {
+      "compiler": "clang14",
+      "case": "enwik8-L6",
+      "pairs": 3,
+      "compression_change_pct": 0.42846941204475186,
+      "compression_min_pair_pct": -0.023801023444003366,
+      "compression_max_pair_pct": 0.9455415918611765,
+      "decompression_change_pct": -0.3566878980891808,
+      "baseline_compression_mbps": 84.02,
+      "candidate_compression_mbps": 84.34,
+      "baseline_decompression_mbps": 1175.7,
+      "candidate_decompression_mbps": 1173.3,
+      "compressed_bytes": 32612520,
+      "pair_details": [
+        {
+          "round": 0,
+          "c_ratio": 1.0042846941204475,
+          "d_ratio": 0.9964331210191082,
+          "baseline_c": 84.02,
+          "candidate_c": 84.38,
+          "baseline_d": 1177.5,
+          "candidate_d": 1173.3,
+          "compressed_bytes": 32612520
+        },
+        {
+          "round": 1,
+          "c_ratio": 0.99976198976556,
+          "d_ratio": 0.9958322701369396,
+          "baseline_c": 84.03,
+          "candidate_c": 84.01,
+          "baseline_d": 1175.7,
+          "candidate_d": 1170.8,
+          "compressed_bytes": 32612520
+        },
+        {
+          "round": 2,
+          "c_ratio": 1.0094554159186118,
+          "d_ratio": 1.001447917553871,
+          "baseline_c": 83.55,
+          "candidate_c": 84.34,
+          "baseline_d": 1174.1,
+          "candidate_d": 1175.8,
+          "compressed_bytes": 32612520
+        }
+      ]
+    },
+    {
+      "compiler": "clang14",
+      "case": "enwik8-L7",
+      "pairs": 3,
+      "compression_change_pct": 1.027115858668859,
+      "compression_min_pair_pct": 0.27363524421946117,
+      "compression_max_pair_pct": 1.0313531353135286,
+      "decompression_change_pct": 1.2404016538688722,
+      "baseline_compression_mbps": 73.02,
+      "candidate_compression_mbps": 73.47,
+      "baseline_decompression_mbps": 1183.7,
+      "candidate_decompression_mbps": 1199.8,
+      "compressed_bytes": 31981436,
+      "pair_details": [
+        {
+          "round": 0,
+          "c_ratio": 1.0103135313531353,
+          "d_ratio": 1.0063366002027712,
+          "baseline_c": 72.72,
+          "candidate_c": 73.47,
+          "baseline_d": 1183.6,
+          "candidate_d": 1191.1,
+          "compressed_bytes": 31981436
+        },
+        {
+          "round": 1,
+          "c_ratio": 1.0027363524421946,
+          "d_ratio": 1.0140238236039536,
+          "baseline_c": 73.09,
+          "candidate_c": 73.29,
+          "baseline_d": 1183.7,
+          "candidate_d": 1200.3,
+          "compressed_bytes": 31981436
+        },
+        {
+          "round": 2,
+          "c_ratio": 1.0102711585866886,
+          "d_ratio": 1.0124040165386887,
+          "baseline_c": 73.02,
+          "candidate_c": 73.77,
+          "baseline_d": 1185.1,
+          "candidate_d": 1199.8,
+          "compressed_bytes": 31981436
+        }
+      ]
+    },
+    {
+      "compiler": "clang14",
+      "case": "enwik8-L9",
+      "pairs": 3,
+      "compression_change_pct": 1.5117994100295018,
+      "compression_min_pair_pct": 1.4930875576036895,
+      "compression_max_pair_pct": 2.614500278138343,
+      "decompression_change_pct": -0.8443908323281013,
+      "baseline_compression_mbps": 54.24,
+      "candidate_compression_mbps": 55.06,
+      "baseline_decompression_mbps": 1237.5,
+      "candidate_decompression_mbps": 1233.0,
+      "compressed_bytes": 31076602,
+      "pair_details": [
+        {
+          "round": 0,
+          "c_ratio": 1.015117994100295,
+          "d_ratio": 1.0012121212121212,
+          "baseline_c": 54.24,
+          "candidate_c": 55.06,
+          "baseline_d": 1237.5,
+          "candidate_d": 1239.0,
+          "compressed_bytes": 31076602
+        },
+        {
+          "round": 1,
+          "c_ratio": 1.014930875576037,
+          "d_ratio": 0.991556091676719,
+          "baseline_c": 54.25,
+          "candidate_c": 55.06,
+          "baseline_d": 1243.5,
+          "candidate_d": 1233.0,
+          "compressed_bytes": 31076602
+        },
+        {
+          "round": 2,
+          "c_ratio": 1.0261450027813834,
+          "d_ratio": 0.9883312933496532,
+          "baseline_c": 53.93,
+          "candidate_c": 55.34,
+          "baseline_d": 1225.5,
+          "candidate_d": 1211.2,
+          "compressed_bytes": 31076602
+        }
+      ]
+    },
+    {
+      "compiler": "clang14",
+      "case": "mixed-L6",
+      "pairs": 3,
+      "compression_change_pct": 0.20303943887283182,
+      "compression_min_pair_pct": 0.1598524438979343,
+      "compression_max_pair_pct": 0.3014086239773617,
+      "decompression_change_pct": -0.5066039442735759,
+      "baseline_compression_mbps": 162.57,
+      "candidate_compression_mbps": 162.91,
+      "baseline_decompression_mbps": 2213.2,
+      "candidate_decompression_mbps": 2199.6,
+      "compressed_bytes": 11148798,
+      "pair_details": [
+        {
+          "round": 0,
+          "c_ratio": 1.0015985244389793,
+          "d_ratio": 0.9895626242544732,
+          "baseline_c": 162.65,
+          "candidate_c": 162.91,
+          "baseline_d": 2213.2,
+          "candidate_d": 2190.1,
+          "compressed_bytes": 11148798
+        },
+        {
+          "round": 1,
+          "c_ratio": 1.0020303943887283,
+          "d_ratio": 0.9989695340501791,
+          "baseline_c": 162.53,
+          "candidate_c": 162.86,
+          "baseline_d": 2232.0,
+          "candidate_d": 2229.7,
+          "compressed_bytes": 11148798
+        },
+        {
+          "round": 2,
+          "c_ratio": 1.0030140862397736,
+          "d_ratio": 0.9949339605572642,
+          "baseline_c": 162.57,
+          "candidate_c": 163.06,
+          "baseline_d": 2210.8,
+          "candidate_d": 2199.6,
+          "compressed_bytes": 11148798
+        }
+      ]
+    },
+    {
+      "compiler": "clang14",
+      "case": "mixed-L9",
+      "pairs": 3,
+      "compression_change_pct": -1.187756966651432,
+      "compression_min_pair_pct": -3.8404998162440362,
+      "compression_max_pair_pct": 5.350761707729923,
+      "decompression_change_pct": 0.34369953207171733,
+      "baseline_compression_mbps": 108.84,
+      "candidate_compression_mbps": 108.15,
+      "baseline_decompression_mbps": 2367.2,
+      "candidate_decompression_mbps": 2376.7,
+      "compressed_bytes": 11033108,
+      "pair_details": [
+        {
+          "round": 0,
+          "c_ratio": 1.0535076170772992,
+          "d_ratio": 1.0083153027024734,
+          "baseline_c": 106.34,
+          "candidate_c": 112.03,
+          "baseline_d": 2357.1,
+          "candidate_d": 2376.7,
+          "compressed_bytes": 11033108
+        },
+        {
+          "round": 1,
+          "c_ratio": 0.9615950018375596,
+          "d_ratio": 0.9287766137208516,
+          "baseline_c": 108.84,
+          "candidate_c": 104.66,
+          "baseline_d": 2367.2,
+          "candidate_d": 2198.6,
+          "compressed_bytes": 11033108
+        },
+        {
+          "round": 2,
+          "c_ratio": 0.9881224303334857,
+          "d_ratio": 1.0034369953207172,
+          "baseline_c": 109.45,
+          "candidate_c": 108.15,
+          "baseline_d": 2414.9,
+          "candidate_d": 2423.2,
+          "compressed_bytes": 11033108
+        }
+      ]
+    },
+    {
+      "compiler": "clang14",
+      "case": "random16MiB-L12",
+      "pairs": 3,
+      "compression_change_pct": 0.029515146636627243,
+      "compression_min_pair_pct": -3.1429501416864403,
+      "compression_max_pair_pct": 2.897315314107285,
+      "decompression_change_pct": -4.772237296955739,
+      "baseline_compression_mbps": 1044.56,
+      "candidate_compression_mbps": 1074.32,
+      "baseline_decompression_mbps": 24455.1,
+      "candidate_decompression_mbps": 21811.7,
+      "compressed_bytes": 16777610,
+      "pair_details": [
+        {
+          "round": 0,
+          "c_ratio": 0.9685704985831356,
+          "d_ratio": 0.9522776270304426,
+          "baseline_c": 1044.56,
+          "candidate_c": 1011.73,
+          "baseline_d": 21522.4,
+          "candidate_d": 20495.3,
+          "compressed_bytes": 16777610
+        },
+        {
+          "round": 1,
+          "c_ratio": 1.0289731531410728,
+          "d_ratio": 1.0286063719195255,
+          "baseline_c": 1044.07,
+          "candidate_c": 1074.32,
+          "baseline_d": 24529.5,
+          "candidate_d": 25231.2,
+          "compressed_bytes": 16777610
+        },
+        {
+          "round": 2,
+          "c_ratio": 1.0002951514663663,
+          "d_ratio": 0.8919080273644353,
+          "baseline_c": 1118.07,
+          "candidate_c": 1118.4,
+          "baseline_d": 24455.1,
+          "candidate_d": 21811.7,
+          "compressed_bytes": 16777610
+        }
+      ]
+    },
+    {
+      "compiler": "clang14",
+      "case": "random16MiB-L13",
+      "pairs": 3,
+      "compression_change_pct": -2.200488997555017,
+      "compression_min_pair_pct": -2.8100296442687633,
+      "compression_max_pair_pct": 0.6408629441624569,
+      "decompression_change_pct": 2.4032648125755784,
+      "baseline_compression_mbps": 161.92,
+      "candidate_compression_mbps": 158.61,
+      "baseline_decompression_mbps": 22031.1,
+      "candidate_decompression_mbps": 22357.5,
+      "compressed_bytes": 16777610,
+      "pair_details": [
+        {
+          "round": 0,
+          "c_ratio": 0.9718997035573124,
+          "d_ratio": 1.0240326481257558,
+          "baseline_c": 161.92,
+          "candidate_c": 157.37,
+          "baseline_d": 21832.8,
+          "candidate_d": 22357.5,
+          "compressed_bytes": 16777610
+        },
+        {
+          "round": 1,
+          "c_ratio": 1.0064086294416246,
+          "d_ratio": 0.9989424041468652,
+          "baseline_c": 157.6,
+          "candidate_c": 158.61,
+          "baseline_d": 22031.1,
+          "candidate_d": 22007.8,
+          "compressed_bytes": 16777610
+        },
+        {
+          "round": 2,
+          "c_ratio": 0.9779951100244498,
+          "d_ratio": 1.0477032756339284,
+          "baseline_c": 184.05,
+          "candidate_c": 180.0,
+          "baseline_d": 22218.6,
+          "candidate_d": 23278.5,
+          "compressed_bytes": 16777610
+        }
+      ]
+    },
+    {
+      "compiler": "clang14",
+      "case": "random16MiB-L5",
+      "pairs": 3,
+      "compression_change_pct": -2.7354307533976496,
+      "compression_min_pair_pct": -12.80023597959704,
+      "compression_max_pair_pct": -1.5978173562661513,
+      "decompression_change_pct": -3.119798222923087,
+      "baseline_compression_mbps": 3017.21,
+      "candidate_compression_mbps": 2964.72,
+      "baseline_decompression_mbps": 21494.1,
+      "candidate_decompression_mbps": 21010.7,
+      "compressed_bytes": 16777610,
+      "pair_details": [
+        {
+          "round": 0,
+          "c_ratio": 0.9726456924660235,
+          "d_ratio": 0.9688020177707691,
+          "baseline_c": 3119.07,
+          "candidate_c": 3033.75,
+          "baseline_d": 21687.3,
+          "candidate_d": 21010.7,
+          "compressed_bytes": 16777610
+        },
+        {
+          "round": 1,
+          "c_ratio": 0.8719976402040296,
+          "d_ratio": 0.9621151850973058,
+          "baseline_c": 3017.21,
+          "candidate_c": 2631.0,
+          "baseline_d": 21494.1,
+          "candidate_d": 20679.8,
+          "compressed_bytes": 16777610
+        },
+        {
+          "round": 2,
+          "c_ratio": 0.9840218264373385,
+          "d_ratio": 1.0476918958197883,
+          "baseline_c": 3012.86,
+          "candidate_c": 2964.72,
+          "baseline_d": 20917.6,
+          "candidate_d": 21915.2,
+          "compressed_bytes": 16777610
+        }
+      ]
+    },
+    {
+      "compiler": "clang14",
+      "case": "random16MiB-L6",
+      "pairs": 3,
+      "compression_change_pct": -0.9005480275398159,
+      "compression_min_pair_pct": -2.250628952199629,
+      "compression_max_pair_pct": -0.8129262998265441,
+      "decompression_change_pct": 5.250351135141229,
+      "baseline_compression_mbps": 2980.59,
+      "candidate_compression_mbps": 2956.36,
+      "baseline_decompression_mbps": 21288.1,
+      "candidate_decompression_mbps": 22405.8,
+      "compressed_bytes": 16777610,
+      "pair_details": [
+        {
+          "round": 0,
+          "c_ratio": 0.9918707370017346,
+          "d_ratio": 1.1063670558541991,
+          "baseline_c": 2980.59,
+          "candidate_c": 2956.36,
+          "baseline_d": 20444.3,
+          "candidate_d": 22618.9,
+          "compressed_bytes": 16777610
+        },
+        {
+          "round": 1,
+          "c_ratio": 0.9774937104780037,
+          "d_ratio": 1.0525035113514123,
+          "baseline_c": 3088.47,
+          "candidate_c": 3018.96,
+          "baseline_d": 21288.1,
+          "candidate_d": 22405.8,
+          "compressed_bytes": 16777610
+        },
+        {
+          "round": 2,
+          "c_ratio": 0.9909945197246018,
+          "d_ratio": 0.9849727730497444,
+          "baseline_c": 2961.53,
+          "candidate_c": 2934.86,
+          "baseline_d": 21467.7,
+          "candidate_d": 21145.1,
+          "compressed_bytes": 16777610
+        }
+      ]
+    },
+    {
+      "compiler": "clang14",
+      "case": "random16MiB-L7",
+      "pairs": 3,
+      "compression_change_pct": -0.4998985970817382,
+      "compression_min_pair_pct": -0.6181509657271933,
+      "compression_max_pair_pct": 0.6616733160124122,
+      "decompression_change_pct": -1.7495886939837613,
+      "baseline_compression_mbps": 2805.14,
+      "candidate_compression_mbps": 2787.8,
+      "baseline_decompression_mbps": 22744.5,
+      "candidate_decompression_mbps": 21944.9,
+      "compressed_bytes": 16777610,
+      "pair_details": [
+        {
+          "round": 0,
+          "c_ratio": 0.9938184903427281,
+          "d_ratio": 0.9825041130601624,
+          "baseline_c": 2805.14,
+          "candidate_c": 2787.8,
+          "baseline_d": 21942.3,
+          "candidate_d": 21558.4,
+          "compressed_bytes": 16777610
+        },
+        {
+          "round": 1,
+          "c_ratio": 1.0066167331601241,
+          "d_ratio": 0.9614835261128637,
+          "baseline_c": 2759.67,
+          "candidate_c": 2777.93,
+          "baseline_d": 22824.0,
+          "candidate_d": 21944.9,
+          "compressed_bytes": 16777610
+        },
+        {
+          "round": 2,
+          "c_ratio": 0.9950010140291826,
+          "d_ratio": 1.0294268944140341,
+          "baseline_c": 2810.57,
+          "candidate_c": 2796.52,
+          "baseline_d": 22744.5,
+          "candidate_d": 23413.8,
+          "compressed_bytes": 16777610
+        }
+      ]
+    },
+    {
+      "compiler": "clang14",
+      "case": "random16MiB-L9",
+      "pairs": 3,
+      "compression_change_pct": -4.653812601256934,
+      "compression_min_pair_pct": -14.235848732568524,
+      "compression_max_pair_pct": 9.1131474532405,
+      "decompression_change_pct": 0.6575276774886785,
+      "baseline_compression_mbps": 2246.76,
+      "candidate_compression_mbps": 2142.2,
+      "baseline_decompression_mbps": 21611.7,
+      "candidate_decompression_mbps": 21829.9,
+      "compressed_bytes": 16777610,
+      "pair_details": [
+        {
+          "round": 0,
+          "c_ratio": 0.8576415126743148,
+          "d_ratio": 1.061707315944604,
+          "baseline_c": 2329.12,
+          "candidate_c": 1997.55,
+          "baseline_d": 21611.7,
+          "candidate_d": 22945.3,
+          "compressed_bytes": 16777610
+        },
+        {
+          "round": 1,
+          "c_ratio": 0.9534618739874307,
+          "d_ratio": 1.0065752767748868,
+          "baseline_c": 2246.76,
+          "candidate_c": 2142.2,
+          "baseline_d": 21687.3,
+          "candidate_d": 21829.9,
+          "compressed_bytes": 16777610
+        },
+        {
+          "round": 2,
+          "c_ratio": 1.091131474532405,
+          "d_ratio": 0.9929461389016877,
+          "baseline_c": 2043.97,
+          "candidate_c": 2230.24,
+          "baseline_d": 21052.3,
+          "candidate_d": 20903.8,
+          "compressed_bytes": 16777610
+        }
+      ]
+    },
+    {
+      "compiler": "clang14",
+      "case": "silesia-32KiB-L6",
+      "pairs": 3,
+      "compression_change_pct": 0.6688341848583468,
+      "compression_min_pair_pct": -0.2896654830872758,
+      "compression_max_pair_pct": 1.169645363525773,
+      "decompression_change_pct": 0.35470426531878374,
+      "baseline_compression_mbps": 107.02,
+      "candidate_compression_mbps": 108.12,
+      "baseline_decompression_mbps": 1127.7,
+      "candidate_decompression_mbps": 1130.8,
+      "compressed_bytes": 72603809,
+      "pair_details": [
+        {
+          "round": 0,
+          "c_ratio": 1.0116964536352577,
+          "d_ratio": 1.0047982939399323,
+          "baseline_c": 106.87,
+          "candidate_c": 108.12,
+          "baseline_d": 1125.4,
+          "candidate_d": 1130.8,
+          "compressed_bytes": 72603809
+        },
+        {
+          "round": 1,
+          "c_ratio": 0.9971033451691272,
+          "d_ratio": 1.0018613720971459,
+          "baseline_c": 107.02,
+          "candidate_c": 106.71,
+          "baseline_d": 1128.2,
+          "candidate_d": 1130.3,
+          "compressed_bytes": 72603809
+        },
+        {
+          "round": 2,
+          "c_ratio": 1.0066883418485835,
+          "d_ratio": 1.0035470426531878,
+          "baseline_c": 107.65,
+          "candidate_c": 108.37,
+          "baseline_d": 1127.7,
+          "candidate_d": 1131.7,
+          "compressed_bytes": 72603809
+        }
+      ]
+    },
+    {
+      "compiler": "clang14",
+      "case": "silesia-32KiB-L9",
+      "pairs": 3,
+      "compression_change_pct": 6.577480490523957,
+      "compression_min_pair_pct": 5.382709251101314,
+      "compression_max_pair_pct": 7.338291006033404,
+      "decompression_change_pct": 0.7128746886541304,
+      "baseline_compression_mbps": 71.76,
+      "candidate_compression_mbps": 76.5,
+      "baseline_decompression_mbps": 1164.3,
+      "candidate_decompression_mbps": 1172.6,
+      "compressed_bytes": 71853531,
+      "pair_details": [
+        {
+          "round": 0,
+          "c_ratio": 1.0657748049052396,
+          "d_ratio": 1.0081615120274914,
+          "baseline_c": 71.76,
+          "candidate_c": 76.48,
+          "baseline_d": 1164.0,
+          "candidate_d": 1173.5,
+          "compressed_bytes": 71853531
+        },
+        {
+          "round": 1,
+          "c_ratio": 1.073382910060334,
+          "d_ratio": 0.9993181624477968,
+          "baseline_c": 71.27,
+          "candidate_c": 76.5,
+          "baseline_d": 1173.3,
+          "candidate_d": 1172.5,
+          "compressed_bytes": 71853531
+        },
+        {
+          "round": 2,
+          "c_ratio": 1.0538270925110131,
+          "d_ratio": 1.0071287468865413,
+          "baseline_c": 72.64,
+          "candidate_c": 76.55,
+          "baseline_d": 1164.3,
+          "candidate_d": 1172.6,
+          "compressed_bytes": 71853531
+        }
+      ]
+    },
+    {
+      "compiler": "clang14",
+      "case": "silesia-L12",
+      "pairs": 3,
+      "compression_change_pct": -1.5069318866787196,
+      "compression_min_pair_pct": -2.886977886977893,
+      "compression_max_pair_pct": -0.3214494447691396,
+      "decompression_change_pct": 1.5506500541711876,
+      "baseline_compression_mbps": 33.18,
+      "candidate_compression_mbps": 32.68,
+      "baseline_decompression_mbps": 1474.4,
+      "candidate_decompression_mbps": 1473.7,
+      "compressed_bytes": 57911231,
+      "pair_details": [
+        {
+          "round": 0,
+          "c_ratio": 0.9967855055523086,
+          "d_ratio": 0.9995252306022788,
+          "baseline_c": 34.22,
+          "candidate_c": 34.11,
+          "baseline_d": 1474.4,
+          "candidate_d": 1473.7,
+          "compressed_bytes": 57911231
+        },
+        {
+          "round": 1,
+          "c_ratio": 0.9849306811332128,
+          "d_ratio": 1.0258199581297975,
+          "baseline_c": 33.18,
+          "candidate_c": 32.68,
+          "baseline_d": 1433.0,
+          "candidate_d": 1470.0,
+          "compressed_bytes": 57911231
+        },
+        {
+          "round": 2,
+          "c_ratio": 0.9711302211302211,
+          "d_ratio": 1.0155065005417119,
+          "baseline_c": 32.56,
+          "candidate_c": 31.62,
+          "baseline_d": 1476.8,
+          "candidate_d": 1499.7,
+          "compressed_bytes": 57911231
+        }
+      ]
+    },
+    {
+      "compiler": "clang14",
+      "case": "silesia-L13",
+      "pairs": 3,
+      "compression_change_pct": -5.618892508143314,
+      "compression_min_pair_pct": -22.58287292817679,
+      "compression_max_pair_pct": -0.9685230024213176,
+      "decompression_change_pct": -1.0994105569905432,
+      "baseline_compression_mbps": 12.39,
+      "candidate_compression_mbps": 11.59,
+      "baseline_decompression_mbps": 1504.7,
+      "candidate_decompression_mbps": 1493.3,
+      "compressed_bytes": 57686085,
+      "pair_details": [
+        {
+          "round": 0,
+          "c_ratio": 0.9438110749185669,
+          "d_ratio": 0.9888523269088711,
+          "baseline_c": 12.28,
+          "candidate_c": 11.59,
+          "baseline_d": 1489.1,
+          "candidate_d": 1472.5,
+          "compressed_bytes": 57686085
+        },
+        {
+          "round": 1,
+          "c_ratio": 0.7741712707182321,
+          "d_ratio": 0.9890058944300946,
+          "baseline_c": 14.48,
+          "candidate_c": 11.21,
+          "baseline_d": 1509.9,
+          "candidate_d": 1493.3,
+          "compressed_bytes": 57686085
+        },
+        {
+          "round": 2,
+          "c_ratio": 0.9903147699757868,
+          "d_ratio": 1.0019272944773043,
+          "baseline_c": 12.39,
+          "candidate_c": 12.27,
+          "baseline_d": 1504.7,
+          "candidate_d": 1507.6,
+          "compressed_bytes": 57686085
+        }
+      ]
+    },
+    {
+      "compiler": "clang14",
+      "case": "silesia-L5",
+      "pairs": 3,
+      "compression_change_pct": -0.22295790824943262,
+      "compression_min_pair_pct": -0.4610758436351503,
+      "compression_max_pair_pct": 0.14101531023369418,
+      "decompression_change_pct": 0.2101628762290808,
+      "baseline_compression_mbps": 148.92,
+      "candidate_compression_mbps": 148.96,
+      "baseline_decompression_mbps": 1332.3,
+      "candidate_decompression_mbps": 1325.5,
+      "compressed_bytes": 62742335,
+      "pair_details": [
+        {
+          "round": 0,
+          "c_ratio": 0.9953892415636485,
+          "d_ratio": 1.0021016287622908,
+          "baseline_c": 149.65,
+          "candidate_c": 148.96,
+          "baseline_d": 1332.3,
+          "candidate_d": 1335.1,
+          "compressed_bytes": 62742335
+        },
+        {
+          "round": 1,
+          "c_ratio": 0.9977704209175057,
+          "d_ratio": 0.9931070652581104,
+          "baseline_c": 148.01,
+          "candidate_c": 147.68,
+          "baseline_d": 1334.7,
+          "candidate_d": 1325.5,
+          "compressed_bytes": 62742335
+        },
+        {
+          "round": 2,
+          "c_ratio": 1.001410153102337,
+          "d_ratio": 1.0024990533888678,
+          "baseline_c": 148.92,
+          "candidate_c": 149.13,
+          "baseline_d": 1320.5,
+          "candidate_d": 1323.8,
+          "compressed_bytes": 62742335
+        }
+      ]
+    },
+    {
+      "compiler": "clang14",
+      "case": "silesia-L6",
+      "pairs": 3,
+      "compression_change_pct": 0.5444152073314612,
+      "compression_min_pair_pct": 0.1383636195922966,
+      "compression_max_pair_pct": 2.146840148698881,
+      "decompression_change_pct": -0.08471584892341122,
+      "baseline_compression_mbps": 108.41,
+      "candidate_compression_mbps": 109.91,
+      "baseline_decompression_mbps": 1413.2,
+      "candidate_decompression_mbps": 1415.1,
+      "compressed_bytes": 61230924,
+      "pair_details": [
+        {
+          "round": 0,
+          "c_ratio": 1.0054441520733146,
+          "d_ratio": 1.0017697862098258,
+          "baseline_c": 110.21,
+          "candidate_c": 110.81,
+          "baseline_d": 1412.6,
+          "candidate_d": 1415.1,
+          "compressed_bytes": 61230924
+        },
+        {
+          "round": 1,
+          "c_ratio": 1.001383636195923,
+          "d_ratio": 0.9991528415107659,
+          "baseline_c": 108.41,
+          "candidate_c": 108.56,
+          "baseline_d": 1416.5,
+          "candidate_d": 1415.3,
+          "compressed_bytes": 61230924
+        },
+        {
+          "round": 2,
+          "c_ratio": 1.0214684014869888,
+          "d_ratio": 0.9981602037928106,
+          "baseline_c": 107.6,
+          "candidate_c": 109.91,
+          "baseline_d": 1413.2,
+          "candidate_d": 1410.6,
+          "compressed_bytes": 61230924
+        }
+      ]
+    },
+    {
+      "compiler": "clang14",
+      "case": "silesia-L7",
+      "pairs": 3,
+      "compression_change_pct": -0.5756578947368474,
+      "compression_min_pair_pct": -1.1003565970453488,
+      "compression_max_pair_pct": 0.28272251308900653,
+      "decompression_change_pct": 0.31376377074328055,
+      "baseline_compression_mbps": 97.28,
+      "candidate_compression_mbps": 96.72,
+      "baseline_decompression_mbps": 1434.2,
+      "candidate_decompression_mbps": 1437.9,
+      "compressed_bytes": 60250552,
+      "pair_details": [
+        {
+          "round": 0,
+          "c_ratio": 0.9942434210526315,
+          "d_ratio": 1.0053838623968676,
+          "baseline_c": 97.28,
+          "candidate_c": 96.72,
+          "baseline_d": 1430.2,
+          "candidate_d": 1437.9,
+          "compressed_bytes": 60250552
+        },
+        {
+          "round": 1,
+          "c_ratio": 1.00282722513089,
+          "d_ratio": 1.0031376377074328,
+          "baseline_c": 95.5,
+          "candidate_c": 95.77,
+          "baseline_d": 1434.2,
+          "candidate_d": 1438.7,
+          "compressed_bytes": 60250552
+        },
+        {
+          "round": 2,
+          "c_ratio": 0.9889964340295465,
+          "d_ratio": 0.9840116279069768,
+          "baseline_c": 98.15,
+          "candidate_c": 97.07,
+          "baseline_d": 1444.8,
+          "candidate_d": 1421.7,
+          "compressed_bytes": 60250552
+        }
+      ]
+    },
+    {
+      "compiler": "clang14",
+      "case": "silesia-L9",
+      "pairs": 3,
+      "compression_change_pct": -0.5307262569832383,
+      "compression_min_pair_pct": -1.554691837867861,
+      "compression_max_pair_pct": 1.6940037644528116,
+      "decompression_change_pct": 1.18359482521333,
+      "baseline_compression_mbps": 72.04,
+      "candidate_compression_mbps": 71.22,
+      "baseline_decompression_mbps": 1431.4,
+      "candidate_decompression_mbps": 1436.3,
+      "compressed_bytes": 59073803,
+      "pair_details": [
+        {
+          "round": 0,
+          "c_ratio": 1.0169400376445281,
+          "d_ratio": 1.0118359482521333,
+          "baseline_c": 74.38,
+          "candidate_c": 75.64,
+          "baseline_d": 1453.2,
+          "candidate_d": 1470.4,
+          "compressed_bytes": 59073803
+        },
+        {
+          "round": 1,
+          "c_ratio": 0.9946927374301676,
+          "d_ratio": 0.9902892273298868,
+          "baseline_c": 71.6,
+          "candidate_c": 71.22,
+          "baseline_d": 1431.4,
+          "candidate_d": 1417.5,
+          "compressed_bytes": 59073803
+        },
+        {
+          "round": 2,
+          "c_ratio": 0.9844530816213214,
+          "d_ratio": 1.0146944542564464,
+          "baseline_c": 72.04,
+          "candidate_c": 70.92,
+          "baseline_d": 1415.5,
+          "candidate_d": 1436.3,
+          "compressed_bytes": 59073803
+        }
+      ]
+    },
+    {
+      "compiler": "clang14",
+      "case": "silesia-hashchain-L6",
+      "pairs": 3,
+      "compression_change_pct": -0.9607498535442183,
+      "compression_min_pair_pct": -2.805587892898731,
+      "compression_max_pair_pct": -0.23568230025925452,
+      "decompression_change_pct": -0.07911392405064444,
+      "baseline_compression_mbps": 85.35,
+      "candidate_compression_mbps": 84.53,
+      "baseline_decompression_mbps": 1390.7,
+      "candidate_decompression_mbps": 1390.0,
+      "compressed_bytes": 61430436,
+      "pair_details": [
+        {
+          "round": 0,
+          "c_ratio": 0.9719441210710127,
+          "d_ratio": 0.9940671908506076,
+          "baseline_c": 85.9,
+          "candidate_c": 83.49,
+          "baseline_d": 1399.0,
+          "candidate_d": 1390.7,
+          "compressed_bytes": 61430436
+        },
+        {
+          "round": 1,
+          "c_ratio": 0.9976431769974075,
+          "d_ratio": 0.9994966563601064,
+          "baseline_c": 84.86,
+          "candidate_c": 84.66,
+          "baseline_d": 1390.7,
+          "candidate_d": 1390.0,
+          "compressed_bytes": 61430436
+        },
+        {
+          "round": 2,
+          "c_ratio": 0.9903925014645578,
+          "d_ratio": 0.9992088607594936,
+          "baseline_c": 85.35,
+          "candidate_c": 84.53,
+          "baseline_d": 1390.4,
+          "candidate_d": 1389.3,
+          "compressed_bytes": 61430436
+        }
+      ]
+    },
+    {
+      "compiler": "clang14",
+      "case": "silesia-hashchain-L9",
+      "pairs": 3,
+      "compression_change_pct": -1.4906832298136719,
+      "compression_min_pair_pct": -1.8351214003387906,
+      "compression_max_pair_pct": 2.7156147850138312,
+      "decompression_change_pct": -0.10209637898176416,
+      "baseline_compression_mbps": 39.77,
+      "candidate_compression_mbps": 39.65,
+      "baseline_decompression_mbps": 1453.7,
+      "candidate_decompression_mbps": 1444.6,
+      "compressed_bytes": 59234156,
+      "pair_details": [
+        {
+          "round": 0,
+          "c_ratio": 0.9816487859966121,
+          "d_ratio": 1.0022200638268348,
+          "baseline_c": 35.42,
+          "candidate_c": 34.77,
+          "baseline_d": 1441.4,
+          "candidate_d": 1444.6,
+          "compressed_bytes": 59234156
+        },
+        {
+          "round": 1,
+          "c_ratio": 1.0271561478501383,
+          "d_ratio": 0.9761298754901286,
+          "baseline_c": 39.77,
+          "candidate_c": 40.85,
+          "baseline_d": 1453.7,
+          "candidate_d": 1419.0,
+          "compressed_bytes": 59234156
+        },
+        {
+          "round": 2,
+          "c_ratio": 0.9850931677018633,
+          "d_ratio": 0.9989790362101824,
+          "baseline_c": 40.25,
+          "candidate_c": 39.65,
+          "baseline_d": 1469.2,
+          "candidate_d": 1467.7,
+          "compressed_bytes": 59234156
+        }
+      ]
+    },
+    {
+      "compiler": "gcc11",
+      "case": "AA-silesia-L9",
+      "pairs": 3,
+      "compression_change_pct": -3.740719588806407,
+      "compression_min_pair_pct": -4.0000000000000036,
+      "compression_max_pair_pct": 1.0806199345940737,
+      "decompression_change_pct": -0.4846839860411012,
+      "baseline_compression_mbps": 70.33,
+      "candidate_compression_mbps": 68.64,
+      "baseline_decompression_mbps": 1560.5,
+      "candidate_decompression_mbps": 1547.0,
+      "compressed_bytes": 59073803,
+      "pair_details": [
+        {
+          "round": 0,
+          "c_ratio": 1.0108061993459407,
+          "d_ratio": 0.9884984025559106,
+          "baseline_c": 70.33,
+          "candidate_c": 71.09,
+          "baseline_d": 1565.0,
+          "candidate_d": 1547.0,
+          "compressed_bytes": 59073803
+        },
+        {
+          "round": 1,
+          "c_ratio": 0.96,
+          "d_ratio": 1.0023710349247037,
+          "baseline_c": 71.5,
+          "candidate_c": 68.64,
+          "baseline_d": 1560.5,
+          "candidate_d": 1564.2,
+          "compressed_bytes": 59073803
+        },
+        {
+          "round": 2,
+          "c_ratio": 0.9625928041119359,
+          "d_ratio": 0.995153160139589,
+          "baseline_c": 70.04,
+          "candidate_c": 67.42,
+          "baseline_d": 1547.4,
+          "candidate_d": 1539.9,
+          "compressed_bytes": 59073803
+        }
+      ]
+    },
+    {
+      "compiler": "gcc11",
+      "case": "confirm-osdb-L6",
+      "pairs": 5,
+      "compression_change_pct": -1.8581995309399302,
+      "compression_min_pair_pct": -2.0474137931034475,
+      "compression_max_pair_pct": -1.2221423436376666,
+      "decompression_change_pct": -0.3045741499612342,
+      "baseline_compression_mbps": 111.2,
+      "candidate_compression_mbps": 109.08,
+      "baseline_decompression_mbps": 1804.8,
+      "candidate_decompression_mbps": 1797.4,
+      "compressed_bytes": 3395739,
+      "pair_details": [
+        {
+          "round": 0,
+          "c_ratio": 0.9802158273381295,
+          "d_ratio": 0.996120594103303,
+          "baseline_c": 111.2,
+          "candidate_c": 109.0,
+          "baseline_d": 1804.4,
+          "candidate_d": 1797.4,
+          "compressed_bytes": 3395739
+        },
+        {
+          "round": 1,
+          "c_ratio": 0.9814180046906007,
+          "d_ratio": 1.004270382648761,
+          "baseline_c": 110.86,
+          "candidate_c": 108.8,
+          "baseline_d": 1779.7,
+          "candidate_d": 1787.3,
+          "compressed_bytes": 3395739
+        },
+        {
+          "round": 2,
+          "c_ratio": 0.9877785765636233,
+          "d_ratio": 0.9873487652615879,
+          "baseline_c": 111.28,
+          "candidate_c": 109.92,
+          "baseline_d": 1810.1,
+          "candidate_d": 1787.2,
+          "compressed_bytes": 3395739
+        },
+        {
+          "round": 3,
+          "c_ratio": 0.9840583626047015,
+          "d_ratio": 0.9969542585003877,
+          "baseline_c": 111.03,
+          "candidate_c": 109.26,
+          "baseline_d": 1805.8,
+          "candidate_d": 1800.3,
+          "compressed_bytes": 3395739
+        },
+        {
+          "round": 4,
+          "c_ratio": 0.9795258620689655,
+          "d_ratio": 0.9987256205673759,
+          "baseline_c": 111.36,
+          "candidate_c": 109.08,
+          "baseline_d": 1804.8,
+          "candidate_d": 1802.5,
+          "compressed_bytes": 3395739
+        }
+      ]
+    },
+    {
+      "compiler": "gcc11",
+      "case": "confirm-sao-L6",
+      "pairs": 5,
+      "compression_change_pct": -1.9953355791655913,
+      "compression_min_pair_pct": -3.1233799896319248,
+      "compression_max_pair_pct": -0.8992571354098811,
+      "decompression_change_pct": -0.2519767138761009,
+      "baseline_compression_mbps": 76.84,
+      "candidate_compression_mbps": 75.64,
+      "baseline_decompression_mbps": 1147.5,
+      "candidate_decompression_mbps": 1148.0,
+      "compressed_bytes": 5272383,
+      "pair_details": [
+        {
+          "round": 0,
+          "c_ratio": 0.9859448204060386,
+          "d_ratio": 0.9995648011141092,
+          "baseline_c": 76.84,
+          "candidate_c": 75.76,
+          "baseline_d": 1148.9,
+          "candidate_d": 1148.4,
+          "compressed_bytes": 5272383
+        },
+        {
+          "round": 1,
+          "c_ratio": 0.9761717727153706,
+          "d_ratio": 0.997480232861239,
+          "baseline_c": 76.38,
+          "candidate_c": 74.56,
+          "baseline_d": 1150.9,
+          "candidate_d": 1148.0,
+          "compressed_bytes": 5272383
+        },
+        {
+          "round": 2,
+          "c_ratio": 0.9800466442083441,
+          "d_ratio": 0.9962527233115469,
+          "baseline_c": 77.18,
+          "candidate_c": 75.64,
+          "baseline_d": 1147.5,
+          "candidate_d": 1143.2,
+          "compressed_bytes": 5272383
+        },
+        {
+          "round": 3,
+          "c_ratio": 0.9910074286459012,
+          "d_ratio": 1.0167034909412285,
+          "baseline_c": 76.73,
+          "candidate_c": 76.04,
+          "baseline_d": 1131.5,
+          "candidate_d": 1150.4,
+          "compressed_bytes": 5272383
+        },
+        {
+          "round": 4,
+          "c_ratio": 0.9687662001036808,
+          "d_ratio": 0.9922257162823201,
+          "baseline_c": 77.16,
+          "candidate_c": 74.75,
+          "baseline_d": 1144.8,
+          "candidate_d": 1135.9,
+          "compressed_bytes": 5272383
+        }
+      ]
+    },
+    {
+      "compiler": "gcc11",
+      "case": "confirm-x-ray-L6",
+      "pairs": 5,
+      "compression_change_pct": -1.4723777074714173,
+      "compression_min_pair_pct": -2.338260237460632,
+      "compression_max_pair_pct": 0.7641114123736914,
+      "decompression_change_pct": -0.10376673238560175,
+      "baseline_compression_mbps": 82.18,
+      "candidate_compression_mbps": 80.97,
+      "baseline_decompression_mbps": 966.7,
+      "candidate_decompression_mbps": 962.7,
+      "compressed_bytes": 5551501,
+      "pair_details": [
+        {
+          "round": 0,
+          "c_ratio": 0.9842951059167274,
+          "d_ratio": 0.9921382021309609,
+          "baseline_c": 82.14,
+          "candidate_c": 80.85,
+          "baseline_d": 966.7,
+          "candidate_d": 959.1,
+          "compressed_bytes": 5551501
+        },
+        {
+          "round": 1,
+          "c_ratio": 0.9766173976253937,
+          "d_ratio": 0.9946024496574633,
+          "baseline_c": 82.54,
+          "candidate_c": 80.61,
+          "baseline_d": 963.4,
+          "candidate_d": 958.2,
+          "compressed_bytes": 5551501
+        },
+        {
+          "round": 2,
+          "c_ratio": 0.9852762229252858,
+          "d_ratio": 1.0004126263668247,
+          "baseline_c": 82.18,
+          "candidate_c": 80.97,
+          "baseline_d": 969.4,
+          "candidate_d": 969.8,
+          "compressed_bytes": 5551501
+        },
+        {
+          "round": 3,
+          "c_ratio": 1.007641114123737,
+          "d_ratio": 1.0009286967289237,
+          "baseline_c": 81.14,
+          "candidate_c": 81.76,
+          "baseline_d": 969.1,
+          "candidate_d": 970.0,
+          "compressed_bytes": 5551501
+        },
+        {
+          "round": 4,
+          "c_ratio": 0.9869154349406347,
+          "d_ratio": 0.998962332676144,
+          "baseline_c": 82.54,
+          "candidate_c": 81.46,
+          "baseline_d": 963.7,
+          "candidate_d": 962.7,
+          "compressed_bytes": 5551501
+        }
+      ]
+    },
+    {
+      "compiler": "gcc11",
+      "case": "enwik8-L12",
+      "pairs": 3,
+      "compression_change_pct": 2.5815217391304435,
+      "compression_min_pair_pct": 0.23946360153257462,
+      "compression_max_pair_pct": 5.6487202118270075,
+      "decompression_change_pct": 0.1524279596428757,
+      "baseline_compression_mbps": 22.08,
+      "candidate_compression_mbps": 22.65,
+      "baseline_decompression_mbps": 1370.6,
+      "candidate_decompression_mbps": 1376.1,
+      "compressed_bytes": 30339024,
+      "pair_details": [
+        {
+          "round": 0,
+          "c_ratio": 1.05648720211827,
+          "d_ratio": 1.0015242795964288,
+          "baseline_c": 22.66,
+          "candidate_c": 23.94,
+          "baseline_d": 1377.7,
+          "candidate_d": 1379.8,
+          "compressed_bytes": 30339024
+        },
+        {
+          "round": 1,
+          "c_ratio": 1.0258152173913044,
+          "d_ratio": 1.0119870569201352,
+          "baseline_c": 22.08,
+          "candidate_c": 22.65,
+          "baseline_d": 1359.8,
+          "candidate_d": 1376.1,
+          "compressed_bytes": 30339024
+        },
+        {
+          "round": 2,
+          "c_ratio": 1.0023946360153257,
+          "d_ratio": 0.9951116299430908,
+          "baseline_c": 20.88,
+          "candidate_c": 20.93,
+          "baseline_d": 1370.6,
+          "candidate_d": 1363.9,
+          "compressed_bytes": 30339024
+        }
+      ]
+    },
+    {
+      "compiler": "gcc11",
+      "case": "enwik8-L13",
+      "pairs": 3,
+      "compression_change_pct": -1.4285714285714235,
+      "compression_min_pair_pct": -1.5363128491620137,
+      "compression_max_pair_pct": 0.27548209366392573,
+      "decompression_change_pct": -0.894935972060551,
+      "baseline_compression_mbps": 7.16,
+      "candidate_compression_mbps": 7.05,
+      "baseline_decompression_mbps": 1357.7,
+      "candidate_decompression_mbps": 1345.5,
+      "compressed_bytes": 29967212,
+      "pair_details": [
+        {
+          "round": 0,
+          "c_ratio": 1.0027548209366393,
+          "d_ratio": 0.9910506402793945,
+          "baseline_c": 7.26,
+          "candidate_c": 7.28,
+          "baseline_d": 1374.4,
+          "candidate_d": 1362.1,
+          "compressed_bytes": 29967212
+        },
+        {
+          "round": 1,
+          "c_ratio": 0.9857142857142858,
+          "d_ratio": 1.008550213755344,
+          "baseline_c": 7.0,
+          "candidate_c": 6.9,
+          "baseline_d": 1333.3,
+          "candidate_d": 1344.7,
+          "compressed_bytes": 29967212
+        },
+        {
+          "round": 2,
+          "c_ratio": 0.9846368715083799,
+          "d_ratio": 0.9910142152169109,
+          "baseline_c": 7.16,
+          "candidate_c": 7.05,
+          "baseline_d": 1357.7,
+          "candidate_d": 1345.5,
+          "compressed_bytes": 29967212
+        }
+      ]
+    },
+    {
+      "compiler": "gcc11",
+      "case": "enwik8-L5",
+      "pairs": 3,
+      "compression_change_pct": -1.0752688172043001,
+      "compression_min_pair_pct": -1.6400517911091872,
+      "compression_max_pair_pct": -0.42884649046036616,
+      "decompression_change_pct": -0.09581603321623389,
+      "baseline_compression_mbps": 114.39,
+      "candidate_compression_mbps": 113.77,
+      "baseline_decompression_mbps": 1252.4,
+      "candidate_decompression_mbps": 1250.3,
+      "compressed_bytes": 33699396,
+      "pair_details": [
+        {
+          "round": 0,
+          "c_ratio": 0.989247311827957,
+          "d_ratio": 0.9996800767815726,
+          "baseline_c": 114.39,
+          "candidate_c": 113.16,
+          "baseline_d": 1250.3,
+          "candidate_d": 1249.9,
+          "compressed_bytes": 33699396
+        },
+        {
+          "round": 1,
+          "c_ratio": 0.9957115350953963,
+          "d_ratio": 0.9990418396678377,
+          "baseline_c": 114.26,
+          "candidate_c": 113.77,
+          "baseline_d": 1252.4,
+          "candidate_d": 1251.2,
+          "compressed_bytes": 33699396
+        },
+        {
+          "round": 2,
+          "c_ratio": 0.9835994820889081,
+          "d_ratio": 0.9937211890001589,
+          "baseline_c": 115.85,
+          "candidate_c": 113.95,
+          "baseline_d": 1258.2,
+          "candidate_d": 1250.3,
+          "compressed_bytes": 33699396
+        }
+      ]
+    },
+    {
+      "compiler": "gcc11",
+      "case": "enwik8-L6",
+      "pairs": 3,
+      "compression_change_pct": -0.5033763044812734,
+      "compression_min_pair_pct": -0.7026627218934989,
+      "compression_max_pair_pct": -0.04910385465257683,
+      "decompression_change_pct": 0.34975669099754914,
+      "baseline_compression_mbps": 81.45,
+      "candidate_compression_mbps": 81.04,
+      "baseline_decompression_mbps": 1314.7,
+      "candidate_decompression_mbps": 1319.8,
+      "compressed_bytes": 32612520,
+      "pair_details": [
+        {
+          "round": 0,
+          "c_ratio": 0.9995089614534742,
+          "d_ratio": 1.0173166807141216,
+          "baseline_c": 81.46,
+          "candidate_c": 81.42,
+          "baseline_d": 1305.1,
+          "candidate_d": 1327.7,
+          "compressed_bytes": 32612520
+        },
+        {
+          "round": 1,
+          "c_ratio": 0.992973372781065,
+          "d_ratio": 0.9906442534418499,
+          "baseline_c": 81.12,
+          "candidate_c": 80.55,
+          "baseline_d": 1314.7,
+          "candidate_d": 1302.4,
+          "compressed_bytes": 32612520
+        },
+        {
+          "round": 2,
+          "c_ratio": 0.9949662369551873,
+          "d_ratio": 1.0034975669099755,
+          "baseline_c": 81.45,
+          "candidate_c": 81.04,
+          "baseline_d": 1315.2,
+          "candidate_d": 1319.8,
+          "compressed_bytes": 32612520
+        }
+      ]
+    },
+    {
+      "compiler": "gcc11",
+      "case": "enwik8-L7",
+      "pairs": 3,
+      "compression_change_pct": -0.9615384615384803,
+      "compression_min_pair_pct": -1.1779379157427883,
+      "compression_max_pair_pct": -0.6698297516047891,
+      "decompression_change_pct": 0.28646814926498454,
+      "baseline_compression_mbps": 71.76,
+      "candidate_compression_mbps": 71.18,
+      "baseline_decompression_mbps": 1326.0,
+      "candidate_decompression_mbps": 1330.3,
+      "compressed_bytes": 31981436,
+      "pair_details": [
+        {
+          "round": 0,
+          "c_ratio": 0.9882206208425721,
+          "d_ratio": 1.007548309178744,
+          "baseline_c": 72.16,
+          "candidate_c": 71.31,
+          "baseline_d": 1324.8,
+          "candidate_d": 1334.8,
+          "compressed_bytes": 31981436
+        },
+        {
+          "round": 1,
+          "c_ratio": 0.9933017024839521,
+          "d_ratio": 0.996606334841629,
+          "baseline_c": 71.66,
+          "candidate_c": 71.18,
+          "baseline_d": 1326.0,
+          "candidate_d": 1321.5,
+          "compressed_bytes": 31981436
+        },
+        {
+          "round": 2,
+          "c_ratio": 0.9903846153846152,
+          "d_ratio": 1.0028646814926498,
+          "baseline_c": 71.76,
+          "candidate_c": 71.07,
+          "baseline_d": 1326.5,
+          "candidate_d": 1330.3,
+          "compressed_bytes": 31981436
+        }
+      ]
+    },
+    {
+      "compiler": "gcc11",
+      "case": "enwik8-L9",
+      "pairs": 3,
+      "compression_change_pct": 1.922337562475973,
+      "compression_min_pair_pct": 0.34383954154728613,
+      "compression_max_pair_pct": 2.470565527890378,
+      "decompression_change_pct": -1.1704085388295926,
+      "baseline_compression_mbps": 52.02,
+      "candidate_compression_mbps": 53.02,
+      "baseline_decompression_mbps": 1356.8,
+      "candidate_decompression_mbps": 1342.6,
+      "compressed_bytes": 31076602,
+      "pair_details": [
+        {
+          "round": 0,
+          "c_ratio": 1.0247056552789038,
+          "d_ratio": 1.009485697346969,
+          "baseline_c": 51.81,
+          "candidate_c": 53.09,
+          "baseline_d": 1349.4,
+          "candidate_d": 1362.2,
+          "compressed_bytes": 31076602
+        },
+        {
+          "round": 1,
+          "c_ratio": 1.0034383954154729,
+          "d_ratio": 0.9882959146117041,
+          "baseline_c": 52.35,
+          "candidate_c": 52.53,
+          "baseline_d": 1358.5,
+          "candidate_d": 1342.6,
+          "compressed_bytes": 31076602
+        },
+        {
+          "round": 2,
+          "c_ratio": 1.0192233756247597,
+          "d_ratio": 0.9845961084905661,
+          "baseline_c": 52.02,
+          "candidate_c": 53.02,
+          "baseline_d": 1356.8,
+          "candidate_d": 1335.9,
+          "compressed_bytes": 31076602
+        }
+      ]
+    },
+    {
+      "compiler": "gcc11",
+      "case": "mixed-L6",
+      "pairs": 3,
+      "compression_change_pct": -0.544028340080982,
+      "compression_min_pair_pct": -1.1291550367926728,
+      "compression_max_pair_pct": -0.4967203719034585,
+      "decompression_change_pct": -2.988154690659961,
+      "baseline_compression_mbps": 157.64,
+      "candidate_compression_mbps": 156.25,
+      "baseline_decompression_mbps": 2449.1,
+      "candidate_decompression_mbps": 2391.6,
+      "compressed_bytes": 11148798,
+      "pair_details": [
+        {
+          "round": 0,
+          "c_ratio": 0.9950327962809654,
+          "d_ratio": 0.9701184530934004,
+          "baseline_c": 157.03,
+          "candidate_c": 156.25,
+          "baseline_d": 2422.9,
+          "candidate_d": 2350.5,
+          "compressed_bytes": 11148798
+        },
+        {
+          "round": 1,
+          "c_ratio": 0.9887084496320733,
+          "d_ratio": 0.9473559120617944,
+          "baseline_c": 157.64,
+          "candidate_c": 155.86,
+          "baseline_d": 2524.5,
+          "candidate_d": 2391.6,
+          "compressed_bytes": 11148798
+        },
+        {
+          "round": 2,
+          "c_ratio": 0.9945597165991902,
+          "d_ratio": 1.005512228982075,
+          "baseline_c": 158.08,
+          "candidate_c": 157.22,
+          "baseline_d": 2449.1,
+          "candidate_d": 2462.6,
+          "compressed_bytes": 11148798
+        }
+      ]
+    },
+    {
+      "compiler": "gcc11",
+      "case": "mixed-L9",
+      "pairs": 3,
+      "compression_change_pct": 2.099025810987243,
+      "compression_min_pair_pct": -6.123809523809531,
+      "compression_max_pair_pct": 3.0082579630357875,
+      "decompression_change_pct": 0.46145050637045326,
+      "baseline_compression_mbps": 101.72,
+      "candidate_compression_mbps": 101.66,
+      "baseline_decompression_mbps": 2547.8,
+      "candidate_decompression_mbps": 2460.1,
+      "compressed_bytes": 11033108,
+      "pair_details": [
+        {
+          "round": 0,
+          "c_ratio": 0.9387619047619047,
+          "d_ratio": 0.9459271292643304,
+          "baseline_c": 105.0,
+          "candidate_c": 98.57,
+          "baseline_d": 2585.4,
+          "candidate_d": 2445.6,
+          "compressed_bytes": 11033108
+        },
+        {
+          "round": 1,
+          "c_ratio": 1.0209902581098724,
+          "d_ratio": 1.0046145050637045,
+          "baseline_c": 99.57,
+          "candidate_c": 101.66,
+          "baseline_d": 2448.8,
+          "candidate_d": 2460.1,
+          "compressed_bytes": 11033108
+        },
+        {
+          "round": 2,
+          "c_ratio": 1.0300825796303579,
+          "d_ratio": 1.013972839312348,
+          "baseline_c": 101.72,
+          "candidate_c": 104.78,
+          "baseline_d": 2547.8,
+          "candidate_d": 2583.4,
+          "compressed_bytes": 11033108
+        }
+      ]
+    },
+    {
+      "compiler": "gcc11",
+      "case": "random16MiB-L12",
+      "pairs": 3,
+      "compression_change_pct": -2.852461069594625,
+      "compression_min_pair_pct": -9.302981114102693,
+      "compression_max_pair_pct": -1.1139490459530776,
+      "decompression_change_pct": 0.2782926933872165,
+      "baseline_compression_mbps": 958.12,
+      "candidate_compression_mbps": 930.79,
+      "baseline_decompression_mbps": 21509.0,
+      "candidate_decompression_mbps": 21043.5,
+      "compressed_bytes": 16777610,
+      "pair_details": [
+        {
+          "round": 0,
+          "c_ratio": 0.9714753893040537,
+          "d_ratio": 0.9719373285601377,
+          "baseline_c": 958.12,
+          "candidate_c": 930.79,
+          "baseline_d": 21509.0,
+          "candidate_d": 20905.4,
+          "compressed_bytes": 16777610
+        },
+        {
+          "round": 1,
+          "c_ratio": 0.9888605095404692,
+          "d_ratio": 1.0027829269338722,
+          "baseline_c": 931.82,
+          "candidate_c": 921.44,
+          "baseline_d": 20985.1,
+          "candidate_d": 21043.5,
+          "compressed_bytes": 16777610
+        },
+        {
+          "round": 2,
+          "c_ratio": 0.9069701888589731,
+          "d_ratio": 1.13546271918931,
+          "baseline_c": 1028.81,
+          "candidate_c": 933.1,
+          "baseline_d": 22144.1,
+          "candidate_d": 25143.8,
+          "compressed_bytes": 16777610
+        }
+      ]
+    },
+    {
+      "compiler": "gcc11",
+      "case": "random16MiB-L13",
+      "pairs": 3,
+      "compression_change_pct": -8.797729618163041,
+      "compression_min_pair_pct": -10.334559467507454,
+      "compression_max_pair_pct": 5.8660014255167425,
+      "decompression_change_pct": -2.9592743104614683,
+      "baseline_compression_mbps": 155.04,
+      "candidate_compression_mbps": 148.53,
+      "baseline_decompression_mbps": 21728.3,
+      "candidate_decompression_mbps": 21085.3,
+      "compressed_bytes": 16777610,
+      "pair_details": [
+        {
+          "round": 0,
+          "c_ratio": 1.0586600142551674,
+          "d_ratio": 0.9587941474667238,
+          "baseline_c": 140.3,
+          "candidate_c": 148.53,
+          "baseline_d": 21501.8,
+          "candidate_d": 20615.8,
+          "compressed_bytes": 16777610
+        },
+        {
+          "round": 1,
+          "c_ratio": 0.9120227038183696,
+          "d_ratio": 0.9704072568953853,
+          "baseline_c": 155.04,
+          "candidate_c": 141.4,
+          "baseline_d": 21728.3,
+          "candidate_d": 21085.3,
+          "compressed_bytes": 16777610
+        },
+        {
+          "round": 2,
+          "c_ratio": 0.8966544053249255,
+          "d_ratio": 1.1421636676741407,
+          "baseline_c": 171.27,
+          "candidate_c": 153.57,
+          "baseline_d": 22763.2,
+          "candidate_d": 25999.3,
+          "compressed_bytes": 16777610
+        }
+      ]
+    },
+    {
+      "compiler": "gcc11",
+      "case": "random16MiB-L5",
+      "pairs": 3,
+      "compression_change_pct": -2.2993538777677403,
+      "compression_min_pair_pct": -4.182428945866601,
+      "compression_max_pair_pct": -0.1863347571575802,
+      "decompression_change_pct": -1.2251947537916363,
+      "baseline_compression_mbps": 2900.38,
+      "candidate_compression_mbps": 2833.69,
+      "baseline_decompression_mbps": 22211.4,
+      "candidate_decompression_mbps": 21960.8,
+      "compressed_bytes": 16777610,
+      "pair_details": [
+        {
+          "round": 0,
+          "c_ratio": 0.958175710541334,
+          "d_ratio": 0.9877480524620836,
+          "baseline_c": 2926.29,
+          "candidate_c": 2803.9,
+          "baseline_d": 22233.2,
+          "candidate_d": 21960.8,
+          "compressed_bytes": 16777610
+        },
+        {
+          "round": 1,
+          "c_ratio": 0.9770064612223226,
+          "d_ratio": 0.9705638436091889,
+          "baseline_c": 2900.38,
+          "candidate_c": 2833.69,
+          "baseline_d": 21704.6,
+          "candidate_d": 21065.7,
+          "compressed_bytes": 16777610
+        },
+        {
+          "round": 2,
+          "c_ratio": 0.9981366524284242,
+          "d_ratio": 1.0017468507162988,
+          "baseline_c": 2881.91,
+          "candidate_c": 2876.54,
+          "baseline_d": 22211.4,
+          "candidate_d": 22250.2,
+          "compressed_bytes": 16777610
+        }
+      ]
+    },
+    {
+      "compiler": "gcc11",
+      "case": "random16MiB-L6",
+      "pairs": 3,
+      "compression_change_pct": 0.16677519716374878,
+      "compression_min_pair_pct": -0.7634773811244444,
+      "compression_max_pair_pct": 2.0354241038394782,
+      "decompression_change_pct": 1.0069751249048187,
+      "baseline_compression_mbps": 2767.6,
+      "candidate_compression_mbps": 2768.81,
+      "baseline_decompression_mbps": 24558.7,
+      "candidate_decompression_mbps": 24806.0,
+      "compressed_bytes": 16777610,
+      "pair_details": [
+        {
+          "round": 0,
+          "c_ratio": 0.9923652261887556,
+          "d_ratio": 1.0100697512490482,
+          "baseline_c": 2767.6,
+          "candidate_c": 2746.47,
+          "baseline_d": 24558.7,
+          "candidate_d": 24806.0,
+          "compressed_bytes": 16777610
+        },
+        {
+          "round": 1,
+          "c_ratio": 1.0016677519716375,
+          "d_ratio": 1.0067573278169284,
+          "baseline_c": 2764.2,
+          "candidate_c": 2768.81,
+          "baseline_d": 24847.1,
+          "candidate_d": 25015.0,
+          "compressed_bytes": 16777610
+        },
+        {
+          "round": 2,
+          "c_ratio": 1.0203542410383948,
+          "d_ratio": 1.0718151065780106,
+          "baseline_c": 2770.43,
+          "candidate_c": 2826.82,
+          "baseline_d": 21491.3,
+          "candidate_d": 23034.7,
+          "compressed_bytes": 16777610
+        }
+      ]
+    },
+    {
+      "compiler": "gcc11",
+      "case": "random16MiB-L7",
+      "pairs": 3,
+      "compression_change_pct": -1.4895410313385815,
+      "compression_min_pair_pct": -3.818556573217413,
+      "compression_max_pair_pct": -0.6895781675932855,
+      "decompression_change_pct": -1.734570391286816,
+      "baseline_compression_mbps": 2597.24,
+      "candidate_compression_mbps": 2571.32,
+      "baseline_decompression_mbps": 22093.1,
+      "candidate_decompression_mbps": 22654.8,
+      "compressed_bytes": 16777610,
+      "pair_details": [
+        {
+          "round": 0,
+          "c_ratio": 0.9851045896866142,
+          "d_ratio": 0.9826542960871318,
+          "baseline_c": 2610.2,
+          "candidate_c": 2571.32,
+          "baseline_d": 23054.7,
+          "candidate_d": 22654.8,
+          "compressed_bytes": 16777610
+        },
+        {
+          "round": 1,
+          "c_ratio": 0.9931042183240671,
+          "d_ratio": 0.9659712760997778,
+          "baseline_c": 2597.24,
+          "candidate_c": 2579.33,
+          "baseline_d": 22093.1,
+          "candidate_d": 21341.3,
+          "compressed_bytes": 16777610
+        },
+        {
+          "round": 2,
+          "c_ratio": 0.9618144342678259,
+          "d_ratio": 1.0869925472890076,
+          "baseline_c": 2581.08,
+          "candidate_c": 2482.52,
+          "baseline_d": 21844.4,
+          "candidate_d": 23744.7,
+          "compressed_bytes": 16777610
+        }
+      ]
+    },
+    {
+      "compiler": "gcc11",
+      "case": "random16MiB-L9",
+      "pairs": 3,
+      "compression_change_pct": -9.880079363535565,
+      "compression_min_pair_pct": -10.27990701784719,
+      "compression_max_pair_pct": -3.957078952832127,
+      "decompression_change_pct": -3.9626636705414553,
+      "baseline_compression_mbps": 2082.12,
+      "candidate_compression_mbps": 1868.08,
+      "baseline_decompression_mbps": 24133.1,
+      "candidate_decompression_mbps": 22929.7,
+      "compressed_bytes": 16777610,
+      "pair_details": [
+        {
+          "round": 0,
+          "c_ratio": 0.8972009298215281,
+          "d_ratio": 0.9501348769946671,
+          "baseline_c": 2082.12,
+          "candidate_c": 1868.08,
+          "baseline_d": 24133.1,
+          "candidate_d": 22929.7,
+          "compressed_bytes": 16777610
+        },
+        {
+          "round": 1,
+          "c_ratio": 0.9011992063646443,
+          "d_ratio": 0.9821781533553161,
+          "baseline_c": 2056.36,
+          "candidate_c": 1853.19,
+          "baseline_d": 21501.7,
+          "candidate_d": 21118.5,
+          "compressed_bytes": 16777610
+        },
+        {
+          "round": 2,
+          "c_ratio": 0.9604292104716787,
+          "d_ratio": 0.9603733632945854,
+          "baseline_c": 2119.24,
+          "candidate_c": 2035.38,
+          "baseline_d": 25455.1,
+          "candidate_d": 24446.4,
+          "compressed_bytes": 16777610
+        }
+      ]
+    },
+    {
+      "compiler": "gcc11",
+      "case": "silesia-32KiB-L6",
+      "pairs": 3,
+      "compression_change_pct": 3.285420944558526,
+      "compression_min_pair_pct": 2.8153921091086165,
+      "compression_max_pair_pct": 3.659607690055622,
+      "decompression_change_pct": 0.1326369891403667,
+      "baseline_compression_mbps": 102.47,
+      "candidate_compression_mbps": 105.63,
+      "baseline_decompression_mbps": 1204.4,
+      "candidate_decompression_mbps": 1207.9,
+      "compressed_bytes": 72603809,
+      "pair_details": [
+        {
+          "round": 0,
+          "c_ratio": 1.0281539210910862,
+          "d_ratio": 1.0129533678756477,
+          "baseline_c": 102.65,
+          "candidate_c": 105.54,
+          "baseline_d": 1196.6,
+          "candidate_d": 1212.1,
+          "compressed_bytes": 72603809
+        },
+        {
+          "round": 1,
+          "c_ratio": 1.0365960769005562,
+          "d_ratio": 0.9992527399535037,
+          "baseline_c": 102.47,
+          "candidate_c": 106.22,
+          "baseline_d": 1204.4,
+          "candidate_d": 1203.5,
+          "compressed_bytes": 72603809
+        },
+        {
+          "round": 2,
+          "c_ratio": 1.0328542094455853,
+          "d_ratio": 1.0013263698914037,
+          "baseline_c": 102.27,
+          "candidate_c": 105.63,
+          "baseline_d": 1206.3,
+          "candidate_d": 1207.9,
+          "compressed_bytes": 72603809
+        }
+      ]
+    },
+    {
+      "compiler": "gcc11",
+      "case": "silesia-32KiB-L9",
+      "pairs": 3,
+      "compression_change_pct": 3.6964980544747172,
+      "compression_min_pair_pct": 3.3439711391702653,
+      "compression_max_pair_pct": 7.352941176470584,
+      "decompression_change_pct": -0.27944111776446734,
+      "baseline_compression_mbps": 71.96,
+      "candidate_compression_mbps": 74.48,
+      "baseline_decompression_mbps": 1252.5,
+      "candidate_decompression_mbps": 1247.2,
+      "compressed_bytes": 71853531,
+      "pair_details": [
+        {
+          "round": 0,
+          "c_ratio": 1.0735294117647058,
+          "d_ratio": 0.9956094835156063,
+          "baseline_c": 69.36,
+          "candidate_c": 74.46,
+          "baseline_d": 1252.7,
+          "candidate_d": 1247.2,
+          "compressed_bytes": 71853531
+        },
+        {
+          "round": 1,
+          "c_ratio": 1.0334397113917027,
+          "d_ratio": 0.9972055888223553,
+          "baseline_c": 72.07,
+          "candidate_c": 74.48,
+          "baseline_d": 1252.5,
+          "candidate_d": 1249.0,
+          "compressed_bytes": 71853531
+        },
+        {
+          "round": 2,
+          "c_ratio": 1.0369649805447472,
+          "d_ratio": 1.0060940927927196,
+          "baseline_c": 71.96,
+          "candidate_c": 74.62,
+          "baseline_d": 1230.7,
+          "candidate_d": 1238.2,
+          "compressed_bytes": 71853531
+        }
+      ]
+    },
+    {
+      "compiler": "gcc11",
+      "case": "silesia-L12",
+      "pairs": 3,
+      "compression_change_pct": 0.6572461386789241,
+      "compression_min_pair_pct": -3.073645769933042,
+      "compression_max_pair_pct": 0.9505703422053147,
+      "decompression_change_pct": -0.11974538350034702,
+      "baseline_compression_mbps": 31.56,
+      "candidate_compression_mbps": 31.85,
+      "baseline_decompression_mbps": 1570.8,
+      "candidate_decompression_mbps": 1584.8,
+      "compressed_bytes": 57911231,
+      "pair_details": [
+        {
+          "round": 0,
+          "c_ratio": 1.0095057034220531,
+          "d_ratio": 0.9988025461649965,
+          "baseline_c": 31.56,
+          "candidate_c": 31.86,
+          "baseline_d": 1586.7,
+          "candidate_d": 1584.8,
+          "compressed_bytes": 57911231
+        },
+        {
+          "round": 1,
+          "c_ratio": 1.0065724613867892,
+          "d_ratio": 0.9698242933537052,
+          "baseline_c": 30.43,
+          "candidate_c": 30.63,
+          "baseline_d": 1570.8,
+          "candidate_d": 1523.4,
+          "compressed_bytes": 57911231
+        },
+        {
+          "round": 2,
+          "c_ratio": 0.9692635423006696,
+          "d_ratio": 1.02031040429201,
+          "baseline_c": 32.86,
+          "candidate_c": 31.85,
+          "baseline_d": 1565.7,
+          "candidate_d": 1597.5,
+          "compressed_bytes": 57911231
+        }
+      ]
+    },
+    {
+      "compiler": "gcc11",
+      "case": "silesia-L13",
+      "pairs": 3,
+      "compression_change_pct": 0.9743135518157864,
+      "compression_min_pair_pct": -2.3396880415944454,
+      "compression_max_pair_pct": 16.80814940577251,
+      "decompression_change_pct": 0.06878439219608623,
+      "baseline_compression_mbps": 11.54,
+      "candidate_compression_mbps": 11.4,
+      "baseline_decompression_mbps": 1582.0,
+      "candidate_decompression_mbps": 1581.3,
+      "compressed_bytes": 57686085,
+      "pair_details": [
+        {
+          "round": 0,
+          "c_ratio": 0.9766031195840555,
+          "d_ratio": 1.0176985455013514,
+          "baseline_c": 11.54,
+          "candidate_c": 11.27,
+          "baseline_d": 1553.8,
+          "candidate_d": 1581.3,
+          "compressed_bytes": 57686085
+        },
+        {
+          "round": 1,
+          "c_ratio": 1.0097431355181579,
+          "d_ratio": 0.992983565107459,
+          "baseline_c": 11.29,
+          "candidate_c": 11.4,
+          "baseline_d": 1582.0,
+          "candidate_d": 1570.9,
+          "compressed_bytes": 57686085
+        },
+        {
+          "round": 2,
+          "c_ratio": 1.168081494057725,
+          "d_ratio": 1.0006878439219609,
+          "baseline_c": 11.78,
+          "candidate_c": 13.76,
+          "baseline_d": 1599.2,
+          "candidate_d": 1600.3,
+          "compressed_bytes": 57686085
+        }
+      ]
+    },
+    {
+      "compiler": "gcc11",
+      "case": "silesia-L5",
+      "pairs": 3,
+      "compression_change_pct": -1.469477442834577,
+      "compression_min_pair_pct": -1.531383051778612,
+      "compression_max_pair_pct": -0.17234247897421895,
+      "decompression_change_pct": -0.5072314757694207,
+      "baseline_compression_mbps": 145.62,
+      "candidate_compression_mbps": 143.49,
+      "baseline_decompression_mbps": 1456.6,
+      "candidate_decompression_mbps": 1448.8,
+      "compressed_bytes": 62742335,
+      "pair_details": [
+        {
+          "round": 0,
+          "c_ratio": 0.9853052255716542,
+          "d_ratio": 0.9946450638473157,
+          "baseline_c": 145.63,
+          "candidate_c": 143.49,
+          "baseline_d": 1456.6,
+          "candidate_d": 1448.8,
+          "compressed_bytes": 62742335
+        },
+        {
+          "round": 1,
+          "c_ratio": 0.9846861694822139,
+          "d_ratio": 0.9949276852423058,
+          "baseline_c": 145.62,
+          "candidate_c": 143.39,
+          "baseline_d": 1458.9,
+          "candidate_d": 1451.5,
+          "compressed_bytes": 62742335
+        },
+        {
+          "round": 2,
+          "c_ratio": 0.9982765752102578,
+          "d_ratio": 1.0032738924491502,
+          "baseline_c": 145.06,
+          "candidate_c": 144.81,
+          "baseline_d": 1435.6,
+          "candidate_d": 1440.3,
+          "compressed_bytes": 62742335
+        }
+      ]
+    },
+    {
+      "compiler": "gcc11",
+      "case": "silesia-L6",
+      "pairs": 3,
+      "compression_change_pct": -0.4256526674233818,
+      "compression_min_pair_pct": -0.9649039825938899,
+      "compression_max_pair_pct": -0.018991548760793897,
+      "decompression_change_pct": -0.24129385678883786,
+      "baseline_compression_mbps": 105.71,
+      "candidate_compression_mbps": 105.27,
+      "baseline_decompression_mbps": 1533.4,
+      "candidate_decompression_mbps": 1529.7,
+      "compressed_bytes": 61230924,
+      "pair_details": [
+        {
+          "round": 0,
+          "c_ratio": 0.9903509601740611,
+          "d_ratio": 0.9895474907485555,
+          "baseline_c": 105.71,
+          "candidate_c": 104.69,
+          "baseline_d": 1540.3,
+          "candidate_d": 1524.2,
+          "compressed_bytes": 61230924
+        },
+        {
+          "round": 1,
+          "c_ratio": 0.9957434733257662,
+          "d_ratio": 1.0103824418451832,
+          "baseline_c": 105.72,
+          "candidate_c": 105.27,
+          "baseline_d": 1521.8,
+          "candidate_d": 1537.6,
+          "compressed_bytes": 61230924
+        },
+        {
+          "round": 2,
+          "c_ratio": 0.9998100845123921,
+          "d_ratio": 0.9975870614321116,
+          "baseline_c": 105.31,
+          "candidate_c": 105.29,
+          "baseline_d": 1533.4,
+          "candidate_d": 1529.7,
+          "compressed_bytes": 61230924
+        }
+      ]
+    },
+    {
+      "compiler": "gcc11",
+      "case": "silesia-L7",
+      "pairs": 3,
+      "compression_change_pct": -0.3005581794761736,
+      "compression_min_pair_pct": -0.5872931126535086,
+      "compression_max_pair_pct": 0.5747126436781658,
+      "decompression_change_pct": 0.11077083469082094,
+      "baseline_compression_mbps": 93.16,
+      "candidate_compression_mbps": 92.88,
+      "baseline_decompression_mbps": 1537.0,
+      "candidate_decompression_mbps": 1540.1,
+      "compressed_bytes": 60250552,
+      "pair_details": [
+        {
+          "round": 0,
+          "c_ratio": 0.9969944182052383,
+          "d_ratio": 0.993048403707518,
+          "baseline_c": 93.16,
+          "candidate_c": 92.88,
+          "baseline_d": 1553.6,
+          "candidate_d": 1542.8,
+          "compressed_bytes": 60250552
+        },
+        {
+          "round": 1,
+          "c_ratio": 1.0057471264367817,
+          "d_ratio": 1.0011077083469082,
+          "baseline_c": 92.22,
+          "candidate_c": 92.75,
+          "baseline_d": 1534.7,
+          "candidate_d": 1536.4,
+          "compressed_bytes": 60250552
+        },
+        {
+          "round": 2,
+          "c_ratio": 0.9941270688734649,
+          "d_ratio": 1.0020169160702668,
+          "baseline_c": 93.65,
+          "candidate_c": 93.1,
+          "baseline_d": 1537.0,
+          "candidate_d": 1540.1,
+          "compressed_bytes": 60250552
+        }
+      ]
+    },
+    {
+      "compiler": "gcc11",
+      "case": "silesia-L9",
+      "pairs": 3,
+      "compression_change_pct": 0.4644616467276652,
+      "compression_min_pair_pct": 0.16994759949016114,
+      "compression_max_pair_pct": 3.4998588766582017,
+      "decompression_change_pct": 0.3219782342713584,
+      "baseline_compression_mbps": 70.86,
+      "candidate_compression_mbps": 71.38,
+      "baseline_decompression_mbps": 1552.9,
+      "candidate_decompression_mbps": 1560.3,
+      "compressed_bytes": 59073803,
+      "pair_details": [
+        {
+          "round": 0,
+          "c_ratio": 1.0046446164672767,
+          "d_ratio": 0.992241653418124,
+          "baseline_c": 71.05,
+          "candidate_c": 71.38,
+          "baseline_d": 1572.5,
+          "candidate_d": 1560.3,
+          "compressed_bytes": 59073803
+        },
+        {
+          "round": 1,
+          "c_ratio": 1.0016994759949016,
+          "d_ratio": 1.0032197823427136,
+          "baseline_c": 70.61,
+          "candidate_c": 70.73,
+          "baseline_d": 1552.9,
+          "candidate_d": 1557.9,
+          "compressed_bytes": 59073803
+        },
+        {
+          "round": 2,
+          "c_ratio": 1.034998588766582,
+          "d_ratio": 1.0105936309023966,
+          "baseline_c": 70.86,
+          "candidate_c": 73.34,
+          "baseline_d": 1548.1,
+          "candidate_d": 1564.5,
+          "compressed_bytes": 59073803
+        }
+      ]
+    },
+    {
+      "compiler": "gcc11",
+      "case": "silesia-hashchain-L6",
+      "pairs": 3,
+      "compression_change_pct": -0.24444185775811533,
+      "compression_min_pair_pct": -0.6795669200644894,
+      "compression_max_pair_pct": 2.114164904862581,
+      "decompression_change_pct": 0.02644453259288415,
+      "baseline_compression_mbps": 85.91,
+      "candidate_compression_mbps": 86.23,
+      "baseline_decompression_mbps": 1507.3,
+      "candidate_decompression_mbps": 1497.8,
+      "compressed_bytes": 61430436,
+      "pair_details": [
+        {
+          "round": 0,
+          "c_ratio": 0.9975555814224188,
+          "d_ratio": 1.0022751605995717,
+          "baseline_c": 85.91,
+          "candidate_c": 85.7,
+          "baseline_d": 1494.4,
+          "candidate_d": 1497.8,
+          "compressed_bytes": 61430436
+        },
+        {
+          "round": 1,
+          "c_ratio": 0.9932043307993551,
+          "d_ratio": 1.0002644453259288,
+          "baseline_c": 86.82,
+          "candidate_c": 86.23,
+          "baseline_d": 1512.6,
+          "candidate_d": 1513.0,
+          "compressed_bytes": 61430436
+        },
+        {
+          "round": 2,
+          "c_ratio": 1.0211416490486258,
+          "d_ratio": 0.9911762754594308,
+          "baseline_c": 85.14,
+          "candidate_c": 86.94,
+          "baseline_d": 1507.3,
+          "candidate_d": 1494.0,
+          "compressed_bytes": 61430436
+        }
+      ]
+    },
+    {
+      "compiler": "gcc11",
+      "case": "silesia-hashchain-L9",
+      "pairs": 3,
+      "compression_change_pct": 0.21703743895822303,
+      "compression_min_pair_pct": -13.025535207634775,
+      "compression_max_pair_pct": 7.053617907339937,
+      "decompression_change_pct": -1.2963790791238328,
+      "baseline_compression_mbps": 38.42,
+      "candidate_compression_mbps": 36.94,
+      "baseline_decompression_mbps": 1565.9,
+      "candidate_decompression_mbps": 1545.6,
+      "compressed_bytes": 59234156,
+      "pair_details": [
+        {
+          "round": 0,
+          "c_ratio": 1.0021703743895822,
+          "d_ratio": 1.0066400206291903,
+          "baseline_c": 36.86,
+          "candidate_c": 36.94,
+          "baseline_d": 1551.2,
+          "candidate_d": 1561.5,
+          "compressed_bytes": 59234156
+        },
+        {
+          "round": 1,
+          "c_ratio": 0.8697446479236522,
+          "d_ratio": 0.9870362092087617,
+          "baseline_c": 38.77,
+          "candidate_c": 33.72,
+          "baseline_d": 1565.9,
+          "candidate_d": 1545.6,
+          "compressed_bytes": 59234156
+        },
+        {
+          "round": 2,
+          "c_ratio": 1.0705361790733994,
+          "d_ratio": 0.9834394904458599,
+          "baseline_c": 38.42,
+          "candidate_c": 41.13,
+          "baseline_d": 1570.0,
+          "candidate_d": 1544.0,
+          "compressed_bytes": 59234156
+        }
+      ]
+    }
+  ],
+  "streaming": [
+    {
+      "compiler": "clang14",
+      "input_bytes": 1024,
+      "level": 6,
+      "pairs": 3,
+      "change_pct": -0.4401408450704247,
+      "baseline_mbps": 113.6,
+      "candidate_mbps": 113.1,
+      "min_pair_pct": -0.5277044854881341,
+      "max_pair_pct": -0.08802816901407606
+    },
+    {
+      "compiler": "clang14",
+      "input_bytes": 1024,
+      "level": 9,
+      "pairs": 3,
+      "change_pct": -0.8238928939237833,
+      "baseline_mbps": 97.1,
+      "candidate_mbps": 97.7,
+      "min_pair_pct": -1.4925373134328401,
+      "max_pair_pct": 2.1966527196652708
+    },
+    {
+      "compiler": "clang14",
+      "input_bytes": 32768,
+      "level": 6,
+      "pairs": 3,
+      "change_pct": -0.5519779208831732,
+      "baseline_mbps": 109.3,
+      "candidate_mbps": 108.3,
+      "min_pair_pct": -1.455868971792551,
+      "max_pair_pct": 0.18298261665141702
+    },
+    {
+      "compiler": "clang14",
+      "input_bytes": 32768,
+      "level": 9,
+      "pairs": 3,
+      "change_pct": 3.3498759305210957,
+      "baseline_mbps": 81.0,
+      "candidate_mbps": 83.3,
+      "min_pair_pct": 0.48367593712210777,
+      "max_pair_pct": 3.580246913580254
+    },
+    {
+      "compiler": "gcc11",
+      "input_bytes": 1024,
+      "level": 6,
+      "pairs": 3,
+      "change_pct": 0.0,
+      "baseline_mbps": 108.2,
+      "candidate_mbps": 108.0,
+      "min_pair_pct": -0.3693444136657398,
+      "max_pair_pct": 0.09242144177448175
+    },
+    {
+      "compiler": "gcc11",
+      "input_bytes": 1024,
+      "level": 9,
+      "pairs": 3,
+      "change_pct": 1.6877637130801704,
+      "baseline_mbps": 94.8,
+      "candidate_mbps": 95.7,
+      "min_pair_pct": -0.2085505735140769,
+      "max_pair_pct": 3.207964601769908
+    },
+    {
+      "compiler": "gcc11",
+      "input_bytes": 32768,
+      "level": 6,
+      "pairs": 3,
+      "change_pct": -0.7677543186180413,
+      "baseline_mbps": 104.1,
+      "candidate_mbps": 103.4,
+      "min_pair_pct": -0.7684918347742542,
+      "max_pair_pct": 0.09624639076033503
+    },
+    {
+      "compiler": "gcc11",
+      "input_bytes": 32768,
+      "level": 9,
+      "pairs": 3,
+      "change_pct": 0.0,
+      "baseline_mbps": 80.9,
+      "candidate_mbps": 81.0,
+      "min_pair_pct": -0.3722084367245637,
+      "max_pair_pct": 1.3597033374536327
+    }
+  ],
+  "static_analysis": [],
+  "independent_confirmation": [
+    {
+      "compiler": "clang14",
+      "case": "silesia-L13",
+      "pairs": 5,
+      "change_pct": -0.6939625260235949,
+      "min_pair_pct": -3.726235741444872,
+      "max_pair_pct": 24.43403590944573,
+      "baseline_mbps": 13.15,
+      "candidate_mbps": 14.31,
+      "decompression_change_pct": 0.3159141766486684
+    },
+    {
+      "compiler": "clang14",
+      "case": "silesia-L9",
+      "pairs": 5,
+      "change_pct": 1.625135427952329,
+      "min_pair_pct": -0.9748172217709183,
+      "max_pair_pct": 2.1992940537605365,
+      "baseline_mbps": 73.66,
+      "candidate_mbps": 75.04,
+      "decompression_change_pct": -0.04807362131720172
+    },
+    {
+      "compiler": "gcc11",
+      "case": "random16MiB-L9",
+      "pairs": 5,
+      "change_pct": -7.8380650845439215,
+      "min_pair_pct": -10.743862250447068,
+      "max_pair_pct": -3.6576384590675026,
+      "baseline_mbps": 2485.69,
+      "candidate_mbps": 2288.01,
+      "decompression_change_pct": -1.8879646704075048
+    },
+    {
+      "compiler": "gcc11",
+      "case": "silesia-L9",
+      "pairs": 5,
+      "change_pct": 0.6142506142505999,
+      "min_pair_pct": -0.5152542372881319,
+      "max_pair_pct": 1.4528850145288486,
+      "baseline_mbps": 73.35,
+      "candidate_mbps": 73.38,
+      "decompression_change_pct": -0.14589280050745224
+    }
+  ],
+  "final_aa": [
+    {
+      "compiler": "clang14",
+      "pairs": 5,
+      "median_change_pct": -0.1980198019802093,
+      "min_pair_pct": -2.332937920126543,
+      "max_pair_pct": 0.5930718425663839
+    },
+    {
+      "compiler": "gcc11",
+      "pairs": 5,
+      "median_change_pct": -0.14118311449949905,
+      "min_pair_pct": -3.3770850423844645,
+      "max_pair_pct": 2.0266439909296885
+    }
+  ],
+  "caution": "Three-pair expanded matrix is a screen; pair ranges are descriptive, not confidence intervals. Longer confirmations use five pairs at -i5. Original Mac A/A is excluded due transfer overlap; see final_aa. Cross-CPU/compiler claims require inspecting all configurations, including losses.",
+  "dictionary_compression": [
+    {
+      "compiler": "clang14",
+      "dataset": "dickens",
+      "level": 6,
+      "pairs": 3,
+      "change_pct": 1.458761922573415,
+      "min_pair_pct": 0.5613772455089983,
+      "max_pair_pct": 1.6129032258064502,
+      "baseline_mbps": 53.44,
+      "candidate_mbps": 54.18
+    },
+    {
+      "compiler": "clang14",
+      "dataset": "dickens",
+      "level": 9,
+      "pairs": 3,
+      "change_pct": 2.8899592441645083,
+      "min_pair_pct": 2.7027027027026973,
+      "max_pair_pct": 3.046062407132233,
+      "baseline_mbps": 26.99,
+      "candidate_mbps": 27.74
+    },
+    {
+      "compiler": "clang14",
+      "dataset": "xml",
+      "level": 6,
+      "pairs": 3,
+      "change_pct": 4.853170478170488,
+      "min_pair_pct": 4.441846873173594,
+      "max_pair_pct": 5.331515033443712,
+      "baseline_mbps": 153.99,
+      "candidate_mbps": 161.39
+    },
+    {
+      "compiler": "clang14",
+      "dataset": "xml",
+      "level": 9,
+      "pairs": 3,
+      "change_pct": 6.702438105996422,
+      "min_pair_pct": 6.608924872905297,
+      "max_pair_pct": 7.529835196059853,
+      "baseline_mbps": 106.22,
+      "candidate_mbps": 113.35
+    },
+    {
+      "compiler": "gcc11",
+      "dataset": "dickens",
+      "level": 6,
+      "pairs": 3,
+      "change_pct": -0.1342796854018835,
+      "min_pair_pct": -2.2458857696030954,
+      "max_pair_pct": -0.038476337052706366,
+      "baseline_mbps": 51.98,
+      "candidate_mbps": 51.96
+    },
+    {
+      "compiler": "gcc11",
+      "dataset": "dickens",
+      "level": 9,
+      "pairs": 3,
+      "change_pct": -0.5543237250554278,
+      "min_pair_pct": -0.7034431691965937,
+      "max_pair_pct": -0.4066543438077663,
+      "baseline_mbps": 27.05,
+      "candidate_mbps": 26.91
+    },
+    {
+      "compiler": "gcc11",
+      "dataset": "xml",
+      "level": 6,
+      "pairs": 3,
+      "change_pct": 3.6170490093847762,
+      "min_pair_pct": 3.2706938032381894,
+      "max_pair_pct": 3.9798719121683535,
+      "baseline_mbps": 153.44,
+      "candidate_mbps": 158.99
+    },
+    {
+      "compiler": "gcc11",
+      "dataset": "xml",
+      "level": 9,
+      "pairs": 3,
+      "change_pct": 6.224106368628957,
+      "min_pair_pct": 5.851217399672803,
+      "max_pair_pct": 6.321063788783965,
+      "baseline_mbps": 103.79,
+      "candidate_mbps": 110.25
+    }
+  ]
+}

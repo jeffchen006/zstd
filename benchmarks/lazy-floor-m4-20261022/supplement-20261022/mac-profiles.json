@@ -1,0 +1,50 @@
+[
+  {
+    "label": "baseline",
+    "benchmark_command": [
+      "$MAC_RUN/bench-source-apple-clang17-baseline/zstd",
+      "-q",
+      "-b9",
+      "-i10",
+      "$MAC_REPO/.local-bench/20261022/corpus/silesia-all"
+    ],
+    "sample_command": [
+      "/usr/bin/sample",
+      "51896",
+      "5",
+      "1",
+      "-file",
+      "$MAC_RUN/profile-baseline.txt"
+    ],
+    "sample_returncode": 0,
+    "sample_stdout": "",
+    "sample_stderr": "Sampling process 51896 for 5 seconds with 1 millisecond of run time between samples\nSampling completed, processing symbols...\nSample analysis of process 51896 written to file $MAC_RUN/profile-baseline.txt\n",
+    "benchmark_returncode": 0,
+    "elapsed_seconds": 23.900980949401855,
+    "excluded_from_performance_measurements": true
+  },
+  {
+    "label": "candidate",
+    "benchmark_command": [
+      "$MAC_RUN/bench-source-apple-clang17-candidate/zstd",
+      "-q",
+      "-b9",
+      "-i10",
+      "$MAC_REPO/.local-bench/20261022/corpus/silesia-all"
+    ],
+    "sample_command": [
+      "/usr/bin/sample",
+      "51907",
+      "5",
+      "1",
+      "-file",
+      "$MAC_RUN/profile-candidate.txt"
+    ],
+    "sample_returncode": 0,
+    "sample_stdout": "",
+    "sample_stderr": "Sampling process 51907 for 5 seconds with 1 millisecond of run time between samples\nSampling completed, processing symbols...\nSample analysis of process 51907 written to file $MAC_RUN/profile-candidate.txt\n",
+    "benchmark_returncode": 0,
+    "elapsed_seconds": 23.76653814315796,
+    "excluded_from_performance_measurements": true
+  }
+]

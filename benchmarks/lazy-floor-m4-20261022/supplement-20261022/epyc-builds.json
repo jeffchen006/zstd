@@ -1,0 +1,138 @@
+[
+  {
+    "compiler_label": "clang14",
+    "compiler": "Ubuntu clang version 14.0.0-1ubuntu1.1\nTarget: x86_64-pc-linux-gnu\nThread model: posix\nInstalledDir: /usr/bin\n",
+    "label": "baseline",
+    "commit": "49cf51799ea051457f57243527aa2058f999f005",
+    "command": [
+      "make",
+      "-j4",
+      "zstd",
+      "CC=/usr/bin/clang",
+      "CFLAGS=-O3",
+      "DEBUGLEVEL=0",
+      "HAVE_ZLIB=0",
+      "HAVE_LZMA=0",
+      "HAVE_LZ4=0"
+    ],
+    "fullbench_command": [
+      "make",
+      "-C",
+      "tests",
+      "-j4",
+      "fullbench",
+      "CC=/usr/bin/clang",
+      "CFLAGS=-O3",
+      "DEBUGLEVEL=0"
+    ],
+    "returncode": 0,
+    "binary": "$EPYC_RUN/bench-source-clang14-baseline/zstd",
+    "sha256": "403727a844400aaaaa677848cfbd33b0afb45f99645ab760eb1eb1954727ca0f",
+    "fullbench": "$EPYC_RUN/bench-source-clang14-baseline/tests/fullbench",
+    "fullbench_sha256": "a33459c3e57cb595e9a222eefd58b82e3e999057323cd613866ef7c61608d117",
+    "size_output": "   text\t   data\t    bss\t    dec\t    hex\tfilename\n 967650\t   4840\t   2816\t 975306\t  ee1ca\t$EPYC_RUN/bench-source-clang14-baseline/zstd\n",
+    "file_bytes": 1032032
+  },
+  {
+    "compiler_label": "clang14",
+    "compiler": "Ubuntu clang version 14.0.0-1ubuntu1.1\nTarget: x86_64-pc-linux-gnu\nThread model: posix\nInstalledDir: /usr/bin\n",
+    "label": "candidate",
+    "commit": "222606cee24d2fc3cb1c514640903a21b6f40dfc",
+    "command": [
+      "make",
+      "-j4",
+      "zstd",
+      "CC=/usr/bin/clang",
+      "CFLAGS=-O3",
+      "DEBUGLEVEL=0",
+      "HAVE_ZLIB=0",
+      "HAVE_LZMA=0",
+      "HAVE_LZ4=0"
+    ],
+    "fullbench_command": [
+      "make",
+      "-C",
+      "tests",
+      "-j4",
+      "fullbench",
+      "CC=/usr/bin/clang",
+      "CFLAGS=-O3",
+      "DEBUGLEVEL=0"
+    ],
+    "returncode": 0,
+    "binary": "$EPYC_RUN/bench-source-clang14-candidate/zstd",
+    "sha256": "ad58ccb5a58080466d6d91b685227991eda688ac199a8055eca5f8332854a38c",
+    "fullbench": "$EPYC_RUN/bench-source-clang14-candidate/tests/fullbench",
+    "fullbench_sha256": "e04fad70f42e2847b476bb2bb3244f4cc6ed590eb813195f1b8cabad3c838ca0",
+    "size_output": "   text\t   data\t    bss\t    dec\t    hex\tfilename\n 971882\t   4840\t   2816\t 979538\t  ef252\t$EPYC_RUN/bench-source-clang14-candidate/zstd\n",
+    "file_bytes": 1036128
+  },
+  {
+    "compiler_label": "gcc11",
+    "compiler": "gcc (Ubuntu 11.4.0-1ubuntu1~22.04.3) 11.4.0\nCopyright (C) 2021 Free Software Foundation, Inc.\nThis is free software; see the source for copying conditions.  There is NO\nwarranty; not even for MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.\n\n",
+    "label": "baseline",
+    "commit": "49cf51799ea051457f57243527aa2058f999f005",
+    "command": [
+      "make",
+      "-j4",
+      "zstd",
+      "CC=/usr/bin/gcc",
+      "CFLAGS=-O3",
+      "DEBUGLEVEL=0",
+      "HAVE_ZLIB=0",
+      "HAVE_LZMA=0",
+      "HAVE_LZ4=0"
+    ],
+    "fullbench_command": [
+      "make",
+      "-C",
+      "tests",
+      "-j4",
+      "fullbench",
+      "CC=/usr/bin/gcc",
+      "CFLAGS=-O3",
+      "DEBUGLEVEL=0"
+    ],
+    "returncode": 0,
+    "binary": "$EPYC_RUN/bench-source-gcc11-baseline/zstd",
+    "sha256": "758c87823c9f1de1fa1e740a8806acb4bd091710371b80fd4fcb107aef880e4d",
+    "fullbench": "$EPYC_RUN/bench-source-gcc11-baseline/tests/fullbench",
+    "fullbench_sha256": "dd136e3255c6b08b8a15ab08bdc3b18c5995ab7cb81dc613578359269f0a4c61",
+    "size_output": "   text\t   data\t    bss\t    dec\t    hex\tfilename\n1042098\t   5104\t   2904\t1050106\t 1005fa\t$EPYC_RUN/bench-source-gcc11-baseline/zstd\n",
+    "file_bytes": 1112560
+  },
+  {
+    "compiler_label": "gcc11",
+    "compiler": "gcc (Ubuntu 11.4.0-1ubuntu1~22.04.3) 11.4.0\nCopyright (C) 2021 Free Software Foundation, Inc.\nThis is free software; see the source for copying conditions.  There is NO\nwarranty; not even for MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.\n\n",
+    "label": "candidate",
+    "commit": "222606cee24d2fc3cb1c514640903a21b6f40dfc",
+    "command": [
+      "make",
+      "-j4",
+      "zstd",
+      "CC=/usr/bin/gcc",
+      "CFLAGS=-O3",
+      "DEBUGLEVEL=0",
+      "HAVE_ZLIB=0",
+      "HAVE_LZMA=0",
+      "HAVE_LZ4=0"
+    ],
+    "fullbench_command": [
+      "make",
+      "-C",
+      "tests",
+      "-j4",
+      "fullbench",
+      "CC=/usr/bin/gcc",
+      "CFLAGS=-O3",
+      "DEBUGLEVEL=0"
+    ],
+    "returncode": 0,
+    "binary": "$EPYC_RUN/bench-source-gcc11-candidate/zstd",
+    "sha256": "da65dfb3a5d0b2b90f426aed6b6d86a6152541b4781ec72b6b6f19c9a7fb821c",
+    "fullbench": "$EPYC_RUN/bench-source-gcc11-candidate/tests/fullbench",
+    "fullbench_sha256": "b21bb6e98bead7feb034ba224e15e460dc064588623b332a2c5ee282d42183ed",
+    "size_output": "   text\t   data\t    bss\t    dec\t    hex\tfilename\n1044962\t   5104\t   2904\t1052970\t 10112a\t$EPYC_RUN/bench-source-gcc11-candidate/zstd\n",
+    "file_bytes": 1112560
+  }
+]

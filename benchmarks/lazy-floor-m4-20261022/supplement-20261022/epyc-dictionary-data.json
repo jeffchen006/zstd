@@ -1,0 +1,20 @@
+[
+  {
+    "name": "dickens",
+    "dictionary": "$EPYC_RUN/data/dickens-raw-dict64KiB",
+    "input": "$EPYC_RUN/data/dickens-after-dict4MiB",
+    "dictionary_bytes": 65536,
+    "input_bytes": 4194304,
+    "dictionary_sha256": "134ad989a7b8b40c900a3b9c0f4895317dfd827d9e6e933895b08d2f4a8a8293",
+    "input_sha256": "fad723961b08db66f88fd8a0e7a82f55a16c5a2aa7069ba0d500391d9662a9c5"
+  },
+  {
+    "name": "xml",
+    "dictionary": "$EPYC_RUN/data/xml-raw-dict64KiB",
+    "input": "$EPYC_RUN/data/xml-after-dict4MiB",
+    "dictionary_bytes": 65536,
+    "input_bytes": 4194304,
+    "dictionary_sha256": "e32aff2bebf00105a17dd57f5490c1986d17543cee837b42eb56b3e0e6f8e7f1",
+    "input_sha256": "75796370453dd5229ee66ab7493c35eb6e530c50365bfeb959ddf19e95cd33e7"
+  }
+]

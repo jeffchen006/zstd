@@ -1,0 +1,10 @@
+{
+  "status": "passed",
+  "case": "rawdict-xml-L9",
+  "pairs": 1,
+  "seconds": 1,
+  "full_dictionary_frame_comparisons": 4,
+  "corpus_manifest_validated": true,
+  "benchmark_results_written": 2,
+  "excluded_from_performance_claims": true
+}

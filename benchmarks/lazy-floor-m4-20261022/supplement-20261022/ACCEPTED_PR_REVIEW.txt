@@ -1,0 +1,37 @@
+Merged zstd performance PRs reviewed, 2026-10-22
+
+Selection: five merged changes with relevant lazy/row matchfinders, small-input compression, or compiler-sensitive optimizations. Merger status was verified through GitHub PR metadata. These are precedents, not a universal acceptance checklist or a guarantee of approval. Original descriptions and review discussions are retained in accepted-pr-research.json.
+
+1. #3552, [lazy] Skip over incompressible data
+https://github.com/facebook/zstd/pull/3552
+Closest search-path precedent: compared GCC and Clang at several affected levels, using random data, Silesia and enwik8. Reported compressed-size changes and losses as well as gains; also compared hash-chain and row search. A reviewer asked about random data followed by compressible data.
+Applied here: GCC 15 and Apple Clang 17 on the Mac; levels 5, 6, 7, 9, 12 and 13; Silesia, enwik8, deterministic random input, mixed random/text data, and hash-chain controls. Retain compressed sizes, both throughput columns and raw paired observations.
+
+2. #3295, [lazy] Use switch instead of indirect function calls
+https://github.com/facebook/zstd/pull/3295
+Reported absolute before/after throughput for GCC and Clang at affected levels, plus binary text/data/BSS sizes. Explained the relationship with an earlier implementation and compiler-sensitive regressions.
+Applied here: absolute throughput and paired ratios; actual Mach-O code-section size and executable size for both compilers. Preserve exact baseline and candidate identifiers and build settings.
+
+3. #4165, Improve compression speed on small blocks
+https://github.com/facebook/zstd/pull/4165
+Compared small independent blocks with whole-file input, GCC with Clang, and x86 with Apple M1. Investigation of generated code informed how it avoided a whole-file regression.
+Applied here: 32 KiB independent chunks alongside full inputs, compiler comparison, and native stack samples of the affected hot path. Profiling runs are excluded from throughput measurements. The user authorized an AMD EPYC 9654 host for GCC 11/Clang 14 x86 runs, in addition to the Mac's Apple Clang 17/GCC 15 runs. The x86 host is shared; per-process affinity and scheduling/sibling-load guards do not remove all shared-resource noise.
+
+4. #3543, Reduce RowHash's tag space size by x2
+https://github.com/facebook/zstd/pull/3543
+Disclosed memory savings against speed and ratio losses. Added a tiny-input streaming benchmark, fullbench -b41 -l9 enwik8.1k; the review discussion also mentions x86 measurements and a lower-level regression.
+Applied here: fullbench's reused-context streaming case on 1 KiB and 32 KiB enwik8 prefixes at levels 6 and 9. In the pinned current source, compressStream is scenario7, so the equivalent command is -b7; historical -b41 now returns success without a timing and is excluded. We require the named compressStream result. Confirm the existing three L6 per-file losses with five longer alternating pairs rather than treating a small median as definitive. Our patch has no claimed memory saving that could automatically justify a speed regression.
+
+5. #4418, AArch64: Improve ZSTD_decodeSequence performance
+https://github.com/facebook/zstd/pull/4418
+Compared several GCC/Clang versions and two ARM CPUs, scoped code to AArch64 after observing other-platform trade-offs, and received an additional Apple M1 result. Later discussion identified a rare correctness concern despite earlier validation.
+Applied here: keep the Mac/compiler claim narrow, do not call successful cross-platform CI a cross-platform speed result, and extend boundary correctness tests. This example is also a reminder that a merged PR is not proof that a validation method covers every case.
+
+What this does not imply:
+- No fixed minimum percentage win was established by these examples.
+- Not every accepted PR supplied every kind of evidence above.
+- We do not imitate an architecture guard without evidence that the algorithm itself should be architecture-specific.
+- We do not claim GCC on ARM substitutes for an x86 run, or that three pairs prove subtle effects. The expanded matrix is a screen; small changes and regressions need longer confirmation.
+- The package-install and CLI-warning repairs remain separate prerequisite PRs. The user alone submits upstream; no email is authorized.
+
+Local static analysis is separate from this precedent review. Read the exact run results, inherited diagnostics and analysis coverage in expanded-summary.json and the final report; do not equate a wrapper's success message with proof that the analyzer actually ran.

@@ -1,0 +1,74 @@
+[
+  {
+    "compiler": "clang14",
+    "dataset": "dickens",
+    "level": 6,
+    "compressed_bytes": 1493712,
+    "frame_sha256": "ba06978a703ee9410dd4d27f8cd6f096a4dac61d158b5a3c298cf354af1d8049",
+    "byte_identical": true,
+    "roundtrip": true
+  },
+  {
+    "compiler": "clang14",
+    "dataset": "dickens",
+    "level": 9,
+    "compressed_bytes": 1440898,
+    "frame_sha256": "35595ab8bd2032a13724d0a041fab7a148c4bb023d58e6f2bf66635dd57a5ec5",
+    "byte_identical": true,
+    "roundtrip": true
+  },
+  {
+    "compiler": "clang14",
+    "dataset": "xml",
+    "level": 6,
+    "compressed_bytes": 377179,
+    "frame_sha256": "aa13f6af5f7b19cc5d4670827df29ebecc8db8feb96083a95d1f30c6d74f70d8",
+    "byte_identical": true,
+    "roundtrip": true
+  },
+  {
+    "compiler": "clang14",
+    "dataset": "xml",
+    "level": 9,
+    "compressed_bytes": 344671,
+    "frame_sha256": "634a6c0f538633f9c7f8fb28355a9b7d73aa893dcea56dbc66c2d3737a68f4db",
+    "byte_identical": true,
+    "roundtrip": true
+  },
+  {
+    "compiler": "gcc11",
+    "dataset": "dickens",
+    "level": 6,
+    "compressed_bytes": 1493712,
+    "frame_sha256": "ba06978a703ee9410dd4d27f8cd6f096a4dac61d158b5a3c298cf354af1d8049",
+    "byte_identical": true,
+    "roundtrip": true
+  },
+  {
+    "compiler": "gcc11",
+    "dataset": "dickens",
+    "level": 9,
+    "compressed_bytes": 1440898,
+    "frame_sha256": "35595ab8bd2032a13724d0a041fab7a148c4bb023d58e6f2bf66635dd57a5ec5",
+    "byte_identical": true,
+    "roundtrip": true
+  },
+  {
+    "compiler": "gcc11",
+    "dataset": "xml",
+    "level": 6,
+    "compressed_bytes": 377179,
+    "frame_sha256": "aa13f6af5f7b19cc5d4670827df29ebecc8db8feb96083a95d1f30c6d74f70d8",
+    "byte_identical": true,
+    "roundtrip": true
+  },
+  {
+    "compiler": "gcc11",
+    "dataset": "xml",
+    "level": 9,
+    "compressed_bytes": 344671,
+    "frame_sha256": "634a6c0f538633f9c7f8fb28355a9b7d73aa893dcea56dbc66c2d3737a68f4db",
+    "byte_identical": true,
+    "roundtrip": true
+  }
+]

@@ -1,0 +1,90 @@
+Supplemental zstd validation, 2026-10-22
+
+Recommendation: hold the generic lazy-floor optimization for performance work.
+An RFC/draft can discuss the trade-offs if all results are disclosed. The two
+compatibility fixes remain separate and prepared for submission. No upstream
+PR has been created by the agent; the user alone submits. CLA is user-confirmed
+signed. Existing upstream comparison forms may contain the older description.
+
+Static analysis
+--------------
+make staticAnalyze genuinely analyzed41 compilation units, including
+zstd_lazy.c, on each of the baseline, optimization and standalone CLI fix.
+All three exit2 with the same12 inherited diagnostics in unchanged upstream
+files. There are no new diagnostics. This is NOT a clean static-analysis pass.
+Official scan-build wrapper: llvmorg-20.1.8; analyzer: Apple Clang17.0.0.
+See static-analysis.json, static-analysis-proof.txt and REPRODUCE.txt.
+
+Performance
+-----------
+Fresh independent tests: five alternating old/new pairs, built-in -i5.
+Changes below are median paired throughput ratios. Brackets are individual
+pair minima/maxima, NOT confidence intervals. Full absolute speeds are in
+SUPPLEMENT.txt and the summary JSON files.
+
+Silesia L9 compression:
+  Mac Apple Clang17: +3.62% [+3.42,+4.94]
+  Mac GCC15:         +3.52% [+3.11,+5.96]
+  EPYC Clang14:      +1.63% [-0.97,+2.20]
+  EPYC GCC11:        +0.61% [-0.52,+1.45]
+
+The Mac L9 gain reproduces with both compilers. Small mixed x86 changes do
+not establish a broad x86 benefit. Additional confirmed/screened losses are
+retained, including mixed L6 file results and decoder observations.
+
+The principal concern is EPYC GCC11 random16MiB L9 compression:
+  Candidate: -7.84% median [-10.74,-3.66], all five pairs negative.
+  Same-binary random A/A: -0.35% median [-1.78,+1.37].
+The separate fixed256MiB repeated-random counter diagnostic shows nearly
+unchanged GCC instructions (+0.018%) and cycles (-0.17%). It uses a different
+work size/schedule and cannot invalidate the in-memory observations, but it
+does not establish an algorithmic cost increase. The cause remains unresolved.
+Flat profiles sample both compression and decompression; their memmove/row
+matcher proportions do not isolate compression cost or prove causality.
+
+Clang14's original Silesia L13 screen loss did not reproduce consistently:
+longer median -0.69%, range[-3.73,+24.43]. Mac Clang L5 likewise has a large
+retained outlier (+87.18% in one pair) and supports no subtle gain/loss claim.
+No sample was removed merely because it was an unfavorable result or outlier.
+
+Coverage added from merged-PR precedents
+--------------------------------------
+Reviewed merged #3552, #3295, #4165, #3543 and #4418. See
+ACCEPTED_PR_REVIEW.txt for source links and the correspondence to this work.
+No universal percentage threshold or guarantee of acceptance follows.
+
+Both platforms: GCC/Clang; levels5/6/7/9/12/13; Silesia, enwik8, seeded random
+and mixed random/text; row/hash-chain; whole inputs and32KiB chunks;1/32KiB
+streaming; raw dictionary compression; code size; profiling/counters; A/A;
+longer loss confirmation. Dictionary compression is a separate three-pair
+screen, not a result about the withheld c0004 dictionary-decoder patch.
+
+Both machines passed696 boundary configurations each with exact frame
+equivalence and round trips. Dictionary full-frame checks passed. Timed sizes
+were unchanged. Prior make check and bounded ASan/UBSan tests passed. All106
+fork checks passed, including104 workflow jobs, on a merge containing the
+separate compatibility repairs. Optimization-only source remains zstd_lazy.c.
+
+Code size increases: Mac main __text +1272bytes(Clang),+6016bytes(GCC);
+Linux GNU size text +4232bytes(Clang),+2864bytes(GCC). These size categories
+are platform-specific. Raw tool outputs and binary hashes are retained.
+
+Limits and reproduction
+----------------------
+Mac desktop placement/frequency/ASLR are uncontrolled. EPYC is shared;
+process affinity and CPU/SMT guards do not control shared cache/memory or
+schedutil frequency/boost. Final Silesia A/A ranges reach several percent on
+EPYC; random Clang A/A includes a +9.29% outlier. Profiles and fixed-work
+counters are separate from adaptive in-memory timing. No alignment perturbation
+was performed. No general architecture, compiler, decoder, streaming or
+dictionary performance improvement is claimed.
+
+SUPPLEMENT.txt has complete tables, losses, controls and exclusions. Raw
+performance/guard records, correctness, hashes, compiler/build settings and
+bounded static proof accompany it. REPRODUCE.txt and reproduce_supplement.py
+provide a standalone recheck; its bounded smoke passed and its timings are
+excluded. Initial Mac A/A overlaps transfer and is excluded from calibration.
+Invalid historical fullbench41 attempts, non-intercepting analyzer setup,
+earlier implicit-thread counters, rejected load samples and quarantined older
+shared-load experiments do not support final claims. Existing evidence blobs
+are preserved; the original experiment and this supplement are not pooled.

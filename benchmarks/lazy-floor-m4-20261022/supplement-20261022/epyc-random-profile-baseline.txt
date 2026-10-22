@@ -1,0 +1,20 @@
+# To display the perf.data header info, please use --header/--header-only options.
+#
+#
+# Total Lost Samples: 0
+#
+# Samples: 2K of event 'cycles'
+# Event count (approx.): 37930337278
+#
+# Overhead  Command  Shared Object     Symbol                                          
+# ........  .......  ................  ................................................
+#
+    61.28%  zstd     libc.so.6         [.] __memmove_avx512_unaligned_erms
+    30.59%  zstd     zstd              [.] ZSTD_RowFindBestMatch_noDict_5_4.constprop.0
+     4.32%  zstd     zstd              [.] ZSTD_compressBlock_lazy2_row
+     2.30%  zstd     zstd              [.] HIST_count_simple
+
+
+#
+# (Cannot load tips.txt file, please install perf!)
+#
