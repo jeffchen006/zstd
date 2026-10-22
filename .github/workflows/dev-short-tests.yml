@@ -483,9 +483,7 @@ jobs:
         include: [
           { compiler: gcc, msystem: MINGW32, cflags: "-Werror"},
           { compiler: gcc, msystem: MINGW64, cflags: "-Werror"},
-          # Fork-only compatibility: retain diagnostics for upstream CLI globals,
-          # while keeping other warnings fatal. Baseline control below verifies this.
-          { compiler: clang, msystem: MINGW64, cflags: "--target=x86_64-w64-mingw32 -Werror -Wconversion -Wno-sign-conversion -Wno-unused-command-line-argument -Wno-error=unused-but-set-global"},
+          { compiler: clang, msystem: MINGW64, cflags: "--target=x86_64-w64-mingw32 -Werror -Wconversion -Wno-sign-conversion -Wno-unused-command-line-argument"},
         ]
     defaults:
       run:
